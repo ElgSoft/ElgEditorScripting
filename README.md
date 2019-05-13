@@ -82,6 +82,8 @@ Blueprint nodes that add the possibility to change the tab name, open or close a
 
 ![EditorWidget](https://elgsoft.com/Images/EditorScripting/EditorWidgetToggle.gif)<br>
 
+![EditorWidgetOpen](https://elgsoft.com/Images/EditorScripting/BP_OpenEditorWidget_smaller.png)<br>
+
 Examples can be found in EW_BlueprintNodes_EditorWidget.
 
 OpenEditorWidget*, CloseEditorWidget*, ToggleEditorWidget*, IsEditorWidgetOpen, IsEditorWidgetRegistered, SetEditorWidgetLabel, 
