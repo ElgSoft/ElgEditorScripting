@@ -19,7 +19,7 @@ Events that are exposed in the plugin are:<br>
 OnLevelActorAdded, OnLevelActorDeleted, OnLevelActorAttached, OnLevelActorDetached, OnActorMoved, OnActorSelectionChanged, OnActorSelected, OnActorDeselected, OnWorldAdded, OnWorldDestroyed, OnMapOpened, OnMapChanged, OnEditorModeChanged, OnEnterMode, OnExitMode, OnEditorCameraMoved, OnFocusViewportOnActors, OnBeginPIE, OnPausePIE, OnResumePIE, OnEndPIE, OnBeginStandaloneLocalPlay, OnLeftMouseClick, OnMiddleMouseClick, OnRightMouseClick, OnInputKey.
 
 Blueprint Nodes:<br>
-GetMousePosition, GetMousePositionWorld, GetActorUnderMouse, LineTrace, HasFocus, GetEditorMode, IsInPIE, IsInEditor.
+GetMousePosition, GetMousePositionWorld, GetActorUnderMouse, LineTrace, HasFocus, GetEditorMode, IsInPIE, IsInEditor, IsViewportRealtime, SetViewportRealtime, RestoreViewportRealtime.
 
 ## Asset Browser Context
 Thru the Asset Browser Context object, you can bind asset related events.
