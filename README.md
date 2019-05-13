@@ -32,7 +32,7 @@ Events that are exposed in the plugin are:<br>
 OnAssetCreated, OnAssetRemoved, OnAssetRenamed, OnAssetSelectionChanged, OnAssetSelected, OnAssetDeselected
 
 ## Config Context
-Tthe Config Context let you read/write to config ini files in the "Project/Config/" folder by specifying the Config filename and the config section.
+The Config Context let you read/write to config ini files in the "Project/Config/" folder by specifying the Config filename and the config section.
 
 ![ConfigContext](https://elgsoft.com/Images/EditorScripting/CC_ReadInt.png)<br>
 Examples can be found in EW_EditorContexts_Config.
