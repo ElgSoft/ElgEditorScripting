@@ -59,8 +59,12 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorContext_LevelEditor() {}
 	ELGEDITORSCRIPTING_API UFunction* Z_Construct_UFunction_UElgEditorContext_LevelEditor_IsInEditorBranch();
 	ELGEDITORSCRIPTING_API UFunction* Z_Construct_UFunction_UElgEditorContext_LevelEditor_IsInPIE();
 	ELGEDITORSCRIPTING_API UFunction* Z_Construct_UFunction_UElgEditorContext_LevelEditor_IsInPIEBranch();
+	ELGEDITORSCRIPTING_API UFunction* Z_Construct_UFunction_UElgEditorContext_LevelEditor_IsViewportRealtime();
+	ELGEDITORSCRIPTING_API UFunction* Z_Construct_UFunction_UElgEditorContext_LevelEditor_IsViewportRealtimeBranch();
 	ELGEDITORSCRIPTING_API UFunction* Z_Construct_UFunction_UElgEditorContext_LevelEditor_LineTrace();
 	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FHitResult();
+	ELGEDITORSCRIPTING_API UFunction* Z_Construct_UFunction_UElgEditorContext_LevelEditor_RestoreViewportRealtime();
+	ELGEDITORSCRIPTING_API UFunction* Z_Construct_UFunction_UElgEditorContext_LevelEditor_SetViewportRealtime();
 // End Cross Module References
 	struct Z_Construct_UDelegateFunction_ElgEditorScripting_ElgEditorEventsOnInputKeySignature__DelegateSignature_Statics
 	{
@@ -925,7 +929,11 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorContext_LevelEditor() {}
 			{ "IsInEditorBranch", &UElgEditorContext_LevelEditor::execIsInEditorBranch },
 			{ "IsInPIE", &UElgEditorContext_LevelEditor::execIsInPIE },
 			{ "IsInPIEBranch", &UElgEditorContext_LevelEditor::execIsInPIEBranch },
+			{ "IsViewportRealtime", &UElgEditorContext_LevelEditor::execIsViewportRealtime },
+			{ "IsViewportRealtimeBranch", &UElgEditorContext_LevelEditor::execIsViewportRealtimeBranch },
 			{ "LineTrace", &UElgEditorContext_LevelEditor::execLineTrace },
+			{ "RestoreViewportRealtime", &UElgEditorContext_LevelEditor::execRestoreViewportRealtime },
+			{ "SetViewportRealtime", &UElgEditorContext_LevelEditor::execSetViewportRealtime },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
 	}
@@ -1493,6 +1501,83 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorContext_LevelEditor() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_UElgEditorContext_LevelEditor_IsViewportRealtime_Statics
+	{
+		struct ElgEditorContext_LevelEditor_eventIsViewportRealtime_Parms
+		{
+			bool ReturnValue;
+		};
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_UElgEditorContext_LevelEditor_IsViewportRealtime_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((ElgEditorContext_LevelEditor_eventIsViewportRealtime_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UElgEditorContext_LevelEditor_IsViewportRealtime_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ElgEditorContext_LevelEditor_eventIsViewportRealtime_Parms), &Z_Construct_UFunction_UElgEditorContext_LevelEditor_IsViewportRealtime_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorContext_LevelEditor_IsViewportRealtime_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorContext_LevelEditor_IsViewportRealtime_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorContext_LevelEditor_IsViewportRealtime_Statics::Function_MetaDataParams[] = {
+		{ "Category", "ElgEditor|LevelEditor" },
+		{ "ModuleRelativePath", "Public/EditorContexts/ElgEditorContext_LevelEditor.h" },
+		{ "ToolTip", "Return if the current viewport is rendering in real time or not" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorContext_LevelEditor_IsViewportRealtime_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorContext_LevelEditor, nullptr, "IsViewportRealtime", sizeof(ElgEditorContext_LevelEditor_eventIsViewportRealtime_Parms), Z_Construct_UFunction_UElgEditorContext_LevelEditor_IsViewportRealtime_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorContext_LevelEditor_IsViewportRealtime_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorContext_LevelEditor_IsViewportRealtime_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorContext_LevelEditor_IsViewportRealtime_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UElgEditorContext_LevelEditor_IsViewportRealtime()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UElgEditorContext_LevelEditor_IsViewportRealtime_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UElgEditorContext_LevelEditor_IsViewportRealtimeBranch_Statics
+	{
+		struct ElgEditorContext_LevelEditor_eventIsViewportRealtimeBranch_Parms
+		{
+			EBPEditorOutputBranch Branches;
+		};
+		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_Branches;
+		static const UE4CodeGen_Private::FBytePropertyParams NewProp_Branches_Underlying;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UElgEditorContext_LevelEditor_IsViewportRealtimeBranch_Statics::NewProp_Branches = { "Branches", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorContext_LevelEditor_eventIsViewportRealtimeBranch_Parms, Branches), Z_Construct_UEnum_ElgEditorScripting_EBPEditorOutputBranch, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UElgEditorContext_LevelEditor_IsViewportRealtimeBranch_Statics::NewProp_Branches_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorContext_LevelEditor_IsViewportRealtimeBranch_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorContext_LevelEditor_IsViewportRealtimeBranch_Statics::NewProp_Branches,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorContext_LevelEditor_IsViewportRealtimeBranch_Statics::NewProp_Branches_Underlying,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorContext_LevelEditor_IsViewportRealtimeBranch_Statics::Function_MetaDataParams[] = {
+		{ "Category", "ElgEditor|LevelEditor" },
+		{ "ExpandEnumAsExecs", "Branches" },
+		{ "ModuleRelativePath", "Public/EditorContexts/ElgEditorContext_LevelEditor.h" },
+		{ "ToolTip", "Return if the current viewport is rendering in real time or not with branch pins" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorContext_LevelEditor_IsViewportRealtimeBranch_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorContext_LevelEditor, nullptr, "IsViewportRealtimeBranch", sizeof(ElgEditorContext_LevelEditor_eventIsViewportRealtimeBranch_Parms), Z_Construct_UFunction_UElgEditorContext_LevelEditor_IsViewportRealtimeBranch_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorContext_LevelEditor_IsViewportRealtimeBranch_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04420401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorContext_LevelEditor_IsViewportRealtimeBranch_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorContext_LevelEditor_IsViewportRealtimeBranch_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UElgEditorContext_LevelEditor_IsViewportRealtimeBranch()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UElgEditorContext_LevelEditor_IsViewportRealtimeBranch_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_UElgEditorContext_LevelEditor_LineTrace_Statics
 	{
 		struct ElgEditorContext_LevelEditor_eventLineTrace_Parms
@@ -1567,6 +1652,103 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorContext_LevelEditor() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UElgEditorContext_LevelEditor_LineTrace_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UElgEditorContext_LevelEditor_RestoreViewportRealtime_Statics
+	{
+		struct ElgEditorContext_LevelEditor_eventRestoreViewportRealtime_Parms
+		{
+			bool bAllowDisable;
+		};
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bAllowDisable_MetaData[];
+#endif
+		static void NewProp_bAllowDisable_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bAllowDisable;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorContext_LevelEditor_RestoreViewportRealtime_Statics::NewProp_bAllowDisable_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	void Z_Construct_UFunction_UElgEditorContext_LevelEditor_RestoreViewportRealtime_Statics::NewProp_bAllowDisable_SetBit(void* Obj)
+	{
+		((ElgEditorContext_LevelEditor_eventRestoreViewportRealtime_Parms*)Obj)->bAllowDisable = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UElgEditorContext_LevelEditor_RestoreViewportRealtime_Statics::NewProp_bAllowDisable = { "bAllowDisable", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ElgEditorContext_LevelEditor_eventRestoreViewportRealtime_Parms), &Z_Construct_UFunction_UElgEditorContext_LevelEditor_RestoreViewportRealtime_Statics::NewProp_bAllowDisable_SetBit, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorContext_LevelEditor_RestoreViewportRealtime_Statics::NewProp_bAllowDisable_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorContext_LevelEditor_RestoreViewportRealtime_Statics::NewProp_bAllowDisable_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorContext_LevelEditor_RestoreViewportRealtime_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorContext_LevelEditor_RestoreViewportRealtime_Statics::NewProp_bAllowDisable,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorContext_LevelEditor_RestoreViewportRealtime_Statics::Function_MetaDataParams[] = {
+		{ "Category", "ElgEditor|LevelEditor" },
+		{ "CPP_Default_bAllowDisable", "false" },
+		{ "ModuleRelativePath", "Public/EditorContexts/ElgEditorContext_LevelEditor.h" },
+		{ "ToolTip", "Restores real time setting to stored value. This will only enable real time and\n       * never disable it (unless bAllowDisable is true)" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorContext_LevelEditor_RestoreViewportRealtime_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorContext_LevelEditor, nullptr, "RestoreViewportRealtime", sizeof(ElgEditorContext_LevelEditor_eventRestoreViewportRealtime_Parms), Z_Construct_UFunction_UElgEditorContext_LevelEditor_RestoreViewportRealtime_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorContext_LevelEditor_RestoreViewportRealtime_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorContext_LevelEditor_RestoreViewportRealtime_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorContext_LevelEditor_RestoreViewportRealtime_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UElgEditorContext_LevelEditor_RestoreViewportRealtime()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UElgEditorContext_LevelEditor_RestoreViewportRealtime_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UElgEditorContext_LevelEditor_SetViewportRealtime_Statics
+	{
+		struct ElgEditorContext_LevelEditor_eventSetViewportRealtime_Parms
+		{
+			bool bInRealtime;
+			bool bStoreCurrentValue;
+		};
+		static void NewProp_bStoreCurrentValue_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bStoreCurrentValue;
+		static void NewProp_bInRealtime_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bInRealtime;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_UElgEditorContext_LevelEditor_SetViewportRealtime_Statics::NewProp_bStoreCurrentValue_SetBit(void* Obj)
+	{
+		((ElgEditorContext_LevelEditor_eventSetViewportRealtime_Parms*)Obj)->bStoreCurrentValue = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UElgEditorContext_LevelEditor_SetViewportRealtime_Statics::NewProp_bStoreCurrentValue = { "bStoreCurrentValue", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ElgEditorContext_LevelEditor_eventSetViewportRealtime_Parms), &Z_Construct_UFunction_UElgEditorContext_LevelEditor_SetViewportRealtime_Statics::NewProp_bStoreCurrentValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	void Z_Construct_UFunction_UElgEditorContext_LevelEditor_SetViewportRealtime_Statics::NewProp_bInRealtime_SetBit(void* Obj)
+	{
+		((ElgEditorContext_LevelEditor_eventSetViewportRealtime_Parms*)Obj)->bInRealtime = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UElgEditorContext_LevelEditor_SetViewportRealtime_Statics::NewProp_bInRealtime = { "bInRealtime", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ElgEditorContext_LevelEditor_eventSetViewportRealtime_Parms), &Z_Construct_UFunction_UElgEditorContext_LevelEditor_SetViewportRealtime_Statics::NewProp_bInRealtime_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorContext_LevelEditor_SetViewportRealtime_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorContext_LevelEditor_SetViewportRealtime_Statics::NewProp_bStoreCurrentValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorContext_LevelEditor_SetViewportRealtime_Statics::NewProp_bInRealtime,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorContext_LevelEditor_SetViewportRealtime_Statics::Function_MetaDataParams[] = {
+		{ "Category", "ElgEditor|LevelEditor" },
+		{ "CPP_Default_bStoreCurrentValue", "false" },
+		{ "ModuleRelativePath", "Public/EditorContexts/ElgEditorContext_LevelEditor.h" },
+		{ "ToolTip", "Sets whether or not the viewport updates in real time." },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorContext_LevelEditor_SetViewportRealtime_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorContext_LevelEditor, nullptr, "SetViewportRealtime", sizeof(ElgEditorContext_LevelEditor_eventSetViewportRealtime_Parms), Z_Construct_UFunction_UElgEditorContext_LevelEditor_SetViewportRealtime_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorContext_LevelEditor_SetViewportRealtime_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorContext_LevelEditor_SetViewportRealtime_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorContext_LevelEditor_SetViewportRealtime_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UElgEditorContext_LevelEditor_SetViewportRealtime()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UElgEditorContext_LevelEditor_SetViewportRealtime_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -1733,7 +1915,11 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorContext_LevelEditor() {}
 		{ &Z_Construct_UFunction_UElgEditorContext_LevelEditor_IsInEditorBranch, "IsInEditorBranch" }, // 3186918429
 		{ &Z_Construct_UFunction_UElgEditorContext_LevelEditor_IsInPIE, "IsInPIE" }, // 3694041613
 		{ &Z_Construct_UFunction_UElgEditorContext_LevelEditor_IsInPIEBranch, "IsInPIEBranch" }, // 3495216438
+		{ &Z_Construct_UFunction_UElgEditorContext_LevelEditor_IsViewportRealtime, "IsViewportRealtime" }, // 4249400234
+		{ &Z_Construct_UFunction_UElgEditorContext_LevelEditor_IsViewportRealtimeBranch, "IsViewportRealtimeBranch" }, // 1976628501
 		{ &Z_Construct_UFunction_UElgEditorContext_LevelEditor_LineTrace, "LineTrace" }, // 2664866370
+		{ &Z_Construct_UFunction_UElgEditorContext_LevelEditor_RestoreViewportRealtime, "RestoreViewportRealtime" }, // 3915040683
+		{ &Z_Construct_UFunction_UElgEditorContext_LevelEditor_SetViewportRealtime, "SetViewportRealtime" }, // 550046749
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UElgEditorContext_LevelEditor_Statics::Class_MetaDataParams[] = {
@@ -2030,7 +2216,7 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorContext_LevelEditor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UElgEditorContext_LevelEditor, 2594593596);
+	IMPLEMENT_CLASS(UElgEditorContext_LevelEditor, 2853973712);
 	template<> ELGEDITORSCRIPTING_API UClass* StaticClass<UElgEditorContext_LevelEditor>()
 	{
 		return UElgEditorContext_LevelEditor::StaticClass();

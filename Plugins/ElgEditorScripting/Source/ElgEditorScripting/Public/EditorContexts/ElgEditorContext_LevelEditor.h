@@ -390,5 +390,27 @@ public:
 
 #pragma endregion
 
+#pragma region ViewportRealtime
+
+	/* Return if the current viewport is rendering in real time or not */
+	UFUNCTION(BlueprintPure, Category = "ElgEditor|LevelEditor")
+		bool IsViewportRealtime();
+
+	/*  Return if the current viewport is rendering in real time or not with branch pins */
+	UFUNCTION(BlueprintCallable, Category = "ElgEditor|LevelEditor", meta = (ExpandEnumAsExecs = "Branches"))
+		void IsViewportRealtimeBranch(EBPEditorOutputBranch& Branches);
+
+	/* Sets whether or not the viewport updates in real time. */
+	UFUNCTION(BlueprintCallable, Category = "ElgEditor|LevelEditor")
+		void SetViewportRealtime(bool bInRealtime, bool bStoreCurrentValue = false);
+
+	/* Restores real time setting to stored value. This will only enable real time and
+	 * never disable it (unless bAllowDisable is true) */
+	UFUNCTION(BlueprintCallable, Category = "ElgEditor|LevelEditor")
+		void RestoreViewportRealtime(const bool bAllowDisable = false);
+
+
+#pragma endregion
+
 };
 

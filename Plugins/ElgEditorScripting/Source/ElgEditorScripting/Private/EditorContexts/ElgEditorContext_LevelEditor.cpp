@@ -469,3 +469,39 @@ void UElgEditorContext_LevelEditor::IsInEditorBranch(EBPEditorOutputBranch& Bran
 }
 
 #pragma endregion
+
+#pragma region ViewportRealtime
+
+bool UElgEditorContext_LevelEditor::IsViewportRealtime()
+{
+	if (GCurrentLevelEditingViewportClient == nullptr) return false;
+
+	return GCurrentLevelEditingViewportClient->IsRealtime();
+}
+
+
+void UElgEditorContext_LevelEditor::IsViewportRealtimeBranch(EBPEditorOutputBranch& Branches)
+{
+	if (IsViewportRealtime()) {
+		Branches = EBPEditorOutputBranch::outTrue;
+	}
+	else {
+		Branches = EBPEditorOutputBranch::outFalse;
+	}
+}
+
+
+void UElgEditorContext_LevelEditor::SetViewportRealtime(bool bInRealtime, bool bStoreCurrentValue /* false */)
+{
+	if (GCurrentLevelEditingViewportClient == nullptr) return;
+	return GCurrentLevelEditingViewportClient->SetRealtime(bInRealtime, bStoreCurrentValue);
+}
+
+
+void UElgEditorContext_LevelEditor::RestoreViewportRealtime(const bool bAllowDisable /* false */)
+{
+	if (GCurrentLevelEditingViewportClient == nullptr) return;
+	return GCurrentLevelEditingViewportClient->RestoreRealtime(bAllowDisable);
+}
+
+#pragma endregion
