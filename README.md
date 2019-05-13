@@ -22,6 +22,9 @@ OnLevelActorAdded, OnLevelActorDeleted, OnLevelActorAttached, OnLevelActorDetach
 Blueprint Nodes:<br>
 GetMousePosition, GetMousePositionWorld, GetActorUnderMouse, LineTrace, HasFocus, GetEditorMode, IsInPIE, IsInEditor, IsViewportRealtime, SetViewportRealtime, RestoreViewportRealtime.
 
+Example of spawning and actor on the mouse cursor position in the level editor on middle mouse click.
+![LevelEditorContext_spawn](https://elgsoft.com/Images/EditorScripting/LEC_SpawnOnClick.png)<br>
+
 ## Asset Browser Context
 Thru the Asset Browser Context object, you can bind asset related events.
 
