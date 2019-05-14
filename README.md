@@ -7,7 +7,8 @@ For the Content Browser it has events like OnAssetCreated/Removed/Renamed and Se
 
 It also add nodes to get the MousePosition, Read/Write to config files, Load/Reload/Compile Modules, Show the SlowTask UI, Add/Remove Components/Interfaces. Open/Close EditorWidgets* and set the EditorWidget tab Label and tooltip.
 
-[ElgSoft.com](http://elgsoft.com/ccount/click.php?id=main)
+[ElgSoft.com](http://elgsoft.com/ccount/click.php?id=main), 
+[Unreal Forum thread](https://forums.unrealengine.com/community/community-content-tools-and-tutorials/1618595-free-elgeditorscripting-editor-utility-widget-extension-events-and-stuff)
 
 ## Level Editor Context
 
