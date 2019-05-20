@@ -104,7 +104,7 @@ Examples can be found in EW_ToolbarButton_MoveSelectedToMouse and EW_ToolbarButt
 
 RunConstructionScript, MarkActorAsDirty
 
-##Plugin Manager
+## Plugin Manager
 Expose plugin functionality to blueprints so you can Enable/Disable plugins, Package a plugin or get the description with information about the plugin.
 
 ![PluginManager](https://elgsoft.com/Images/EditorScripting/PluginManager_nodes.png)<br>
