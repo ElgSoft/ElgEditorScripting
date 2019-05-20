@@ -10,6 +10,9 @@ It also add nodes to get the MousePosition, Read/Write to config files, Load/Rel
 [ElgSoft.com](http://elgsoft.com/ccount/click.php?id=main), 
 [Unreal Forum thread](https://forums.unrealengine.com/community/community-content-tools-and-tutorials/1618595-free-elgeditorscripting-editor-utility-widget-extension-events-and-stuff)
 
+1.0.1 Exposed PluginManager to Blueprints.
+
+
 ## Level Editor Context
 
 Thru the Level Editor Context object, you can bind events and query level editor specific data like mouse position or if the level editor viewport are in focus.
@@ -100,6 +103,14 @@ If you modify a Level Actors transformation in an Editor Widget the editor won't
 Examples can be found in EW_ToolbarButton_MoveSelectedToMouse and EW_ToolbarButton_RunConstructionScript.
 
 RunConstructionScript, MarkActorAsDirty
+
+##Plugin Manager
+Expose plugin functionality to blueprints so you can Enable/Disable plugins, Package a plugin or get the description with information about the plugin.
+
+![PluginManager](https://elgsoft.com/Images/EditorScripting/PluginManager_nodes.png)<br>
+Examples can be found in EW_BlueprintNodes_PluginManager.
+
+EnablePlugin, DisablePlugin, SetPluginEnabled, GetPluginIconTexture, GetPluginDescription, GetPluginDescriptions, GetPluginCategory, PackagePlugin.
 
 
 ## Usage
