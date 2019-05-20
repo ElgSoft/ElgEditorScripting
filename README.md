@@ -12,6 +12,9 @@ It also add nodes to get the MousePosition, Read/Write to config files, Load/Rel
 
 1.0.1 Exposed PluginManager to Blueprints.
 
+Here is a Custom PluginBrowser created in EditorWidgets using the new PluginManager nodes.
+![PluginBrowser](https://elgsoft.com/Images/EditorScripting/Tool_PluginBrowser.png)<br>
+
 
 ## Level Editor Context
 
