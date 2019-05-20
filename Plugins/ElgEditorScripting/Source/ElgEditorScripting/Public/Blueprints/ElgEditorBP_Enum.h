@@ -39,3 +39,12 @@ enum class EBPEditorOutputValidBranch : uint8
 	Valid,
 	Invalid 
 };
+
+
+
+UENUM(BlueprintType)
+enum class EBPEditorOutputResultBranch : uint8
+{
+	Success,
+	Failed
+};

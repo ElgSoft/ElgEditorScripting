@@ -58,6 +58,14 @@ class ELGEDITORSCRIPTING_API UElgEditorBP_EditorWidget : public UBlueprintFuncti
 	//UFUNCTION(BlueprintCallable, Category = "ElgEditor | EditorWidget")
 	//	static void RegisterTabSpawner(UEditorUtilityWidgetBlueprint* EditorWidget);
 
+	/* Add editor widgets to the loaded script list so they will be registration when/if ReinitializeUIs */
+	UFUNCTION(BlueprintCallable, Category = "ElgEditor|EditorWidget")
+		static void AddEditorWidgetsToLoadedScript(TArray<UEditorUtilityWidgetBlueprint*> EditorWidgets);
+	
+	/* ReinitializeUIs any editor widgets i in the loaded script */
+	UFUNCTION(BlueprintCallable, Category = "ElgEditor|EditorWidget")
+		static void ReinitializeEditorWidgets();
+
 #pragma endregion
 
 #pragma region TabStyle

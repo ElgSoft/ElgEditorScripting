@@ -54,6 +54,9 @@ public class ElgEditorScripting : ModuleRules
                 "Blutility",
                 "LevelEditor",
                 "InputCore",
+                "Projects",
+                "EditorStyle",
+                "AssetTools",
 				// ... add private dependencies that you statically link with here ...	
 			}
 			);

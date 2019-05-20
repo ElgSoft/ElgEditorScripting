@@ -1,7 +1,7 @@
 {
 	"FileVersion": 3,
 	"Version": 1,
-	"VersionName": "1.0",
+	"VersionName": "1.0.1",
 	"FriendlyName": "Elg Editor Utility Widget Scripting",
 	"Description": "Extend the Editor Utility Widget scripting to make it possible to have Events like LevelActorSelected or AssetSelected and many more.",
 	"Category": "Scripting",

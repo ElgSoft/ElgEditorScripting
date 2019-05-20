@@ -7,6 +7,8 @@
 #include "LevelEditor.h"
 #include <IDocumentation.h>
 #include "Widgets/SToolTip.h"
+#include <IBlutilityModule.h>
+
 
 /* RegisterTabSpawner, error LNK2019: unresolved external symbol "public: class TSharedRef<class SDockTab,0> UEditorUtilityWidgetBlueprint::SpawnEditorUITab
 #include <IBlutilityModule.h>
@@ -27,7 +29,16 @@ void UElgEditorBP_EditorWidget::OpenEditorWidget(UEditorUtilityWidgetBlueprint* 
 	if (tabManager->CanSpawnTab(widgetName)) {
 		TSharedRef<SDockTab> widgetTab = tabManager->InvokeTab(widgetName);
 	} else {
-		UE_LOG(LogTemp, Error, TEXT("Cant open %s its not registrated..."), *EditorWidget->GetName());
+		IBlutilityModule* BlutilityModule = FModuleManager::GetModulePtr<IBlutilityModule>("Blutility");
+
+		if (BlutilityModule)
+		{
+			BlutilityModule->AddLoadedScriptUI(EditorWidget);
+
+			FLevelEditorModule& LevelEditorModule = FModuleManager::LoadModuleChecked<FLevelEditorModule>(TEXT("LevelEditor"));
+			LevelEditorModule.OnTabManagerChanged().Broadcast();  // force a FBlutilityModule::ReinitializeUIs()
+		}
+		//UE_LOG(LogTemp, Error, TEXT("Cant open %s its not registrated..."), *EditorWidget->GetName());
 	}
 }
 
@@ -98,6 +109,27 @@ void UElgEditorBP_EditorWidget::IsEditorWidgetRegisteredBranch(UEditorUtilityWid
 		Branches = EBPEditorOutputBranch::outFalse;
 	}
 }
+
+
+void UElgEditorBP_EditorWidget::AddEditorWidgetsToLoadedScript(TArray<UEditorUtilityWidgetBlueprint*> EditorWidgets)
+{
+	IBlutilityModule* BlutilityModule = FModuleManager::GetModulePtr<IBlutilityModule>("Blutility");
+
+	if (BlutilityModule)
+	{	
+		for (UEditorUtilityWidgetBlueprint* editorWidget : EditorWidgets) { 
+			BlutilityModule->AddLoadedScriptUI(editorWidget);
+		}
+	}
+}
+
+
+void UElgEditorBP_EditorWidget::ReinitializeEditorWidgets()
+{
+	FLevelEditorModule& LevelEditorModule = FModuleManager::LoadModuleChecked<FLevelEditorModule>(TEXT("LevelEditor"));
+	LevelEditorModule.OnTabManagerChanged().Broadcast();  // force a FBlutilityModule::ReinitializeUIs()
+}
+
 /* Dont work, LNK2019: unresolved external symbol "public: class TSharedRef<class SDockTab,0> __cdecl UEditorUtilityWidgetBlueprint::SpawnEditorUITab
 
 void UElgEditorBP_EditorWidget::RegisterTabSpawner(UEditorUtilityWidgetBlueprint* EditorWidget)
