@@ -10,6 +10,9 @@ It also add nodes to get the MousePosition, Read/Write to config files, Load/Rel
 [ElgSoft.com](http://elgsoft.com/ccount/click.php?id=main), 
 [Unreal Forum thread](https://forums.unrealengine.com/community/community-content-tools-and-tutorials/1618595-free-elgeditorscripting-editor-utility-widget-extension-events-and-stuff)
 
+1.0.2 Exposed Notifications to Blueprints.<br>
+![Notifications](https://elgsoft.com/Images/EditorScripting/Notifications.gif)<br>
+
 1.0.1 Exposed PluginManager to Blueprints.
 
 Here is a Custom PluginBrowser created in EditorWidgets using the new PluginManager nodes.
@@ -114,6 +117,12 @@ Expose plugin functionality to blueprints so you can Enable/Disable plugins, Pac
 Examples can be found in EW_BlueprintNodes_PluginManager.
 
 EnablePlugin, DisablePlugin, SetPluginEnabled, GetPluginIconTexture, GetPluginDescription, GetPluginDescriptions, GetPluginCategory, PackagePlugin.
+
+## Notifications
+Expose Notification functionality to blueprints so you can show notifications from blueprint nodes.
+
+![Notifications](https://elgsoft.com/Images/EditorScripting/Notifications.gif)<br>
+![NotificationsSetup](https://elgsoft.com/Images/EditorScripting/Notification_node.png)<br>
 
 
 ## Usage
