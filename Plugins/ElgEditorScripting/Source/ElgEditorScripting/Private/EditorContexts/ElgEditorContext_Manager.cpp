@@ -5,6 +5,7 @@
 #include "ElgEditorContext_LevelEditor.h"
 #include "ElgEditorContext_AssetBrowser.h"
 #include "ElgEditorContext_Config.h"
+#include "ElgEditorContext_Notification.h"
 
 
 
@@ -38,8 +39,17 @@ UElgEditorContext_Config* UElgEditorContext_Manager::GetConfigContext(FString Co
 	}
 
 	// create a new config object for the file and section
-	UElgEditorContext_Config* config = NewObject<UElgEditorContext_Config>();;
+	UElgEditorContext_Config* config = NewObject<UElgEditorContext_Config>();
 	config->Setup(ConfigFilename, ConfigSection);
 	ConfigContexts.Add(config);
 	return config;
 }
+
+
+UElgEditorContext_Notification* UElgEditorContext_Manager::GetNotificationContext(const FS_ElgNotificationInfo& Info, UObject* InGraphObject, const bool ShowNotification)
+{
+	UElgEditorContext_Notification* notification = NewObject<UElgEditorContext_Notification>();
+	notification->Setup(Info, InGraphObject, ShowNotification);
+	return notification;
+}
+

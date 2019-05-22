@@ -17,8 +17,9 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorBP_EditorWidget() {}
 	ELGEDITORSCRIPTING_API UClass* Z_Construct_UClass_UElgEditorBP_EditorWidget();
 	ENGINE_API UClass* Z_Construct_UClass_UBlueprintFunctionLibrary();
 	UPackage* Z_Construct_UPackage__Script_ElgEditorScripting();
-	ELGEDITORSCRIPTING_API UFunction* Z_Construct_UFunction_UElgEditorBP_EditorWidget_CloseEditorWidget();
+	ELGEDITORSCRIPTING_API UFunction* Z_Construct_UFunction_UElgEditorBP_EditorWidget_AddEditorWidgetsToLoadedScript();
 	BLUTILITY_API UClass* Z_Construct_UClass_UEditorUtilityWidgetBlueprint_NoRegister();
+	ELGEDITORSCRIPTING_API UFunction* Z_Construct_UFunction_UElgEditorBP_EditorWidget_CloseEditorWidget();
 	ELGEDITORSCRIPTING_API UFunction* Z_Construct_UFunction_UElgEditorBP_EditorWidget_EditorWidgetDrawAttention();
 	ELGEDITORSCRIPTING_API UFunction* Z_Construct_UFunction_UElgEditorBP_EditorWidget_GetEditorWidgetLabel();
 	ELGEDITORSCRIPTING_API UFunction* Z_Construct_UFunction_UElgEditorBP_EditorWidget_IsEditorWidgetOpen();
@@ -27,6 +28,7 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorBP_EditorWidget() {}
 	ELGEDITORSCRIPTING_API UFunction* Z_Construct_UFunction_UElgEditorBP_EditorWidget_IsEditorWidgetRegistered();
 	ELGEDITORSCRIPTING_API UFunction* Z_Construct_UFunction_UElgEditorBP_EditorWidget_IsEditorWidgetRegisteredBranch();
 	ELGEDITORSCRIPTING_API UFunction* Z_Construct_UFunction_UElgEditorBP_EditorWidget_OpenEditorWidget();
+	ELGEDITORSCRIPTING_API UFunction* Z_Construct_UFunction_UElgEditorBP_EditorWidget_ReinitializeEditorWidgets();
 	ELGEDITORSCRIPTING_API UFunction* Z_Construct_UFunction_UElgEditorBP_EditorWidget_SetEditorWidgetLabel();
 	ELGEDITORSCRIPTING_API UFunction* Z_Construct_UFunction_UElgEditorBP_EditorWidget_SetEditorWidgetToolTip();
 	ELGEDITORSCRIPTING_API UFunction* Z_Construct_UFunction_UElgEditorBP_EditorWidget_ToggleEditorWidget();
@@ -35,6 +37,7 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorBP_EditorWidget() {}
 	{
 		UClass* Class = UElgEditorBP_EditorWidget::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
+			{ "AddEditorWidgetsToLoadedScript", &UElgEditorBP_EditorWidget::execAddEditorWidgetsToLoadedScript },
 			{ "CloseEditorWidget", &UElgEditorBP_EditorWidget::execCloseEditorWidget },
 			{ "EditorWidgetDrawAttention", &UElgEditorBP_EditorWidget::execEditorWidgetDrawAttention },
 			{ "GetEditorWidgetLabel", &UElgEditorBP_EditorWidget::execGetEditorWidgetLabel },
@@ -43,11 +46,49 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorBP_EditorWidget() {}
 			{ "IsEditorWidgetRegistered", &UElgEditorBP_EditorWidget::execIsEditorWidgetRegistered },
 			{ "IsEditorWidgetRegisteredBranch", &UElgEditorBP_EditorWidget::execIsEditorWidgetRegisteredBranch },
 			{ "OpenEditorWidget", &UElgEditorBP_EditorWidget::execOpenEditorWidget },
+			{ "ReinitializeEditorWidgets", &UElgEditorBP_EditorWidget::execReinitializeEditorWidgets },
 			{ "SetEditorWidgetLabel", &UElgEditorBP_EditorWidget::execSetEditorWidgetLabel },
 			{ "SetEditorWidgetToolTip", &UElgEditorBP_EditorWidget::execSetEditorWidgetToolTip },
 			{ "ToggleEditorWidget", &UElgEditorBP_EditorWidget::execToggleEditorWidget },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_UElgEditorBP_EditorWidget_AddEditorWidgetsToLoadedScript_Statics
+	{
+		struct ElgEditorBP_EditorWidget_eventAddEditorWidgetsToLoadedScript_Parms
+		{
+			TArray<UEditorUtilityWidgetBlueprint*> EditorWidgets;
+		};
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_EditorWidgets;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_EditorWidgets_Inner;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UElgEditorBP_EditorWidget_AddEditorWidgetsToLoadedScript_Statics::NewProp_EditorWidgets = { "EditorWidgets", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_EditorWidget_eventAddEditorWidgetsToLoadedScript_Parms, EditorWidgets), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UElgEditorBP_EditorWidget_AddEditorWidgetsToLoadedScript_Statics::NewProp_EditorWidgets_Inner = { "EditorWidgets", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UEditorUtilityWidgetBlueprint_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorBP_EditorWidget_AddEditorWidgetsToLoadedScript_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_EditorWidget_AddEditorWidgetsToLoadedScript_Statics::NewProp_EditorWidgets,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_EditorWidget_AddEditorWidgetsToLoadedScript_Statics::NewProp_EditorWidgets_Inner,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_EditorWidget_AddEditorWidgetsToLoadedScript_Statics::Function_MetaDataParams[] = {
+		{ "Category", "ElgEditor|EditorWidget" },
+		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_EditorWidget.h" },
+		{ "ToolTip", "Add editor widgets to the loaded script list so they will be registration when/if ReinitializeUIs" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_EditorWidget_AddEditorWidgetsToLoadedScript_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_EditorWidget, nullptr, "AddEditorWidgetsToLoadedScript", sizeof(ElgEditorBP_EditorWidget_eventAddEditorWidgetsToLoadedScript_Parms), Z_Construct_UFunction_UElgEditorBP_EditorWidget_AddEditorWidgetsToLoadedScript_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_EditorWidget_AddEditorWidgetsToLoadedScript_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_EditorWidget_AddEditorWidgetsToLoadedScript_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_EditorWidget_AddEditorWidgetsToLoadedScript_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UElgEditorBP_EditorWidget_AddEditorWidgetsToLoadedScript()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UElgEditorBP_EditorWidget_AddEditorWidgetsToLoadedScript_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	struct Z_Construct_UFunction_UElgEditorBP_EditorWidget_CloseEditorWidget_Statics
 	{
@@ -359,6 +400,30 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorBP_EditorWidget() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_UElgEditorBP_EditorWidget_ReinitializeEditorWidgets_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_EditorWidget_ReinitializeEditorWidgets_Statics::Function_MetaDataParams[] = {
+		{ "Category", "ElgEditor|EditorWidget" },
+		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_EditorWidget.h" },
+		{ "ToolTip", "ReinitializeUIs any editor widgets i in the loaded script" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_EditorWidget_ReinitializeEditorWidgets_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_EditorWidget, nullptr, "ReinitializeEditorWidgets", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_EditorWidget_ReinitializeEditorWidgets_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_EditorWidget_ReinitializeEditorWidgets_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UElgEditorBP_EditorWidget_ReinitializeEditorWidgets()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UElgEditorBP_EditorWidget_ReinitializeEditorWidgets_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_UElgEditorBP_EditorWidget_SetEditorWidgetLabel_Statics
 	{
 		struct ElgEditorBP_EditorWidget_eventSetEditorWidgetLabel_Parms
@@ -504,6 +569,7 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorBP_EditorWidget() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_ElgEditorScripting,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UElgEditorBP_EditorWidget_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_UElgEditorBP_EditorWidget_AddEditorWidgetsToLoadedScript, "AddEditorWidgetsToLoadedScript" }, // 3019379698
 		{ &Z_Construct_UFunction_UElgEditorBP_EditorWidget_CloseEditorWidget, "CloseEditorWidget" }, // 734820000
 		{ &Z_Construct_UFunction_UElgEditorBP_EditorWidget_EditorWidgetDrawAttention, "EditorWidgetDrawAttention" }, // 3741012
 		{ &Z_Construct_UFunction_UElgEditorBP_EditorWidget_GetEditorWidgetLabel, "GetEditorWidgetLabel" }, // 1747973574
@@ -512,6 +578,7 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorBP_EditorWidget() {}
 		{ &Z_Construct_UFunction_UElgEditorBP_EditorWidget_IsEditorWidgetRegistered, "IsEditorWidgetRegistered" }, // 1410310165
 		{ &Z_Construct_UFunction_UElgEditorBP_EditorWidget_IsEditorWidgetRegisteredBranch, "IsEditorWidgetRegisteredBranch" }, // 702436028
 		{ &Z_Construct_UFunction_UElgEditorBP_EditorWidget_OpenEditorWidget, "OpenEditorWidget" }, // 1805266379
+		{ &Z_Construct_UFunction_UElgEditorBP_EditorWidget_ReinitializeEditorWidgets, "ReinitializeEditorWidgets" }, // 483083445
 		{ &Z_Construct_UFunction_UElgEditorBP_EditorWidget_SetEditorWidgetLabel, "SetEditorWidgetLabel" }, // 2528224194
 		{ &Z_Construct_UFunction_UElgEditorBP_EditorWidget_SetEditorWidgetToolTip, "SetEditorWidgetToolTip" }, // 2920095414
 		{ &Z_Construct_UFunction_UElgEditorBP_EditorWidget_ToggleEditorWidget, "ToggleEditorWidget" }, // 2892118650
@@ -549,7 +616,7 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorBP_EditorWidget() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UElgEditorBP_EditorWidget, 354674512);
+	IMPLEMENT_CLASS(UElgEditorBP_EditorWidget, 3480583167);
 	template<> ELGEDITORSCRIPTING_API UClass* StaticClass<UElgEditorBP_EditorWidget>()
 	{
 		return UElgEditorBP_EditorWidget::StaticClass();

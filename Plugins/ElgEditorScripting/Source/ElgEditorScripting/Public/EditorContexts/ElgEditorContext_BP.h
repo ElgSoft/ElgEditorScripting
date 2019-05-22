@@ -6,12 +6,14 @@
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintFunctionLibrary.h"
 #include "UObject/TextProperty.h"
+#include "ElgEditorContext_Notification.h"
 #include "ElgEditorContext_BP.generated.h"
 
 class UElgEditorContext_LevelEditor;
 class UElgEditorContext_AssetBrowser;
 class UElgEditorContext_Config;
 class AActor;
+
 
 /**
  * 
@@ -42,6 +44,20 @@ class ELGEDITORSCRIPTING_API UElgEditorContext_BP : public UBlueprintFunctionLib
 	*/
 	UFUNCTION(BlueprintPure, Category = "ElgEditor|Config")
 		static UElgEditorContext_Config* GetConfigContext(FString ConfigFilename, FString ConfigSection);
+
+	/*
+		Return a NotificationContext object so you can pop up a notification in the right bottom corner.
+	*/
+	UFUNCTION(BlueprintPure, Category = "ElgEditor|Notification", Meta = (DefaultToSelf = "InGraphObject", AdvancedDisplay = "2", ShowNotification = "true"))
+		static UElgEditorContext_Notification* GetNotificationContext(const FS_ElgNotificationInfo& Info, const bool ShowNotification, UObject* InGraphObject);
+
+#pragma endregion
+
+#pragma region Notification
+
+	/* Show a quick notification message */
+	UFUNCTION(BlueprintCallable, Category = "ElgEditor|Notification", Meta = (DefaultToSelf = "InGraphObject", AdvancedDisplay = "1", Duration = "8.0"))
+		static void ShowQuickNotification(const FText Text, const FS_ElgNotificationIcon Icon, EBPNotificationCompletionState State, const float Duration, FS_ElgNotificationButtons Buttons, UObject* InGraphObject);
 
 #pragma endregion
 

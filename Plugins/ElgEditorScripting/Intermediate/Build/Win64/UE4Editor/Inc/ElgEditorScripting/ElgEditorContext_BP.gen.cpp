@@ -23,8 +23,16 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorContext_BP() {}
 	ELGEDITORSCRIPTING_API UClass* Z_Construct_UClass_UElgEditorContext_Config_NoRegister();
 	ELGEDITORSCRIPTING_API UFunction* Z_Construct_UFunction_UElgEditorContext_BP_GetLevelEditorContext();
 	ELGEDITORSCRIPTING_API UClass* Z_Construct_UClass_UElgEditorContext_LevelEditor_NoRegister();
+	ELGEDITORSCRIPTING_API UFunction* Z_Construct_UFunction_UElgEditorContext_BP_GetNotificationContext();
+	ELGEDITORSCRIPTING_API UClass* Z_Construct_UClass_UElgEditorContext_Notification_NoRegister();
+	COREUOBJECT_API UClass* Z_Construct_UClass_UObject_NoRegister();
+	ELGEDITORSCRIPTING_API UScriptStruct* Z_Construct_UScriptStruct_FS_ElgNotificationInfo();
 	ELGEDITORSCRIPTING_API UFunction* Z_Construct_UFunction_UElgEditorContext_BP_IsInEditor();
 	ELGEDITORSCRIPTING_API UFunction* Z_Construct_UFunction_UElgEditorContext_BP_IsInPIE();
+	ELGEDITORSCRIPTING_API UFunction* Z_Construct_UFunction_UElgEditorContext_BP_ShowQuickNotification();
+	ELGEDITORSCRIPTING_API UScriptStruct* Z_Construct_UScriptStruct_FS_ElgNotificationButtons();
+	ELGEDITORSCRIPTING_API UEnum* Z_Construct_UEnum_ElgEditorScripting_EBPNotificationCompletionState();
+	ELGEDITORSCRIPTING_API UScriptStruct* Z_Construct_UScriptStruct_FS_ElgNotificationIcon();
 // End Cross Module References
 	void UElgEditorContext_BP::StaticRegisterNativesUElgEditorContext_BP()
 	{
@@ -33,8 +41,10 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorContext_BP() {}
 			{ "GetAssetBrowserContext", &UElgEditorContext_BP::execGetAssetBrowserContext },
 			{ "GetConfigContext", &UElgEditorContext_BP::execGetConfigContext },
 			{ "GetLevelEditorContext", &UElgEditorContext_BP::execGetLevelEditorContext },
+			{ "GetNotificationContext", &UElgEditorContext_BP::execGetNotificationContext },
 			{ "IsInEditor", &UElgEditorContext_BP::execIsInEditor },
 			{ "IsInPIE", &UElgEditorContext_BP::execIsInPIE },
+			{ "ShowQuickNotification", &UElgEditorContext_BP::execShowQuickNotification },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
 	}
@@ -148,6 +158,76 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorContext_BP() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_UElgEditorContext_BP_GetNotificationContext_Statics
+	{
+		struct ElgEditorContext_BP_eventGetNotificationContext_Parms
+		{
+			FS_ElgNotificationInfo Info;
+			bool ShowNotification;
+			UObject* InGraphObject;
+			UElgEditorContext_Notification* ReturnValue;
+		};
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_InGraphObject;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ShowNotification_MetaData[];
+#endif
+		static void NewProp_ShowNotification_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_ShowNotification;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Info_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_Info;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UElgEditorContext_BP_GetNotificationContext_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorContext_BP_eventGetNotificationContext_Parms, ReturnValue), Z_Construct_UClass_UElgEditorContext_Notification_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UElgEditorContext_BP_GetNotificationContext_Statics::NewProp_InGraphObject = { "InGraphObject", nullptr, (EPropertyFlags)0x0010040000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorContext_BP_eventGetNotificationContext_Parms, InGraphObject), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorContext_BP_GetNotificationContext_Statics::NewProp_ShowNotification_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	void Z_Construct_UFunction_UElgEditorContext_BP_GetNotificationContext_Statics::NewProp_ShowNotification_SetBit(void* Obj)
+	{
+		((ElgEditorContext_BP_eventGetNotificationContext_Parms*)Obj)->ShowNotification = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UElgEditorContext_BP_GetNotificationContext_Statics::NewProp_ShowNotification = { "ShowNotification", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ElgEditorContext_BP_eventGetNotificationContext_Parms), &Z_Construct_UFunction_UElgEditorContext_BP_GetNotificationContext_Statics::NewProp_ShowNotification_SetBit, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorContext_BP_GetNotificationContext_Statics::NewProp_ShowNotification_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorContext_BP_GetNotificationContext_Statics::NewProp_ShowNotification_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorContext_BP_GetNotificationContext_Statics::NewProp_Info_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UElgEditorContext_BP_GetNotificationContext_Statics::NewProp_Info = { "Info", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorContext_BP_eventGetNotificationContext_Parms, Info), Z_Construct_UScriptStruct_FS_ElgNotificationInfo, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorContext_BP_GetNotificationContext_Statics::NewProp_Info_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorContext_BP_GetNotificationContext_Statics::NewProp_Info_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorContext_BP_GetNotificationContext_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorContext_BP_GetNotificationContext_Statics::NewProp_ReturnValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorContext_BP_GetNotificationContext_Statics::NewProp_InGraphObject,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorContext_BP_GetNotificationContext_Statics::NewProp_ShowNotification,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorContext_BP_GetNotificationContext_Statics::NewProp_Info,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorContext_BP_GetNotificationContext_Statics::Function_MetaDataParams[] = {
+		{ "AdvancedDisplay", "2" },
+		{ "Category", "ElgEditor|Notification" },
+		{ "DefaultToSelf", "InGraphObject" },
+		{ "ModuleRelativePath", "Public/EditorContexts/ElgEditorContext_BP.h" },
+		{ "ShowNotification", "true" },
+		{ "ToolTip", "Return a NotificationContext object so you can pop up a notification in the right bottom corner." },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorContext_BP_GetNotificationContext_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorContext_BP, nullptr, "GetNotificationContext", sizeof(ElgEditorContext_BP_eventGetNotificationContext_Parms), Z_Construct_UFunction_UElgEditorContext_BP_GetNotificationContext_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorContext_BP_GetNotificationContext_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorContext_BP_GetNotificationContext_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorContext_BP_GetNotificationContext_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UElgEditorContext_BP_GetNotificationContext()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UElgEditorContext_BP_GetNotificationContext_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_UElgEditorContext_BP_IsInEditor_Statics
 	{
 		struct ElgEditorContext_BP_eventIsInEditor_Parms
@@ -226,6 +306,90 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorContext_BP() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_UElgEditorContext_BP_ShowQuickNotification_Statics
+	{
+		struct ElgEditorContext_BP_eventShowQuickNotification_Parms
+		{
+			FText Text;
+			FS_ElgNotificationIcon Icon;
+			EBPNotificationCompletionState State;
+			float Duration;
+			FS_ElgNotificationButtons Buttons;
+			UObject* InGraphObject;
+		};
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_InGraphObject;
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_Buttons;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Duration_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_Duration;
+		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_State;
+		static const UE4CodeGen_Private::FBytePropertyParams NewProp_State_Underlying;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Icon_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_Icon;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Text_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FTextPropertyParams NewProp_Text;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UElgEditorContext_BP_ShowQuickNotification_Statics::NewProp_InGraphObject = { "InGraphObject", nullptr, (EPropertyFlags)0x0010040000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorContext_BP_eventShowQuickNotification_Parms, InGraphObject), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UElgEditorContext_BP_ShowQuickNotification_Statics::NewProp_Buttons = { "Buttons", nullptr, (EPropertyFlags)0x0010040000000080, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorContext_BP_eventShowQuickNotification_Parms, Buttons), Z_Construct_UScriptStruct_FS_ElgNotificationButtons, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorContext_BP_ShowQuickNotification_Statics::NewProp_Duration_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UElgEditorContext_BP_ShowQuickNotification_Statics::NewProp_Duration = { "Duration", nullptr, (EPropertyFlags)0x0010040000000082, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorContext_BP_eventShowQuickNotification_Parms, Duration), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorContext_BP_ShowQuickNotification_Statics::NewProp_Duration_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorContext_BP_ShowQuickNotification_Statics::NewProp_Duration_MetaData)) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UElgEditorContext_BP_ShowQuickNotification_Statics::NewProp_State = { "State", nullptr, (EPropertyFlags)0x0010040000000080, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorContext_BP_eventShowQuickNotification_Parms, State), Z_Construct_UEnum_ElgEditorScripting_EBPNotificationCompletionState, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UElgEditorContext_BP_ShowQuickNotification_Statics::NewProp_State_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorContext_BP_ShowQuickNotification_Statics::NewProp_Icon_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UElgEditorContext_BP_ShowQuickNotification_Statics::NewProp_Icon = { "Icon", nullptr, (EPropertyFlags)0x0010040000000082, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorContext_BP_eventShowQuickNotification_Parms, Icon), Z_Construct_UScriptStruct_FS_ElgNotificationIcon, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorContext_BP_ShowQuickNotification_Statics::NewProp_Icon_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorContext_BP_ShowQuickNotification_Statics::NewProp_Icon_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorContext_BP_ShowQuickNotification_Statics::NewProp_Text_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UFunction_UElgEditorContext_BP_ShowQuickNotification_Statics::NewProp_Text = { "Text", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorContext_BP_eventShowQuickNotification_Parms, Text), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorContext_BP_ShowQuickNotification_Statics::NewProp_Text_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorContext_BP_ShowQuickNotification_Statics::NewProp_Text_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorContext_BP_ShowQuickNotification_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorContext_BP_ShowQuickNotification_Statics::NewProp_InGraphObject,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorContext_BP_ShowQuickNotification_Statics::NewProp_Buttons,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorContext_BP_ShowQuickNotification_Statics::NewProp_Duration,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorContext_BP_ShowQuickNotification_Statics::NewProp_State,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorContext_BP_ShowQuickNotification_Statics::NewProp_State_Underlying,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorContext_BP_ShowQuickNotification_Statics::NewProp_Icon,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorContext_BP_ShowQuickNotification_Statics::NewProp_Text,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorContext_BP_ShowQuickNotification_Statics::Function_MetaDataParams[] = {
+		{ "AdvancedDisplay", "1" },
+		{ "Category", "ElgEditor|Notification" },
+		{ "DefaultToSelf", "InGraphObject" },
+		{ "Duration", "8.0" },
+		{ "ModuleRelativePath", "Public/EditorContexts/ElgEditorContext_BP.h" },
+		{ "ToolTip", "Show a quick notification message" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorContext_BP_ShowQuickNotification_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorContext_BP, nullptr, "ShowQuickNotification", sizeof(ElgEditorContext_BP_eventShowQuickNotification_Parms), Z_Construct_UFunction_UElgEditorContext_BP_ShowQuickNotification_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorContext_BP_ShowQuickNotification_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorContext_BP_ShowQuickNotification_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorContext_BP_ShowQuickNotification_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UElgEditorContext_BP_ShowQuickNotification()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UElgEditorContext_BP_ShowQuickNotification_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	UClass* Z_Construct_UClass_UElgEditorContext_BP_NoRegister()
 	{
 		return UElgEditorContext_BP::StaticClass();
@@ -248,8 +412,10 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorContext_BP() {}
 		{ &Z_Construct_UFunction_UElgEditorContext_BP_GetAssetBrowserContext, "GetAssetBrowserContext" }, // 4096120940
 		{ &Z_Construct_UFunction_UElgEditorContext_BP_GetConfigContext, "GetConfigContext" }, // 957718854
 		{ &Z_Construct_UFunction_UElgEditorContext_BP_GetLevelEditorContext, "GetLevelEditorContext" }, // 577375148
+		{ &Z_Construct_UFunction_UElgEditorContext_BP_GetNotificationContext, "GetNotificationContext" }, // 2424925752
 		{ &Z_Construct_UFunction_UElgEditorContext_BP_IsInEditor, "IsInEditor" }, // 3784331392
 		{ &Z_Construct_UFunction_UElgEditorContext_BP_IsInPIE, "IsInPIE" }, // 2495301795
+		{ &Z_Construct_UFunction_UElgEditorContext_BP_ShowQuickNotification, "ShowQuickNotification" }, // 1094723068
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UElgEditorContext_BP_Statics::Class_MetaDataParams[] = {
@@ -284,7 +450,7 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorContext_BP() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UElgEditorContext_BP, 3124598073);
+	IMPLEMENT_CLASS(UElgEditorContext_BP, 869912271);
 	template<> ELGEDITORSCRIPTING_API UClass* StaticClass<UElgEditorContext_BP>()
 	{
 		return UElgEditorContext_BP::StaticClass();

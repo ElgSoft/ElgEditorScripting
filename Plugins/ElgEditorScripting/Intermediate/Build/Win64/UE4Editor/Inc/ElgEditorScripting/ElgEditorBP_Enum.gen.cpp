@@ -13,12 +13,64 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeElgEditorBP_Enum() {}
 // Cross Module References
-	ELGEDITORSCRIPTING_API UEnum* Z_Construct_UEnum_ElgEditorScripting_EBPEditorOutputValidBranch();
+	ELGEDITORSCRIPTING_API UEnum* Z_Construct_UEnum_ElgEditorScripting_EBPEditorOutputResultBranch();
 	UPackage* Z_Construct_UPackage__Script_ElgEditorScripting();
+	ELGEDITORSCRIPTING_API UEnum* Z_Construct_UEnum_ElgEditorScripting_EBPEditorOutputValidBranch();
 	ELGEDITORSCRIPTING_API UEnum* Z_Construct_UEnum_ElgEditorScripting_EBPEditorOutputCompareBranch();
 	ELGEDITORSCRIPTING_API UEnum* Z_Construct_UEnum_ElgEditorScripting_EBPEditorOutputBranch();
 	ELGEDITORSCRIPTING_API UEnum* Z_Construct_UEnum_ElgEditorScripting_EBPEditorOutputCompareCheck();
 // End Cross Module References
+	static UEnum* EBPEditorOutputResultBranch_StaticEnum()
+	{
+		static UEnum* Singleton = nullptr;
+		if (!Singleton)
+		{
+			Singleton = GetStaticEnum(Z_Construct_UEnum_ElgEditorScripting_EBPEditorOutputResultBranch, Z_Construct_UPackage__Script_ElgEditorScripting(), TEXT("EBPEditorOutputResultBranch"));
+		}
+		return Singleton;
+	}
+	template<> ELGEDITORSCRIPTING_API UEnum* StaticEnum<EBPEditorOutputResultBranch>()
+	{
+		return EBPEditorOutputResultBranch_StaticEnum();
+	}
+	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EBPEditorOutputResultBranch(EBPEditorOutputResultBranch_StaticEnum, TEXT("/Script/ElgEditorScripting"), TEXT("EBPEditorOutputResultBranch"), false, nullptr, nullptr);
+	uint32 Get_Z_Construct_UEnum_ElgEditorScripting_EBPEditorOutputResultBranch_Hash() { return 2542094040U; }
+	UEnum* Z_Construct_UEnum_ElgEditorScripting_EBPEditorOutputResultBranch()
+	{
+#if WITH_HOT_RELOAD
+		UPackage* Outer = Z_Construct_UPackage__Script_ElgEditorScripting();
+		static UEnum* ReturnEnum = FindExistingEnumIfHotReloadOrDynamic(Outer, TEXT("EBPEditorOutputResultBranch"), 0, Get_Z_Construct_UEnum_ElgEditorScripting_EBPEditorOutputResultBranch_Hash(), false);
+#else
+		static UEnum* ReturnEnum = nullptr;
+#endif // WITH_HOT_RELOAD
+		if (!ReturnEnum)
+		{
+			static const UE4CodeGen_Private::FEnumeratorParam Enumerators[] = {
+				{ "EBPEditorOutputResultBranch::Success", (int64)EBPEditorOutputResultBranch::Success },
+				{ "EBPEditorOutputResultBranch::Failed", (int64)EBPEditorOutputResultBranch::Failed },
+			};
+#if WITH_METADATA
+			const UE4CodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
+				{ "BlueprintType", "true" },
+				{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_Enum.h" },
+			};
+#endif
+			static const UE4CodeGen_Private::FEnumParams EnumParams = {
+				(UObject*(*)())Z_Construct_UPackage__Script_ElgEditorScripting,
+				nullptr,
+				"EBPEditorOutputResultBranch",
+				"EBPEditorOutputResultBranch",
+				Enumerators,
+				ARRAY_COUNT(Enumerators),
+				RF_Public|RF_Transient|RF_MarkAsNative,
+				UE4CodeGen_Private::EDynamicType::NotDynamic,
+				(uint8)UEnum::ECppForm::EnumClass,
+				METADATA_PARAMS(Enum_MetaDataParams, ARRAY_COUNT(Enum_MetaDataParams))
+			};
+			UE4CodeGen_Private::ConstructUEnum(ReturnEnum, EnumParams);
+		}
+		return ReturnEnum;
+	}
 	static UEnum* EBPEditorOutputValidBranch_StaticEnum()
 	{
 		static UEnum* Singleton = nullptr;

@@ -14,8 +14,15 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define ELGEDITORSCRIPTING_ElgEditorBP_Enum_generated_h
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID D____github___Plugin_ElgEditorScripting_HostProject_Plugins_ElgEditorScripting_Source_ElgEditorScripting_Public_Blueprints_ElgEditorBP_Enum_h
+#define CURRENT_FILE_ID D__Projects_Unreal_ElgCodeEditor_Plugins_ElgEditorScripting_HostProject_Plugins_ElgEditorScripting_Source_ElgEditorScripting_Public_Blueprints_ElgEditorBP_Enum_h
 
+
+#define FOREACH_ENUM_EBPEDITOROUTPUTRESULTBRANCH(op) \
+	op(EBPEditorOutputResultBranch::Success) \
+	op(EBPEditorOutputResultBranch::Failed) 
+
+enum class EBPEditorOutputResultBranch : uint8;
+template<> ELGEDITORSCRIPTING_API UEnum* StaticEnum<EBPEditorOutputResultBranch>();
 
 #define FOREACH_ENUM_EBPEDITOROUTPUTVALIDBRANCH(op) \
 	op(EBPEditorOutputValidBranch::Valid) \

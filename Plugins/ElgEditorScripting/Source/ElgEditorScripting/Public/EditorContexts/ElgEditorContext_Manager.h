@@ -10,6 +10,8 @@
 class UElgEditorContext_LevelEditor;
 class UElgEditorContext_AssetBrowser;
 class UElgEditorContext_Config;
+class UElgEditorContext_Notification;
+struct FS_ElgNotificationInfo;
 
 /**
  * 
@@ -27,6 +29,8 @@ public:
 	/* get a Config object for the filename and section */
 	UElgEditorContext_Config* GetConfigContext(FString ConfigFilename, FString ConfigSection);
 
+	UElgEditorContext_Notification* GetNotificationContext(const FS_ElgNotificationInfo& Info, UObject* InGraphObject, const bool ShowNotification);
+
 
 protected:
 	UPROPERTY()
@@ -38,4 +42,5 @@ protected:
 	/* Array with the different config */
 	UPROPERTY()
 		TArray<UElgEditorContext_Config*> ConfigContexts;
+
 };
