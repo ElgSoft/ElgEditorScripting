@@ -81,8 +81,8 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorScripting_init() {}
 				SingletonFuncArray,
 				ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000040,
-				0x309382D9,
-				0xE8E57818,
+				0x5D3F7179,
+				0xD8EDED39,
 				METADATA_PARAMS(nullptr, 0)
 			};
 			UE4CodeGen_Private::ConstructUPackage(ReturnPackage, PackageParams);

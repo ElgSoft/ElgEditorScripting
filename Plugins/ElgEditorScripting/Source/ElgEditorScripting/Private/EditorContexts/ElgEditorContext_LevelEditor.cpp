@@ -505,3 +505,14 @@ void UElgEditorContext_LevelEditor::RestoreViewportRealtime(const bool bAllowDis
 }
 
 #pragma endregion
+
+
+void UElgEditorContext_LevelEditor::MoveViewportCameraToActor(AActor* Actor, bool bActiveViewportOnly)
+{
+	if (Actor == nullptr) return;
+	if (GEngine == nullptr)  return;
+	UEditorEngine* editor = (UEditorEngine*)GEngine;
+	if (editor == nullptr) return;
+
+	editor->MoveViewportCamerasToActor(*Actor, bActiveViewportOnly);
+}

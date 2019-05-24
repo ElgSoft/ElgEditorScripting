@@ -63,6 +63,7 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorContext_LevelEditor() {}
 	ELGEDITORSCRIPTING_API UFunction* Z_Construct_UFunction_UElgEditorContext_LevelEditor_IsViewportRealtimeBranch();
 	ELGEDITORSCRIPTING_API UFunction* Z_Construct_UFunction_UElgEditorContext_LevelEditor_LineTrace();
 	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FHitResult();
+	ELGEDITORSCRIPTING_API UFunction* Z_Construct_UFunction_UElgEditorContext_LevelEditor_MoveViewportCameraToActor();
 	ELGEDITORSCRIPTING_API UFunction* Z_Construct_UFunction_UElgEditorContext_LevelEditor_RestoreViewportRealtime();
 	ELGEDITORSCRIPTING_API UFunction* Z_Construct_UFunction_UElgEditorContext_LevelEditor_SetViewportRealtime();
 // End Cross Module References
@@ -932,6 +933,7 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorContext_LevelEditor() {}
 			{ "IsViewportRealtime", &UElgEditorContext_LevelEditor::execIsViewportRealtime },
 			{ "IsViewportRealtimeBranch", &UElgEditorContext_LevelEditor::execIsViewportRealtimeBranch },
 			{ "LineTrace", &UElgEditorContext_LevelEditor::execLineTrace },
+			{ "MoveViewportCameraToActor", &UElgEditorContext_LevelEditor::execMoveViewportCameraToActor },
 			{ "RestoreViewportRealtime", &UElgEditorContext_LevelEditor::execRestoreViewportRealtime },
 			{ "SetViewportRealtime", &UElgEditorContext_LevelEditor::execSetViewportRealtime },
 		};
@@ -1655,6 +1657,49 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorContext_LevelEditor() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_UElgEditorContext_LevelEditor_MoveViewportCameraToActor_Statics
+	{
+		struct ElgEditorContext_LevelEditor_eventMoveViewportCameraToActor_Parms
+		{
+			AActor* Actor;
+			bool bActiveViewportOnly;
+		};
+		static void NewProp_bActiveViewportOnly_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bActiveViewportOnly;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Actor;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_UElgEditorContext_LevelEditor_MoveViewportCameraToActor_Statics::NewProp_bActiveViewportOnly_SetBit(void* Obj)
+	{
+		((ElgEditorContext_LevelEditor_eventMoveViewportCameraToActor_Parms*)Obj)->bActiveViewportOnly = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UElgEditorContext_LevelEditor_MoveViewportCameraToActor_Statics::NewProp_bActiveViewportOnly = { "bActiveViewportOnly", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ElgEditorContext_LevelEditor_eventMoveViewportCameraToActor_Parms), &Z_Construct_UFunction_UElgEditorContext_LevelEditor_MoveViewportCameraToActor_Statics::NewProp_bActiveViewportOnly_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UElgEditorContext_LevelEditor_MoveViewportCameraToActor_Statics::NewProp_Actor = { "Actor", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorContext_LevelEditor_eventMoveViewportCameraToActor_Parms, Actor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorContext_LevelEditor_MoveViewportCameraToActor_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorContext_LevelEditor_MoveViewportCameraToActor_Statics::NewProp_bActiveViewportOnly,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorContext_LevelEditor_MoveViewportCameraToActor_Statics::NewProp_Actor,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorContext_LevelEditor_MoveViewportCameraToActor_Statics::Function_MetaDataParams[] = {
+		{ "Category", "ElgEditor|Leveleditor" },
+		{ "CPP_Default_bActiveViewportOnly", "false" },
+		{ "ModuleRelativePath", "Public/EditorContexts/ElgEditorContext_LevelEditor.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorContext_LevelEditor_MoveViewportCameraToActor_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorContext_LevelEditor, nullptr, "MoveViewportCameraToActor", sizeof(ElgEditorContext_LevelEditor_eventMoveViewportCameraToActor_Parms), Z_Construct_UFunction_UElgEditorContext_LevelEditor_MoveViewportCameraToActor_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorContext_LevelEditor_MoveViewportCameraToActor_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorContext_LevelEditor_MoveViewportCameraToActor_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorContext_LevelEditor_MoveViewportCameraToActor_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UElgEditorContext_LevelEditor_MoveViewportCameraToActor()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UElgEditorContext_LevelEditor_MoveViewportCameraToActor_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_UElgEditorContext_LevelEditor_RestoreViewportRealtime_Statics
 	{
 		struct ElgEditorContext_LevelEditor_eventRestoreViewportRealtime_Parms
@@ -1918,6 +1963,7 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorContext_LevelEditor() {}
 		{ &Z_Construct_UFunction_UElgEditorContext_LevelEditor_IsViewportRealtime, "IsViewportRealtime" }, // 4249400234
 		{ &Z_Construct_UFunction_UElgEditorContext_LevelEditor_IsViewportRealtimeBranch, "IsViewportRealtimeBranch" }, // 1976628501
 		{ &Z_Construct_UFunction_UElgEditorContext_LevelEditor_LineTrace, "LineTrace" }, // 2664866370
+		{ &Z_Construct_UFunction_UElgEditorContext_LevelEditor_MoveViewportCameraToActor, "MoveViewportCameraToActor" }, // 3443094845
 		{ &Z_Construct_UFunction_UElgEditorContext_LevelEditor_RestoreViewportRealtime, "RestoreViewportRealtime" }, // 3915040683
 		{ &Z_Construct_UFunction_UElgEditorContext_LevelEditor_SetViewportRealtime, "SetViewportRealtime" }, // 550046749
 	};
@@ -2216,7 +2262,7 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorContext_LevelEditor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UElgEditorContext_LevelEditor, 2853973712);
+	IMPLEMENT_CLASS(UElgEditorContext_LevelEditor, 1789346381);
 	template<> ELGEDITORSCRIPTING_API UClass* StaticClass<UElgEditorContext_LevelEditor>()
 	{
 		return UElgEditorContext_LevelEditor::StaticClass();

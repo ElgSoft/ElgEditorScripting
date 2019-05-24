@@ -310,6 +310,16 @@ static inline void FElgEditorEventsOnLevelActorAddedSignature_DelegateWrapper(co
 
 #define D__Projects_Unreal_ElgCodeEditor_Plugins_ElgEditorScripting_HostProject_Plugins_ElgEditorScripting_Source_ElgEditorScripting_Public_EditorContexts_ElgEditorContext_LevelEditor_h_67_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execMoveViewportCameraToActor) \
+	{ \
+		P_GET_OBJECT(AActor,Z_Param_Actor); \
+		P_GET_UBOOL(Z_Param_bActiveViewportOnly); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->MoveViewportCameraToActor(Z_Param_Actor,Z_Param_bActiveViewportOnly); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execRestoreViewportRealtime) \
 	{ \
 		P_GET_UBOOL(Z_Param_bAllowDisable); \
@@ -478,6 +488,16 @@ static inline void FElgEditorEventsOnLevelActorAddedSignature_DelegateWrapper(co
 
 
 #define D__Projects_Unreal_ElgCodeEditor_Plugins_ElgEditorScripting_HostProject_Plugins_ElgEditorScripting_Source_ElgEditorScripting_Public_EditorContexts_ElgEditorContext_LevelEditor_h_67_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execMoveViewportCameraToActor) \
+	{ \
+		P_GET_OBJECT(AActor,Z_Param_Actor); \
+		P_GET_UBOOL(Z_Param_bActiveViewportOnly); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->MoveViewportCameraToActor(Z_Param_Actor,Z_Param_bActiveViewportOnly); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execRestoreViewportRealtime) \
 	{ \
