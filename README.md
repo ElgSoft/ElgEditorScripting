@@ -30,7 +30,7 @@ Events that are exposed in the plugin are:<br>
 OnLevelActorAdded, OnLevelActorDeleted, OnLevelActorAttached, OnLevelActorDetached, OnActorMoved, OnActorSelectionChanged, OnActorSelected, OnActorDeselected, OnWorldAdded, OnWorldDestroyed, OnMapOpened, OnMapChanged, OnEditorModeChanged, OnEnterMode, OnExitMode, OnEditorCameraMoved, OnFocusViewportOnActors, OnBeginPIE, OnPausePIE, OnResumePIE, OnEndPIE, OnBeginStandaloneLocalPlay, OnLeftMouseClick, OnMiddleMouseClick, OnRightMouseClick, OnInputKey.
 
 Blueprint Nodes:<br>
-GetMousePosition, GetMousePositionWorld, GetActorUnderMouse, LineTrace, HasFocus, GetEditorMode, IsInPIE, IsInEditor, IsViewportRealtime, SetViewportRealtime, RestoreViewportRealtime.
+GetMousePosition, GetMousePositionWorld, GetActorUnderMouse, LineTrace, HasFocus, GetEditorMode, IsInPIE, IsInEditor, IsViewportRealtime, SetViewportRealtime, RestoreViewportRealtime, MoveViewportCameraToActor.
 
 Example of spawning and actor on the mouse cursor position in the level editor on middle mouse click.
 ![LevelEditorContext_spawn](https://elgsoft.com/Images/EditorScripting/LEC_SpawnOnClick.png)<br>
