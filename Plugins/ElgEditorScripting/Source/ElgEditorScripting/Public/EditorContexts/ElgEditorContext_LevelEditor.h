@@ -55,6 +55,8 @@ DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FElgEditorEventsOnEditorModeSignatur
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_ThreeParams(FElgEditorEventsOnMouseClickSignature, const bool, ShiftIsPressed, const bool, CtrlIsPressed, const bool, AltIsPressed);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FElgEditorEventsOnInputKeySignature, const FKeyEvent&, KeyEvent);
 
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_ThreeParams(FElgEditorEventsOnObjectPropertyChangedSignature, AActor*, LevelActor, const FName&, PropertyName, UObject*, PropertyObject);
+
 #pragma endregion
 
 
@@ -412,8 +414,20 @@ public:
 
 #pragma endregion
 
+#pragma region OnPropertyChanged
+
+	UPROPERTY(BlueprintAssignable)
+		FElgEditorEventsOnObjectPropertyChangedSignature OnLevelActorPropertyChanged;
+
+	void HandleOnObjectPropertyChanged(UObject* InObject, struct FPropertyChangedEvent& InPropertyChangedEvent);
+
+#pragma endregion
+
+
 	UFUNCTION(BlueprintCallable, Category = "ElgEditor|Leveleditor")
 		void MoveViewportCameraToActor(AActor* Actor, bool bActiveViewportOnly=false);
+
+
 
 };
 

@@ -58,3 +58,34 @@ void UElgEditorBP_LevelActor::MarkActorsAsDirty(TArray<AActor*> Actors, const bo
 }
 
 #pragma endregion
+
+#pragma region Tick
+
+bool UElgEditorBP_LevelActor::StartWithTickEnabled(AActor* Actor)
+{
+	if (Actor == nullptr) return false;
+	return Actor->PrimaryActorTick.bStartWithTickEnabled;
+}
+
+
+void UElgEditorBP_LevelActor::StartWithTickEnabledBranch(AActor* Actor, EBPEditorOutputBranch& Branches)
+{
+	Branches = StartWithTickEnabled(Actor) ? EBPEditorOutputBranch::outTrue : EBPEditorOutputBranch::outFalse;
+}
+
+#pragma endregion
+
+#pragma region EditorOnly
+
+bool UElgEditorBP_LevelActor::IsEditorOnlyActor(AActor* Actor)
+{
+	if (Actor == nullptr) return false;
+	return Actor->bIsEditorOnlyActor;
+}
+
+void UElgEditorBP_LevelActor::IsEditorOnlyActorBranch(AActor* Actor, EBPEditorOutputBranch& Branches)
+{
+	Branches = IsEditorOnlyActor(Actor) ? EBPEditorOutputBranch::outTrue : EBPEditorOutputBranch::outFalse;
+}
+
+#pragma endregion

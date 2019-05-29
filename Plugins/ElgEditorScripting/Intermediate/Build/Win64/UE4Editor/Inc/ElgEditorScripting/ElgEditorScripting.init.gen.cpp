@@ -40,6 +40,7 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorScripting_init() {}
 	ELGEDITORSCRIPTING_API UFunction* Z_Construct_UDelegateFunction_ElgEditorScripting_ElgEditorEventsOnEditorModeSignature__DelegateSignature();
 	ELGEDITORSCRIPTING_API UFunction* Z_Construct_UDelegateFunction_ElgEditorScripting_ElgEditorEventsOnMouseClickSignature__DelegateSignature();
 	ELGEDITORSCRIPTING_API UFunction* Z_Construct_UDelegateFunction_ElgEditorScripting_ElgEditorEventsOnInputKeySignature__DelegateSignature();
+	ELGEDITORSCRIPTING_API UFunction* Z_Construct_UDelegateFunction_ElgEditorScripting_ElgEditorEventsOnObjectPropertyChangedSignature__DelegateSignature();
 	UPackage* Z_Construct_UPackage__Script_ElgEditorScripting()
 	{
 		static UPackage* ReturnPackage = nullptr;
@@ -75,14 +76,15 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorScripting_init() {}
 				(UObject* (*)())Z_Construct_UDelegateFunction_ElgEditorScripting_ElgEditorEventsOnEditorModeSignature__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_ElgEditorScripting_ElgEditorEventsOnMouseClickSignature__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_ElgEditorScripting_ElgEditorEventsOnInputKeySignature__DelegateSignature,
+				(UObject* (*)())Z_Construct_UDelegateFunction_ElgEditorScripting_ElgEditorEventsOnObjectPropertyChangedSignature__DelegateSignature,
 			};
 			static const UE4CodeGen_Private::FPackageParams PackageParams = {
 				"/Script/ElgEditorScripting",
 				SingletonFuncArray,
 				ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000040,
-				0x02F315F2,
-				0x280C3E6C,
+				0x9C90B505,
+				0x65E25C49,
 				METADATA_PARAMS(nullptr, 0)
 			};
 			UE4CodeGen_Private::ConstructUPackage(ReturnPackage, PackageParams);

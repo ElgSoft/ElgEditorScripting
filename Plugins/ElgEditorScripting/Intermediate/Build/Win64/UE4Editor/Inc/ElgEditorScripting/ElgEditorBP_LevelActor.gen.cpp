@@ -17,22 +17,117 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorBP_LevelActor() {}
 	ELGEDITORSCRIPTING_API UClass* Z_Construct_UClass_UElgEditorBP_LevelActor();
 	ENGINE_API UClass* Z_Construct_UClass_UBlueprintFunctionLibrary();
 	UPackage* Z_Construct_UPackage__Script_ElgEditorScripting();
-	ELGEDITORSCRIPTING_API UFunction* Z_Construct_UFunction_UElgEditorBP_LevelActor_MarkActorAsDirty();
+	ELGEDITORSCRIPTING_API UFunction* Z_Construct_UFunction_UElgEditorBP_LevelActor_IsEditorOnlyActor();
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
+	ELGEDITORSCRIPTING_API UFunction* Z_Construct_UFunction_UElgEditorBP_LevelActor_IsEditorOnlyActorBranch();
+	ELGEDITORSCRIPTING_API UEnum* Z_Construct_UEnum_ElgEditorScripting_EBPEditorOutputBranch();
+	ELGEDITORSCRIPTING_API UFunction* Z_Construct_UFunction_UElgEditorBP_LevelActor_MarkActorAsDirty();
 	ELGEDITORSCRIPTING_API UFunction* Z_Construct_UFunction_UElgEditorBP_LevelActor_MarkActorsAsDirty();
 	ELGEDITORSCRIPTING_API UFunction* Z_Construct_UFunction_UElgEditorBP_LevelActor_RunConstructionScipt();
 	ELGEDITORSCRIPTING_API UFunction* Z_Construct_UFunction_UElgEditorBP_LevelActor_RunConstructionScipts();
+	ELGEDITORSCRIPTING_API UFunction* Z_Construct_UFunction_UElgEditorBP_LevelActor_StartWithTickEnabled();
+	ELGEDITORSCRIPTING_API UFunction* Z_Construct_UFunction_UElgEditorBP_LevelActor_StartWithTickEnabledBranch();
 // End Cross Module References
 	void UElgEditorBP_LevelActor::StaticRegisterNativesUElgEditorBP_LevelActor()
 	{
 		UClass* Class = UElgEditorBP_LevelActor::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
+			{ "IsEditorOnlyActor", &UElgEditorBP_LevelActor::execIsEditorOnlyActor },
+			{ "IsEditorOnlyActorBranch", &UElgEditorBP_LevelActor::execIsEditorOnlyActorBranch },
 			{ "MarkActorAsDirty", &UElgEditorBP_LevelActor::execMarkActorAsDirty },
 			{ "MarkActorsAsDirty", &UElgEditorBP_LevelActor::execMarkActorsAsDirty },
 			{ "RunConstructionScipt", &UElgEditorBP_LevelActor::execRunConstructionScipt },
 			{ "RunConstructionScipts", &UElgEditorBP_LevelActor::execRunConstructionScipts },
+			{ "StartWithTickEnabled", &UElgEditorBP_LevelActor::execStartWithTickEnabled },
+			{ "StartWithTickEnabledBranch", &UElgEditorBP_LevelActor::execStartWithTickEnabledBranch },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_UElgEditorBP_LevelActor_IsEditorOnlyActor_Statics
+	{
+		struct ElgEditorBP_LevelActor_eventIsEditorOnlyActor_Parms
+		{
+			AActor* Actor;
+			bool ReturnValue;
+		};
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Actor;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_UElgEditorBP_LevelActor_IsEditorOnlyActor_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((ElgEditorBP_LevelActor_eventIsEditorOnlyActor_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UElgEditorBP_LevelActor_IsEditorOnlyActor_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ElgEditorBP_LevelActor_eventIsEditorOnlyActor_Parms), &Z_Construct_UFunction_UElgEditorBP_LevelActor_IsEditorOnlyActor_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UElgEditorBP_LevelActor_IsEditorOnlyActor_Statics::NewProp_Actor = { "Actor", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_LevelActor_eventIsEditorOnlyActor_Parms, Actor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorBP_LevelActor_IsEditorOnlyActor_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_LevelActor_IsEditorOnlyActor_Statics::NewProp_ReturnValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_LevelActor_IsEditorOnlyActor_Statics::NewProp_Actor,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_LevelActor_IsEditorOnlyActor_Statics::Function_MetaDataParams[] = {
+		{ "Category", "ElgEditor|Actor" },
+		{ "DefaultToSelf", "Actor" },
+		{ "Keywords", "ElgEditor Actor" },
+		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_LevelActor.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_LevelActor_IsEditorOnlyActor_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_LevelActor, nullptr, "IsEditorOnlyActor", sizeof(ElgEditorBP_LevelActor_eventIsEditorOnlyActor_Parms), Z_Construct_UFunction_UElgEditorBP_LevelActor_IsEditorOnlyActor_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_LevelActor_IsEditorOnlyActor_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_LevelActor_IsEditorOnlyActor_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_LevelActor_IsEditorOnlyActor_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UElgEditorBP_LevelActor_IsEditorOnlyActor()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UElgEditorBP_LevelActor_IsEditorOnlyActor_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UElgEditorBP_LevelActor_IsEditorOnlyActorBranch_Statics
+	{
+		struct ElgEditorBP_LevelActor_eventIsEditorOnlyActorBranch_Parms
+		{
+			AActor* Actor;
+			EBPEditorOutputBranch Branches;
+		};
+		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_Branches;
+		static const UE4CodeGen_Private::FBytePropertyParams NewProp_Branches_Underlying;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Actor;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UElgEditorBP_LevelActor_IsEditorOnlyActorBranch_Statics::NewProp_Branches = { "Branches", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_LevelActor_eventIsEditorOnlyActorBranch_Parms, Branches), Z_Construct_UEnum_ElgEditorScripting_EBPEditorOutputBranch, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UElgEditorBP_LevelActor_IsEditorOnlyActorBranch_Statics::NewProp_Branches_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UElgEditorBP_LevelActor_IsEditorOnlyActorBranch_Statics::NewProp_Actor = { "Actor", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_LevelActor_eventIsEditorOnlyActorBranch_Parms, Actor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorBP_LevelActor_IsEditorOnlyActorBranch_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_LevelActor_IsEditorOnlyActorBranch_Statics::NewProp_Branches,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_LevelActor_IsEditorOnlyActorBranch_Statics::NewProp_Branches_Underlying,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_LevelActor_IsEditorOnlyActorBranch_Statics::NewProp_Actor,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_LevelActor_IsEditorOnlyActorBranch_Statics::Function_MetaDataParams[] = {
+		{ "Category", "ElgEditor|Actor" },
+		{ "DefaultToSelf", "Actor" },
+		{ "ExpandEnumAsExecs", "Branches" },
+		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_LevelActor.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_LevelActor_IsEditorOnlyActorBranch_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_LevelActor, nullptr, "IsEditorOnlyActorBranch", sizeof(ElgEditorBP_LevelActor_eventIsEditorOnlyActorBranch_Parms), Z_Construct_UFunction_UElgEditorBP_LevelActor_IsEditorOnlyActorBranch_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_LevelActor_IsEditorOnlyActorBranch_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_LevelActor_IsEditorOnlyActorBranch_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_LevelActor_IsEditorOnlyActorBranch_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UElgEditorBP_LevelActor_IsEditorOnlyActorBranch()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UElgEditorBP_LevelActor_IsEditorOnlyActorBranch_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	struct Z_Construct_UFunction_UElgEditorBP_LevelActor_MarkActorAsDirty_Statics
 	{
@@ -210,6 +305,93 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorBP_LevelActor() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_UElgEditorBP_LevelActor_StartWithTickEnabled_Statics
+	{
+		struct ElgEditorBP_LevelActor_eventStartWithTickEnabled_Parms
+		{
+			AActor* Actor;
+			bool ReturnValue;
+		};
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Actor;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_UElgEditorBP_LevelActor_StartWithTickEnabled_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((ElgEditorBP_LevelActor_eventStartWithTickEnabled_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UElgEditorBP_LevelActor_StartWithTickEnabled_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ElgEditorBP_LevelActor_eventStartWithTickEnabled_Parms), &Z_Construct_UFunction_UElgEditorBP_LevelActor_StartWithTickEnabled_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UElgEditorBP_LevelActor_StartWithTickEnabled_Statics::NewProp_Actor = { "Actor", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_LevelActor_eventStartWithTickEnabled_Parms, Actor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorBP_LevelActor_StartWithTickEnabled_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_LevelActor_StartWithTickEnabled_Statics::NewProp_ReturnValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_LevelActor_StartWithTickEnabled_Statics::NewProp_Actor,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_LevelActor_StartWithTickEnabled_Statics::Function_MetaDataParams[] = {
+		{ "Category", "ElgEditor|Actor" },
+		{ "DefaultToSelf", "Actor" },
+		{ "Keywords", "ElgEditor Actor" },
+		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_LevelActor.h" },
+		{ "ToolTip", "Is tick enabled on the actor?" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_LevelActor_StartWithTickEnabled_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_LevelActor, nullptr, "StartWithTickEnabled", sizeof(ElgEditorBP_LevelActor_eventStartWithTickEnabled_Parms), Z_Construct_UFunction_UElgEditorBP_LevelActor_StartWithTickEnabled_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_LevelActor_StartWithTickEnabled_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_LevelActor_StartWithTickEnabled_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_LevelActor_StartWithTickEnabled_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UElgEditorBP_LevelActor_StartWithTickEnabled()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UElgEditorBP_LevelActor_StartWithTickEnabled_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UElgEditorBP_LevelActor_StartWithTickEnabledBranch_Statics
+	{
+		struct ElgEditorBP_LevelActor_eventStartWithTickEnabledBranch_Parms
+		{
+			AActor* Actor;
+			EBPEditorOutputBranch Branches;
+		};
+		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_Branches;
+		static const UE4CodeGen_Private::FBytePropertyParams NewProp_Branches_Underlying;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Actor;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UElgEditorBP_LevelActor_StartWithTickEnabledBranch_Statics::NewProp_Branches = { "Branches", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_LevelActor_eventStartWithTickEnabledBranch_Parms, Branches), Z_Construct_UEnum_ElgEditorScripting_EBPEditorOutputBranch, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UElgEditorBP_LevelActor_StartWithTickEnabledBranch_Statics::NewProp_Branches_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UElgEditorBP_LevelActor_StartWithTickEnabledBranch_Statics::NewProp_Actor = { "Actor", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_LevelActor_eventStartWithTickEnabledBranch_Parms, Actor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorBP_LevelActor_StartWithTickEnabledBranch_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_LevelActor_StartWithTickEnabledBranch_Statics::NewProp_Branches,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_LevelActor_StartWithTickEnabledBranch_Statics::NewProp_Branches_Underlying,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_LevelActor_StartWithTickEnabledBranch_Statics::NewProp_Actor,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_LevelActor_StartWithTickEnabledBranch_Statics::Function_MetaDataParams[] = {
+		{ "Category", "ElgEditor|Actor" },
+		{ "ExpandEnumAsExecs", "Branches" },
+		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_LevelActor.h" },
+		{ "ToolTip", "Is tick enabled on the actor?" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_LevelActor_StartWithTickEnabledBranch_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_LevelActor, nullptr, "StartWithTickEnabledBranch", sizeof(ElgEditorBP_LevelActor_eventStartWithTickEnabledBranch_Parms), Z_Construct_UFunction_UElgEditorBP_LevelActor_StartWithTickEnabledBranch_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_LevelActor_StartWithTickEnabledBranch_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_LevelActor_StartWithTickEnabledBranch_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_LevelActor_StartWithTickEnabledBranch_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UElgEditorBP_LevelActor_StartWithTickEnabledBranch()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UElgEditorBP_LevelActor_StartWithTickEnabledBranch_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	UClass* Z_Construct_UClass_UElgEditorBP_LevelActor_NoRegister()
 	{
 		return UElgEditorBP_LevelActor::StaticClass();
@@ -229,10 +411,14 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorBP_LevelActor() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_ElgEditorScripting,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UElgEditorBP_LevelActor_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_UElgEditorBP_LevelActor_IsEditorOnlyActor, "IsEditorOnlyActor" }, // 2596156156
+		{ &Z_Construct_UFunction_UElgEditorBP_LevelActor_IsEditorOnlyActorBranch, "IsEditorOnlyActorBranch" }, // 412080241
 		{ &Z_Construct_UFunction_UElgEditorBP_LevelActor_MarkActorAsDirty, "MarkActorAsDirty" }, // 3489470873
 		{ &Z_Construct_UFunction_UElgEditorBP_LevelActor_MarkActorsAsDirty, "MarkActorsAsDirty" }, // 3286677694
 		{ &Z_Construct_UFunction_UElgEditorBP_LevelActor_RunConstructionScipt, "RunConstructionScipt" }, // 620577906
 		{ &Z_Construct_UFunction_UElgEditorBP_LevelActor_RunConstructionScipts, "RunConstructionScipts" }, // 771057293
+		{ &Z_Construct_UFunction_UElgEditorBP_LevelActor_StartWithTickEnabled, "StartWithTickEnabled" }, // 2113715216
+		{ &Z_Construct_UFunction_UElgEditorBP_LevelActor_StartWithTickEnabledBranch, "StartWithTickEnabledBranch" }, // 1412741903
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UElgEditorBP_LevelActor_Statics::Class_MetaDataParams[] = {
@@ -267,7 +453,7 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorBP_LevelActor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UElgEditorBP_LevelActor, 1194078116);
+	IMPLEMENT_CLASS(UElgEditorBP_LevelActor, 2843141590);
 	template<> ELGEDITORSCRIPTING_API UClass* StaticClass<UElgEditorBP_LevelActor>()
 	{
 		return UElgEditorBP_LevelActor::StaticClass();

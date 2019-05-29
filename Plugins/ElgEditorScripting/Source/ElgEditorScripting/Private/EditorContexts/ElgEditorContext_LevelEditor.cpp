@@ -52,6 +52,8 @@ UElgEditorContext_LevelEditor::~UElgEditorContext_LevelEditor()
 
 	FSlateApplication::Get().OnApplicationMousePreInputButtonDownListener().RemoveAll(this);
 
+	FCoreUObjectDelegates::OnObjectPropertyChanged.RemoveAll(this);
+
 #endif // WITH_EDITOR
 }
 
@@ -96,6 +98,9 @@ void UElgEditorContext_LevelEditor::Setup()
 
 	FSlateApplication::Get().OnApplicationMousePreInputButtonDownListener().AddUObject(this, &UElgEditorContext_LevelEditor::HandleOnApplicationMousePreInputButtonDown);
 	FSlateApplication::Get().OnApplicationPreInputKeyDownListener().AddUObject(this, &UElgEditorContext_LevelEditor::HandleOnApplicationPreInputKeyDown);
+
+	FCoreUObjectDelegates::OnObjectPropertyChanged.AddUObject(this, &UElgEditorContext_LevelEditor::HandleOnObjectPropertyChanged);
+
 
 #endif // WITH_EDITOR
 }
@@ -506,6 +511,29 @@ void UElgEditorContext_LevelEditor::RestoreViewportRealtime(const bool bAllowDis
 
 #pragma endregion
 
+#pragma region OnPropertyChanged
+
+void UElgEditorContext_LevelEditor::HandleOnObjectPropertyChanged(UObject* InObject, struct FPropertyChangedEvent& InPropertyChangedEvent)
+{
+	AActor* levelActor = nullptr;
+	FName propertyName = FName::FName();
+	if (InPropertyChangedEvent.Property != nullptr) {
+		propertyName = InPropertyChangedEvent.GetPropertyName();
+
+		levelActor = Cast<AActor>(InObject);
+		if (!levelActor) {
+			if (UActorComponent* comp = Cast<UActorComponent>(InObject)) {
+				levelActor = comp->GetOwner();
+			}
+		}
+
+		if (levelActor) {
+			OnLevelActorPropertyChanged.Broadcast(levelActor, propertyName, InObject);
+		}
+	}
+}
+
+#pragma endregion
 
 void UElgEditorContext_LevelEditor::MoveViewportCameraToActor(AActor* Actor, bool bActiveViewportOnly)
 {
