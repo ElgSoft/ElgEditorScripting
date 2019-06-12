@@ -17,6 +17,7 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorContext_Manager() {}
 	ELGEDITORSCRIPTING_API UClass* Z_Construct_UClass_UElgEditorContext_Manager();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UObject();
 	UPackage* Z_Construct_UPackage__Script_ElgEditorScripting();
+	ELGEDITORSCRIPTING_API UClass* Z_Construct_UClass_UElgEditorContext_DirWatcher_NoRegister();
 	ELGEDITORSCRIPTING_API UClass* Z_Construct_UClass_UElgEditorContext_Config_NoRegister();
 	ELGEDITORSCRIPTING_API UClass* Z_Construct_UClass_UElgEditorContext_AssetBrowser_NoRegister();
 	ELGEDITORSCRIPTING_API UClass* Z_Construct_UClass_UElgEditorContext_LevelEditor_NoRegister();
@@ -34,6 +35,10 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorContext_Manager() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_DirectoryWatcherContext_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_DirectoryWatcherContext;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ConfigContexts_MetaData[];
 #endif
@@ -62,6 +67,12 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorContext_Manager() {}
 	};
 #endif
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UElgEditorContext_Manager_Statics::NewProp_DirectoryWatcherContext_MetaData[] = {
+		{ "ModuleRelativePath", "Public/EditorContexts/ElgEditorContext_Manager.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UElgEditorContext_Manager_Statics::NewProp_DirectoryWatcherContext = { "DirectoryWatcherContext", nullptr, (EPropertyFlags)0x0020080000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UElgEditorContext_Manager, DirectoryWatcherContext), Z_Construct_UClass_UElgEditorContext_DirWatcher_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UElgEditorContext_Manager_Statics::NewProp_DirectoryWatcherContext_MetaData, ARRAY_COUNT(Z_Construct_UClass_UElgEditorContext_Manager_Statics::NewProp_DirectoryWatcherContext_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UElgEditorContext_Manager_Statics::NewProp_ConfigContexts_MetaData[] = {
 		{ "ModuleRelativePath", "Public/EditorContexts/ElgEditorContext_Manager.h" },
 		{ "ToolTip", "Array with the different config" },
@@ -82,6 +93,7 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorContext_Manager() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UElgEditorContext_Manager_Statics::NewProp_LevelEditorContext = { "LevelEditorContext", nullptr, (EPropertyFlags)0x0020080000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UElgEditorContext_Manager, LevelEditorContext), Z_Construct_UClass_UElgEditorContext_LevelEditor_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UElgEditorContext_Manager_Statics::NewProp_LevelEditorContext_MetaData, ARRAY_COUNT(Z_Construct_UClass_UElgEditorContext_Manager_Statics::NewProp_LevelEditorContext_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UElgEditorContext_Manager_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UElgEditorContext_Manager_Statics::NewProp_DirectoryWatcherContext,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UElgEditorContext_Manager_Statics::NewProp_ConfigContexts,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UElgEditorContext_Manager_Statics::NewProp_ConfigContexts_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UElgEditorContext_Manager_Statics::NewProp_AssetBrowserContext,
@@ -114,7 +126,7 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorContext_Manager() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UElgEditorContext_Manager, 3719931939);
+	IMPLEMENT_CLASS(UElgEditorContext_Manager, 592901123);
 	template<> ELGEDITORSCRIPTING_API UClass* StaticClass<UElgEditorContext_Manager>()
 	{
 		return UElgEditorContext_Manager::StaticClass();

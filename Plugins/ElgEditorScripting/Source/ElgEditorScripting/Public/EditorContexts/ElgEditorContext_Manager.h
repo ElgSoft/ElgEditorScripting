@@ -12,6 +12,7 @@ class UElgEditorContext_AssetBrowser;
 class UElgEditorContext_Config;
 class UElgEditorContext_Notification;
 struct FS_ElgNotificationInfo;
+class UElgEditorContext_DirWatcher;
 
 /**
  * 
@@ -31,6 +32,8 @@ public:
 
 	UElgEditorContext_Notification* GetNotificationContext(const FS_ElgNotificationInfo& Info, UObject* InGraphObject, const bool ShowNotification);
 
+	UElgEditorContext_DirWatcher* GetDirectoryWatcherContext();
+
 
 protected:
 	UPROPERTY()
@@ -43,4 +46,6 @@ protected:
 	UPROPERTY()
 		TArray<UElgEditorContext_Config*> ConfigContexts;
 
+	UPROPERTY()
+		UElgEditorContext_DirWatcher* DirectoryWatcherContext;
 };

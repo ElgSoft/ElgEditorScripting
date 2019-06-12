@@ -33,6 +33,9 @@ class ELGEDITORSCRIPTING_API UElgEditorBP_Editor : public UBlueprintFunctionLibr
 	UFUNCTION(BlueprintCallable, Category = "ElgEditor|Editor", meta = (ExpandEnumAsExecs = "Branches"))
 		static void IsProcessRunningBranch(int32 ProcessId, EBPEditorOutputBranch& Branches);
 
+	UFUNCTION(BlueprintCallable, Category = "ElgEditor|App")
+		static void CreateProc(const FString PathToProgram, const FString Parameters, const bool Detach, const bool Hidden, const int32 Priority, const FString OptionalWorkingDirectory, int32& ProcessId);
+
 
 #pragma region SlowTask
 

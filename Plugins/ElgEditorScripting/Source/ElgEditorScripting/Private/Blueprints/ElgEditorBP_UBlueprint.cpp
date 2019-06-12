@@ -9,6 +9,16 @@
 #include "Kismet2/BlueprintEditorUtils.h"
 #include "Engine/SCS_Node.h"
 #include "Kismet2/KismetEditorUtilities.h"
+#include "Editor/BlueprintGraph/Classes/K2Node_FunctionEntry.h"
+#include "Runtime/Engine/Classes/EdGraph/EdGraph.h"
+#include <K2Node_CallFunction.h>
+#include "Editor/BlueprintGraph/Classes/K2Node_VariableGet.h"
+#include "Editor/BlueprintGraph/Classes/K2Node_VariableSet.h"
+#include "Editor/BlueprintGraph/Classes/K2Node_Event.h"
+#include "Editor/BlueprintGraph/Classes/K2Node_CustomEvent.h"
+#include "Editor/BlueprintGraph/Classes/K2Node_Knot.h"
+#include "Editor/BlueprintGraph/Classes/K2Node_ComponentBoundEvent.h"
+#include "Editor/BlueprintGraph/Classes/K2Node_MacroInstance.h"
 
 
 #pragma region Getters
@@ -55,6 +65,55 @@ UBlueprint* UElgEditorBP_UBlueprint::GetBlueprintFromObject(UObject* Object, EBP
 
 	return nullptr;
 }
+
+
+
+TArray<UBlueprint*> UElgEditorBP_UBlueprint::GetBlueprintsFromObjects(TArray<UObject*> Objects)
+{
+	TArray<UBlueprint*> blueprints;
+	for (UObject* object : Objects) {
+		if (UBlueprint* blueprint = Cast<UBlueprint>(object)) {
+			blueprints.Add(blueprint);
+		}
+	}
+	return blueprints;
+}
+
+
+TArray<UBlueprint*> UElgEditorBP_UBlueprint::GetBlueprintsByPath(const FName Path, const bool RecursivePaths/*=true*/)
+{
+	TArray<UBlueprint*> blueprints;
+
+	FAssetRegistryModule& assetRegistryModule = FModuleManager::Get().LoadModuleChecked<FAssetRegistryModule>(TEXT("AssetRegistry"));
+
+	// Form a filter for the root dir
+	FARFilter assetFilter;
+	assetFilter.bRecursivePaths = RecursivePaths;
+	assetFilter.PackagePaths.Add(Path);
+	assetFilter.ClassNames.Add(UBlueprint::StaticClass()->GetFName());
+
+	// Query for a list of assets in the selected paths
+	TArray<FAssetData> assetList;
+	assetRegistryModule.Get().GetAssets(assetFilter, assetList);
+
+	if (assetList.Num() > 0)
+	{
+
+		for (const auto& asset : assetList)
+		{
+			FString path = asset.ObjectPath.ToString();
+
+			FAssetData assetData = assetRegistryModule.Get().GetAssetByObjectPath(*path, false);
+			if (assetData.IsValid()) {
+				auto blueprint = CastChecked<UBlueprint>(assetData.GetAsset());
+				blueprints.Add(blueprint);
+			}
+		}
+	}
+	return blueprints;
+}
+
+
 
 #pragma endregion
 
@@ -371,6 +430,32 @@ TSubclassOf<class UObject> UElgEditorBP_UBlueprint::GetParentClass(UBlueprint* B
 }
 
 
+TSubclassOf<class UObject> UElgEditorBP_UBlueprint::GetNativeClass(UBlueprint* Blueprint)
+{
+	if (Blueprint == nullptr) return nullptr;
+
+	return FBlueprintEditorUtils::GetNativeParent(Blueprint);
+}
+
+
+bool UElgEditorBP_UBlueprint::IsChildOfClass(UBlueprint* Blueprint, TSubclassOf<class UObject> ChildClass)
+{
+	if (Blueprint == nullptr) return false;
+
+	return Blueprint->GeneratedClass->IsChildOf(ChildClass);
+}
+
+
+void UElgEditorBP_UBlueprint::IsChildOfClassBranch(UBlueprint* Blueprint, TSubclassOf<class UObject> ChildClass, EBPEditorOutputBranch& Branches)
+{
+	Branches = EBPEditorOutputBranch::outFalse;
+
+	if (IsChildOfClass(Blueprint, ChildClass)) {
+		Branches = EBPEditorOutputBranch::outTrue;
+	}
+}
+
+
 void UElgEditorBP_UBlueprint::CompileBlueprint(UBlueprint* Blueprint)
 {
 	if (Blueprint == nullptr) return;
@@ -382,3 +467,562 @@ void UElgEditorBP_UBlueprint::CompileBlueprint(UBlueprint* Blueprint)
 }
 
 #pragma endregion
+
+#pragma region Tick
+
+bool UElgEditorBP_UBlueprint::IsStartingWithTick(UBlueprint* Blueprint)
+{
+	if (Blueprint == nullptr) return false;
+
+	AActor* actor = GetDefaultObjectActor(Blueprint);
+
+	if (actor) {
+		return actor->PrimaryActorTick.bStartWithTickEnabled;
+	}
+	return false;
+}
+
+void UElgEditorBP_UBlueprint::IsStartingWithTickBranch(UBlueprint* Blueprint, EBPEditorOutputBranch& Branches)
+{
+	Branches = EBPEditorOutputBranch::outFalse;
+	if (IsStartingWithTick(Blueprint)) {
+		Branches = EBPEditorOutputBranch::outTrue;
+	}
+}
+
+
+void UElgEditorBP_UBlueprint::SetStartingWithTick(UBlueprint* Blueprint, const bool bEnabled/*=false*/)
+{
+	if (Blueprint == nullptr) return;
+
+	AActor* actor = GetDefaultObjectActor(Blueprint);
+	if (actor) {
+		actor->PrimaryActorTick.bStartWithTickEnabled = bEnabled;
+		FBlueprintEditorUtils::MarkBlueprintAsStructurallyModified(Blueprint);
+	}
+}
+
+
+bool UElgEditorBP_UBlueprint::CanEverTick(UBlueprint* Blueprint)
+{
+	if (Blueprint == nullptr) return false;
+
+	AActor* actor = GetDefaultObjectActor(Blueprint);
+	if (actor) {
+		return actor->PrimaryActorTick.bCanEverTick;
+	}
+	return false;
+}
+
+
+void UElgEditorBP_UBlueprint::CanEverTickBranch(UBlueprint* Blueprint, EBPEditorOutputBranch& Branches)
+{
+	Branches = EBPEditorOutputBranch::outFalse;
+	if (CanEverTick(Blueprint)) {
+		Branches = EBPEditorOutputBranch::outTrue;
+	}
+}
+
+void UElgEditorBP_UBlueprint::SetCanEverTick(UBlueprint* Blueprint, const bool bEnabled /*= false*/)
+{
+	if (Blueprint == nullptr) return;
+
+	AActor* actor = GetDefaultObjectActor(Blueprint);
+	if (actor) {
+		actor->PrimaryActorTick.bCanEverTick = bEnabled;
+		FBlueprintEditorUtils::MarkBlueprintAsStructurallyModified(Blueprint);
+	}
+}
+
+
+#pragma endregion
+
+#pragma region ConstructionScript
+
+bool UElgEditorBP_UBlueprint::IsRunConstructionScriptOnDrag(UBlueprint* Blueprint)
+{
+	if (Blueprint == nullptr) return false;
+
+	return Blueprint->bRunConstructionScriptOnDrag;
+}
+
+
+void UElgEditorBP_UBlueprint::IsRunConstructionScriptOnDragBranch(UBlueprint* Blueprint, EBPEditorOutputBranch& Branches)
+{
+	Branches = EBPEditorOutputBranch::outFalse;
+	if (IsRunConstructionScriptOnDrag(Blueprint)) {
+		Branches = EBPEditorOutputBranch::outTrue;
+	}
+}
+
+
+void UElgEditorBP_UBlueprint::SetRunConstructionScriptOnDrag(UBlueprint* Blueprint, const bool bEnabled/*=true*/)
+{
+	if (Blueprint == nullptr) return;
+	Blueprint->bRunConstructionScriptOnDrag = bEnabled;
+	FBlueprintEditorUtils::MarkBlueprintAsStructurallyModified(Blueprint);
+}
+
+
+bool UElgEditorBP_UBlueprint::IsConstructionScriptConnected(UBlueprint* Blueprint)
+{
+	if (Blueprint == nullptr) return false;
+
+	if (!FBlueprintEditorUtils::SupportsConstructionScript(Blueprint)) return false;
+
+	UEdGraph* graph = FBlueprintEditorUtils::FindUserConstructionScript(Blueprint);
+
+	if (graph) {
+		FText nodeName = FText::FromString("ConstructionScript");
+		FName pinName = FName::FName("then");
+
+		for (UEdGraphNode* node : graph->Nodes) {
+			FText name = node->GetNodeTitle(ENodeTitleType::ListView);
+			if (name.EqualTo(nodeName)) {  // node with the right name			
+				for (UEdGraphPin* pin : node->Pins) {
+					if (pin->PinName == pinName) { // pin with the right name
+						if (pin->LinkedTo.Num() > 0) {
+							return true;
+						}
+						else {
+							return false;
+						}
+					}
+				}
+			}
+		}
+	}
+	return false;
+}
+
+
+void UElgEditorBP_UBlueprint::IsConstructionScriptConnectedBranch(UBlueprint* Blueprint, EBPEditorOutputBranch& Branches)
+{
+	Branches = EBPEditorOutputBranch::outFalse;
+
+	if (IsConstructionScriptConnected(Blueprint)) {
+		Branches = EBPEditorOutputBranch::outTrue;
+	}
+}
+
+#pragma endregion
+
+#pragma region Node	
+
+bool UElgEditorBP_UBlueprint::HasNode(UBlueprint* Blueprint, const FString NodeName)
+{
+	if (Blueprint == nullptr) return false;
+
+	FText nodeName = FText::FromString(NodeName);
+	for (UEdGraph* graph : Blueprint->UbergraphPages) {
+		for (UEdGraphNode* node : graph->Nodes) {
+			FText name = node->GetNodeTitle(ENodeTitleType::ListView);
+			if (name.EqualTo(nodeName)) { 
+				return true;
+			}
+		}
+	}
+	return false;
+}
+
+
+
+void UElgEditorBP_UBlueprint::HasNodeBranch(UBlueprint* Blueprint, const FString NodeName, EBPEditorOutputBranch& Branches)
+{
+	Branches = EBPEditorOutputBranch::outFalse;
+
+	if (HasNode(Blueprint, NodeName)) {
+		Branches = EBPEditorOutputBranch::outTrue;
+	}
+}
+
+
+bool UElgEditorBP_UBlueprint::IsNodePinConnected(UBlueprint* Blueprint, const FString NodeName, const FString PinName)
+{
+	if (Blueprint == nullptr) return false;
+
+	FText nodeName = FText::FromString(NodeName);
+	FName pinName = FName::FName(*PinName);
+	for (UEdGraph* graph : Blueprint->UbergraphPages) {
+		for (UEdGraphNode* node : graph->Nodes) {
+			FText name = node->GetNodeTitle(ENodeTitleType::ListView);
+			if (name.EqualTo(nodeName)) {  // node with the right name			
+				for (UEdGraphPin* pin : node->Pins) {
+					if (pin->PinName == pinName) { // pin with the right name
+						if (pin->LinkedTo.Num() > 0) {
+							return true;
+						} else {
+							return false;
+						}
+					}
+				}
+			}
+		}
+	}
+	return false;
+}
+
+
+void UElgEditorBP_UBlueprint::IsNodePinConnectedBranch(UBlueprint* Blueprint, const FString NodeName, const FString PinName, EBPEditorOutputBranch& Branches)
+{
+	Branches = EBPEditorOutputBranch::outFalse;
+
+	if (IsNodePinConnected(Blueprint, NodeName, PinName)) {
+		Branches = EBPEditorOutputBranch::outTrue;
+	}
+}
+
+
+void UElgEditorBP_UBlueprint::GetNodeUsage(UBlueprint* Blueprint, TMap<FString, int32>& NodeUsageMap)
+{
+	NodeUsageMap.Empty();
+	if (Blueprint == nullptr) return;
+
+	for (UEdGraph* graph : Blueprint->UbergraphPages) {
+		for (UEdGraphNode* node : graph->Nodes) {
+			FString displayName;
+			FString nodeName;
+			GetNodeNameAndType(node, displayName, nodeName);			
+			NodeUsageMap.FindOrAdd(nodeName) += 1;
+		}
+	}
+	int32 count = NodeUsageMap.Num();
+}
+
+
+FS_ElgBlueprintNodeStats UElgEditorBP_UBlueprint::GetBlueprintNodeStat(UBlueprint* Blueprint)
+{
+	FS_ElgBlueprintNodeStats NodeStats;
+	if (Blueprint == nullptr) return NodeStats;
+	
+	TMap<FString, int32> tempMapForNameCountSort;
+	TMap<FString, int32> tempMapForTypeCountSort;
+
+	NodeStats.Blueprint = Blueprint;
+	NodeStats.BlueprintName = Blueprint->GetName();
+
+	FString displayName;
+	FString nodeType;
+
+	// Iterate on all the Graphs and the Construction Script and Functions.
+	TArray<UEdGraph*> graphs = Blueprint->UbergraphPages;
+	graphs.Append(Blueprint->FunctionGraphs);
+	for (UEdGraph* graph : graphs) {
+		for (UEdGraphNode* node : graph->Nodes) {
+			
+			GetNodeNameAndType(node, displayName, nodeType);
+
+			NodeStats.DisplayNameCountMap.FindOrAdd(displayName) += 1;
+			tempMapForNameCountSort.FindOrAdd(displayName) += 1;
+			NodeStats.NodeTypeCountMap.FindOrAdd(nodeType) += 1;
+			tempMapForTypeCountSort.FindOrAdd(nodeType) += 1;
+			NodeStats.DisplayNamesSorted.AddUnique(displayName);
+			NodeStats.NodeTypeSorted.AddUnique(nodeType);
+			NodeStats.DisplayTypeMap.Add(displayName, nodeType);
+			NodeStats.NodeCount += 1;
+		}
+	}
+
+	NodeStats.DisplayNamesSorted.Sort();
+	NodeStats.NodeTypeSorted.Sort();
+
+	// sort on the node count
+	tempMapForNameCountSort.ValueSort([](int32 A, int32 B) {
+		return A > B;
+	});
+	tempMapForNameCountSort.GetKeys(NodeStats.DisplayNamesCountSorted);
+
+	// sort on the node count
+	tempMapForTypeCountSort.ValueSort([](int32 A, int32 B) {
+		return A > B;
+	});
+	tempMapForTypeCountSort.GetKeys(NodeStats.NodeTypeCountSorted);
+
+
+	return NodeStats;
+}
+
+
+FS_ElgBlueprintsNodeStats UElgEditorBP_UBlueprint::GetBlueprintsNodeStat(TArray<UBlueprint*> Blueprints)
+{
+	FS_ElgBlueprintsNodeStats NodeStats;
+	TMap<FString, int32> tempMapForCountSort;
+
+	for (UBlueprint* blueprint : Blueprints) {
+		FS_ElgBlueprintNodeStats nodeStats = GetBlueprintNodeStat(blueprint);
+
+		NodeStats.Stats.Add(nodeStats);
+		NodeStats.BlueprintCount += 1;
+		NodeStats.NodeCount += nodeStats.NodeCount;
+
+		for (auto& Elem : nodeStats.NodeTypeCountMap) {
+			NodeStats.NodeTypeCountMap.FindOrAdd(Elem.Key) += Elem.Value;
+			tempMapForCountSort.FindOrAdd(Elem.Key) += Elem.Value;
+		}
+	}
+	NodeStats.NodeTypeCountMap.GetKeys(NodeStats.NodeTypeSorted);
+	NodeStats.NodeTypeSorted.Sort();
+
+	// sort on the node count
+	tempMapForCountSort.ValueSort([](int32 A, int32 B) {
+		return A > B;
+	});
+	tempMapForCountSort.GetKeys(NodeStats.NodeCountSorted);
+	return NodeStats;
+}
+
+
+FS_ElgBlueprintsNodeStats UElgEditorBP_UBlueprint::GetNodeStatsByPath(const FName Path)
+{	
+	TArray<UBlueprint*> blueprints = GetBlueprintsByPath(Path, true);
+	return GetBlueprintsNodeStat(blueprints);
+}
+
+
+void UElgEditorBP_UBlueprint::DeleteNodesByName(UBlueprint* Blueprint, const FString NodeName)
+{
+	if (Blueprint == nullptr) return;
+
+	TArray<UEdGraphNode*> nodesToDelete;
+
+	FText nodeName = FText::FromString(NodeName);
+	for (UEdGraph* graph : Blueprint->UbergraphPages) {
+		for (UEdGraphNode* node : graph->Nodes) {
+			FText name = node->GetNodeTitle(ENodeTitleType::ListView);
+			if (name.EqualTo(nodeName)) {  // node with the right name			
+				nodesToDelete.Add(node);
+			}
+		}
+	}
+
+	if (nodesToDelete.Num() > 0) {
+		for (UEdGraphNode* node : nodesToDelete) {
+			FBlueprintEditorUtils::RemoveNode(Blueprint, node, true);
+		}
+		FBlueprintEditorUtils::MarkBlueprintAsStructurallyModified(Blueprint);
+	}	
+}
+
+bool UElgEditorBP_UBlueprint::HasCompilerError(UBlueprint* Blueprint)
+{
+	if (Blueprint == nullptr) return true;
+
+	if (Blueprint->Status == EBlueprintStatus::BS_Error) {
+		return true;
+	}
+	return false;
+}
+
+
+void UElgEditorBP_UBlueprint::HasCompilerErrorBranch(UBlueprint* Blueprint, EBPEditorOutputBranch& Branches)
+{
+	Branches = EBPEditorOutputBranch::outFalse;
+	if (HasCompilerError(Blueprint)) {
+		Branches = EBPEditorOutputBranch::outTrue;
+	}
+}
+
+#pragma endregion
+
+#pragma region LocalVariables
+
+void UElgEditorBP_UBlueprint::GetVariableNames(UBlueprint* Blueprint, TArray<FString>& VariableNames)
+{
+	VariableNames.Empty();
+	if (Blueprint == nullptr) return;
+
+	for (FBPVariableDescription var : Blueprint->NewVariables) {
+		VariableNames.Add(var.VarName.ToString());
+	}
+}
+
+
+
+void UElgEditorBP_UBlueprint::GetLocalVariableNames(UBlueprint* Blueprint, TArray<FString>& VariableNames)
+{
+	VariableNames.Empty();
+	if (Blueprint == nullptr) return;
+
+	for (UEdGraph* graph : Blueprint->FunctionGraphs) {
+		TArray<UK2Node_FunctionEntry*> functionEntryNodes;
+		graph->GetNodesOfClass(functionEntryNodes);
+
+		for (UK2Node_FunctionEntry* node : functionEntryNodes) {
+			FText nameNode = node->GetNodeTitle(ENodeTitleType::ListView);
+			for (FBPVariableDescription var : node->LocalVariables) {
+				FString name = var.VarName.ToString() + " @ " + nameNode.ToString();
+				VariableNames.Add(name);
+			}
+		}
+	}
+}
+
+
+void UElgEditorBP_UBlueprint::GetUnusedLocalVariableNames(UBlueprint* Blueprint, TArray<FString>& VariableNames)
+{
+	VariableNames.Empty();
+	if (Blueprint == nullptr) return;
+	for (UEdGraph* graph : Blueprint->FunctionGraphs) {
+		TArray<UK2Node_FunctionEntry*> functionEntryNodes;
+		graph->GetNodesOfClass(functionEntryNodes);
+
+		for (UK2Node_FunctionEntry* node : functionEntryNodes) {
+			for (FBPVariableDescription var : node->LocalVariables) {
+				if (!FBlueprintEditorUtils::IsVariableUsed(Blueprint, var.VarName, graph)) {
+					FText nameNode = node->GetNodeTitle(ENodeTitleType::ListView);
+					FString name = var.VarName.ToString() + " @ " + nameNode.ToString();
+					VariableNames.Add(name);
+				}				
+			}
+		}
+	}
+}
+
+
+void UElgEditorBP_UBlueprint::RemoveUnusedLocalVariables(UBlueprint* Blueprint)
+{
+	if (Blueprint == nullptr) return;
+
+	TArray<FName> names;
+	TArray<UEdGraph*> graphs;
+
+	for (UEdGraph* graph : Blueprint->FunctionGraphs) {
+		TArray<UK2Node_FunctionEntry*> functionEntryNodes;
+		graph->GetNodesOfClass(functionEntryNodes);
+
+		for (UK2Node_FunctionEntry* node : functionEntryNodes) {
+			for (int32 index = 0; index < node->LocalVariables.Num(); ++index) {
+				FBPVariableDescription var = node->LocalVariables[index];
+				if (!FBlueprintEditorUtils::IsVariableUsed(Blueprint, var.VarName, graph)) {
+					node->LocalVariables.RemoveAt(index);
+					FBlueprintEditorUtils::MarkBlueprintAsStructurallyModified(Blueprint);
+				}
+			}
+		}
+	}
+}
+
+
+void UElgEditorBP_UBlueprint::RenameLocalVariable(UBlueprint* Blueprint, const FString FunctionName, const FString OldVariableName, const FString NewVariableName)
+{
+	if (Blueprint == nullptr) return;
+	if (FunctionName == "" || OldVariableName == "" || NewVariableName == "") return;
+	if (OldVariableName == NewVariableName) return;
+
+	UStruct* scope = GetFunctionScope(Blueprint, FunctionName);
+	if (!scope) return;
+
+	FBlueprintEditorUtils::RenameLocalVariable(Blueprint, scope, FName(*OldVariableName), FName(*NewVariableName));
+
+}
+
+
+void UElgEditorBP_UBlueprint::RemoveLocalVariable(UBlueprint* Blueprint, const FString FunctionName, const FString VariableName)
+{
+	if (Blueprint == nullptr) return;
+	if (VariableName == "" || FunctionName == "") return;
+
+	UStruct* scope = GetFunctionScope(Blueprint, FunctionName);
+
+	if (!scope) return;
+
+	FBlueprintEditorUtils::RemoveLocalVariable(Blueprint, scope, FName(*VariableName));
+}
+
+
+#pragma endregion
+
+#pragma region Helpers
+
+AActor* UElgEditorBP_UBlueprint::GetDefaultObjectActor(UBlueprint* Blueprint)
+{
+	if (Blueprint == nullptr) return nullptr;
+
+	UClass* generatedClassAsClass = Blueprint->GeneratedClass;
+	UBlueprintGeneratedClass* generatedClass = (UBlueprintGeneratedClass*)(generatedClassAsClass);
+	UObject* defaultObject = generatedClass->GetDefaultObject();
+
+	AActor* actor = Cast<AActor>(defaultObject);
+	return actor;
+}
+
+
+UStruct* UElgEditorBP_UBlueprint::GetNodeScope(UK2Node* Node)
+{
+	UFunction* func = FFunctionFromNodeHelper::FunctionFromNode(Node);
+	UStruct* graphStruct = Cast<UStruct>(func);
+	return graphStruct;
+}
+
+
+UStruct* UElgEditorBP_UBlueprint::GetFunctionScope(UBlueprint* Blueprint, const FString FunctionName)
+{
+	FText functionName = FText::FromString(FunctionName);
+
+	UStruct* scope = nullptr;
+
+	for (UEdGraph* graph : Blueprint->FunctionGraphs) {
+		TArray<UK2Node_FunctionEntry*> functionEntryNodes;
+		graph->GetNodesOfClass(functionEntryNodes);
+
+		for (UK2Node_FunctionEntry* node : functionEntryNodes) {
+			FText nameNode = node->GetNodeTitle(ENodeTitleType::ListView);
+			if (nameNode.EqualTo(functionName)) {
+				scope = GetNodeScope(node);
+				return scope;
+			}
+		}
+	}
+
+	return scope;
+}
+
+
+void UElgEditorBP_UBlueprint::GetNodeNameAndType(UEdGraphNode* Node, FString& NodeName, FString& NodeType)
+{
+	NodeName = Node->GetNodeTitle(ENodeTitleType::ListView).ToString();
+
+	if (UK2Node_CallFunction* node_CallFunction = Cast<UK2Node_CallFunction>(Node)) {
+
+		if (UClass* parent = node_CallFunction->FunctionReference.GetMemberParentClass())			
+		{	
+			NodeType = parent->GetFName().ToString() + "." + node_CallFunction->FunctionReference.GetMemberName().ToString();
+		} else if (!node_CallFunction->FunctionReference.GetMemberGuid().IsValid()) {
+			if (UFunction* TargetFunction = node_CallFunction->GetTargetFunction()) {
+				NodeType = TargetFunction->GetOuterUClass()->GetName() + "." + TargetFunction->GetName();
+			} else {
+				NodeType = node_CallFunction->FunctionReference.GetMemberName().ToString();
+			}
+		} else {
+			NodeType = "CallLocalFunction";
+		}
+	}
+	else if (Cast<UK2Node_VariableGet>(Node)) {
+		NodeType = "VariableGet";
+	} else if (Cast<UK2Node_VariableSet>(Node)) {
+		NodeType = "VariableSet";
+	} else if (Cast<UK2Node_CustomEvent>(Node))	{
+		NodeType = "EventCustom";
+	} else if (UK2Node_MacroInstance* node_MacroInstance = Cast<UK2Node_MacroInstance>(Node)) {
+		NodeType = node_MacroInstance->GetSourceBlueprint()->GetFName().ToString() + "." + node_MacroInstance->GetMacroGraph()->GetFName().ToString();
+	} else if (Cast<UK2Node_ComponentBoundEvent>(Node))	{
+		NodeType = Node->GetClass()->GetFName().ToString();
+	} else if (UK2Node_Event* node_Event = Cast<UK2Node_Event>(Node)) {
+		NodeType = node_Event->GetFunctionName().ToString();
+		if (UClass* parent = node_Event->EventReference.GetMemberParentClass()) {
+			NodeType = "Event." + parent->GetFName().ToString() + "." + NodeType;
+		}
+	} else if (Cast<UK2Node_Knot>(Node)) {
+		NodeType = "RerouteNode";
+	} else if (Cast<UK2Node_FunctionEntry>(Node)) {
+		NodeType = Node->GetClass()->GetFName().ToString();
+		NodeName += ".FunctionEntry";
+	} else {
+		// maybe remove the "K2Node_" part?
+		NodeType = Node->GetClass()->GetFName().ToString();
+	}
+}
+
+
+#pragma endregion
+

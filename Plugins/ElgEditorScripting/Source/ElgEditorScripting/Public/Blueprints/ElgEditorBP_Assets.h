@@ -97,6 +97,30 @@ class ELGEDITORSCRIPTING_API UElgEditorBP_Assets : public UBlueprintFunctionLibr
 	UFUNCTION(BlueprintCallable, Category = "ElgEditor|Asset", meta=(ExpandEnumAsExecs = "Branches"))
 		static void GetAssetMetaDataBranch(const FAssetData& AssetDataStruct, FS_ElgAssetMetaData& MetaData, EBPEditorOutputValidBranch& Branches);
 
+	/* Get the AssetData by its path */
+	UFUNCTION(BlueprintPure, Category = "ElgEditor|Asset")
+		static FAssetData GetAssetDataFromPath(const FString& AssetPath);
+
+	/* Get the AssetData by UObject */
+	UFUNCTION(BlueprintPure, Category = "ElgEditor|Asset")
+		static FAssetData GetAssetDataFromObject(const UObject* Object);
+
+	/* Get the AssetPath from a UObject */
+	UFUNCTION(BlueprintPure, Category = "ElgEditor|Asset")
+		static FString GetAssetPathFromObject(const UObject* Object);
+
+	/* Get the asset data array*/
+	UFUNCTION(BlueprintPure, Category = "ElgEditor|Asset")
+		static void GetAssetDatasByPath(const TArray<FString>& AssetPaths, TArray<FAssetData>& AssetDatas);
+
+	/* Return the name of the asset */
+	UFUNCTION(BlueprintPure, Category = "ElgEditor|Asset")
+		static FString GetAssetName(const FAssetData& AssetDataStruct);
+
+	/* Return the asset path name of the asset */
+	UFUNCTION(BlueprintPure, Category = "ElgEditor|Asset")
+		static FString GetAssetPath(const FAssetData& AssetDataStruct);
+
 #pragma endregion
 
 #pragma region GetAssetObjects
@@ -104,7 +128,10 @@ class ELGEDITORSCRIPTING_API UElgEditorBP_Assets : public UBlueprintFunctionLibr
 	/* Get the asset data as asset objects array*/
 	UFUNCTION(BlueprintPure, Category = "ElgEditor|Asset")
 		static void GetAssetObjects(const TArray<FAssetData>& AssetDataStructs, TArray<UObject*>& AssetObjects);
-
+	
+	/* Get the asset data as asset objects array*/
+	UFUNCTION(BlueprintPure, Category = "ElgEditor|Asset")
+		static void GetAssetObjectsByPath(const TArray<FString>& AssetPaths, TArray<UObject*>& AssetObjects);
 
 #pragma endregion
 
@@ -130,6 +157,53 @@ class ELGEDITORSCRIPTING_API UElgEditorBP_Assets : public UBlueprintFunctionLibr
 	UFUNCTION(BlueprintCallable, Category = "ElgEditor|Asset", meta = (ExpandEnumAsExecs = "Branches"))
 		static void GetAssetObjectMetaDataBranch(UObject* AssetObject, FS_ElgAssetMetaData& MetaData, EBPEditorOutputValidBranch& Branches);
 
+
+#pragma endregion
+
+#pragma region References
+
+	/* Get all reference, hard and soft, to the asset */
+	UFUNCTION(BlueprintPure, Category = "ElgEditor|Asset")
+		static void GetAssetReferencers(const FAssetData AssetData, TArray<FString>& Referencers);
+	
+	/* Get all reference, hard and soft, to the asset */
+	UFUNCTION(BlueprintPure, Category = "ElgEditor|Asset")
+		static void GetAssetReferencersByPath(const FString AssetPath, TArray<FString>& Referencers);
+
+	/* Get all reference, hard and soft, to the asset */
+	UFUNCTION(BlueprintPure, Category = "ElgEditor|Asset")
+		static void GetAssetReferencersByObject(const UObject* Object, TArray<FString>& Referencers);
+
+	/* Get all dependencies, hard and soft, to the asset */
+	UFUNCTION(BlueprintPure, Category = "ElgEditor|Asset")
+		static void GetAssetDependencies(const FAssetData AssetData, TArray<FString>& Dependencies);
+
+	/* Get all dependencies, hard and soft, to the asset */
+	UFUNCTION(BlueprintPure, Category = "ElgEditor|Asset")
+		static void GetAssetDependenciesByPath(const FString AssetPath, TArray<FString>& Dependencies);
+
+	/* Get all reference, hard and soft, to the asset */
+	UFUNCTION(BlueprintPure, Category = "ElgEditor|Asset")
+		static void GetAssetDependenciesByObject(const UObject* Object, TArray<FString>& Dependencies);
+
+	/* Check if the Asset has any ref/dep, if its a new asset it might not have anything for a while... */
+	UFUNCTION(BlueprintPure, Category = "ElgEditor|Asset")
+		static bool HasAssetRefs(const FAssetData AssetData);
+
+
+	/* Gather all reference or dependencies for an asset */
+	static void RecursivelyGatherLinkedAssets(const bool bReferencers, const TArray<FAssetIdentifier>& Identifiers, int32 CurrentDepth, TSet<FAssetIdentifier>& VisitedNames);
+
+
+	static void GetReferenceDependencies(const FAssetData AssetData, const bool bReferencers, const bool bExcludeNativePackage, const bool bExcludeSelf,TArray<FString>& Referencers);
+
+#pragma endregion
+
+#pragma region ContentBrowser
+
+	/* Return the current selected Folder paths */
+	UFUNCTION(BlueprintPure, Category = "ElgEditor|Asset")
+		static TArray<FString> GetSelectedPaths();
 
 #pragma endregion
 

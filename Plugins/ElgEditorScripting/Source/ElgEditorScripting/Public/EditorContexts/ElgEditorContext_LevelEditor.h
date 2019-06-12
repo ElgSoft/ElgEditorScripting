@@ -424,6 +424,7 @@ public:
 #pragma endregion
 
 
+
 	UFUNCTION(BlueprintCallable, Category = "ElgEditor|Leveleditor")
 		void MoveViewportCameraToActor(AActor* Actor, bool bActiveViewportOnly=false);
 

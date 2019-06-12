@@ -21,6 +21,8 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorContext_BP() {}
 	ELGEDITORSCRIPTING_API UClass* Z_Construct_UClass_UElgEditorContext_AssetBrowser_NoRegister();
 	ELGEDITORSCRIPTING_API UFunction* Z_Construct_UFunction_UElgEditorContext_BP_GetConfigContext();
 	ELGEDITORSCRIPTING_API UClass* Z_Construct_UClass_UElgEditorContext_Config_NoRegister();
+	ELGEDITORSCRIPTING_API UFunction* Z_Construct_UFunction_UElgEditorContext_BP_GetDirectoryWatcherContext();
+	ELGEDITORSCRIPTING_API UClass* Z_Construct_UClass_UElgEditorContext_DirWatcher_NoRegister();
 	ELGEDITORSCRIPTING_API UFunction* Z_Construct_UFunction_UElgEditorContext_BP_GetLevelEditorContext();
 	ELGEDITORSCRIPTING_API UClass* Z_Construct_UClass_UElgEditorContext_LevelEditor_NoRegister();
 	ELGEDITORSCRIPTING_API UFunction* Z_Construct_UFunction_UElgEditorContext_BP_GetNotificationContext();
@@ -40,6 +42,7 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorContext_BP() {}
 		static const FNameNativePtrPair Funcs[] = {
 			{ "GetAssetBrowserContext", &UElgEditorContext_BP::execGetAssetBrowserContext },
 			{ "GetConfigContext", &UElgEditorContext_BP::execGetConfigContext },
+			{ "GetDirectoryWatcherContext", &UElgEditorContext_BP::execGetDirectoryWatcherContext },
 			{ "GetLevelEditorContext", &UElgEditorContext_BP::execGetLevelEditorContext },
 			{ "GetNotificationContext", &UElgEditorContext_BP::execGetNotificationContext },
 			{ "IsInEditor", &UElgEditorContext_BP::execIsInEditor },
@@ -121,6 +124,40 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorContext_BP() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UElgEditorContext_BP_GetConfigContext_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UElgEditorContext_BP_GetDirectoryWatcherContext_Statics
+	{
+		struct ElgEditorContext_BP_eventGetDirectoryWatcherContext_Parms
+		{
+			UElgEditorContext_DirWatcher* ReturnValue;
+		};
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UElgEditorContext_BP_GetDirectoryWatcherContext_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorContext_BP_eventGetDirectoryWatcherContext_Parms, ReturnValue), Z_Construct_UClass_UElgEditorContext_DirWatcher_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorContext_BP_GetDirectoryWatcherContext_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorContext_BP_GetDirectoryWatcherContext_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorContext_BP_GetDirectoryWatcherContext_Statics::Function_MetaDataParams[] = {
+		{ "Category", "ElgEditor|DirectoryWatcher" },
+		{ "ModuleRelativePath", "Public/EditorContexts/ElgEditorContext_BP.h" },
+		{ "ToolTip", "Return a DirectoryWatcherContext object." },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorContext_BP_GetDirectoryWatcherContext_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorContext_BP, nullptr, "GetDirectoryWatcherContext", sizeof(ElgEditorContext_BP_eventGetDirectoryWatcherContext_Parms), Z_Construct_UFunction_UElgEditorContext_BP_GetDirectoryWatcherContext_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorContext_BP_GetDirectoryWatcherContext_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorContext_BP_GetDirectoryWatcherContext_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorContext_BP_GetDirectoryWatcherContext_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UElgEditorContext_BP_GetDirectoryWatcherContext()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UElgEditorContext_BP_GetDirectoryWatcherContext_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -411,6 +448,7 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorContext_BP() {}
 	const FClassFunctionLinkInfo Z_Construct_UClass_UElgEditorContext_BP_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_UElgEditorContext_BP_GetAssetBrowserContext, "GetAssetBrowserContext" }, // 4096120940
 		{ &Z_Construct_UFunction_UElgEditorContext_BP_GetConfigContext, "GetConfigContext" }, // 957718854
+		{ &Z_Construct_UFunction_UElgEditorContext_BP_GetDirectoryWatcherContext, "GetDirectoryWatcherContext" }, // 2428163115
 		{ &Z_Construct_UFunction_UElgEditorContext_BP_GetLevelEditorContext, "GetLevelEditorContext" }, // 577375148
 		{ &Z_Construct_UFunction_UElgEditorContext_BP_GetNotificationContext, "GetNotificationContext" }, // 2424925752
 		{ &Z_Construct_UFunction_UElgEditorContext_BP_IsInEditor, "IsInEditor" }, // 3784331392
@@ -450,7 +488,7 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorContext_BP() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UElgEditorContext_BP, 869912271);
+	IMPLEMENT_CLASS(UElgEditorContext_BP, 426481325);
 	template<> ELGEDITORSCRIPTING_API UClass* StaticClass<UElgEditorContext_BP>()
 	{
 		return UElgEditorContext_BP::StaticClass();

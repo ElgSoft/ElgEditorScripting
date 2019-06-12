@@ -8,11 +8,11 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+struct FAssetData;
 class UObject;
 struct FS_ElgAssetMetaData;
 enum class EBPEditorOutputValidBranch : uint8;
 class UObject; struct FS_ElgAssetMetaData;
-struct FAssetData;
 struct FDateTime;
  
 #ifdef ELGEDITORSCRIPTING_ElgEditorBP_Assets_generated_h
@@ -20,14 +20,91 @@ struct FDateTime;
 #endif
 #define ELGEDITORSCRIPTING_ElgEditorBP_Assets_generated_h
 
-#define D__Projects_Unreal_ElgCodeEditor_Plugins_ElgEditorScripting_HostProject_Plugins_ElgEditorScripting_Source_ElgEditorScripting_Public_Blueprints_ElgEditorBP_Assets_h_21_GENERATED_BODY \
+#define D___TEST__ElgEditorScripting_HostProject_Plugins_ElgEditorScripting_Source_ElgEditorScripting_Public_Blueprints_ElgEditorBP_Assets_h_21_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FS_ElgAssetMetaData_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
 template<> ELGEDITORSCRIPTING_API UScriptStruct* StaticStruct<struct FS_ElgAssetMetaData>();
 
-#define D__Projects_Unreal_ElgCodeEditor_Plugins_ElgEditorScripting_HostProject_Plugins_ElgEditorScripting_Source_ElgEditorScripting_Public_Blueprints_ElgEditorBP_Assets_h_60_RPC_WRAPPERS \
+#define D___TEST__ElgEditorScripting_HostProject_Plugins_ElgEditorScripting_Source_ElgEditorScripting_Public_Blueprints_ElgEditorBP_Assets_h_60_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execGetSelectedPaths) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(TArray<FString>*)Z_Param__Result=UElgEditorBP_Assets::GetSelectedPaths(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execHasAssetRefs) \
+	{ \
+		P_GET_STRUCT(FAssetData,Z_Param_AssetData); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=UElgEditorBP_Assets::HasAssetRefs(Z_Param_AssetData); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetAssetDependenciesByObject) \
+	{ \
+		P_GET_OBJECT(UObject,Z_Param_Object); \
+		P_GET_TARRAY_REF(FString,Z_Param_Out_Dependencies); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		UElgEditorBP_Assets::GetAssetDependenciesByObject(Z_Param_Object,Z_Param_Out_Dependencies); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetAssetDependenciesByPath) \
+	{ \
+		P_GET_PROPERTY(UStrProperty,Z_Param_AssetPath); \
+		P_GET_TARRAY_REF(FString,Z_Param_Out_Dependencies); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		UElgEditorBP_Assets::GetAssetDependenciesByPath(Z_Param_AssetPath,Z_Param_Out_Dependencies); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetAssetDependencies) \
+	{ \
+		P_GET_STRUCT(FAssetData,Z_Param_AssetData); \
+		P_GET_TARRAY_REF(FString,Z_Param_Out_Dependencies); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		UElgEditorBP_Assets::GetAssetDependencies(Z_Param_AssetData,Z_Param_Out_Dependencies); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetAssetReferencersByObject) \
+	{ \
+		P_GET_OBJECT(UObject,Z_Param_Object); \
+		P_GET_TARRAY_REF(FString,Z_Param_Out_Referencers); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		UElgEditorBP_Assets::GetAssetReferencersByObject(Z_Param_Object,Z_Param_Out_Referencers); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetAssetReferencersByPath) \
+	{ \
+		P_GET_PROPERTY(UStrProperty,Z_Param_AssetPath); \
+		P_GET_TARRAY_REF(FString,Z_Param_Out_Referencers); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		UElgEditorBP_Assets::GetAssetReferencersByPath(Z_Param_AssetPath,Z_Param_Out_Referencers); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetAssetReferencers) \
+	{ \
+		P_GET_STRUCT(FAssetData,Z_Param_AssetData); \
+		P_GET_TARRAY_REF(FString,Z_Param_Out_Referencers); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		UElgEditorBP_Assets::GetAssetReferencers(Z_Param_AssetData,Z_Param_Out_Referencers); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execGetAssetObjectMetaDataBranch) \
 	{ \
@@ -82,6 +159,16 @@ template<> ELGEDITORSCRIPTING_API UScriptStruct* StaticStruct<struct FS_ElgAsset
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execGetAssetObjectsByPath) \
+	{ \
+		P_GET_TARRAY_REF(FString,Z_Param_Out_AssetPaths); \
+		P_GET_TARRAY_REF(UObject*,Z_Param_Out_AssetObjects); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		UElgEditorBP_Assets::GetAssetObjectsByPath(Z_Param_Out_AssetPaths,Z_Param_Out_AssetObjects); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execGetAssetObjects) \
 	{ \
 		P_GET_TARRAY_REF(FAssetData,Z_Param_Out_AssetDataStructs); \
@@ -89,6 +176,61 @@ template<> ELGEDITORSCRIPTING_API UScriptStruct* StaticStruct<struct FS_ElgAsset
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		UElgEditorBP_Assets::GetAssetObjects(Z_Param_Out_AssetDataStructs,Z_Param_Out_AssetObjects); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetAssetPath) \
+	{ \
+		P_GET_STRUCT_REF(FAssetData,Z_Param_Out_AssetDataStruct); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FString*)Z_Param__Result=UElgEditorBP_Assets::GetAssetPath(Z_Param_Out_AssetDataStruct); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetAssetName) \
+	{ \
+		P_GET_STRUCT_REF(FAssetData,Z_Param_Out_AssetDataStruct); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FString*)Z_Param__Result=UElgEditorBP_Assets::GetAssetName(Z_Param_Out_AssetDataStruct); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetAssetDatasByPath) \
+	{ \
+		P_GET_TARRAY_REF(FString,Z_Param_Out_AssetPaths); \
+		P_GET_TARRAY_REF(FAssetData,Z_Param_Out_AssetDatas); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		UElgEditorBP_Assets::GetAssetDatasByPath(Z_Param_Out_AssetPaths,Z_Param_Out_AssetDatas); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetAssetPathFromObject) \
+	{ \
+		P_GET_OBJECT(UObject,Z_Param_Object); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FString*)Z_Param__Result=UElgEditorBP_Assets::GetAssetPathFromObject(Z_Param_Object); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetAssetDataFromObject) \
+	{ \
+		P_GET_OBJECT(UObject,Z_Param_Object); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FAssetData*)Z_Param__Result=UElgEditorBP_Assets::GetAssetDataFromObject(Z_Param_Object); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetAssetDataFromPath) \
+	{ \
+		P_GET_PROPERTY(UStrProperty,Z_Param_AssetPath); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FAssetData*)Z_Param__Result=UElgEditorBP_Assets::GetAssetDataFromPath(Z_Param_AssetPath); \
 		P_NATIVE_END; \
 	} \
  \
@@ -172,7 +314,84 @@ template<> ELGEDITORSCRIPTING_API UScriptStruct* StaticStruct<struct FS_ElgAsset
 	}
 
 
-#define D__Projects_Unreal_ElgCodeEditor_Plugins_ElgEditorScripting_HostProject_Plugins_ElgEditorScripting_Source_ElgEditorScripting_Public_Blueprints_ElgEditorBP_Assets_h_60_RPC_WRAPPERS_NO_PURE_DECLS \
+#define D___TEST__ElgEditorScripting_HostProject_Plugins_ElgEditorScripting_Source_ElgEditorScripting_Public_Blueprints_ElgEditorBP_Assets_h_60_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execGetSelectedPaths) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(TArray<FString>*)Z_Param__Result=UElgEditorBP_Assets::GetSelectedPaths(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execHasAssetRefs) \
+	{ \
+		P_GET_STRUCT(FAssetData,Z_Param_AssetData); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=UElgEditorBP_Assets::HasAssetRefs(Z_Param_AssetData); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetAssetDependenciesByObject) \
+	{ \
+		P_GET_OBJECT(UObject,Z_Param_Object); \
+		P_GET_TARRAY_REF(FString,Z_Param_Out_Dependencies); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		UElgEditorBP_Assets::GetAssetDependenciesByObject(Z_Param_Object,Z_Param_Out_Dependencies); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetAssetDependenciesByPath) \
+	{ \
+		P_GET_PROPERTY(UStrProperty,Z_Param_AssetPath); \
+		P_GET_TARRAY_REF(FString,Z_Param_Out_Dependencies); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		UElgEditorBP_Assets::GetAssetDependenciesByPath(Z_Param_AssetPath,Z_Param_Out_Dependencies); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetAssetDependencies) \
+	{ \
+		P_GET_STRUCT(FAssetData,Z_Param_AssetData); \
+		P_GET_TARRAY_REF(FString,Z_Param_Out_Dependencies); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		UElgEditorBP_Assets::GetAssetDependencies(Z_Param_AssetData,Z_Param_Out_Dependencies); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetAssetReferencersByObject) \
+	{ \
+		P_GET_OBJECT(UObject,Z_Param_Object); \
+		P_GET_TARRAY_REF(FString,Z_Param_Out_Referencers); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		UElgEditorBP_Assets::GetAssetReferencersByObject(Z_Param_Object,Z_Param_Out_Referencers); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetAssetReferencersByPath) \
+	{ \
+		P_GET_PROPERTY(UStrProperty,Z_Param_AssetPath); \
+		P_GET_TARRAY_REF(FString,Z_Param_Out_Referencers); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		UElgEditorBP_Assets::GetAssetReferencersByPath(Z_Param_AssetPath,Z_Param_Out_Referencers); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetAssetReferencers) \
+	{ \
+		P_GET_STRUCT(FAssetData,Z_Param_AssetData); \
+		P_GET_TARRAY_REF(FString,Z_Param_Out_Referencers); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		UElgEditorBP_Assets::GetAssetReferencers(Z_Param_AssetData,Z_Param_Out_Referencers); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execGetAssetObjectMetaDataBranch) \
 	{ \
@@ -227,6 +446,16 @@ template<> ELGEDITORSCRIPTING_API UScriptStruct* StaticStruct<struct FS_ElgAsset
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execGetAssetObjectsByPath) \
+	{ \
+		P_GET_TARRAY_REF(FString,Z_Param_Out_AssetPaths); \
+		P_GET_TARRAY_REF(UObject*,Z_Param_Out_AssetObjects); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		UElgEditorBP_Assets::GetAssetObjectsByPath(Z_Param_Out_AssetPaths,Z_Param_Out_AssetObjects); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execGetAssetObjects) \
 	{ \
 		P_GET_TARRAY_REF(FAssetData,Z_Param_Out_AssetDataStructs); \
@@ -234,6 +463,61 @@ template<> ELGEDITORSCRIPTING_API UScriptStruct* StaticStruct<struct FS_ElgAsset
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		UElgEditorBP_Assets::GetAssetObjects(Z_Param_Out_AssetDataStructs,Z_Param_Out_AssetObjects); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetAssetPath) \
+	{ \
+		P_GET_STRUCT_REF(FAssetData,Z_Param_Out_AssetDataStruct); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FString*)Z_Param__Result=UElgEditorBP_Assets::GetAssetPath(Z_Param_Out_AssetDataStruct); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetAssetName) \
+	{ \
+		P_GET_STRUCT_REF(FAssetData,Z_Param_Out_AssetDataStruct); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FString*)Z_Param__Result=UElgEditorBP_Assets::GetAssetName(Z_Param_Out_AssetDataStruct); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetAssetDatasByPath) \
+	{ \
+		P_GET_TARRAY_REF(FString,Z_Param_Out_AssetPaths); \
+		P_GET_TARRAY_REF(FAssetData,Z_Param_Out_AssetDatas); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		UElgEditorBP_Assets::GetAssetDatasByPath(Z_Param_Out_AssetPaths,Z_Param_Out_AssetDatas); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetAssetPathFromObject) \
+	{ \
+		P_GET_OBJECT(UObject,Z_Param_Object); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FString*)Z_Param__Result=UElgEditorBP_Assets::GetAssetPathFromObject(Z_Param_Object); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetAssetDataFromObject) \
+	{ \
+		P_GET_OBJECT(UObject,Z_Param_Object); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FAssetData*)Z_Param__Result=UElgEditorBP_Assets::GetAssetDataFromObject(Z_Param_Object); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetAssetDataFromPath) \
+	{ \
+		P_GET_PROPERTY(UStrProperty,Z_Param_AssetPath); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(FAssetData*)Z_Param__Result=UElgEditorBP_Assets::GetAssetDataFromPath(Z_Param_AssetPath); \
 		P_NATIVE_END; \
 	} \
  \
@@ -317,7 +601,7 @@ template<> ELGEDITORSCRIPTING_API UScriptStruct* StaticStruct<struct FS_ElgAsset
 	}
 
 
-#define D__Projects_Unreal_ElgCodeEditor_Plugins_ElgEditorScripting_HostProject_Plugins_ElgEditorScripting_Source_ElgEditorScripting_Public_Blueprints_ElgEditorBP_Assets_h_60_INCLASS_NO_PURE_DECLS \
+#define D___TEST__ElgEditorScripting_HostProject_Plugins_ElgEditorScripting_Source_ElgEditorScripting_Public_Blueprints_ElgEditorBP_Assets_h_60_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUElgEditorBP_Assets(); \
 	friend struct Z_Construct_UClass_UElgEditorBP_Assets_Statics; \
@@ -326,7 +610,7 @@ public: \
 	DECLARE_SERIALIZER(UElgEditorBP_Assets)
 
 
-#define D__Projects_Unreal_ElgCodeEditor_Plugins_ElgEditorScripting_HostProject_Plugins_ElgEditorScripting_Source_ElgEditorScripting_Public_Blueprints_ElgEditorBP_Assets_h_60_INCLASS \
+#define D___TEST__ElgEditorScripting_HostProject_Plugins_ElgEditorScripting_Source_ElgEditorScripting_Public_Blueprints_ElgEditorBP_Assets_h_60_INCLASS \
 private: \
 	static void StaticRegisterNativesUElgEditorBP_Assets(); \
 	friend struct Z_Construct_UClass_UElgEditorBP_Assets_Statics; \
@@ -335,7 +619,7 @@ public: \
 	DECLARE_SERIALIZER(UElgEditorBP_Assets)
 
 
-#define D__Projects_Unreal_ElgCodeEditor_Plugins_ElgEditorScripting_HostProject_Plugins_ElgEditorScripting_Source_ElgEditorScripting_Public_Blueprints_ElgEditorBP_Assets_h_60_STANDARD_CONSTRUCTORS \
+#define D___TEST__ElgEditorScripting_HostProject_Plugins_ElgEditorScripting_Source_ElgEditorScripting_Public_Blueprints_ElgEditorBP_Assets_h_60_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UElgEditorBP_Assets(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UElgEditorBP_Assets) \
@@ -348,7 +632,7 @@ private: \
 public:
 
 
-#define D__Projects_Unreal_ElgCodeEditor_Plugins_ElgEditorScripting_HostProject_Plugins_ElgEditorScripting_Source_ElgEditorScripting_Public_Blueprints_ElgEditorBP_Assets_h_60_ENHANCED_CONSTRUCTORS \
+#define D___TEST__ElgEditorScripting_HostProject_Plugins_ElgEditorScripting_Source_ElgEditorScripting_Public_Blueprints_ElgEditorBP_Assets_h_60_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UElgEditorBP_Assets(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -361,26 +645,26 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UElgEditorBP_Assets); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UElgEditorBP_Assets)
 
 
-#define D__Projects_Unreal_ElgCodeEditor_Plugins_ElgEditorScripting_HostProject_Plugins_ElgEditorScripting_Source_ElgEditorScripting_Public_Blueprints_ElgEditorBP_Assets_h_60_PRIVATE_PROPERTY_OFFSET
-#define D__Projects_Unreal_ElgCodeEditor_Plugins_ElgEditorScripting_HostProject_Plugins_ElgEditorScripting_Source_ElgEditorScripting_Public_Blueprints_ElgEditorBP_Assets_h_57_PROLOG
-#define D__Projects_Unreal_ElgCodeEditor_Plugins_ElgEditorScripting_HostProject_Plugins_ElgEditorScripting_Source_ElgEditorScripting_Public_Blueprints_ElgEditorBP_Assets_h_60_GENERATED_BODY_LEGACY \
+#define D___TEST__ElgEditorScripting_HostProject_Plugins_ElgEditorScripting_Source_ElgEditorScripting_Public_Blueprints_ElgEditorBP_Assets_h_60_PRIVATE_PROPERTY_OFFSET
+#define D___TEST__ElgEditorScripting_HostProject_Plugins_ElgEditorScripting_Source_ElgEditorScripting_Public_Blueprints_ElgEditorBP_Assets_h_57_PROLOG
+#define D___TEST__ElgEditorScripting_HostProject_Plugins_ElgEditorScripting_Source_ElgEditorScripting_Public_Blueprints_ElgEditorBP_Assets_h_60_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	D__Projects_Unreal_ElgCodeEditor_Plugins_ElgEditorScripting_HostProject_Plugins_ElgEditorScripting_Source_ElgEditorScripting_Public_Blueprints_ElgEditorBP_Assets_h_60_PRIVATE_PROPERTY_OFFSET \
-	D__Projects_Unreal_ElgCodeEditor_Plugins_ElgEditorScripting_HostProject_Plugins_ElgEditorScripting_Source_ElgEditorScripting_Public_Blueprints_ElgEditorBP_Assets_h_60_RPC_WRAPPERS \
-	D__Projects_Unreal_ElgCodeEditor_Plugins_ElgEditorScripting_HostProject_Plugins_ElgEditorScripting_Source_ElgEditorScripting_Public_Blueprints_ElgEditorBP_Assets_h_60_INCLASS \
-	D__Projects_Unreal_ElgCodeEditor_Plugins_ElgEditorScripting_HostProject_Plugins_ElgEditorScripting_Source_ElgEditorScripting_Public_Blueprints_ElgEditorBP_Assets_h_60_STANDARD_CONSTRUCTORS \
+	D___TEST__ElgEditorScripting_HostProject_Plugins_ElgEditorScripting_Source_ElgEditorScripting_Public_Blueprints_ElgEditorBP_Assets_h_60_PRIVATE_PROPERTY_OFFSET \
+	D___TEST__ElgEditorScripting_HostProject_Plugins_ElgEditorScripting_Source_ElgEditorScripting_Public_Blueprints_ElgEditorBP_Assets_h_60_RPC_WRAPPERS \
+	D___TEST__ElgEditorScripting_HostProject_Plugins_ElgEditorScripting_Source_ElgEditorScripting_Public_Blueprints_ElgEditorBP_Assets_h_60_INCLASS \
+	D___TEST__ElgEditorScripting_HostProject_Plugins_ElgEditorScripting_Source_ElgEditorScripting_Public_Blueprints_ElgEditorBP_Assets_h_60_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define D__Projects_Unreal_ElgCodeEditor_Plugins_ElgEditorScripting_HostProject_Plugins_ElgEditorScripting_Source_ElgEditorScripting_Public_Blueprints_ElgEditorBP_Assets_h_60_GENERATED_BODY \
+#define D___TEST__ElgEditorScripting_HostProject_Plugins_ElgEditorScripting_Source_ElgEditorScripting_Public_Blueprints_ElgEditorBP_Assets_h_60_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	D__Projects_Unreal_ElgCodeEditor_Plugins_ElgEditorScripting_HostProject_Plugins_ElgEditorScripting_Source_ElgEditorScripting_Public_Blueprints_ElgEditorBP_Assets_h_60_PRIVATE_PROPERTY_OFFSET \
-	D__Projects_Unreal_ElgCodeEditor_Plugins_ElgEditorScripting_HostProject_Plugins_ElgEditorScripting_Source_ElgEditorScripting_Public_Blueprints_ElgEditorBP_Assets_h_60_RPC_WRAPPERS_NO_PURE_DECLS \
-	D__Projects_Unreal_ElgCodeEditor_Plugins_ElgEditorScripting_HostProject_Plugins_ElgEditorScripting_Source_ElgEditorScripting_Public_Blueprints_ElgEditorBP_Assets_h_60_INCLASS_NO_PURE_DECLS \
-	D__Projects_Unreal_ElgCodeEditor_Plugins_ElgEditorScripting_HostProject_Plugins_ElgEditorScripting_Source_ElgEditorScripting_Public_Blueprints_ElgEditorBP_Assets_h_60_ENHANCED_CONSTRUCTORS \
+	D___TEST__ElgEditorScripting_HostProject_Plugins_ElgEditorScripting_Source_ElgEditorScripting_Public_Blueprints_ElgEditorBP_Assets_h_60_PRIVATE_PROPERTY_OFFSET \
+	D___TEST__ElgEditorScripting_HostProject_Plugins_ElgEditorScripting_Source_ElgEditorScripting_Public_Blueprints_ElgEditorBP_Assets_h_60_RPC_WRAPPERS_NO_PURE_DECLS \
+	D___TEST__ElgEditorScripting_HostProject_Plugins_ElgEditorScripting_Source_ElgEditorScripting_Public_Blueprints_ElgEditorBP_Assets_h_60_INCLASS_NO_PURE_DECLS \
+	D___TEST__ElgEditorScripting_HostProject_Plugins_ElgEditorScripting_Source_ElgEditorScripting_Public_Blueprints_ElgEditorBP_Assets_h_60_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -388,7 +672,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> ELGEDITORSCRIPTING_API UClass* StaticClass<class UElgEditorBP_Assets>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID D__Projects_Unreal_ElgCodeEditor_Plugins_ElgEditorScripting_HostProject_Plugins_ElgEditorScripting_Source_ElgEditorScripting_Public_Blueprints_ElgEditorBP_Assets_h
+#define CURRENT_FILE_ID D___TEST__ElgEditorScripting_HostProject_Plugins_ElgEditorScripting_Source_ElgEditorScripting_Public_Blueprints_ElgEditorBP_Assets_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

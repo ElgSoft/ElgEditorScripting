@@ -49,6 +49,12 @@ UElgEditorContext_Notification* UElgEditorContext_BP::GetNotificationContext(con
 	return elgEditorScriptModule.GetContextManager().GetNotificationContext(Info, InGraphObject, ShowNotification);
 }
 
+UElgEditorContext_DirWatcher* UElgEditorContext_BP::GetDirectoryWatcherContext()
+{
+	FElgEditorScriptingModule& elgEditorScriptModule = FModuleManager::Get().LoadModuleChecked<FElgEditorScriptingModule>(TEXT("ElgEditorScripting"));
+	return elgEditorScriptModule.GetContextManager().GetDirectoryWatcherContext();
+}
+
 #pragma endregion
 
 #pragma region Notification

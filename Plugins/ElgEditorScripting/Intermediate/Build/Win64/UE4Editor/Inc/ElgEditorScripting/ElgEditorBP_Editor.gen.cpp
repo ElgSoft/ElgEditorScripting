@@ -18,6 +18,7 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorBP_Editor() {}
 	ENGINE_API UClass* Z_Construct_UClass_UBlueprintFunctionLibrary();
 	UPackage* Z_Construct_UPackage__Script_ElgEditorScripting();
 	ELGEDITORSCRIPTING_API UFunction* Z_Construct_UFunction_UElgEditorBP_Editor_BeginSlowTask();
+	ELGEDITORSCRIPTING_API UFunction* Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc();
 	ELGEDITORSCRIPTING_API UFunction* Z_Construct_UFunction_UElgEditorBP_Editor_EndSlowTask();
 	ELGEDITORSCRIPTING_API UFunction* Z_Construct_UFunction_UElgEditorBP_Editor_IsProcessRunning();
 	ELGEDITORSCRIPTING_API UFunction* Z_Construct_UFunction_UElgEditorBP_Editor_IsProcessRunningBranch();
@@ -34,6 +35,7 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorBP_Editor() {}
 		UClass* Class = UElgEditorBP_Editor::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
 			{ "BeginSlowTask", &UElgEditorBP_Editor::execBeginSlowTask },
+			{ "CreateProc", &UElgEditorBP_Editor::execCreateProc },
 			{ "EndSlowTask", &UElgEditorBP_Editor::execEndSlowTask },
 			{ "IsProcessRunning", &UElgEditorBP_Editor::execIsProcessRunning },
 			{ "IsProcessRunningBranch", &UElgEditorBP_Editor::execIsProcessRunningBranch },
@@ -104,6 +106,121 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorBP_Editor() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UElgEditorBP_Editor_BeginSlowTask_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics
+	{
+		struct ElgEditorBP_Editor_eventCreateProc_Parms
+		{
+			FString PathToProgram;
+			FString Parameters;
+			bool Detach;
+			bool Hidden;
+			int32 Priority;
+			FString OptionalWorkingDirectory;
+			int32 ProcessId;
+		};
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_ProcessId;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_OptionalWorkingDirectory_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_OptionalWorkingDirectory;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Priority_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_Priority;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Hidden_MetaData[];
+#endif
+		static void NewProp_Hidden_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_Hidden;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Detach_MetaData[];
+#endif
+		static void NewProp_Detach_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_Detach;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Parameters_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_Parameters;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_PathToProgram_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_PathToProgram;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_ProcessId = { "ProcessId", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_Editor_eventCreateProc_Parms, ProcessId), METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_OptionalWorkingDirectory_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_OptionalWorkingDirectory = { "OptionalWorkingDirectory", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_Editor_eventCreateProc_Parms, OptionalWorkingDirectory), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_OptionalWorkingDirectory_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_OptionalWorkingDirectory_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_Priority_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_Priority = { "Priority", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_Editor_eventCreateProc_Parms, Priority), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_Priority_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_Priority_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_Hidden_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	void Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_Hidden_SetBit(void* Obj)
+	{
+		((ElgEditorBP_Editor_eventCreateProc_Parms*)Obj)->Hidden = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_Hidden = { "Hidden", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ElgEditorBP_Editor_eventCreateProc_Parms), &Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_Hidden_SetBit, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_Hidden_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_Hidden_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_Detach_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	void Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_Detach_SetBit(void* Obj)
+	{
+		((ElgEditorBP_Editor_eventCreateProc_Parms*)Obj)->Detach = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_Detach = { "Detach", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ElgEditorBP_Editor_eventCreateProc_Parms), &Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_Detach_SetBit, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_Detach_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_Detach_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_Parameters_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_Parameters = { "Parameters", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_Editor_eventCreateProc_Parms, Parameters), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_Parameters_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_Parameters_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_PathToProgram_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_PathToProgram = { "PathToProgram", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_Editor_eventCreateProc_Parms, PathToProgram), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_PathToProgram_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_PathToProgram_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_ProcessId,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_OptionalWorkingDirectory,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_Priority,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_Hidden,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_Detach,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_Parameters,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_PathToProgram,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::Function_MetaDataParams[] = {
+		{ "Category", "ElgEditor|App" },
+		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_Editor.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Editor, nullptr, "CreateProc", sizeof(ElgEditorBP_Editor_eventCreateProc_Parms), Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -507,6 +624,7 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorBP_Editor() {}
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UElgEditorBP_Editor_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_UElgEditorBP_Editor_BeginSlowTask, "BeginSlowTask" }, // 490736945
+		{ &Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc, "CreateProc" }, // 508678947
 		{ &Z_Construct_UFunction_UElgEditorBP_Editor_EndSlowTask, "EndSlowTask" }, // 3471258511
 		{ &Z_Construct_UFunction_UElgEditorBP_Editor_IsProcessRunning, "IsProcessRunning" }, // 2871010210
 		{ &Z_Construct_UFunction_UElgEditorBP_Editor_IsProcessRunningBranch, "IsProcessRunningBranch" }, // 2957765338
@@ -550,7 +668,7 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorBP_Editor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UElgEditorBP_Editor, 1188314433);
+	IMPLEMENT_CLASS(UElgEditorBP_Editor, 3459162405);
 	template<> ELGEDITORSCRIPTING_API UClass* StaticClass<UElgEditorBP_Editor>()
 	{
 		return UElgEditorBP_Editor::StaticClass();

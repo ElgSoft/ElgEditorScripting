@@ -19,6 +19,10 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorScripting_init() {}
 	ELGEDITORSCRIPTING_API UFunction* Z_Construct_UDelegateFunction_ElgEditorScripting_ElgEditorEventsOnSearchBoxChangedSignature__DelegateSignature();
 	ELGEDITORSCRIPTING_API UFunction* Z_Construct_UDelegateFunction_ElgEditorScripting_ElgEditorEventsOnAssetPathChangedSignature__DelegateSignature();
 	ELGEDITORSCRIPTING_API UFunction* Z_Construct_UDelegateFunction_ElgEditorScripting_ElgEditorEventsOnAssetSelectionSignature__DelegateSignature();
+	ELGEDITORSCRIPTING_API UFunction* Z_Construct_UDelegateFunction_ElgEditorScripting_ElgEditorEventsOnDirWatchSignature__DelegateSignature();
+	ELGEDITORSCRIPTING_API UFunction* Z_Construct_UDelegateFunction_ElgEditorScripting_ElgEditorEventsOnDirWatchFilesAddedSignature__DelegateSignature();
+	ELGEDITORSCRIPTING_API UFunction* Z_Construct_UDelegateFunction_ElgEditorScripting_ElgEditorEventsOnDirWatchFilesModifiedSignature__DelegateSignature();
+	ELGEDITORSCRIPTING_API UFunction* Z_Construct_UDelegateFunction_ElgEditorScripting_ElgEditorEventsOnDirWatchFilesRemovedSignature__DelegateSignature();
 	ELGEDITORSCRIPTING_API UFunction* Z_Construct_UDelegateFunction_ElgEditorScripting_ElgEditorEventsOnLevelActorAddedSignature__DelegateSignature();
 	ELGEDITORSCRIPTING_API UFunction* Z_Construct_UDelegateFunction_ElgEditorScripting_ElgEditorEventsOnLevelActorAddedNativeSignature__DelegateSignature();
 	ELGEDITORSCRIPTING_API UFunction* Z_Construct_UDelegateFunction_ElgEditorScripting_ElgEditorEventsOnLevelActorDeletedSignature__DelegateSignature();
@@ -55,6 +59,10 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorScripting_init() {}
 				(UObject* (*)())Z_Construct_UDelegateFunction_ElgEditorScripting_ElgEditorEventsOnSearchBoxChangedSignature__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_ElgEditorScripting_ElgEditorEventsOnAssetPathChangedSignature__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_ElgEditorScripting_ElgEditorEventsOnAssetSelectionSignature__DelegateSignature,
+				(UObject* (*)())Z_Construct_UDelegateFunction_ElgEditorScripting_ElgEditorEventsOnDirWatchSignature__DelegateSignature,
+				(UObject* (*)())Z_Construct_UDelegateFunction_ElgEditorScripting_ElgEditorEventsOnDirWatchFilesAddedSignature__DelegateSignature,
+				(UObject* (*)())Z_Construct_UDelegateFunction_ElgEditorScripting_ElgEditorEventsOnDirWatchFilesModifiedSignature__DelegateSignature,
+				(UObject* (*)())Z_Construct_UDelegateFunction_ElgEditorScripting_ElgEditorEventsOnDirWatchFilesRemovedSignature__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_ElgEditorScripting_ElgEditorEventsOnLevelActorAddedSignature__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_ElgEditorScripting_ElgEditorEventsOnLevelActorAddedNativeSignature__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_ElgEditorScripting_ElgEditorEventsOnLevelActorDeletedSignature__DelegateSignature,
@@ -83,8 +91,8 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorScripting_init() {}
 				SingletonFuncArray,
 				ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000040,
-				0x9C90B505,
-				0x65E25C49,
+				0x37AF5118,
+				0x8D7E4CD3,
 				METADATA_PARAMS(nullptr, 0)
 			};
 			UE4CodeGen_Private::ConstructUPackage(ReturnPackage, PackageParams);

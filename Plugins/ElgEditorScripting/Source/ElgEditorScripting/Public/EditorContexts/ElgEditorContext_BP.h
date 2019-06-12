@@ -51,6 +51,12 @@ class ELGEDITORSCRIPTING_API UElgEditorContext_BP : public UBlueprintFunctionLib
 	UFUNCTION(BlueprintPure, Category = "ElgEditor|Notification", Meta = (DefaultToSelf = "InGraphObject", AdvancedDisplay = "2", ShowNotification = "true"))
 		static UElgEditorContext_Notification* GetNotificationContext(const FS_ElgNotificationInfo& Info, const bool ShowNotification, UObject* InGraphObject);
 
+	/*
+		Return a DirectoryWatcherContext object.
+	*/
+	UFUNCTION(BlueprintPure, Category = "ElgEditor|DirectoryWatcher")
+		static UElgEditorContext_DirWatcher* GetDirectoryWatcherContext();
+
 #pragma endregion
 
 #pragma region Notification

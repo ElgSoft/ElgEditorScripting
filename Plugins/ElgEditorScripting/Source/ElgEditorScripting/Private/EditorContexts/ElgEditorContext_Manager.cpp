@@ -6,6 +6,7 @@
 #include "ElgEditorContext_AssetBrowser.h"
 #include "ElgEditorContext_Config.h"
 #include "ElgEditorContext_Notification.h"
+#include "ElgEditorContext_DirWatcher.h"
 
 
 
@@ -51,5 +52,14 @@ UElgEditorContext_Notification* UElgEditorContext_Manager::GetNotificationContex
 	UElgEditorContext_Notification* notification = NewObject<UElgEditorContext_Notification>();
 	notification->Setup(Info, InGraphObject, ShowNotification);
 	return notification;
+}
+
+
+UElgEditorContext_DirWatcher* UElgEditorContext_Manager::GetDirectoryWatcherContext()
+{
+	if (DirectoryWatcherContext == nullptr) {
+		DirectoryWatcherContext = NewObject<UElgEditorContext_DirWatcher>();
+	}
+	return DirectoryWatcherContext;
 }
 

@@ -10,6 +10,10 @@
 #include <Engine/World.h>
 #include "HAL\FileManager.h"
 #include "UObject\MetaData.h"
+#include <FileHelpers.h>
+#include <ContentBrowserModule.h>
+#include "Core\Public\Modules\ModuleManager.h"
+#include <IContentBrowserSingleton.h>
 
 
 #pragma region Redirectors
@@ -130,6 +134,68 @@ void UElgEditorBP_Assets::GetAssetMetaDataBranch(const FAssetData& AssetDataStru
 }
 
 
+FAssetData UElgEditorBP_Assets::GetAssetDataFromPath(const FString& AssetPath)
+{
+	FAssetData AssetData = FAssetData();
+	if (AssetPath.IsEmpty())
+	{
+		return AssetData;
+	}
+
+	if (FEditorFileUtils::IsMapPackageAsset(AssetPath)) {
+		return AssetData;
+	}
+
+	FAssetRegistryModule& AssetRegistryModule = FModuleManager::LoadModuleChecked<FAssetRegistryModule>("AssetRegistry");
+	AssetData = AssetRegistryModule.Get().GetAssetByObjectPath(*AssetPath);
+	if (!AssetData.IsValid()) {
+		return AssetData;
+	}
+
+	return AssetData;
+}
+
+
+FAssetData UElgEditorBP_Assets::GetAssetDataFromObject(const UObject* Object)
+{
+	FString assetPath = GetAssetPathFromObject(Object);
+	return GetAssetDataFromPath(assetPath);
+}
+
+
+FString UElgEditorBP_Assets::GetAssetPathFromObject(const UObject* AssetObject)
+{
+	FString path;
+	if (AssetObject == nullptr) return path;
+
+	AssetObject->GetPathName().Split("/", &path, nullptr, ESearchCase::IgnoreCase, ESearchDir::FromEnd);
+	return FString::Printf(TEXT("%s/%s.%s"), *path, *AssetObject->GetName(), *AssetObject->GetName());
+}
+
+void UElgEditorBP_Assets::GetAssetDatasByPath(const TArray<FString>& AssetPaths, TArray<FAssetData>& AssetDatas)
+{
+	AssetDatas.Empty();
+
+	for (FString path : AssetPaths) {
+		FAssetData assetData = GetAssetDataFromPath(path);
+		if (!assetData.IsValid()) continue;
+		AssetDatas.AddUnique(assetData);
+	}
+}
+
+FString UElgEditorBP_Assets::GetAssetName(const FAssetData& AssetDataStruct)
+{	
+	if (!AssetDataStruct.IsValid()) return "";
+	return AssetDataStruct.AssetName.ToString();
+}
+
+
+FString UElgEditorBP_Assets::GetAssetPath(const FAssetData& AssetDataStruct)
+{
+	if (!AssetDataStruct.IsValid()) return "";
+	return AssetDataStruct.ObjectPath.ToString();
+}
+
 #pragma endregion
 
 #pragma region GetAssets
@@ -143,6 +209,17 @@ void UElgEditorBP_Assets::GetAssetObjects(const TArray<FAssetData>& AssetDataStr
 	}
 }
 
+
+void UElgEditorBP_Assets::GetAssetObjectsByPath(const TArray<FString>& AssetPaths, TArray<UObject*>& AssetObjects)
+{
+	AssetObjects.Empty();
+
+	for (FString path : AssetPaths) {
+		FAssetData assetData = GetAssetDataFromPath(path);
+		if (!assetData.IsValid()) continue;
+		AssetObjects.AddUnique(assetData.GetAsset());
+	}
+}
 
 #pragma endregion
 
@@ -257,4 +334,117 @@ void UElgEditorBP_Assets::GetAssetObjectMetaDataBranch(UObject* AssetObject, FS_
 	}
 }
 
+
 #pragma endregion
+
+#pragma region References
+
+
+void UElgEditorBP_Assets::GetAssetReferencers(const FAssetData AssetData, TArray<FString>& Referencers)
+{
+	if (!AssetData.IsValid()) return;	
+
+	GetReferenceDependencies(AssetData, true, true, true, Referencers);
+}
+
+void UElgEditorBP_Assets::GetAssetReferencersByPath(const FString AssetPath, TArray<FString>& Referencers)
+{
+	FAssetData assetData = GetAssetDataFromPath(AssetPath);
+	if (!assetData.IsValid()) return;
+
+	GetReferenceDependencies(assetData, true, true, true, Referencers);
+}
+
+
+void UElgEditorBP_Assets::GetAssetReferencersByObject(const UObject* Object, TArray<FString>& Referencers)
+{
+	FAssetData assetData = GetAssetDataFromObject(Object);
+	GetAssetReferencers(assetData, Referencers);
+}
+
+
+void UElgEditorBP_Assets::GetAssetDependencies(const FAssetData AssetData, TArray<FString>& Dependencies)
+{
+	if (!AssetData.IsValid()) return;
+
+	GetReferenceDependencies(AssetData, false, true, true, Dependencies);
+}
+
+
+void UElgEditorBP_Assets::GetAssetDependenciesByPath(const FString AssetPath, TArray<FString>& Dependencies)
+{
+	FAssetData assetData = GetAssetDataFromPath(AssetPath);
+	if (!assetData.IsValid()) return;
+
+	GetAssetDependencies(assetData, Dependencies);
+}
+
+
+void UElgEditorBP_Assets::GetAssetDependenciesByObject(const UObject* Object, TArray<FString>& Dependencies)
+{
+	FAssetData assetData = GetAssetDataFromObject(Object);
+	GetAssetDependencies(assetData, Dependencies);
+}
+
+
+bool UElgEditorBP_Assets::HasAssetRefs(const FAssetData AssetData)
+{
+	if (!AssetData.IsValid()) return false;
+
+	TArray<FString> Dependencies;
+	GetReferenceDependencies(AssetData, false, true, false, Dependencies);
+
+	if (Dependencies.Num() == 0) {
+		return false;
+	}
+	return true;
+}
+
+
+void UElgEditorBP_Assets::GetReferenceDependencies(const FAssetData AssetData, const bool bReferencers, const bool bExcludeNativePackage, const bool bExcludeSelf,  TArray<FString>& Referencers)
+{
+	// check for both Soft and hard dependency types
+	int32 ReferenceFlags = 0;
+	ReferenceFlags |= EAssetRegistryDependencyType::Soft;
+	ReferenceFlags |= EAssetRegistryDependencyType::Hard;
+	
+	// load the asset
+	UObject* FoundObject = AssetData.GetAsset();
+
+	FAssetRegistryModule& AssetRegistryModule = FModuleManager::LoadModuleChecked<FAssetRegistryModule>("AssetRegistry");
+	TArray<FAssetIdentifier> ReferenceNames;
+
+	if (bReferencers) {
+		AssetRegistryModule.Get().GetReferencers(FAssetIdentifier::FAssetIdentifier(AssetData.PackageName), ReferenceNames, (EAssetRegistryDependencyType::Type)ReferenceFlags);
+	}
+	else {
+		AssetRegistryModule.Get().GetDependencies(FAssetIdentifier::FAssetIdentifier(AssetData.PackageName), ReferenceNames, (EAssetRegistryDependencyType::Type)ReferenceFlags);
+	}
+
+	// skip ourself in the referencer list 
+	// should skip /Script/ paths also or maybe has a option
+	FString packageName = AssetData.PackageName.ToString();
+	for (const FAssetIdentifier& assetId : ReferenceNames) {
+		const FString name = assetId.PackageName.ToString();
+		
+		if (bExcludeSelf && name.Equals(packageName)) continue;
+		if (bExcludeNativePackage && name.StartsWith("/Script")) continue;
+
+		Referencers.AddUnique(assetId.PackageName.ToString());
+	}
+}
+
+#pragma endregion
+
+#pragma region ContentBrowser
+
+TArray<FString> UElgEditorBP_Assets::GetSelectedPaths()
+{
+	TArray<FString> selectedPath;
+	FContentBrowserModule& ContentBrowserModule = FModuleManager::GetModuleChecked<FContentBrowserModule>(TEXT("ContentBrowser"));
+	ContentBrowserModule.Get().GetSelectedPathViewFolders(selectedPath);
+	return selectedPath;
+}
+
+#pragma endregion
+

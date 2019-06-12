@@ -36,6 +36,17 @@ void UElgEditorBP_Editor::IsProcessRunningBranch(int32 ProcessId, EBPEditorOutpu
 }
 
 
+void UElgEditorBP_Editor::CreateProc(const FString PathToProgram, const FString Parameters, const bool Detach, const bool Hidden, const int32 Priority, const FString OptionalWorkingDirectory, int32& ProcessId)
+{
+	uint32 processId = 0;
+	FProcHandle ProcHandle = FPlatformProcess::CreateProc(*PathToProgram,
+		(Parameters != "") ? *Parameters : nullptr, 
+		Detach, false, Hidden, &processId, Priority, 
+		(OptionalWorkingDirectory != "") ? *OptionalWorkingDirectory : nullptr,
+		nullptr);
+	ProcessId = processId;
+}
+
 #pragma region SlowTask
 
 void UElgEditorBP_Editor::BeginSlowTask(const FText Task, bool ShowProgressDialog, bool bShowCancelButton /*= false*/)
