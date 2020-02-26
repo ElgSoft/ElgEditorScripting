@@ -55,7 +55,7 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorContext_Notification() {}
 		return EBPNotificationCompletionState_StaticEnum();
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EBPNotificationCompletionState(EBPNotificationCompletionState_StaticEnum, TEXT("/Script/ElgEditorScripting"), TEXT("EBPNotificationCompletionState"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_ElgEditorScripting_EBPNotificationCompletionState_Hash() { return 3090310642U; }
+	uint32 Get_Z_Construct_UEnum_ElgEditorScripting_EBPNotificationCompletionState_Hash() { return 466273454U; }
 	UEnum* Z_Construct_UEnum_ElgEditorScripting_EBPNotificationCompletionState()
 	{
 #if WITH_HOT_RELOAD
@@ -75,7 +75,11 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorContext_Notification() {}
 #if WITH_METADATA
 			const UE4CodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
 				{ "BlueprintType", "true" },
+				{ "Fail.Name", "EBPNotificationCompletionState::Fail" },
 				{ "ModuleRelativePath", "Public/EditorContexts/ElgEditorContext_Notification.h" },
+				{ "None.Name", "EBPNotificationCompletionState::None" },
+				{ "Pending.Name", "EBPNotificationCompletionState::Pending" },
+				{ "Success.Name", "EBPNotificationCompletionState::Success" },
 			};
 #endif
 			static const UE4CodeGen_Private::FEnumParams EnumParams = {
@@ -84,11 +88,11 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorContext_Notification() {}
 				"EBPNotificationCompletionState",
 				"EBPNotificationCompletionState",
 				Enumerators,
-				ARRAY_COUNT(Enumerators),
+				UE_ARRAY_COUNT(Enumerators),
 				RF_Public|RF_Transient|RF_MarkAsNative,
 				UE4CodeGen_Private::EDynamicType::NotDynamic,
 				(uint8)UEnum::ECppForm::EnumClass,
-				METADATA_PARAMS(Enum_MetaDataParams, ARRAY_COUNT(Enum_MetaDataParams))
+				METADATA_PARAMS(Enum_MetaDataParams, UE_ARRAY_COUNT(Enum_MetaDataParams))
 			};
 			UE4CodeGen_Private::ConstructUEnum(ReturnEnum, EnumParams);
 		}
@@ -189,6 +193,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgNotifi
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+		{ "Comment", "/**\n * Setup class to initialize a notification.\n */" },
 		{ "ModuleRelativePath", "Public/EditorContexts/ElgEditorContext_Notification.h" },
 		{ "ToolTip", "Setup class to initialize a notification." },
 	};
@@ -200,30 +205,34 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgNotifi
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_Buttons_MetaData[] = {
 		{ "Category", "Notification" },
+		{ "Comment", "/* Buttons on the Notification */" },
 		{ "ModuleRelativePath", "Public/EditorContexts/ElgEditorContext_Notification.h" },
 		{ "ToolTip", "Buttons on the Notification" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_Buttons = { "Buttons", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgNotificationInfo, Buttons), Z_Construct_UScriptStruct_FS_ElgNotificationButtons, METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_Buttons_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_Buttons_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_Buttons = { "Buttons", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgNotificationInfo, Buttons), Z_Construct_UScriptStruct_FS_ElgNotificationButtons, METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_Buttons_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_Buttons_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_HyperlinkEventName_MetaData[] = {
 		{ "Category", "Notification" },
+		{ "Comment", "/** When set this will display as a hyperlink on the right side of the notification.\n\x09""And the EventName will be executed when the hyperlink is clicked, can be a CustomEvent or FunctionName*/" },
 		{ "ModuleRelativePath", "Public/EditorContexts/ElgEditorContext_Notification.h" },
 		{ "ToolTip", "When set this will display as a hyperlink on the right side of the notification.\n      And the EventName will be executed when the hyperlink is clicked, can be a CustomEvent or FunctionName" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_HyperlinkEventName = { "HyperlinkEventName", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgNotificationInfo, HyperlinkEventName), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_HyperlinkEventName_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_HyperlinkEventName_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_HyperlinkEventName = { "HyperlinkEventName", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgNotificationInfo, HyperlinkEventName), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_HyperlinkEventName_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_HyperlinkEventName_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_HyperlinkText_MetaData[] = {
 		{ "Category", "Notification" },
+		{ "Comment", "/** Text to display for the hyperlink message */" },
 		{ "ModuleRelativePath", "Public/EditorContexts/ElgEditorContext_Notification.h" },
 		{ "ToolTip", "Text to display for the hyperlink message" },
 	};
 #endif
-	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_HyperlinkText = { "HyperlinkText", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgNotificationInfo, HyperlinkText), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_HyperlinkText_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_HyperlinkText_MetaData)) };
+	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_HyperlinkText = { "HyperlinkText", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgNotificationInfo, HyperlinkText), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_HyperlinkText_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_HyperlinkText_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_bAllowThrottleWhenFrameRateIsLow_MetaData[] = {
 		{ "Category", "Notification" },
+		{ "Comment", "/** True if we should throttle the editor while the notification is transitioning and performance is poor, to make sure the user can see the animation */" },
 		{ "ModuleRelativePath", "Public/EditorContexts/ElgEditorContext_Notification.h" },
 		{ "ToolTip", "True if we should throttle the editor while the notification is transitioning and performance is poor, to make sure the user can see the animation" },
 	};
@@ -232,10 +241,11 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgNotifi
 	{
 		((FS_ElgNotificationInfo*)Obj)->bAllowThrottleWhenFrameRateIsLow = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_bAllowThrottleWhenFrameRateIsLow = { "bAllowThrottleWhenFrameRateIsLow", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FS_ElgNotificationInfo), &Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_bAllowThrottleWhenFrameRateIsLow_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_bAllowThrottleWhenFrameRateIsLow_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_bAllowThrottleWhenFrameRateIsLow_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_bAllowThrottleWhenFrameRateIsLow = { "bAllowThrottleWhenFrameRateIsLow", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FS_ElgNotificationInfo), &Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_bAllowThrottleWhenFrameRateIsLow_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_bAllowThrottleWhenFrameRateIsLow_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_bAllowThrottleWhenFrameRateIsLow_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_bFireAndForget_MetaData[] = {
 		{ "Category", "Notification" },
+		{ "Comment", "/** When true the notification will automatically time out after the expire duration. */" },
 		{ "ModuleRelativePath", "Public/EditorContexts/ElgEditorContext_Notification.h" },
 		{ "ToolTip", "When true the notification will automatically time out after the expire duration." },
 	};
@@ -244,18 +254,20 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgNotifi
 	{
 		((FS_ElgNotificationInfo*)Obj)->bFireAndForget = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_bFireAndForget = { "bFireAndForget", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FS_ElgNotificationInfo), &Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_bFireAndForget_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_bFireAndForget_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_bFireAndForget_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_bFireAndForget = { "bFireAndForget", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FS_ElgNotificationInfo), &Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_bFireAndForget_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_bFireAndForget_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_bFireAndForget_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_WidthOverride_MetaData[] = {
 		{ "Category", "Notification" },
+		{ "Comment", "/** When set this forces the width of the box, used to stop resizing on text change */" },
 		{ "ModuleRelativePath", "Public/EditorContexts/ElgEditorContext_Notification.h" },
 		{ "ToolTip", "When set this forces the width of the box, used to stop resizing on text change" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_WidthOverride = { "WidthOverride", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgNotificationInfo, WidthOverride), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_WidthOverride_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_WidthOverride_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_WidthOverride = { "WidthOverride", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgNotificationInfo, WidthOverride), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_WidthOverride_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_WidthOverride_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_bUseLargeFont_MetaData[] = {
 		{ "Category", "Notification" },
+		{ "Comment", "/** When true the larger bolder font will be used to display the message */" },
 		{ "ModuleRelativePath", "Public/EditorContexts/ElgEditorContext_Notification.h" },
 		{ "ToolTip", "When true the larger bolder font will be used to display the message" },
 	};
@@ -264,10 +276,11 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgNotifi
 	{
 		((FS_ElgNotificationInfo*)Obj)->bUseLargeFont = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_bUseLargeFont = { "bUseLargeFont", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FS_ElgNotificationInfo), &Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_bUseLargeFont_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_bUseLargeFont_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_bUseLargeFont_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_bUseLargeFont = { "bUseLargeFont", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FS_ElgNotificationInfo), &Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_bUseLargeFont_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_bUseLargeFont_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_bUseLargeFont_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_bUseSuccessFailIcons_MetaData[] = {
 		{ "Category", "Notification" },
+		{ "Comment", "/** Controls whether or not to display the success and fail icons */" },
 		{ "ModuleRelativePath", "Public/EditorContexts/ElgEditorContext_Notification.h" },
 		{ "ToolTip", "Controls whether or not to display the success and fail icons" },
 	};
@@ -276,10 +289,11 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgNotifi
 	{
 		((FS_ElgNotificationInfo*)Obj)->bUseSuccessFailIcons = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_bUseSuccessFailIcons = { "bUseSuccessFailIcons", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FS_ElgNotificationInfo), &Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_bUseSuccessFailIcons_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_bUseSuccessFailIcons_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_bUseSuccessFailIcons_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_bUseSuccessFailIcons = { "bUseSuccessFailIcons", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FS_ElgNotificationInfo), &Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_bUseSuccessFailIcons_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_bUseSuccessFailIcons_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_bUseSuccessFailIcons_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_bUseThrobber_MetaData[] = {
 		{ "Category", "Notification" },
+		{ "Comment", "/** Controls whether or not to add the animated throbber */" },
 		{ "ModuleRelativePath", "Public/EditorContexts/ElgEditorContext_Notification.h" },
 		{ "ToolTip", "Controls whether or not to add the animated throbber" },
 	};
@@ -288,47 +302,52 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgNotifi
 	{
 		((FS_ElgNotificationInfo*)Obj)->bUseThrobber = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_bUseThrobber = { "bUseThrobber", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FS_ElgNotificationInfo), &Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_bUseThrobber_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_bUseThrobber_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_bUseThrobber_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_bUseThrobber = { "bUseThrobber", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FS_ElgNotificationInfo), &Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_bUseThrobber_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_bUseThrobber_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_bUseThrobber_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_ExpireDuration_MetaData[] = {
 		{ "Category", "Notification" },
+		{ "Comment", "/** The duration before a fadeout for this element */" },
 		{ "ModuleRelativePath", "Public/EditorContexts/ElgEditorContext_Notification.h" },
 		{ "ToolTip", "The duration before a fadeout for this element" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_ExpireDuration = { "ExpireDuration", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgNotificationInfo, ExpireDuration), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_ExpireDuration_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_ExpireDuration_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_ExpireDuration = { "ExpireDuration", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgNotificationInfo, ExpireDuration), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_ExpireDuration_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_ExpireDuration_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_FadeOutDuration_MetaData[] = {
 		{ "Category", "Notification" },
+		{ "Comment", "/** The fade out duration for this element */" },
 		{ "ModuleRelativePath", "Public/EditorContexts/ElgEditorContext_Notification.h" },
 		{ "ToolTip", "The fade out duration for this element" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_FadeOutDuration = { "FadeOutDuration", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgNotificationInfo, FadeOutDuration), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_FadeOutDuration_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_FadeOutDuration_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_FadeOutDuration = { "FadeOutDuration", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgNotificationInfo, FadeOutDuration), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_FadeOutDuration_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_FadeOutDuration_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_FadeInDuration_MetaData[] = {
 		{ "Category", "Notification" },
+		{ "Comment", "/** The fade in duration for this element */" },
 		{ "ModuleRelativePath", "Public/EditorContexts/ElgEditorContext_Notification.h" },
 		{ "ToolTip", "The fade in duration for this element" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_FadeInDuration = { "FadeInDuration", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgNotificationInfo, FadeInDuration), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_FadeInDuration_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_FadeInDuration_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_FadeInDuration = { "FadeInDuration", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgNotificationInfo, FadeInDuration), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_FadeInDuration_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_FadeInDuration_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_Image_MetaData[] = {
 		{ "Category", "Notification" },
+		{ "Comment", "/** The icon image to display next to the text */" },
 		{ "ModuleRelativePath", "Public/EditorContexts/ElgEditorContext_Notification.h" },
 		{ "ToolTip", "The icon image to display next to the text" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_Image = { "Image", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgNotificationInfo, Image), Z_Construct_UScriptStruct_FSlateBrush, METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_Image_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_Image_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_Image = { "Image", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgNotificationInfo, Image), Z_Construct_UScriptStruct_FSlateBrush, METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_Image_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_Image_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_Text_MetaData[] = {
 		{ "Category", "Notification" },
+		{ "Comment", "/** The text displayed in this text block */" },
 		{ "ModuleRelativePath", "Public/EditorContexts/ElgEditorContext_Notification.h" },
 		{ "ToolTip", "The text displayed in this text block" },
 	};
 #endif
-	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_Text = { "Text", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgNotificationInfo, Text), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_Text_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_Text_MetaData)) };
+	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_Text = { "Text", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgNotificationInfo, Text), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_Text_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_Text_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_Buttons,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::NewProp_HyperlinkEventName,
@@ -353,10 +372,10 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgNotifi
 		sizeof(FS_ElgNotificationInfo),
 		alignof(FS_ElgNotificationInfo),
 		Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::PropPointers,
-		ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::PropPointers),
+		UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
 		EStructFlags(0x00000001),
-		METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::Struct_MetaDataParams))
+		METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::Struct_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FS_ElgNotificationInfo()
 	{
@@ -373,7 +392,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgNotifi
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Hash() { return 2390433981U; }
+	uint32 Get_Z_Construct_UScriptStruct_FS_ElgNotificationInfo_Hash() { return 4640423U; }
 class UScriptStruct* FS_ElgNotificationButtons::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -423,11 +442,12 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgNotifi
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FS_ElgNotificationButtons_Statics::NewProp_Buttons_MetaData[] = {
 		{ "Category", "Notification" },
+		{ "Comment", "/** Array with the buttons to add to the notification message */" },
 		{ "ModuleRelativePath", "Public/EditorContexts/ElgEditorContext_Notification.h" },
 		{ "ToolTip", "Array with the buttons to add to the notification message" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FS_ElgNotificationButtons_Statics::NewProp_Buttons = { "Buttons", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgNotificationButtons, Buttons), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgNotificationButtons_Statics::NewProp_Buttons_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgNotificationButtons_Statics::NewProp_Buttons_MetaData)) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FS_ElgNotificationButtons_Statics::NewProp_Buttons = { "Buttons", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgNotificationButtons, Buttons), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgNotificationButtons_Statics::NewProp_Buttons_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgNotificationButtons_Statics::NewProp_Buttons_MetaData)) };
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FS_ElgNotificationButtons_Statics::NewProp_Buttons_Inner = { "Buttons", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FS_ElgNotificationButtons_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FS_ElgNotificationButtons_Statics::NewProp_Buttons,
@@ -441,10 +461,10 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgNotifi
 		sizeof(FS_ElgNotificationButtons),
 		alignof(FS_ElgNotificationButtons),
 		Z_Construct_UScriptStruct_FS_ElgNotificationButtons_Statics::PropPointers,
-		ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgNotificationButtons_Statics::PropPointers),
+		UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgNotificationButtons_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
 		EStructFlags(0x00000001),
-		METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgNotificationButtons_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgNotificationButtons_Statics::Struct_MetaDataParams))
+		METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgNotificationButtons_Statics::Struct_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgNotificationButtons_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FS_ElgNotificationButtons()
 	{
@@ -461,7 +481,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgNotifi
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FS_ElgNotificationButtons_Hash() { return 456979453U; }
+	uint32 Get_Z_Construct_UScriptStruct_FS_ElgNotificationButtons_Hash() { return 2427681564U; }
 class UScriptStruct* FS_ElgNotificationButtonInfo::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -543,6 +563,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgNotifi
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo_Statics::NewProp_VisibilityOnFail_MetaData[] = {
 		{ "Category", "Notification" },
+		{ "Comment", "/** Visibility of the button when the completion state of the button is SNotificationItem::ECompletionState::Fail */" },
 		{ "ModuleRelativePath", "Public/EditorContexts/ElgEditorContext_Notification.h" },
 		{ "ToolTip", "Visibility of the button when the completion state of the button is SNotificationItem::ECompletionState::Fail" },
 	};
@@ -551,10 +572,11 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgNotifi
 	{
 		((FS_ElgNotificationButtonInfo*)Obj)->VisibilityOnFail = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo_Statics::NewProp_VisibilityOnFail = { "VisibilityOnFail", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FS_ElgNotificationButtonInfo), &Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo_Statics::NewProp_VisibilityOnFail_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo_Statics::NewProp_VisibilityOnFail_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo_Statics::NewProp_VisibilityOnFail_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo_Statics::NewProp_VisibilityOnFail = { "VisibilityOnFail", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FS_ElgNotificationButtonInfo), &Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo_Statics::NewProp_VisibilityOnFail_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo_Statics::NewProp_VisibilityOnFail_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo_Statics::NewProp_VisibilityOnFail_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo_Statics::NewProp_VisibilityOnSuccess_MetaData[] = {
 		{ "Category", "Notification" },
+		{ "Comment", "/** Visibility of the button when the completion state of the button is SNotificationItem::ECompletionState::Success */" },
 		{ "ModuleRelativePath", "Public/EditorContexts/ElgEditorContext_Notification.h" },
 		{ "ToolTip", "Visibility of the button when the completion state of the button is SNotificationItem::ECompletionState::Success" },
 	};
@@ -563,10 +585,11 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgNotifi
 	{
 		((FS_ElgNotificationButtonInfo*)Obj)->VisibilityOnSuccess = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo_Statics::NewProp_VisibilityOnSuccess = { "VisibilityOnSuccess", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FS_ElgNotificationButtonInfo), &Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo_Statics::NewProp_VisibilityOnSuccess_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo_Statics::NewProp_VisibilityOnSuccess_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo_Statics::NewProp_VisibilityOnSuccess_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo_Statics::NewProp_VisibilityOnSuccess = { "VisibilityOnSuccess", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FS_ElgNotificationButtonInfo), &Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo_Statics::NewProp_VisibilityOnSuccess_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo_Statics::NewProp_VisibilityOnSuccess_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo_Statics::NewProp_VisibilityOnSuccess_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo_Statics::NewProp_VisibilityOnPending_MetaData[] = {
 		{ "Category", "Notification" },
+		{ "Comment", "/** Visibility of the button when the completion state of the button is SNotificationItem::ECompletionState::Pending */" },
 		{ "ModuleRelativePath", "Public/EditorContexts/ElgEditorContext_Notification.h" },
 		{ "ToolTip", "Visibility of the button when the completion state of the button is SNotificationItem::ECompletionState::Pending" },
 	};
@@ -575,10 +598,11 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgNotifi
 	{
 		((FS_ElgNotificationButtonInfo*)Obj)->VisibilityOnPending = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo_Statics::NewProp_VisibilityOnPending = { "VisibilityOnPending", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FS_ElgNotificationButtonInfo), &Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo_Statics::NewProp_VisibilityOnPending_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo_Statics::NewProp_VisibilityOnPending_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo_Statics::NewProp_VisibilityOnPending_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo_Statics::NewProp_VisibilityOnPending = { "VisibilityOnPending", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FS_ElgNotificationButtonInfo), &Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo_Statics::NewProp_VisibilityOnPending_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo_Statics::NewProp_VisibilityOnPending_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo_Statics::NewProp_VisibilityOnPending_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo_Statics::NewProp_VisibilityOnNone_MetaData[] = {
 		{ "Category", "Notification" },
+		{ "Comment", "/** Visibility of the button when the completion state of the button is SNotificationItem::ECompletionState::None */" },
 		{ "ModuleRelativePath", "Public/EditorContexts/ElgEditorContext_Notification.h" },
 		{ "ToolTip", "Visibility of the button when the completion state of the button is SNotificationItem::ECompletionState::None" },
 	};
@@ -587,10 +611,11 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgNotifi
 	{
 		((FS_ElgNotificationButtonInfo*)Obj)->VisibilityOnNone = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo_Statics::NewProp_VisibilityOnNone = { "VisibilityOnNone", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FS_ElgNotificationButtonInfo), &Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo_Statics::NewProp_VisibilityOnNone_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo_Statics::NewProp_VisibilityOnNone_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo_Statics::NewProp_VisibilityOnNone_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo_Statics::NewProp_VisibilityOnNone = { "VisibilityOnNone", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FS_ElgNotificationButtonInfo), &Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo_Statics::NewProp_VisibilityOnNone_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo_Statics::NewProp_VisibilityOnNone_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo_Statics::NewProp_VisibilityOnNone_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo_Statics::NewProp_CloseOnClick_MetaData[] = {
 		{ "Category", "Notification" },
+		{ "Comment", "/** Should the notification be closed when the button is clicked? */" },
 		{ "ModuleRelativePath", "Public/EditorContexts/ElgEditorContext_Notification.h" },
 		{ "ToolTip", "Should the notification be closed when the button is clicked?" },
 	};
@@ -599,31 +624,34 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgNotifi
 	{
 		((FS_ElgNotificationButtonInfo*)Obj)->CloseOnClick = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo_Statics::NewProp_CloseOnClick = { "CloseOnClick", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FS_ElgNotificationButtonInfo), &Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo_Statics::NewProp_CloseOnClick_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo_Statics::NewProp_CloseOnClick_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo_Statics::NewProp_CloseOnClick_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo_Statics::NewProp_CloseOnClick = { "CloseOnClick", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FS_ElgNotificationButtonInfo), &Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo_Statics::NewProp_CloseOnClick_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo_Statics::NewProp_CloseOnClick_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo_Statics::NewProp_CloseOnClick_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo_Statics::NewProp_EventName_MetaData[] = {
 		{ "Category", "Notification" },
+		{ "Comment", "/** CustomEvent/FunctionName to call when the button is pressed */" },
 		{ "ModuleRelativePath", "Public/EditorContexts/ElgEditorContext_Notification.h" },
 		{ "ToolTip", "CustomEvent/FunctionName to call when the button is pressed" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo_Statics::NewProp_EventName = { "EventName", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgNotificationButtonInfo, EventName), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo_Statics::NewProp_EventName_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo_Statics::NewProp_EventName_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo_Statics::NewProp_EventName = { "EventName", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgNotificationButtonInfo, EventName), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo_Statics::NewProp_EventName_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo_Statics::NewProp_EventName_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo_Statics::NewProp_ToolTip_MetaData[] = {
 		{ "Category", "Notification" },
+		{ "Comment", "/** Tip displayed when moused over */" },
 		{ "ModuleRelativePath", "Public/EditorContexts/ElgEditorContext_Notification.h" },
 		{ "ToolTip", "Tip displayed when moused over" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo_Statics::NewProp_ToolTip = { "ToolTip", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgNotificationButtonInfo, ToolTip), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo_Statics::NewProp_ToolTip_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo_Statics::NewProp_ToolTip_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo_Statics::NewProp_ToolTip = { "ToolTip", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgNotificationButtonInfo, ToolTip), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo_Statics::NewProp_ToolTip_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo_Statics::NewProp_ToolTip_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo_Statics::NewProp_Text_MetaData[] = {
 		{ "Category", "Notification" },
+		{ "Comment", "/** Message on the button */" },
 		{ "ModuleRelativePath", "Public/EditorContexts/ElgEditorContext_Notification.h" },
 		{ "ToolTip", "Message on the button" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo_Statics::NewProp_Text = { "Text", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgNotificationButtonInfo, Text), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo_Statics::NewProp_Text_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo_Statics::NewProp_Text_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo_Statics::NewProp_Text = { "Text", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgNotificationButtonInfo, Text), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo_Statics::NewProp_Text_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo_Statics::NewProp_Text_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo_Statics::NewProp_VisibilityOnFail,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo_Statics::NewProp_VisibilityOnSuccess,
@@ -642,10 +670,10 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgNotifi
 		sizeof(FS_ElgNotificationButtonInfo),
 		alignof(FS_ElgNotificationButtonInfo),
 		Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo_Statics::PropPointers,
-		ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo_Statics::PropPointers),
+		UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
 		EStructFlags(0x00000001),
-		METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo_Statics::Struct_MetaDataParams))
+		METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo_Statics::Struct_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo()
 	{
@@ -662,7 +690,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgNotifi
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo_Hash() { return 2914438530U; }
+	uint32 Get_Z_Construct_UScriptStruct_FS_ElgNotificationButtonInfo_Hash() { return 4084732519U; }
 class UScriptStruct* FS_ElgNotificationIcon::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -715,19 +743,21 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgNotifi
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FS_ElgNotificationIcon_Statics::NewProp_Size_MetaData[] = {
 		{ "Category", "Notification" },
+		{ "Comment", "/* The size of the icon */" },
 		{ "ModuleRelativePath", "Public/EditorContexts/ElgEditorContext_Notification.h" },
 		{ "ToolTip", "The size of the icon" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FS_ElgNotificationIcon_Statics::NewProp_Size = { "Size", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgNotificationIcon, Size), Z_Construct_UScriptStruct_FVector2D, METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgNotificationIcon_Statics::NewProp_Size_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgNotificationIcon_Statics::NewProp_Size_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FS_ElgNotificationIcon_Statics::NewProp_Size = { "Size", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgNotificationIcon, Size), Z_Construct_UScriptStruct_FVector2D, METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgNotificationIcon_Statics::NewProp_Size_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgNotificationIcon_Statics::NewProp_Size_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FS_ElgNotificationIcon_Statics::NewProp_Texture_MetaData[] = {
 		{ "Category", "Notification" },
+		{ "Comment", "/* Texture to use as an icon */" },
 		{ "ModuleRelativePath", "Public/EditorContexts/ElgEditorContext_Notification.h" },
 		{ "ToolTip", "Texture to use as an icon" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FS_ElgNotificationIcon_Statics::NewProp_Texture = { "Texture", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgNotificationIcon, Texture), Z_Construct_UClass_UTexture2D_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgNotificationIcon_Statics::NewProp_Texture_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgNotificationIcon_Statics::NewProp_Texture_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FS_ElgNotificationIcon_Statics::NewProp_Texture = { "Texture", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgNotificationIcon, Texture), Z_Construct_UClass_UTexture2D_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgNotificationIcon_Statics::NewProp_Texture_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgNotificationIcon_Statics::NewProp_Texture_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FS_ElgNotificationIcon_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FS_ElgNotificationIcon_Statics::NewProp_Size,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FS_ElgNotificationIcon_Statics::NewProp_Texture,
@@ -740,10 +770,10 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgNotifi
 		sizeof(FS_ElgNotificationIcon),
 		alignof(FS_ElgNotificationIcon),
 		Z_Construct_UScriptStruct_FS_ElgNotificationIcon_Statics::PropPointers,
-		ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgNotificationIcon_Statics::PropPointers),
+		UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgNotificationIcon_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
 		EStructFlags(0x00000001),
-		METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgNotificationIcon_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgNotificationIcon_Statics::Struct_MetaDataParams))
+		METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgNotificationIcon_Statics::Struct_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgNotificationIcon_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FS_ElgNotificationIcon()
 	{
@@ -760,7 +790,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgNotifi
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FS_ElgNotificationIcon_Hash() { return 330357721U; }
+	uint32 Get_Z_Construct_UScriptStruct_FS_ElgNotificationIcon_Hash() { return 915576976U; }
 	void UElgEditorContext_Notification::StaticRegisterNativesUElgEditorContext_Notification()
 	{
 		UClass* Class = UElgEditorContext_Notification::StaticClass();
@@ -780,7 +810,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgNotifi
 			{ "SetText", &UElgEditorContext_Notification::execSetText },
 			{ "Show", &UElgEditorContext_Notification::execShow },
 		};
-		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 	}
 	struct Z_Construct_UFunction_UElgEditorContext_Notification_Clear_Statics
 	{
@@ -795,7 +825,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgNotifi
 		{ "ModuleRelativePath", "Public/EditorContexts/ElgEditorContext_Notification.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorContext_Notification_Clear_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorContext_Notification, nullptr, "Clear", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorContext_Notification_Clear_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorContext_Notification_Clear_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorContext_Notification_Clear_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorContext_Notification, nullptr, "Clear", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorContext_Notification_Clear_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorContext_Notification_Clear_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorContext_Notification_Clear()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -826,18 +856,19 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgNotifi
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UFunction_UElgEditorContext_Notification_Close_Statics::NewProp_Text = { "Text", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorContext_Notification_eventClose_Parms, Text), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorContext_Notification_Close_Statics::NewProp_Text_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorContext_Notification_Close_Statics::NewProp_Text_MetaData)) };
+	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UFunction_UElgEditorContext_Notification_Close_Statics::NewProp_Text = { "Text", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorContext_Notification_eventClose_Parms, Text), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorContext_Notification_Close_Statics::NewProp_Text_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorContext_Notification_Close_Statics::NewProp_Text_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorContext_Notification_Close_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorContext_Notification_Close_Statics::NewProp_Text,
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorContext_Notification_Close_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Notification" },
+		{ "Comment", "/* Close the notification with the fade out */" },
 		{ "ModuleRelativePath", "Public/EditorContexts/ElgEditorContext_Notification.h" },
 		{ "ToolTip", "Close the notification with the fade out" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorContext_Notification_Close_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorContext_Notification, nullptr, "Close", sizeof(ElgEditorContext_Notification_eventClose_Parms), Z_Construct_UFunction_UElgEditorContext_Notification_Close_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorContext_Notification_Close_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorContext_Notification_Close_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorContext_Notification_Close_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorContext_Notification_Close_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorContext_Notification, nullptr, "Close", nullptr, nullptr, sizeof(ElgEditorContext_Notification_eventClose_Parms), Z_Construct_UFunction_UElgEditorContext_Notification_Close_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorContext_Notification_Close_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorContext_Notification_Close_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorContext_Notification_Close_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorContext_Notification_Close()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -868,18 +899,19 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgNotifi
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UFunction_UElgEditorContext_Notification_CloseAsFail_Statics::NewProp_Text = { "Text", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorContext_Notification_eventCloseAsFail_Parms, Text), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorContext_Notification_CloseAsFail_Statics::NewProp_Text_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorContext_Notification_CloseAsFail_Statics::NewProp_Text_MetaData)) };
+	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UFunction_UElgEditorContext_Notification_CloseAsFail_Statics::NewProp_Text = { "Text", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorContext_Notification_eventCloseAsFail_Parms, Text), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorContext_Notification_CloseAsFail_Statics::NewProp_Text_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorContext_Notification_CloseAsFail_Statics::NewProp_Text_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorContext_Notification_CloseAsFail_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorContext_Notification_CloseAsFail_Statics::NewProp_Text,
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorContext_Notification_CloseAsFail_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Notification" },
+		{ "Comment", "/* Close the notification after it has been tagged as fail */" },
 		{ "ModuleRelativePath", "Public/EditorContexts/ElgEditorContext_Notification.h" },
 		{ "ToolTip", "Close the notification after it has been tagged as fail" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorContext_Notification_CloseAsFail_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorContext_Notification, nullptr, "CloseAsFail", sizeof(ElgEditorContext_Notification_eventCloseAsFail_Parms), Z_Construct_UFunction_UElgEditorContext_Notification_CloseAsFail_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorContext_Notification_CloseAsFail_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorContext_Notification_CloseAsFail_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorContext_Notification_CloseAsFail_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorContext_Notification_CloseAsFail_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorContext_Notification, nullptr, "CloseAsFail", nullptr, nullptr, sizeof(ElgEditorContext_Notification_eventCloseAsFail_Parms), Z_Construct_UFunction_UElgEditorContext_Notification_CloseAsFail_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorContext_Notification_CloseAsFail_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorContext_Notification_CloseAsFail_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorContext_Notification_CloseAsFail_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorContext_Notification_CloseAsFail()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -910,18 +942,19 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgNotifi
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UFunction_UElgEditorContext_Notification_CloseAsSuccess_Statics::NewProp_Text = { "Text", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorContext_Notification_eventCloseAsSuccess_Parms, Text), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorContext_Notification_CloseAsSuccess_Statics::NewProp_Text_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorContext_Notification_CloseAsSuccess_Statics::NewProp_Text_MetaData)) };
+	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UFunction_UElgEditorContext_Notification_CloseAsSuccess_Statics::NewProp_Text = { "Text", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorContext_Notification_eventCloseAsSuccess_Parms, Text), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorContext_Notification_CloseAsSuccess_Statics::NewProp_Text_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorContext_Notification_CloseAsSuccess_Statics::NewProp_Text_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorContext_Notification_CloseAsSuccess_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorContext_Notification_CloseAsSuccess_Statics::NewProp_Text,
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorContext_Notification_CloseAsSuccess_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Notification" },
+		{ "Comment", "/* Close the notification after it has been tagged as success */" },
 		{ "ModuleRelativePath", "Public/EditorContexts/ElgEditorContext_Notification.h" },
 		{ "ToolTip", "Close the notification after it has been tagged as success" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorContext_Notification_CloseAsSuccess_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorContext_Notification, nullptr, "CloseAsSuccess", sizeof(ElgEditorContext_Notification_eventCloseAsSuccess_Parms), Z_Construct_UFunction_UElgEditorContext_Notification_CloseAsSuccess_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorContext_Notification_CloseAsSuccess_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorContext_Notification_CloseAsSuccess_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorContext_Notification_CloseAsSuccess_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorContext_Notification_CloseAsSuccess_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorContext_Notification, nullptr, "CloseAsSuccess", nullptr, nullptr, sizeof(ElgEditorContext_Notification_eventCloseAsSuccess_Parms), Z_Construct_UFunction_UElgEditorContext_Notification_CloseAsSuccess_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorContext_Notification_CloseAsSuccess_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorContext_Notification_CloseAsSuccess_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorContext_Notification_CloseAsSuccess_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorContext_Notification_CloseAsSuccess()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -941,11 +974,12 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgNotifi
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorContext_Notification_ExpireAndFadeout_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Notification" },
+		{ "Comment", "/** Waits for the ExpireDuration then begins to fade out */" },
 		{ "ModuleRelativePath", "Public/EditorContexts/ElgEditorContext_Notification.h" },
 		{ "ToolTip", "Waits for the ExpireDuration then begins to fade out" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorContext_Notification_ExpireAndFadeout_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorContext_Notification, nullptr, "ExpireAndFadeout", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorContext_Notification_ExpireAndFadeout_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorContext_Notification_ExpireAndFadeout_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorContext_Notification_ExpireAndFadeout_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorContext_Notification, nullptr, "ExpireAndFadeout", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorContext_Notification_ExpireAndFadeout_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorContext_Notification_ExpireAndFadeout_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorContext_Notification_ExpireAndFadeout()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -965,11 +999,12 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgNotifi
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorContext_Notification_Fadeout_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Notification" },
+		{ "Comment", "/** Begin the fade out */" },
 		{ "ModuleRelativePath", "Public/EditorContexts/ElgEditorContext_Notification.h" },
 		{ "ToolTip", "Begin the fade out" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorContext_Notification_Fadeout_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorContext_Notification, nullptr, "Fadeout", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorContext_Notification_Fadeout_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorContext_Notification_Fadeout_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorContext_Notification_Fadeout_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorContext_Notification, nullptr, "Fadeout", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorContext_Notification_Fadeout_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorContext_Notification_Fadeout_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorContext_Notification_Fadeout()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1001,7 +1036,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgNotifi
 		{ "ModuleRelativePath", "Public/EditorContexts/ElgEditorContext_Notification.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorContext_Notification_HandleOnButtonClicked_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorContext_Notification, nullptr, "HandleOnButtonClicked", sizeof(ElgEditorContext_Notification_eventHandleOnButtonClicked_Parms), Z_Construct_UFunction_UElgEditorContext_Notification_HandleOnButtonClicked_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorContext_Notification_HandleOnButtonClicked_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorContext_Notification_HandleOnButtonClicked_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorContext_Notification_HandleOnButtonClicked_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorContext_Notification_HandleOnButtonClicked_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorContext_Notification, nullptr, "HandleOnButtonClicked", nullptr, nullptr, sizeof(ElgEditorContext_Notification_eventHandleOnButtonClicked_Parms), Z_Construct_UFunction_UElgEditorContext_Notification_HandleOnButtonClicked_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorContext_Notification_HandleOnButtonClicked_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorContext_Notification_HandleOnButtonClicked_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorContext_Notification_HandleOnButtonClicked_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorContext_Notification_HandleOnButtonClicked()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1039,7 +1074,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgNotifi
 		{ "ModuleRelativePath", "Public/EditorContexts/ElgEditorContext_Notification.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorContext_Notification_IsNotificationValid_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorContext_Notification, nullptr, "IsNotificationValid", sizeof(ElgEditorContext_Notification_eventIsNotificationValid_Parms), Z_Construct_UFunction_UElgEditorContext_Notification_IsNotificationValid_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorContext_Notification_IsNotificationValid_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorContext_Notification_IsNotificationValid_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorContext_Notification_IsNotificationValid_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorContext_Notification_IsNotificationValid_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorContext_Notification, nullptr, "IsNotificationValid", nullptr, nullptr, sizeof(ElgEditorContext_Notification_eventIsNotificationValid_Parms), Z_Construct_UFunction_UElgEditorContext_Notification_IsNotificationValid_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorContext_Notification_IsNotificationValid_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorContext_Notification_IsNotificationValid_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorContext_Notification_IsNotificationValid_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorContext_Notification_IsNotificationValid()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1059,11 +1094,12 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgNotifi
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorContext_Notification_SetCompleteStateFail_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Notification" },
+		{ "Comment", "/** Sets the visibility state of the throbber, success, and fail images */" },
 		{ "ModuleRelativePath", "Public/EditorContexts/ElgEditorContext_Notification.h" },
 		{ "ToolTip", "Sets the visibility state of the throbber, success, and fail images" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorContext_Notification_SetCompleteStateFail_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorContext_Notification, nullptr, "SetCompleteStateFail", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorContext_Notification_SetCompleteStateFail_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorContext_Notification_SetCompleteStateFail_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorContext_Notification_SetCompleteStateFail_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorContext_Notification, nullptr, "SetCompleteStateFail", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorContext_Notification_SetCompleteStateFail_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorContext_Notification_SetCompleteStateFail_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorContext_Notification_SetCompleteStateFail()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1083,11 +1119,12 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgNotifi
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorContext_Notification_SetCompleteStateSuccess_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Notification" },
+		{ "Comment", "/** Sets the visibility state of the throbber, success, and fail images */" },
 		{ "ModuleRelativePath", "Public/EditorContexts/ElgEditorContext_Notification.h" },
 		{ "ToolTip", "Sets the visibility state of the throbber, success, and fail images" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorContext_Notification_SetCompleteStateSuccess_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorContext_Notification, nullptr, "SetCompleteStateSuccess", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorContext_Notification_SetCompleteStateSuccess_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorContext_Notification_SetCompleteStateSuccess_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorContext_Notification_SetCompleteStateSuccess_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorContext_Notification, nullptr, "SetCompleteStateSuccess", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorContext_Notification_SetCompleteStateSuccess_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorContext_Notification_SetCompleteStateSuccess_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorContext_Notification_SetCompleteStateSuccess()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1120,11 +1157,12 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgNotifi
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorContext_Notification_SetCompletionState_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Notification" },
+		{ "Comment", "/** Sets the visibility state of the throbber, success, and fail images */" },
 		{ "ModuleRelativePath", "Public/EditorContexts/ElgEditorContext_Notification.h" },
 		{ "ToolTip", "Sets the visibility state of the throbber, success, and fail images" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorContext_Notification_SetCompletionState_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorContext_Notification, nullptr, "SetCompletionState", sizeof(ElgEditorContext_Notification_eventSetCompletionState_Parms), Z_Construct_UFunction_UElgEditorContext_Notification_SetCompletionState_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorContext_Notification_SetCompletionState_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorContext_Notification_SetCompletionState_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorContext_Notification_SetCompletionState_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorContext_Notification_SetCompletionState_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorContext_Notification, nullptr, "SetCompletionState", nullptr, nullptr, sizeof(ElgEditorContext_Notification_eventSetCompletionState_Parms), Z_Construct_UFunction_UElgEditorContext_Notification_SetCompletionState_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorContext_Notification_SetCompletionState_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorContext_Notification_SetCompletionState_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorContext_Notification_SetCompletionState_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorContext_Notification_SetCompletionState()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1144,11 +1182,12 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgNotifi
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorContext_Notification_SetStateAsPending_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Notification" },
+		{ "Comment", "/** Sets the visibility state of the throbber, success, and fail images */" },
 		{ "ModuleRelativePath", "Public/EditorContexts/ElgEditorContext_Notification.h" },
 		{ "ToolTip", "Sets the visibility state of the throbber, success, and fail images" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorContext_Notification_SetStateAsPending_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorContext_Notification, nullptr, "SetStateAsPending", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorContext_Notification_SetStateAsPending_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorContext_Notification_SetStateAsPending_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorContext_Notification_SetStateAsPending_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorContext_Notification, nullptr, "SetStateAsPending", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorContext_Notification_SetStateAsPending_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorContext_Notification_SetStateAsPending_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorContext_Notification_SetStateAsPending()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1179,7 +1218,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgNotifi
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UFunction_UElgEditorContext_Notification_SetText_Statics::NewProp_NewText = { "NewText", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorContext_Notification_eventSetText_Parms, NewText), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorContext_Notification_SetText_Statics::NewProp_NewText_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorContext_Notification_SetText_Statics::NewProp_NewText_MetaData)) };
+	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UFunction_UElgEditorContext_Notification_SetText_Statics::NewProp_NewText = { "NewText", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorContext_Notification_eventSetText_Parms, NewText), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorContext_Notification_SetText_Statics::NewProp_NewText_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorContext_Notification_SetText_Statics::NewProp_NewText_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorContext_Notification_SetText_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorContext_Notification_SetText_Statics::NewProp_NewText,
 	};
@@ -1189,7 +1228,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgNotifi
 		{ "ModuleRelativePath", "Public/EditorContexts/ElgEditorContext_Notification.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorContext_Notification_SetText_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorContext_Notification, nullptr, "SetText", sizeof(ElgEditorContext_Notification_eventSetText_Parms), Z_Construct_UFunction_UElgEditorContext_Notification_SetText_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorContext_Notification_SetText_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorContext_Notification_SetText_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorContext_Notification_SetText_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorContext_Notification_SetText_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorContext_Notification, nullptr, "SetText", nullptr, nullptr, sizeof(ElgEditorContext_Notification_eventSetText_Parms), Z_Construct_UFunction_UElgEditorContext_Notification_SetText_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorContext_Notification_SetText_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorContext_Notification_SetText_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorContext_Notification_SetText_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorContext_Notification_SetText()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1209,11 +1248,12 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgNotifi
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorContext_Notification_Show_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Notification" },
+		{ "Comment", "/* Show the notification */" },
 		{ "ModuleRelativePath", "Public/EditorContexts/ElgEditorContext_Notification.h" },
 		{ "ToolTip", "Show the notification" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorContext_Notification_Show_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorContext_Notification, nullptr, "Show", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorContext_Notification_Show_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorContext_Notification_Show_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorContext_Notification_Show_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorContext_Notification, nullptr, "Show", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorContext_Notification_Show_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorContext_Notification_Show_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorContext_Notification_Show()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1256,24 +1296,25 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgNotifi
 		(UObject* (*)())Z_Construct_UPackage__Script_ElgEditorScripting,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UElgEditorContext_Notification_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UElgEditorContext_Notification_Clear, "Clear" }, // 3114102274
-		{ &Z_Construct_UFunction_UElgEditorContext_Notification_Close, "Close" }, // 438779163
-		{ &Z_Construct_UFunction_UElgEditorContext_Notification_CloseAsFail, "CloseAsFail" }, // 1707162244
-		{ &Z_Construct_UFunction_UElgEditorContext_Notification_CloseAsSuccess, "CloseAsSuccess" }, // 1465779336
-		{ &Z_Construct_UFunction_UElgEditorContext_Notification_ExpireAndFadeout, "ExpireAndFadeout" }, // 169660703
-		{ &Z_Construct_UFunction_UElgEditorContext_Notification_Fadeout, "Fadeout" }, // 4193034041
-		{ &Z_Construct_UFunction_UElgEditorContext_Notification_HandleOnButtonClicked, "HandleOnButtonClicked" }, // 177869248
-		{ &Z_Construct_UFunction_UElgEditorContext_Notification_IsNotificationValid, "IsNotificationValid" }, // 1776429265
-		{ &Z_Construct_UFunction_UElgEditorContext_Notification_SetCompleteStateFail, "SetCompleteStateFail" }, // 393110695
-		{ &Z_Construct_UFunction_UElgEditorContext_Notification_SetCompleteStateSuccess, "SetCompleteStateSuccess" }, // 1965893125
-		{ &Z_Construct_UFunction_UElgEditorContext_Notification_SetCompletionState, "SetCompletionState" }, // 90562960
-		{ &Z_Construct_UFunction_UElgEditorContext_Notification_SetStateAsPending, "SetStateAsPending" }, // 1997636270
-		{ &Z_Construct_UFunction_UElgEditorContext_Notification_SetText, "SetText" }, // 1876400906
-		{ &Z_Construct_UFunction_UElgEditorContext_Notification_Show, "Show" }, // 4062578683
+		{ &Z_Construct_UFunction_UElgEditorContext_Notification_Clear, "Clear" }, // 1105287094
+		{ &Z_Construct_UFunction_UElgEditorContext_Notification_Close, "Close" }, // 3538503523
+		{ &Z_Construct_UFunction_UElgEditorContext_Notification_CloseAsFail, "CloseAsFail" }, // 3783712187
+		{ &Z_Construct_UFunction_UElgEditorContext_Notification_CloseAsSuccess, "CloseAsSuccess" }, // 2556769256
+		{ &Z_Construct_UFunction_UElgEditorContext_Notification_ExpireAndFadeout, "ExpireAndFadeout" }, // 370637012
+		{ &Z_Construct_UFunction_UElgEditorContext_Notification_Fadeout, "Fadeout" }, // 2840493560
+		{ &Z_Construct_UFunction_UElgEditorContext_Notification_HandleOnButtonClicked, "HandleOnButtonClicked" }, // 3754774508
+		{ &Z_Construct_UFunction_UElgEditorContext_Notification_IsNotificationValid, "IsNotificationValid" }, // 3834532997
+		{ &Z_Construct_UFunction_UElgEditorContext_Notification_SetCompleteStateFail, "SetCompleteStateFail" }, // 3187358240
+		{ &Z_Construct_UFunction_UElgEditorContext_Notification_SetCompleteStateSuccess, "SetCompleteStateSuccess" }, // 850408026
+		{ &Z_Construct_UFunction_UElgEditorContext_Notification_SetCompletionState, "SetCompletionState" }, // 2112661354
+		{ &Z_Construct_UFunction_UElgEditorContext_Notification_SetStateAsPending, "SetStateAsPending" }, // 1848075483
+		{ &Z_Construct_UFunction_UElgEditorContext_Notification_SetText, "SetText" }, // 697553248
+		{ &Z_Construct_UFunction_UElgEditorContext_Notification_Show, "Show" }, // 3052355280
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UElgEditorContext_Notification_Statics::Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+		{ "Comment", "/**\n * \n */" },
 		{ "IncludePath", "EditorContexts/ElgEditorContext_Notification.h" },
 		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "Public/EditorContexts/ElgEditorContext_Notification.h" },
@@ -1284,7 +1325,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgNotifi
 		{ "ModuleRelativePath", "Public/EditorContexts/ElgEditorContext_Notification.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UElgEditorContext_Notification_Statics::NewProp_GraphObject = { "GraphObject", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UElgEditorContext_Notification, GraphObject), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UElgEditorContext_Notification_Statics::NewProp_GraphObject_MetaData, ARRAY_COUNT(Z_Construct_UClass_UElgEditorContext_Notification_Statics::NewProp_GraphObject_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UElgEditorContext_Notification_Statics::NewProp_GraphObject = { "GraphObject", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UElgEditorContext_Notification, GraphObject), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UElgEditorContext_Notification_Statics::NewProp_GraphObject_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UElgEditorContext_Notification_Statics::NewProp_GraphObject_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UElgEditorContext_Notification_Statics::NewProp_bIsShowing_MetaData[] = {
 		{ "ModuleRelativePath", "Public/EditorContexts/ElgEditorContext_Notification.h" },
@@ -1294,13 +1335,13 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgNotifi
 	{
 		((UElgEditorContext_Notification*)Obj)->bIsShowing = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UElgEditorContext_Notification_Statics::NewProp_bIsShowing = { "bIsShowing", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UElgEditorContext_Notification), &Z_Construct_UClass_UElgEditorContext_Notification_Statics::NewProp_bIsShowing_SetBit, METADATA_PARAMS(Z_Construct_UClass_UElgEditorContext_Notification_Statics::NewProp_bIsShowing_MetaData, ARRAY_COUNT(Z_Construct_UClass_UElgEditorContext_Notification_Statics::NewProp_bIsShowing_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UElgEditorContext_Notification_Statics::NewProp_bIsShowing = { "bIsShowing", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UElgEditorContext_Notification), &Z_Construct_UClass_UElgEditorContext_Notification_Statics::NewProp_bIsShowing_SetBit, METADATA_PARAMS(Z_Construct_UClass_UElgEditorContext_Notification_Statics::NewProp_bIsShowing_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UElgEditorContext_Notification_Statics::NewProp_bIsShowing_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UElgEditorContext_Notification_Statics::NewProp_NotificationInfo_MetaData[] = {
 		{ "ModuleRelativePath", "Public/EditorContexts/ElgEditorContext_Notification.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UElgEditorContext_Notification_Statics::NewProp_NotificationInfo = { "NotificationInfo", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UElgEditorContext_Notification, NotificationInfo), Z_Construct_UScriptStruct_FS_ElgNotificationInfo, METADATA_PARAMS(Z_Construct_UClass_UElgEditorContext_Notification_Statics::NewProp_NotificationInfo_MetaData, ARRAY_COUNT(Z_Construct_UClass_UElgEditorContext_Notification_Statics::NewProp_NotificationInfo_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UElgEditorContext_Notification_Statics::NewProp_NotificationInfo = { "NotificationInfo", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UElgEditorContext_Notification, NotificationInfo), Z_Construct_UScriptStruct_FS_ElgNotificationInfo, METADATA_PARAMS(Z_Construct_UClass_UElgEditorContext_Notification_Statics::NewProp_NotificationInfo_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UElgEditorContext_Notification_Statics::NewProp_NotificationInfo_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UElgEditorContext_Notification_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UElgEditorContext_Notification_Statics::NewProp_GraphObject,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UElgEditorContext_Notification_Statics::NewProp_bIsShowing,
@@ -1317,12 +1358,12 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgNotifi
 		FuncInfo,
 		Z_Construct_UClass_UElgEditorContext_Notification_Statics::PropPointers,
 		nullptr,
-		ARRAY_COUNT(DependentSingletons),
-		ARRAY_COUNT(FuncInfo),
-		ARRAY_COUNT(Z_Construct_UClass_UElgEditorContext_Notification_Statics::PropPointers),
+		UE_ARRAY_COUNT(DependentSingletons),
+		UE_ARRAY_COUNT(FuncInfo),
+		UE_ARRAY_COUNT(Z_Construct_UClass_UElgEditorContext_Notification_Statics::PropPointers),
 		0,
 		0x001000A0u,
-		METADATA_PARAMS(Z_Construct_UClass_UElgEditorContext_Notification_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UElgEditorContext_Notification_Statics::Class_MetaDataParams))
+		METADATA_PARAMS(Z_Construct_UClass_UElgEditorContext_Notification_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_UElgEditorContext_Notification_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UElgEditorContext_Notification()
 	{
@@ -1333,7 +1374,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgNotifi
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UElgEditorContext_Notification, 3355506057);
+	IMPLEMENT_CLASS(UElgEditorContext_Notification, 963579325);
 	template<> ELGEDITORSCRIPTING_API UClass* StaticClass<UElgEditorContext_Notification>()
 	{
 		return UElgEditorContext_Notification::StaticClass();

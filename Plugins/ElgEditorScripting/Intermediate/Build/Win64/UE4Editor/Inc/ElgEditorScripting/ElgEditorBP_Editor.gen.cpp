@@ -46,7 +46,7 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorBP_Editor() {}
 			{ "SwitchProject", &UElgEditorBP_Editor::execSwitchProject },
 			{ "UpdateProgress", &UElgEditorBP_Editor::execUpdateProgress },
 		};
-		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 	}
 	struct Z_Construct_UFunction_UElgEditorBP_Editor_BeginSlowTask_Statics
 	{
@@ -85,7 +85,7 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorBP_Editor() {}
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UFunction_UElgEditorBP_Editor_BeginSlowTask_Statics::NewProp_Task = { "Task", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_Editor_eventBeginSlowTask_Parms, Task), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Editor_BeginSlowTask_Statics::NewProp_Task_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Editor_BeginSlowTask_Statics::NewProp_Task_MetaData)) };
+	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UFunction_UElgEditorBP_Editor_BeginSlowTask_Statics::NewProp_Task = { "Task", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_Editor_eventBeginSlowTask_Parms, Task), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Editor_BeginSlowTask_Statics::NewProp_Task_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Editor_BeginSlowTask_Statics::NewProp_Task_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorBP_Editor_BeginSlowTask_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_Editor_BeginSlowTask_Statics::NewProp_bShowCancelButton,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_Editor_BeginSlowTask_Statics::NewProp_ShowProgressDialog,
@@ -94,12 +94,13 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorBP_Editor() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_Editor_BeginSlowTask_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Editor|SlowTask" },
+		{ "Comment", "/* Begin a SlowTask */" },
 		{ "CPP_Default_bShowCancelButton", "false" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_Editor.h" },
 		{ "ToolTip", "Begin a SlowTask" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Editor_BeginSlowTask_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Editor, nullptr, "BeginSlowTask", sizeof(ElgEditorBP_Editor_eventBeginSlowTask_Parms), Z_Construct_UFunction_UElgEditorBP_Editor_BeginSlowTask_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Editor_BeginSlowTask_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Editor_BeginSlowTask_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Editor_BeginSlowTask_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Editor_BeginSlowTask_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Editor, nullptr, "BeginSlowTask", nullptr, nullptr, sizeof(ElgEditorBP_Editor_eventBeginSlowTask_Parms), Z_Construct_UFunction_UElgEditorBP_Editor_BeginSlowTask_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Editor_BeginSlowTask_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Editor_BeginSlowTask_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Editor_BeginSlowTask_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_Editor_BeginSlowTask()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -160,13 +161,13 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorBP_Editor() {}
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_OptionalWorkingDirectory = { "OptionalWorkingDirectory", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_Editor_eventCreateProc_Parms, OptionalWorkingDirectory), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_OptionalWorkingDirectory_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_OptionalWorkingDirectory_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_OptionalWorkingDirectory = { "OptionalWorkingDirectory", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_Editor_eventCreateProc_Parms, OptionalWorkingDirectory), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_OptionalWorkingDirectory_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_OptionalWorkingDirectory_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_Priority_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_Priority = { "Priority", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_Editor_eventCreateProc_Parms, Priority), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_Priority_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_Priority_MetaData)) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_Priority = { "Priority", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_Editor_eventCreateProc_Parms, Priority), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_Priority_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_Priority_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_Hidden_MetaData[] = {
 		{ "NativeConst", "" },
@@ -176,7 +177,7 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorBP_Editor() {}
 	{
 		((ElgEditorBP_Editor_eventCreateProc_Parms*)Obj)->Hidden = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_Hidden = { "Hidden", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ElgEditorBP_Editor_eventCreateProc_Parms), &Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_Hidden_SetBit, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_Hidden_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_Hidden_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_Hidden = { "Hidden", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ElgEditorBP_Editor_eventCreateProc_Parms), &Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_Hidden_SetBit, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_Hidden_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_Hidden_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_Detach_MetaData[] = {
 		{ "NativeConst", "" },
@@ -186,19 +187,19 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorBP_Editor() {}
 	{
 		((ElgEditorBP_Editor_eventCreateProc_Parms*)Obj)->Detach = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_Detach = { "Detach", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ElgEditorBP_Editor_eventCreateProc_Parms), &Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_Detach_SetBit, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_Detach_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_Detach_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_Detach = { "Detach", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ElgEditorBP_Editor_eventCreateProc_Parms), &Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_Detach_SetBit, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_Detach_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_Detach_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_Parameters_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_Parameters = { "Parameters", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_Editor_eventCreateProc_Parms, Parameters), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_Parameters_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_Parameters_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_Parameters = { "Parameters", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_Editor_eventCreateProc_Parms, Parameters), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_Parameters_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_Parameters_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_PathToProgram_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_PathToProgram = { "PathToProgram", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_Editor_eventCreateProc_Parms, PathToProgram), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_PathToProgram_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_PathToProgram_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_PathToProgram = { "PathToProgram", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_Editor_eventCreateProc_Parms, PathToProgram), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_PathToProgram_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_PathToProgram_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_ProcessId,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::NewProp_OptionalWorkingDirectory,
@@ -214,7 +215,7 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorBP_Editor() {}
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_Editor.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Editor, nullptr, "CreateProc", sizeof(ElgEditorBP_Editor_eventCreateProc_Parms), Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Editor, nullptr, "CreateProc", nullptr, nullptr, sizeof(ElgEditorBP_Editor_eventCreateProc_Parms), Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -234,11 +235,12 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorBP_Editor() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_Editor_EndSlowTask_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Editor|SlowTask" },
+		{ "Comment", "/* End a SlowTask */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_Editor.h" },
 		{ "ToolTip", "End a SlowTask" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Editor_EndSlowTask_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Editor, nullptr, "EndSlowTask", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Editor_EndSlowTask_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Editor_EndSlowTask_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Editor_EndSlowTask_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Editor, nullptr, "EndSlowTask", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Editor_EndSlowTask_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Editor_EndSlowTask_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_Editor_EndSlowTask()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -277,11 +279,12 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorBP_Editor() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_Editor_IsProcessRunning_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Editor" },
+		{ "Comment", "/* Return if the the Process is running or not */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_Editor.h" },
 		{ "ToolTip", "Return if the the Process is running or not" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Editor_IsProcessRunning_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Editor, nullptr, "IsProcessRunning", sizeof(ElgEditorBP_Editor_eventIsProcessRunning_Parms), Z_Construct_UFunction_UElgEditorBP_Editor_IsProcessRunning_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Editor_IsProcessRunning_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Editor_IsProcessRunning_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Editor_IsProcessRunning_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Editor_IsProcessRunning_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Editor, nullptr, "IsProcessRunning", nullptr, nullptr, sizeof(ElgEditorBP_Editor_eventIsProcessRunning_Parms), Z_Construct_UFunction_UElgEditorBP_Editor_IsProcessRunning_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Editor_IsProcessRunning_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Editor_IsProcessRunning_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Editor_IsProcessRunning_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_Editor_IsProcessRunning()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -318,12 +321,13 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorBP_Editor() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_Editor_IsProcessRunningBranch_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Editor" },
+		{ "Comment", "/* Return if the the Process is running or not branch*/" },
 		{ "ExpandEnumAsExecs", "Branches" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_Editor.h" },
 		{ "ToolTip", "Return if the the Process is running or not branch" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Editor_IsProcessRunningBranch_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Editor, nullptr, "IsProcessRunningBranch", sizeof(ElgEditorBP_Editor_eventIsProcessRunningBranch_Parms), Z_Construct_UFunction_UElgEditorBP_Editor_IsProcessRunningBranch_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Editor_IsProcessRunningBranch_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Editor_IsProcessRunningBranch_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Editor_IsProcessRunningBranch_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Editor_IsProcessRunningBranch_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Editor, nullptr, "IsProcessRunningBranch", nullptr, nullptr, sizeof(ElgEditorBP_Editor_eventIsProcessRunningBranch_Parms), Z_Construct_UFunction_UElgEditorBP_Editor_IsProcessRunningBranch_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Editor_IsProcessRunningBranch_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Editor_IsProcessRunningBranch_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Editor_IsProcessRunningBranch_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_Editor_IsProcessRunningBranch()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -358,11 +362,12 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorBP_Editor() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_Editor_ReceivedUserCancel_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Editor|SlowTask" },
+		{ "Comment", "/* Return if the SlowTask has been cancel by the user */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_Editor.h" },
 		{ "ToolTip", "Return if the SlowTask has been cancel by the user" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Editor_ReceivedUserCancel_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Editor, nullptr, "ReceivedUserCancel", sizeof(ElgEditorBP_Editor_eventReceivedUserCancel_Parms), Z_Construct_UFunction_UElgEditorBP_Editor_ReceivedUserCancel_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Editor_ReceivedUserCancel_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Editor_ReceivedUserCancel_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Editor_ReceivedUserCancel_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Editor_ReceivedUserCancel_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Editor, nullptr, "ReceivedUserCancel", nullptr, nullptr, sizeof(ElgEditorBP_Editor_eventReceivedUserCancel_Parms), Z_Construct_UFunction_UElgEditorBP_Editor_ReceivedUserCancel_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Editor_ReceivedUserCancel_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Editor_ReceivedUserCancel_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Editor_ReceivedUserCancel_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_Editor_ReceivedUserCancel()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -395,12 +400,13 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorBP_Editor() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_Editor_ReceivedUserCancelBranch_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Editor|SlowTask" },
+		{ "Comment", "/* Return if the SlowTask has been cancel by the user */" },
 		{ "ExpandEnumAsExecs", "Branches" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_Editor.h" },
 		{ "ToolTip", "Return if the SlowTask has been cancel by the user" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Editor_ReceivedUserCancelBranch_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Editor, nullptr, "ReceivedUserCancelBranch", sizeof(ElgEditorBP_Editor_eventReceivedUserCancelBranch_Parms), Z_Construct_UFunction_UElgEditorBP_Editor_ReceivedUserCancelBranch_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Editor_ReceivedUserCancelBranch_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Editor_ReceivedUserCancelBranch_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Editor_ReceivedUserCancelBranch_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Editor_ReceivedUserCancelBranch_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Editor, nullptr, "ReceivedUserCancelBranch", nullptr, nullptr, sizeof(ElgEditorBP_Editor_eventReceivedUserCancelBranch_Parms), Z_Construct_UFunction_UElgEditorBP_Editor_ReceivedUserCancelBranch_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Editor_ReceivedUserCancelBranch_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Editor_ReceivedUserCancelBranch_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Editor_ReceivedUserCancelBranch_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_Editor_ReceivedUserCancelBranch()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -436,18 +442,19 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorBP_Editor() {}
 	{
 		((ElgEditorBP_Editor_eventRestartEditor_Parms*)Obj)->bShowWarning = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UElgEditorBP_Editor_RestartEditor_Statics::NewProp_bShowWarning = { "bShowWarning", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ElgEditorBP_Editor_eventRestartEditor_Parms), &Z_Construct_UFunction_UElgEditorBP_Editor_RestartEditor_Statics::NewProp_bShowWarning_SetBit, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Editor_RestartEditor_Statics::NewProp_bShowWarning_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Editor_RestartEditor_Statics::NewProp_bShowWarning_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UElgEditorBP_Editor_RestartEditor_Statics::NewProp_bShowWarning = { "bShowWarning", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ElgEditorBP_Editor_eventRestartEditor_Parms), &Z_Construct_UFunction_UElgEditorBP_Editor_RestartEditor_Statics::NewProp_bShowWarning_SetBit, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Editor_RestartEditor_Statics::NewProp_bShowWarning_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Editor_RestartEditor_Statics::NewProp_bShowWarning_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorBP_Editor_RestartEditor_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_Editor_RestartEditor_Statics::NewProp_bShowWarning,
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_Editor_RestartEditor_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Editor" },
+		{ "Comment", "/* Restart the current project and the editor */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_Editor.h" },
 		{ "ToolTip", "Restart the current project and the editor" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Editor_RestartEditor_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Editor, nullptr, "RestartEditor", sizeof(ElgEditorBP_Editor_eventRestartEditor_Parms), Z_Construct_UFunction_UElgEditorBP_Editor_RestartEditor_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Editor_RestartEditor_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Editor_RestartEditor_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Editor_RestartEditor_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Editor_RestartEditor_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Editor, nullptr, "RestartEditor", nullptr, nullptr, sizeof(ElgEditorBP_Editor_eventRestartEditor_Parms), Z_Construct_UFunction_UElgEditorBP_Editor_RestartEditor_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Editor_RestartEditor_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Editor_RestartEditor_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Editor_RestartEditor_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_Editor_RestartEditor()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -482,7 +489,7 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorBP_Editor() {}
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UFunction_UElgEditorBP_Editor_StatusUpdate_Statics::NewProp_StatusText = { "StatusText", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_Editor_eventStatusUpdate_Parms, StatusText), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Editor_StatusUpdate_Statics::NewProp_StatusText_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Editor_StatusUpdate_Statics::NewProp_StatusText_MetaData)) };
+	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UFunction_UElgEditorBP_Editor_StatusUpdate_Statics::NewProp_StatusText = { "StatusText", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_Editor_eventStatusUpdate_Parms, StatusText), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Editor_StatusUpdate_Statics::NewProp_StatusText_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Editor_StatusUpdate_Statics::NewProp_StatusText_MetaData)) };
 	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UElgEditorBP_Editor_StatusUpdate_Statics::NewProp_Denominator = { "Denominator", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_Editor_eventStatusUpdate_Parms, Denominator), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UElgEditorBP_Editor_StatusUpdate_Statics::NewProp_Numerator = { "Numerator", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_Editor_eventStatusUpdate_Parms, Numerator), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorBP_Editor_StatusUpdate_Statics::PropPointers[] = {
@@ -493,11 +500,12 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorBP_Editor() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_Editor_StatusUpdate_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Editor|SlowTask" },
+		{ "Comment", "/* Update the status of the SlowTask */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_Editor.h" },
 		{ "ToolTip", "Update the status of the SlowTask" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Editor_StatusUpdate_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Editor, nullptr, "StatusUpdate", sizeof(ElgEditorBP_Editor_eventStatusUpdate_Parms), Z_Construct_UFunction_UElgEditorBP_Editor_StatusUpdate_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Editor_StatusUpdate_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Editor_StatusUpdate_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Editor_StatusUpdate_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Editor_StatusUpdate_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Editor, nullptr, "StatusUpdate", nullptr, nullptr, sizeof(ElgEditorBP_Editor_eventStatusUpdate_Parms), Z_Construct_UFunction_UElgEditorBP_Editor_StatusUpdate_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Editor_StatusUpdate_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Editor_StatusUpdate_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Editor_StatusUpdate_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_Editor_StatusUpdate()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -538,13 +546,13 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorBP_Editor() {}
 	{
 		((ElgEditorBP_Editor_eventSwitchProject_Parms*)Obj)->bShowWarning = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UElgEditorBP_Editor_SwitchProject_Statics::NewProp_bShowWarning = { "bShowWarning", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ElgEditorBP_Editor_eventSwitchProject_Parms), &Z_Construct_UFunction_UElgEditorBP_Editor_SwitchProject_Statics::NewProp_bShowWarning_SetBit, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Editor_SwitchProject_Statics::NewProp_bShowWarning_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Editor_SwitchProject_Statics::NewProp_bShowWarning_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UElgEditorBP_Editor_SwitchProject_Statics::NewProp_bShowWarning = { "bShowWarning", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ElgEditorBP_Editor_eventSwitchProject_Parms), &Z_Construct_UFunction_UElgEditorBP_Editor_SwitchProject_Statics::NewProp_bShowWarning_SetBit, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Editor_SwitchProject_Statics::NewProp_bShowWarning_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Editor_SwitchProject_Statics::NewProp_bShowWarning_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_Editor_SwitchProject_Statics::NewProp_GameOrProjectFileName_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_Editor_SwitchProject_Statics::NewProp_GameOrProjectFileName = { "GameOrProjectFileName", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_Editor_eventSwitchProject_Parms, GameOrProjectFileName), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Editor_SwitchProject_Statics::NewProp_GameOrProjectFileName_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Editor_SwitchProject_Statics::NewProp_GameOrProjectFileName_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_Editor_SwitchProject_Statics::NewProp_GameOrProjectFileName = { "GameOrProjectFileName", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_Editor_eventSwitchProject_Parms, GameOrProjectFileName), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Editor_SwitchProject_Statics::NewProp_GameOrProjectFileName_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Editor_SwitchProject_Statics::NewProp_GameOrProjectFileName_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorBP_Editor_SwitchProject_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_Editor_SwitchProject_Statics::NewProp_bShowWarning,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_Editor_SwitchProject_Statics::NewProp_GameOrProjectFileName,
@@ -552,11 +560,12 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorBP_Editor() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_Editor_SwitchProject_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Editor" },
+		{ "Comment", "/* Switch project to GameOrProjectFileName */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_Editor.h" },
 		{ "ToolTip", "Switch project to GameOrProjectFileName" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Editor_SwitchProject_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Editor, nullptr, "SwitchProject", sizeof(ElgEditorBP_Editor_eventSwitchProject_Parms), Z_Construct_UFunction_UElgEditorBP_Editor_SwitchProject_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Editor_SwitchProject_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Editor_SwitchProject_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Editor_SwitchProject_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Editor_SwitchProject_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Editor, nullptr, "SwitchProject", nullptr, nullptr, sizeof(ElgEditorBP_Editor_eventSwitchProject_Parms), Z_Construct_UFunction_UElgEditorBP_Editor_SwitchProject_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Editor_SwitchProject_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Editor_SwitchProject_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Editor_SwitchProject_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_Editor_SwitchProject()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -590,11 +599,12 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorBP_Editor() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_Editor_UpdateProgress_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Editor|SlowTask" },
+		{ "Comment", "/* Update the status of the SlowTask */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_Editor.h" },
 		{ "ToolTip", "Update the status of the SlowTask" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Editor_UpdateProgress_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Editor, nullptr, "UpdateProgress", sizeof(ElgEditorBP_Editor_eventUpdateProgress_Parms), Z_Construct_UFunction_UElgEditorBP_Editor_UpdateProgress_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Editor_UpdateProgress_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Editor_UpdateProgress_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Editor_UpdateProgress_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Editor_UpdateProgress_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Editor, nullptr, "UpdateProgress", nullptr, nullptr, sizeof(ElgEditorBP_Editor_eventUpdateProgress_Parms), Z_Construct_UFunction_UElgEditorBP_Editor_UpdateProgress_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Editor_UpdateProgress_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Editor_UpdateProgress_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Editor_UpdateProgress_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_Editor_UpdateProgress()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -623,20 +633,21 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorBP_Editor() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_ElgEditorScripting,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UElgEditorBP_Editor_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UElgEditorBP_Editor_BeginSlowTask, "BeginSlowTask" }, // 490736945
-		{ &Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc, "CreateProc" }, // 508678947
-		{ &Z_Construct_UFunction_UElgEditorBP_Editor_EndSlowTask, "EndSlowTask" }, // 3471258511
-		{ &Z_Construct_UFunction_UElgEditorBP_Editor_IsProcessRunning, "IsProcessRunning" }, // 2871010210
-		{ &Z_Construct_UFunction_UElgEditorBP_Editor_IsProcessRunningBranch, "IsProcessRunningBranch" }, // 2957765338
-		{ &Z_Construct_UFunction_UElgEditorBP_Editor_ReceivedUserCancel, "ReceivedUserCancel" }, // 2345210772
-		{ &Z_Construct_UFunction_UElgEditorBP_Editor_ReceivedUserCancelBranch, "ReceivedUserCancelBranch" }, // 2547260517
-		{ &Z_Construct_UFunction_UElgEditorBP_Editor_RestartEditor, "RestartEditor" }, // 3727720496
-		{ &Z_Construct_UFunction_UElgEditorBP_Editor_StatusUpdate, "StatusUpdate" }, // 760230378
-		{ &Z_Construct_UFunction_UElgEditorBP_Editor_SwitchProject, "SwitchProject" }, // 4048771571
-		{ &Z_Construct_UFunction_UElgEditorBP_Editor_UpdateProgress, "UpdateProgress" }, // 3565290713
+		{ &Z_Construct_UFunction_UElgEditorBP_Editor_BeginSlowTask, "BeginSlowTask" }, // 3184466680
+		{ &Z_Construct_UFunction_UElgEditorBP_Editor_CreateProc, "CreateProc" }, // 3768152292
+		{ &Z_Construct_UFunction_UElgEditorBP_Editor_EndSlowTask, "EndSlowTask" }, // 1195401862
+		{ &Z_Construct_UFunction_UElgEditorBP_Editor_IsProcessRunning, "IsProcessRunning" }, // 3743225997
+		{ &Z_Construct_UFunction_UElgEditorBP_Editor_IsProcessRunningBranch, "IsProcessRunningBranch" }, // 667419416
+		{ &Z_Construct_UFunction_UElgEditorBP_Editor_ReceivedUserCancel, "ReceivedUserCancel" }, // 1171761858
+		{ &Z_Construct_UFunction_UElgEditorBP_Editor_ReceivedUserCancelBranch, "ReceivedUserCancelBranch" }, // 362035047
+		{ &Z_Construct_UFunction_UElgEditorBP_Editor_RestartEditor, "RestartEditor" }, // 2437034150
+		{ &Z_Construct_UFunction_UElgEditorBP_Editor_StatusUpdate, "StatusUpdate" }, // 582440575
+		{ &Z_Construct_UFunction_UElgEditorBP_Editor_SwitchProject, "SwitchProject" }, // 1318580908
+		{ &Z_Construct_UFunction_UElgEditorBP_Editor_UpdateProgress, "UpdateProgress" }, // 767630580
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UElgEditorBP_Editor_Statics::Class_MetaDataParams[] = {
+		{ "Comment", "/**\n * \n */" },
 		{ "IncludePath", "Blueprints/ElgEditorBP_Editor.h" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_Editor.h" },
 	};
@@ -652,12 +663,12 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorBP_Editor() {}
 		FuncInfo,
 		nullptr,
 		nullptr,
-		ARRAY_COUNT(DependentSingletons),
-		ARRAY_COUNT(FuncInfo),
+		UE_ARRAY_COUNT(DependentSingletons),
+		UE_ARRAY_COUNT(FuncInfo),
 		0,
 		0,
 		0x001000A0u,
-		METADATA_PARAMS(Z_Construct_UClass_UElgEditorBP_Editor_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UElgEditorBP_Editor_Statics::Class_MetaDataParams))
+		METADATA_PARAMS(Z_Construct_UClass_UElgEditorBP_Editor_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_UElgEditorBP_Editor_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UElgEditorBP_Editor()
 	{
@@ -668,7 +679,7 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorBP_Editor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UElgEditorBP_Editor, 3459162405);
+	IMPLEMENT_CLASS(UElgEditorBP_Editor, 3797837774);
 	template<> ELGEDITORSCRIPTING_API UClass* StaticClass<UElgEditorBP_Editor>()
 	{
 		return UElgEditorBP_Editor::StaticClass();

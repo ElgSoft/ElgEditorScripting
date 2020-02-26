@@ -27,7 +27,7 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorBP_Class() {}
 		static const FNameNativePtrPair Funcs[] = {
 			{ "GetClassByName", &UElgEditorBP_Class::execGetClassByName },
 		};
-		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 	}
 	struct Z_Construct_UFunction_UElgEditorBP_Class_GetClassByName_Statics
 	{
@@ -53,7 +53,7 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorBP_Class() {}
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_Class_GetClassByName_Statics::NewProp_ClassName = { "ClassName", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_Class_eventGetClassByName_Parms, ClassName), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Class_GetClassByName_Statics::NewProp_ClassName_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Class_GetClassByName_Statics::NewProp_ClassName_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_Class_GetClassByName_Statics::NewProp_ClassName = { "ClassName", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_Class_eventGetClassByName_Parms, ClassName), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Class_GetClassByName_Statics::NewProp_ClassName_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Class_GetClassByName_Statics::NewProp_ClassName_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorBP_Class_GetClassByName_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_Class_GetClassByName_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_Class_GetClassByName_Statics::NewProp_ClassName,
@@ -61,12 +61,13 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorBP_Class() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_Class_GetClassByName_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Class" },
+		{ "Comment", "/* Return a class by its name, if its a blueprint class make sure to have _C. */" },
 		{ "Keywords", "ElgEditor Class" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_Class.h" },
 		{ "ToolTip", "Return a class by its name, if its a blueprint class make sure to have _C." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Class_GetClassByName_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Class, nullptr, "GetClassByName", sizeof(ElgEditorBP_Class_eventGetClassByName_Parms), Z_Construct_UFunction_UElgEditorBP_Class_GetClassByName_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Class_GetClassByName_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Class_GetClassByName_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Class_GetClassByName_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Class_GetClassByName_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Class, nullptr, "GetClassByName", nullptr, nullptr, sizeof(ElgEditorBP_Class_eventGetClassByName_Parms), Z_Construct_UFunction_UElgEditorBP_Class_GetClassByName_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Class_GetClassByName_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Class_GetClassByName_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Class_GetClassByName_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_Class_GetClassByName()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -95,10 +96,11 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorBP_Class() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_ElgEditorScripting,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UElgEditorBP_Class_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UElgEditorBP_Class_GetClassByName, "GetClassByName" }, // 2834546779
+		{ &Z_Construct_UFunction_UElgEditorBP_Class_GetClassByName, "GetClassByName" }, // 4162375467
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UElgEditorBP_Class_Statics::Class_MetaDataParams[] = {
+		{ "Comment", "/**\n * \n */" },
 		{ "IncludePath", "Blueprints/ElgEditorBP_Class.h" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_Class.h" },
 	};
@@ -114,12 +116,12 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorBP_Class() {}
 		FuncInfo,
 		nullptr,
 		nullptr,
-		ARRAY_COUNT(DependentSingletons),
-		ARRAY_COUNT(FuncInfo),
+		UE_ARRAY_COUNT(DependentSingletons),
+		UE_ARRAY_COUNT(FuncInfo),
 		0,
 		0,
 		0x001000A0u,
-		METADATA_PARAMS(Z_Construct_UClass_UElgEditorBP_Class_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UElgEditorBP_Class_Statics::Class_MetaDataParams))
+		METADATA_PARAMS(Z_Construct_UClass_UElgEditorBP_Class_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_UElgEditorBP_Class_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UElgEditorBP_Class()
 	{
@@ -130,7 +132,7 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorBP_Class() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UElgEditorBP_Class, 2529684761);
+	IMPLEMENT_CLASS(UElgEditorBP_Class, 3947098397);
 	template<> ELGEDITORSCRIPTING_API UClass* StaticClass<UElgEditorBP_Class>()
 	{
 		return UElgEditorBP_Class::StaticClass();

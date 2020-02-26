@@ -125,7 +125,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgModule
 	{
 		((FS_ElgModuleStatus*)Obj)->bCanDynamicReload = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::NewProp_bCanDynamicReload = { "bCanDynamicReload", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FS_ElgModuleStatus), &Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::NewProp_bCanDynamicReload_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::NewProp_bCanDynamicReload_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::NewProp_bCanDynamicReload_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::NewProp_bCanDynamicReload = { "bCanDynamicReload", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FS_ElgModuleStatus), &Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::NewProp_bCanDynamicReload_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::NewProp_bCanDynamicReload_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::NewProp_bCanDynamicReload_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::NewProp_bCanHotReload_MetaData[] = {
 		{ "Category", "Module" },
@@ -136,7 +136,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgModule
 	{
 		((FS_ElgModuleStatus*)Obj)->bCanHotReload = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::NewProp_bCanHotReload = { "bCanHotReload", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FS_ElgModuleStatus), &Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::NewProp_bCanHotReload_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::NewProp_bCanHotReload_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::NewProp_bCanHotReload_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::NewProp_bCanHotReload = { "bCanHotReload", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FS_ElgModuleStatus), &Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::NewProp_bCanHotReload_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::NewProp_bCanHotReload_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::NewProp_bCanHotReload_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::NewProp_bCanRecompile_MetaData[] = {
 		{ "Category", "Module" },
@@ -147,7 +147,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgModule
 	{
 		((FS_ElgModuleStatus*)Obj)->bCanRecompile = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::NewProp_bCanRecompile = { "bCanRecompile", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FS_ElgModuleStatus), &Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::NewProp_bCanRecompile_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::NewProp_bCanRecompile_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::NewProp_bCanRecompile_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::NewProp_bCanRecompile = { "bCanRecompile", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FS_ElgModuleStatus), &Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::NewProp_bCanRecompile_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::NewProp_bCanRecompile_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::NewProp_bCanRecompile_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::NewProp_bCanShutDown_MetaData[] = {
 		{ "Category", "Module" },
@@ -158,7 +158,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgModule
 	{
 		((FS_ElgModuleStatus*)Obj)->bCanShutDown = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::NewProp_bCanShutDown = { "bCanShutDown", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FS_ElgModuleStatus), &Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::NewProp_bCanShutDown_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::NewProp_bCanShutDown_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::NewProp_bCanShutDown_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::NewProp_bCanShutDown = { "bCanShutDown", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FS_ElgModuleStatus), &Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::NewProp_bCanShutDown_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::NewProp_bCanShutDown_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::NewProp_bCanShutDown_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::NewProp_bIsProjectModule_MetaData[] = {
 		{ "Category", "Module" },
@@ -169,7 +169,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgModule
 	{
 		((FS_ElgModuleStatus*)Obj)->bIsProjectModule = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::NewProp_bIsProjectModule = { "bIsProjectModule", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FS_ElgModuleStatus), &Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::NewProp_bIsProjectModule_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::NewProp_bIsProjectModule_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::NewProp_bIsProjectModule_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::NewProp_bIsProjectModule = { "bIsProjectModule", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FS_ElgModuleStatus), &Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::NewProp_bIsProjectModule_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::NewProp_bIsProjectModule_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::NewProp_bIsProjectModule_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::NewProp_bIsGameModule_MetaData[] = {
 		{ "Category", "Module" },
@@ -180,7 +180,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgModule
 	{
 		((FS_ElgModuleStatus*)Obj)->bIsGameModule = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::NewProp_bIsGameModule = { "bIsGameModule", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FS_ElgModuleStatus), &Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::NewProp_bIsGameModule_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::NewProp_bIsGameModule_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::NewProp_bIsGameModule_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::NewProp_bIsGameModule = { "bIsGameModule", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FS_ElgModuleStatus), &Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::NewProp_bIsGameModule_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::NewProp_bIsGameModule_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::NewProp_bIsGameModule_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::NewProp_bIsLoaded_MetaData[] = {
 		{ "Category", "Module" },
@@ -191,21 +191,23 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgModule
 	{
 		((FS_ElgModuleStatus*)Obj)->bIsLoaded = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::NewProp_bIsLoaded = { "bIsLoaded", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FS_ElgModuleStatus), &Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::NewProp_bIsLoaded_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::NewProp_bIsLoaded_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::NewProp_bIsLoaded_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::NewProp_bIsLoaded = { "bIsLoaded", nullptr, (EPropertyFlags)0x0010000000000004, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FS_ElgModuleStatus), &Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::NewProp_bIsLoaded_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::NewProp_bIsLoaded_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::NewProp_bIsLoaded_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::NewProp_FilePath_MetaData[] = {
 		{ "Category", "Module" },
+		{ "Comment", "/*  */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_FModuleManager.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::NewProp_FilePath = { "FilePath", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgModuleStatus, FilePath), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::NewProp_FilePath_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::NewProp_FilePath_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::NewProp_FilePath = { "FilePath", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgModuleStatus, FilePath), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::NewProp_FilePath_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::NewProp_FilePath_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::NewProp_Name_MetaData[] = {
 		{ "Category", "Module" },
+		{ "Comment", "/*  */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_FModuleManager.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::NewProp_Name = { "Name", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgModuleStatus, Name), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::NewProp_Name_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::NewProp_Name_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::NewProp_Name = { "Name", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgModuleStatus, Name), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::NewProp_Name_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::NewProp_Name_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::NewProp_bCanDynamicReload,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::NewProp_bCanHotReload,
@@ -225,10 +227,10 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgModule
 		sizeof(FS_ElgModuleStatus),
 		alignof(FS_ElgModuleStatus),
 		Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::PropPointers,
-		ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::PropPointers),
+		UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
 		EStructFlags(0x00000001),
-		METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::Struct_MetaDataParams))
+		METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::Struct_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgModuleStatus_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FS_ElgModuleStatus()
 	{
@@ -245,7 +247,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgModule
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FS_ElgModuleStatus_Hash() { return 3310819372U; }
+	uint32 Get_Z_Construct_UScriptStruct_FS_ElgModuleStatus_Hash() { return 2170416842U; }
 	void UElgEditorBP_FModuleManager::StaticRegisterNativesUElgEditorBP_FModuleManager()
 	{
 		UClass* Class = UElgEditorBP_FModuleManager::StaticClass();
@@ -263,7 +265,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgModule
 			{ "ReloadModule", &UElgEditorBP_FModuleManager::execReloadModule },
 			{ "UnloadModule", &UElgEditorBP_FModuleManager::execUnloadModule },
 		};
-		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 	}
 	struct Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanDynamicReloadModule_Statics
 	{
@@ -294,7 +296,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgModule
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanDynamicReloadModule_Statics::NewProp_ModuleName = { "ModuleName", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_FModuleManager_eventCanDynamicReloadModule_Parms, ModuleName), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanDynamicReloadModule_Statics::NewProp_ModuleName_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanDynamicReloadModule_Statics::NewProp_ModuleName_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanDynamicReloadModule_Statics::NewProp_ModuleName = { "ModuleName", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_FModuleManager_eventCanDynamicReloadModule_Parms, ModuleName), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanDynamicReloadModule_Statics::NewProp_ModuleName_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanDynamicReloadModule_Statics::NewProp_ModuleName_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanDynamicReloadModule_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanDynamicReloadModule_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanDynamicReloadModule_Statics::NewProp_ModuleName,
@@ -302,12 +304,13 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgModule
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanDynamicReloadModule_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|ModuleManager" },
+		{ "Comment", "/* Return if the module can be dynamic reloaded */" },
 		{ "Keywords", "ElgSoft Editor ModuleManager" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_FModuleManager.h" },
 		{ "ToolTip", "Return if the module can be dynamic reloaded" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanDynamicReloadModule_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_FModuleManager, nullptr, "CanDynamicReloadModule", sizeof(ElgEditorBP_FModuleManager_eventCanDynamicReloadModule_Parms), Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanDynamicReloadModule_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanDynamicReloadModule_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanDynamicReloadModule_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanDynamicReloadModule_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanDynamicReloadModule_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_FModuleManager, nullptr, "CanDynamicReloadModule", nullptr, nullptr, sizeof(ElgEditorBP_FModuleManager_eventCanDynamicReloadModule_Parms), Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanDynamicReloadModule_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanDynamicReloadModule_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanDynamicReloadModule_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanDynamicReloadModule_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanDynamicReloadModule()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -346,7 +349,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgModule
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanHotReloadModule_Statics::NewProp_ModuleName = { "ModuleName", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_FModuleManager_eventCanHotReloadModule_Parms, ModuleName), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanHotReloadModule_Statics::NewProp_ModuleName_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanHotReloadModule_Statics::NewProp_ModuleName_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanHotReloadModule_Statics::NewProp_ModuleName = { "ModuleName", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_FModuleManager_eventCanHotReloadModule_Parms, ModuleName), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanHotReloadModule_Statics::NewProp_ModuleName_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanHotReloadModule_Statics::NewProp_ModuleName_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanHotReloadModule_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanHotReloadModule_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanHotReloadModule_Statics::NewProp_ModuleName,
@@ -354,12 +357,13 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgModule
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanHotReloadModule_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|ModuleManager" },
+		{ "Comment", "/* Return if the module can be hot reloaded */" },
 		{ "Keywords", "ElgSoft Editor ModuleManager" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_FModuleManager.h" },
 		{ "ToolTip", "Return if the module can be hot reloaded" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanHotReloadModule_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_FModuleManager, nullptr, "CanHotReloadModule", sizeof(ElgEditorBP_FModuleManager_eventCanHotReloadModule_Parms), Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanHotReloadModule_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanHotReloadModule_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanHotReloadModule_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanHotReloadModule_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanHotReloadModule_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_FModuleManager, nullptr, "CanHotReloadModule", nullptr, nullptr, sizeof(ElgEditorBP_FModuleManager_eventCanHotReloadModule_Parms), Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanHotReloadModule_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanHotReloadModule_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanHotReloadModule_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanHotReloadModule_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanHotReloadModule()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -398,7 +402,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgModule
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanRecompileModule_Statics::NewProp_ModuleName = { "ModuleName", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_FModuleManager_eventCanRecompileModule_Parms, ModuleName), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanRecompileModule_Statics::NewProp_ModuleName_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanRecompileModule_Statics::NewProp_ModuleName_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanRecompileModule_Statics::NewProp_ModuleName = { "ModuleName", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_FModuleManager_eventCanRecompileModule_Parms, ModuleName), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanRecompileModule_Statics::NewProp_ModuleName_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanRecompileModule_Statics::NewProp_ModuleName_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanRecompileModule_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanRecompileModule_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanRecompileModule_Statics::NewProp_ModuleName,
@@ -406,12 +410,13 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgModule
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanRecompileModule_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|ModuleManager" },
+		{ "Comment", "/* Return if the module can be recompile\n\x09\x09""Checks if the can be hot reloaded or dynamic reloaded or not loaded.\n\x09*/" },
 		{ "Keywords", "ElgSoft Editor ModuleManager" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_FModuleManager.h" },
 		{ "ToolTip", "Return if the module can be recompile\n              Checks if the can be hot reloaded or dynamic reloaded or not loaded." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanRecompileModule_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_FModuleManager, nullptr, "CanRecompileModule", sizeof(ElgEditorBP_FModuleManager_eventCanRecompileModule_Parms), Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanRecompileModule_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanRecompileModule_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanRecompileModule_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanRecompileModule_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanRecompileModule_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_FModuleManager, nullptr, "CanRecompileModule", nullptr, nullptr, sizeof(ElgEditorBP_FModuleManager_eventCanRecompileModule_Parms), Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanRecompileModule_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanRecompileModule_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanRecompileModule_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanRecompileModule_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanRecompileModule()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -450,7 +455,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgModule
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanShutdownModule_Statics::NewProp_ModuleName = { "ModuleName", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_FModuleManager_eventCanShutdownModule_Parms, ModuleName), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanShutdownModule_Statics::NewProp_ModuleName_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanShutdownModule_Statics::NewProp_ModuleName_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanShutdownModule_Statics::NewProp_ModuleName = { "ModuleName", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_FModuleManager_eventCanShutdownModule_Parms, ModuleName), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanShutdownModule_Statics::NewProp_ModuleName_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanShutdownModule_Statics::NewProp_ModuleName_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanShutdownModule_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanShutdownModule_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanShutdownModule_Statics::NewProp_ModuleName,
@@ -458,12 +463,13 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgModule
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanShutdownModule_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|ModuleManager" },
+		{ "Comment", "/* Return if the module can be shutdown */" },
 		{ "Keywords", "ElgSoft Editor ModuleManager" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_FModuleManager.h" },
 		{ "ToolTip", "Return if the module can be shutdown" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanShutdownModule_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_FModuleManager, nullptr, "CanShutdownModule", sizeof(ElgEditorBP_FModuleManager_eventCanShutdownModule_Parms), Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanShutdownModule_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanShutdownModule_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanShutdownModule_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanShutdownModule_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanShutdownModule_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_FModuleManager, nullptr, "CanShutdownModule", nullptr, nullptr, sizeof(ElgEditorBP_FModuleManager_eventCanShutdownModule_Parms), Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanShutdownModule_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanShutdownModule_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanShutdownModule_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanShutdownModule_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanShutdownModule()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -502,7 +508,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgModule
 	{
 		((ElgEditorBP_FModuleManager_eventGetModuleNames_Parms*)Obj)->bProjectOnly = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UElgEditorBP_FModuleManager_GetModuleNames_Statics::NewProp_bProjectOnly = { "bProjectOnly", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ElgEditorBP_FModuleManager_eventGetModuleNames_Parms), &Z_Construct_UFunction_UElgEditorBP_FModuleManager_GetModuleNames_Statics::NewProp_bProjectOnly_SetBit, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_FModuleManager_GetModuleNames_Statics::NewProp_bProjectOnly_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_FModuleManager_GetModuleNames_Statics::NewProp_bProjectOnly_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UElgEditorBP_FModuleManager_GetModuleNames_Statics::NewProp_bProjectOnly = { "bProjectOnly", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ElgEditorBP_FModuleManager_eventGetModuleNames_Parms), &Z_Construct_UFunction_UElgEditorBP_FModuleManager_GetModuleNames_Statics::NewProp_bProjectOnly_SetBit, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_FModuleManager_GetModuleNames_Statics::NewProp_bProjectOnly_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_FModuleManager_GetModuleNames_Statics::NewProp_bProjectOnly_MetaData)) };
 	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UElgEditorBP_FModuleManager_GetModuleNames_Statics::NewProp_Modules = { "Modules", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_FModuleManager_eventGetModuleNames_Parms, Modules), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_FModuleManager_GetModuleNames_Statics::NewProp_Modules_Inner = { "Modules", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorBP_FModuleManager_GetModuleNames_Statics::PropPointers[] = {
@@ -513,13 +519,14 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgModule
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_FModuleManager_GetModuleNames_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|ModuleManager" },
+		{ "Comment", "/* Get an sorted array of the Module names */" },
 		{ "CPP_Default_bProjectOnly", "true" },
 		{ "Keywords", "ElgSoft Editor ModuleManager" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_FModuleManager.h" },
 		{ "ToolTip", "Get an sorted array of the Module names" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_FModuleManager_GetModuleNames_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_FModuleManager, nullptr, "GetModuleNames", sizeof(ElgEditorBP_FModuleManager_eventGetModuleNames_Parms), Z_Construct_UFunction_UElgEditorBP_FModuleManager_GetModuleNames_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_FModuleManager_GetModuleNames_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_FModuleManager_GetModuleNames_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_FModuleManager_GetModuleNames_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_FModuleManager_GetModuleNames_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_FModuleManager, nullptr, "GetModuleNames", nullptr, nullptr, sizeof(ElgEditorBP_FModuleManager_eventGetModuleNames_Parms), Z_Construct_UFunction_UElgEditorBP_FModuleManager_GetModuleNames_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_FModuleManager_GetModuleNames_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_FModuleManager_GetModuleNames_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_FModuleManager_GetModuleNames_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_FModuleManager_GetModuleNames()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -562,7 +569,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgModule
 	{
 		((ElgEditorBP_FModuleManager_eventGetModulesStatus_Parms*)Obj)->bProjectOnly = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UElgEditorBP_FModuleManager_GetModulesStatus_Statics::NewProp_bProjectOnly = { "bProjectOnly", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ElgEditorBP_FModuleManager_eventGetModulesStatus_Parms), &Z_Construct_UFunction_UElgEditorBP_FModuleManager_GetModulesStatus_Statics::NewProp_bProjectOnly_SetBit, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_FModuleManager_GetModulesStatus_Statics::NewProp_bProjectOnly_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_FModuleManager_GetModulesStatus_Statics::NewProp_bProjectOnly_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UElgEditorBP_FModuleManager_GetModulesStatus_Statics::NewProp_bProjectOnly = { "bProjectOnly", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ElgEditorBP_FModuleManager_eventGetModulesStatus_Parms), &Z_Construct_UFunction_UElgEditorBP_FModuleManager_GetModulesStatus_Statics::NewProp_bProjectOnly_SetBit, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_FModuleManager_GetModulesStatus_Statics::NewProp_bProjectOnly_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_FModuleManager_GetModulesStatus_Statics::NewProp_bProjectOnly_MetaData)) };
 	const UE4CodeGen_Private::FMapPropertyParams Z_Construct_UFunction_UElgEditorBP_FModuleManager_GetModulesStatus_Statics::NewProp_ModulesMap = { "ModulesMap", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Map, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_FModuleManager_eventGetModulesStatus_Parms, ModulesMap), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_FModuleManager_GetModulesStatus_Statics::NewProp_ModulesMap_Key_KeyProp = { "ModulesMap_Key", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UElgEditorBP_FModuleManager_GetModulesStatus_Statics::NewProp_ModulesMap_ValueProp = { "ModulesMap", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 1, Z_Construct_UScriptStruct_FS_ElgModuleStatus, METADATA_PARAMS(nullptr, 0) };
@@ -579,13 +586,14 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgModule
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_FModuleManager_GetModulesStatus_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|ModuleManager" },
+		{ "Comment", "/* Return an sorted array with the names of the modules and a map with the struct with info about the modules */" },
 		{ "CPP_Default_bProjectOnly", "true" },
 		{ "Keywords", "ElgSoft Editor ModuleManager" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_FModuleManager.h" },
 		{ "ToolTip", "Return an sorted array with the names of the modules and a map with the struct with info about the modules" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_FModuleManager_GetModulesStatus_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_FModuleManager, nullptr, "GetModulesStatus", sizeof(ElgEditorBP_FModuleManager_eventGetModulesStatus_Parms), Z_Construct_UFunction_UElgEditorBP_FModuleManager_GetModulesStatus_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_FModuleManager_GetModulesStatus_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_FModuleManager_GetModulesStatus_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_FModuleManager_GetModulesStatus_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_FModuleManager_GetModulesStatus_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_FModuleManager, nullptr, "GetModulesStatus", nullptr, nullptr, sizeof(ElgEditorBP_FModuleManager_eventGetModulesStatus_Parms), Z_Construct_UFunction_UElgEditorBP_FModuleManager_GetModulesStatus_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_FModuleManager_GetModulesStatus_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_FModuleManager_GetModulesStatus_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_FModuleManager_GetModulesStatus_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_FModuleManager_GetModulesStatus()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -627,7 +635,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgModule
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_FModuleManager_GetModuleStatus_Statics::NewProp_ModuleName = { "ModuleName", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_FModuleManager_eventGetModuleStatus_Parms, ModuleName), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_FModuleManager_GetModuleStatus_Statics::NewProp_ModuleName_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_FModuleManager_GetModuleStatus_Statics::NewProp_ModuleName_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_FModuleManager_GetModuleStatus_Statics::NewProp_ModuleName = { "ModuleName", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_FModuleManager_eventGetModuleStatus_Parms, ModuleName), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_FModuleManager_GetModuleStatus_Statics::NewProp_ModuleName_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_FModuleManager_GetModuleStatus_Statics::NewProp_ModuleName_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorBP_FModuleManager_GetModuleStatus_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_FModuleManager_GetModuleStatus_Statics::NewProp_ModuleStatus,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_FModuleManager_GetModuleStatus_Statics::NewProp_Success,
@@ -636,12 +644,13 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgModule
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_FModuleManager_GetModuleStatus_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|ModuleManager" },
+		{ "Comment", "/* Get the status struct for a module */" },
 		{ "Keywords", "ElgSoft Editor ModuleManager" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_FModuleManager.h" },
 		{ "ToolTip", "Get the status struct for a module" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_FModuleManager_GetModuleStatus_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_FModuleManager, nullptr, "GetModuleStatus", sizeof(ElgEditorBP_FModuleManager_eventGetModuleStatus_Parms), Z_Construct_UFunction_UElgEditorBP_FModuleManager_GetModuleStatus_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_FModuleManager_GetModuleStatus_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_FModuleManager_GetModuleStatus_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_FModuleManager_GetModuleStatus_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_FModuleManager_GetModuleStatus_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_FModuleManager, nullptr, "GetModuleStatus", nullptr, nullptr, sizeof(ElgEditorBP_FModuleManager_eventGetModuleStatus_Parms), Z_Construct_UFunction_UElgEditorBP_FModuleManager_GetModuleStatus_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_FModuleManager_GetModuleStatus_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_FModuleManager_GetModuleStatus_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_FModuleManager_GetModuleStatus_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_FModuleManager_GetModuleStatus()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -680,7 +689,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgModule
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_FModuleManager_IsModuleLoaded_Statics::NewProp_ModuleName = { "ModuleName", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_FModuleManager_eventIsModuleLoaded_Parms, ModuleName), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_FModuleManager_IsModuleLoaded_Statics::NewProp_ModuleName_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_FModuleManager_IsModuleLoaded_Statics::NewProp_ModuleName_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_FModuleManager_IsModuleLoaded_Statics::NewProp_ModuleName = { "ModuleName", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_FModuleManager_eventIsModuleLoaded_Parms, ModuleName), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_FModuleManager_IsModuleLoaded_Statics::NewProp_ModuleName_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_FModuleManager_IsModuleLoaded_Statics::NewProp_ModuleName_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorBP_FModuleManager_IsModuleLoaded_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_FModuleManager_IsModuleLoaded_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_FModuleManager_IsModuleLoaded_Statics::NewProp_ModuleName,
@@ -688,12 +697,13 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgModule
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_FModuleManager_IsModuleLoaded_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|ModuleManager" },
+		{ "Comment", "/* Return if the module is loaded or not */" },
 		{ "Keywords", "ElgSoft Editor ModuleManager" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_FModuleManager.h" },
 		{ "ToolTip", "Return if the module is loaded or not" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_FModuleManager_IsModuleLoaded_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_FModuleManager, nullptr, "IsModuleLoaded", sizeof(ElgEditorBP_FModuleManager_eventIsModuleLoaded_Parms), Z_Construct_UFunction_UElgEditorBP_FModuleManager_IsModuleLoaded_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_FModuleManager_IsModuleLoaded_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_FModuleManager_IsModuleLoaded_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_FModuleManager_IsModuleLoaded_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_FModuleManager_IsModuleLoaded_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_FModuleManager, nullptr, "IsModuleLoaded", nullptr, nullptr, sizeof(ElgEditorBP_FModuleManager_eventIsModuleLoaded_Parms), Z_Construct_UFunction_UElgEditorBP_FModuleManager_IsModuleLoaded_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_FModuleManager_IsModuleLoaded_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_FModuleManager_IsModuleLoaded_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_FModuleManager_IsModuleLoaded_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_FModuleManager_IsModuleLoaded()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -724,19 +734,20 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgModule
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_FModuleManager_LoadModule_Statics::NewProp_ModuleName = { "ModuleName", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_FModuleManager_eventLoadModule_Parms, ModuleName), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_FModuleManager_LoadModule_Statics::NewProp_ModuleName_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_FModuleManager_LoadModule_Statics::NewProp_ModuleName_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_FModuleManager_LoadModule_Statics::NewProp_ModuleName = { "ModuleName", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_FModuleManager_eventLoadModule_Parms, ModuleName), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_FModuleManager_LoadModule_Statics::NewProp_ModuleName_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_FModuleManager_LoadModule_Statics::NewProp_ModuleName_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorBP_FModuleManager_LoadModule_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_FModuleManager_LoadModule_Statics::NewProp_ModuleName,
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_FModuleManager_LoadModule_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|ModuleManager" },
+		{ "Comment", "/* Load a module */" },
 		{ "Keywords", "ElgSoft Editor ModuleManager" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_FModuleManager.h" },
 		{ "ToolTip", "Load a module" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_FModuleManager_LoadModule_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_FModuleManager, nullptr, "LoadModule", sizeof(ElgEditorBP_FModuleManager_eventLoadModule_Parms), Z_Construct_UFunction_UElgEditorBP_FModuleManager_LoadModule_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_FModuleManager_LoadModule_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_FModuleManager_LoadModule_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_FModuleManager_LoadModule_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_FModuleManager_LoadModule_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_FModuleManager, nullptr, "LoadModule", nullptr, nullptr, sizeof(ElgEditorBP_FModuleManager_eventLoadModule_Parms), Z_Construct_UFunction_UElgEditorBP_FModuleManager_LoadModule_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_FModuleManager_LoadModule_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_FModuleManager_LoadModule_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_FModuleManager_LoadModule_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_FModuleManager_LoadModule()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -767,19 +778,20 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgModule
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_FModuleManager_RecompileModule_Statics::NewProp_ModuleName = { "ModuleName", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_FModuleManager_eventRecompileModule_Parms, ModuleName), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_FModuleManager_RecompileModule_Statics::NewProp_ModuleName_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_FModuleManager_RecompileModule_Statics::NewProp_ModuleName_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_FModuleManager_RecompileModule_Statics::NewProp_ModuleName = { "ModuleName", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_FModuleManager_eventRecompileModule_Parms, ModuleName), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_FModuleManager_RecompileModule_Statics::NewProp_ModuleName_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_FModuleManager_RecompileModule_Statics::NewProp_ModuleName_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorBP_FModuleManager_RecompileModule_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_FModuleManager_RecompileModule_Statics::NewProp_ModuleName,
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_FModuleManager_RecompileModule_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|ModuleManager" },
+		{ "Comment", "/* Recompile a module */" },
 		{ "Keywords", "ElgSoft Editor ModuleManager" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_FModuleManager.h" },
 		{ "ToolTip", "Recompile a module" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_FModuleManager_RecompileModule_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_FModuleManager, nullptr, "RecompileModule", sizeof(ElgEditorBP_FModuleManager_eventRecompileModule_Parms), Z_Construct_UFunction_UElgEditorBP_FModuleManager_RecompileModule_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_FModuleManager_RecompileModule_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_FModuleManager_RecompileModule_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_FModuleManager_RecompileModule_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_FModuleManager_RecompileModule_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_FModuleManager, nullptr, "RecompileModule", nullptr, nullptr, sizeof(ElgEditorBP_FModuleManager_eventRecompileModule_Parms), Z_Construct_UFunction_UElgEditorBP_FModuleManager_RecompileModule_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_FModuleManager_RecompileModule_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_FModuleManager_RecompileModule_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_FModuleManager_RecompileModule_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_FModuleManager_RecompileModule()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -810,19 +822,20 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgModule
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_FModuleManager_ReloadModule_Statics::NewProp_ModuleName = { "ModuleName", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_FModuleManager_eventReloadModule_Parms, ModuleName), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_FModuleManager_ReloadModule_Statics::NewProp_ModuleName_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_FModuleManager_ReloadModule_Statics::NewProp_ModuleName_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_FModuleManager_ReloadModule_Statics::NewProp_ModuleName = { "ModuleName", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_FModuleManager_eventReloadModule_Parms, ModuleName), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_FModuleManager_ReloadModule_Statics::NewProp_ModuleName_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_FModuleManager_ReloadModule_Statics::NewProp_ModuleName_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorBP_FModuleManager_ReloadModule_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_FModuleManager_ReloadModule_Statics::NewProp_ModuleName,
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_FModuleManager_ReloadModule_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|ModuleManager" },
+		{ "Comment", "/* Reload a module */" },
 		{ "Keywords", "ElgSoft Editor ModuleManager" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_FModuleManager.h" },
 		{ "ToolTip", "Reload a module" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_FModuleManager_ReloadModule_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_FModuleManager, nullptr, "ReloadModule", sizeof(ElgEditorBP_FModuleManager_eventReloadModule_Parms), Z_Construct_UFunction_UElgEditorBP_FModuleManager_ReloadModule_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_FModuleManager_ReloadModule_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_FModuleManager_ReloadModule_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_FModuleManager_ReloadModule_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_FModuleManager_ReloadModule_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_FModuleManager, nullptr, "ReloadModule", nullptr, nullptr, sizeof(ElgEditorBP_FModuleManager_eventReloadModule_Parms), Z_Construct_UFunction_UElgEditorBP_FModuleManager_ReloadModule_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_FModuleManager_ReloadModule_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_FModuleManager_ReloadModule_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_FModuleManager_ReloadModule_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_FModuleManager_ReloadModule()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -853,19 +866,20 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgModule
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_FModuleManager_UnloadModule_Statics::NewProp_ModuleName = { "ModuleName", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_FModuleManager_eventUnloadModule_Parms, ModuleName), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_FModuleManager_UnloadModule_Statics::NewProp_ModuleName_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_FModuleManager_UnloadModule_Statics::NewProp_ModuleName_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_FModuleManager_UnloadModule_Statics::NewProp_ModuleName = { "ModuleName", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_FModuleManager_eventUnloadModule_Parms, ModuleName), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_FModuleManager_UnloadModule_Statics::NewProp_ModuleName_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_FModuleManager_UnloadModule_Statics::NewProp_ModuleName_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorBP_FModuleManager_UnloadModule_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_FModuleManager_UnloadModule_Statics::NewProp_ModuleName,
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_FModuleManager_UnloadModule_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|ModuleManager" },
+		{ "Comment", "/* Unload a module */" },
 		{ "Keywords", "ElgSoft Editor ModuleManager" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_FModuleManager.h" },
 		{ "ToolTip", "Unload a module" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_FModuleManager_UnloadModule_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_FModuleManager, nullptr, "UnloadModule", sizeof(ElgEditorBP_FModuleManager_eventUnloadModule_Parms), Z_Construct_UFunction_UElgEditorBP_FModuleManager_UnloadModule_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_FModuleManager_UnloadModule_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_FModuleManager_UnloadModule_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_FModuleManager_UnloadModule_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_FModuleManager_UnloadModule_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_FModuleManager, nullptr, "UnloadModule", nullptr, nullptr, sizeof(ElgEditorBP_FModuleManager_eventUnloadModule_Parms), Z_Construct_UFunction_UElgEditorBP_FModuleManager_UnloadModule_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_FModuleManager_UnloadModule_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_FModuleManager_UnloadModule_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_FModuleManager_UnloadModule_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_FModuleManager_UnloadModule()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -894,21 +908,22 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgModule
 		(UObject* (*)())Z_Construct_UPackage__Script_ElgEditorScripting,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UElgEditorBP_FModuleManager_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanDynamicReloadModule, "CanDynamicReloadModule" }, // 2326776229
-		{ &Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanHotReloadModule, "CanHotReloadModule" }, // 2637297437
-		{ &Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanRecompileModule, "CanRecompileModule" }, // 1494739203
-		{ &Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanShutdownModule, "CanShutdownModule" }, // 187805370
-		{ &Z_Construct_UFunction_UElgEditorBP_FModuleManager_GetModuleNames, "GetModuleNames" }, // 2284790169
-		{ &Z_Construct_UFunction_UElgEditorBP_FModuleManager_GetModulesStatus, "GetModulesStatus" }, // 55426850
-		{ &Z_Construct_UFunction_UElgEditorBP_FModuleManager_GetModuleStatus, "GetModuleStatus" }, // 3962817973
-		{ &Z_Construct_UFunction_UElgEditorBP_FModuleManager_IsModuleLoaded, "IsModuleLoaded" }, // 392991943
-		{ &Z_Construct_UFunction_UElgEditorBP_FModuleManager_LoadModule, "LoadModule" }, // 57365520
-		{ &Z_Construct_UFunction_UElgEditorBP_FModuleManager_RecompileModule, "RecompileModule" }, // 2560590303
-		{ &Z_Construct_UFunction_UElgEditorBP_FModuleManager_ReloadModule, "ReloadModule" }, // 3808494662
-		{ &Z_Construct_UFunction_UElgEditorBP_FModuleManager_UnloadModule, "UnloadModule" }, // 2310526669
+		{ &Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanDynamicReloadModule, "CanDynamicReloadModule" }, // 1084911529
+		{ &Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanHotReloadModule, "CanHotReloadModule" }, // 2662970664
+		{ &Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanRecompileModule, "CanRecompileModule" }, // 1952043253
+		{ &Z_Construct_UFunction_UElgEditorBP_FModuleManager_CanShutdownModule, "CanShutdownModule" }, // 2941318487
+		{ &Z_Construct_UFunction_UElgEditorBP_FModuleManager_GetModuleNames, "GetModuleNames" }, // 1017078591
+		{ &Z_Construct_UFunction_UElgEditorBP_FModuleManager_GetModulesStatus, "GetModulesStatus" }, // 3300256854
+		{ &Z_Construct_UFunction_UElgEditorBP_FModuleManager_GetModuleStatus, "GetModuleStatus" }, // 33164372
+		{ &Z_Construct_UFunction_UElgEditorBP_FModuleManager_IsModuleLoaded, "IsModuleLoaded" }, // 2073762208
+		{ &Z_Construct_UFunction_UElgEditorBP_FModuleManager_LoadModule, "LoadModule" }, // 2976893492
+		{ &Z_Construct_UFunction_UElgEditorBP_FModuleManager_RecompileModule, "RecompileModule" }, // 4107144370
+		{ &Z_Construct_UFunction_UElgEditorBP_FModuleManager_ReloadModule, "ReloadModule" }, // 4224164877
+		{ &Z_Construct_UFunction_UElgEditorBP_FModuleManager_UnloadModule, "UnloadModule" }, // 3659525754
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UElgEditorBP_FModuleManager_Statics::Class_MetaDataParams[] = {
+		{ "Comment", "/**\n * \n */" },
 		{ "IncludePath", "Blueprints/ElgEditorBP_FModuleManager.h" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_FModuleManager.h" },
 	};
@@ -924,12 +939,12 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgModule
 		FuncInfo,
 		nullptr,
 		nullptr,
-		ARRAY_COUNT(DependentSingletons),
-		ARRAY_COUNT(FuncInfo),
+		UE_ARRAY_COUNT(DependentSingletons),
+		UE_ARRAY_COUNT(FuncInfo),
 		0,
 		0,
 		0x001000A0u,
-		METADATA_PARAMS(Z_Construct_UClass_UElgEditorBP_FModuleManager_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UElgEditorBP_FModuleManager_Statics::Class_MetaDataParams))
+		METADATA_PARAMS(Z_Construct_UClass_UElgEditorBP_FModuleManager_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_UElgEditorBP_FModuleManager_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UElgEditorBP_FModuleManager()
 	{
@@ -940,7 +955,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgModule
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UElgEditorBP_FModuleManager, 1614790957);
+	IMPLEMENT_CLASS(UElgEditorBP_FModuleManager, 1749061852);
 	template<> ELGEDITORSCRIPTING_API UClass* StaticClass<UElgEditorBP_FModuleManager>()
 	{
 		return UElgEditorBP_FModuleManager::StaticClass();

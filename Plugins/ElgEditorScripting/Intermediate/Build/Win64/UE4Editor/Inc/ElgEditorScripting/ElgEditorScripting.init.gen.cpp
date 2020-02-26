@@ -89,9 +89,9 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorScripting_init() {}
 			static const UE4CodeGen_Private::FPackageParams PackageParams = {
 				"/Script/ElgEditorScripting",
 				SingletonFuncArray,
-				ARRAY_COUNT(SingletonFuncArray),
+				UE_ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000040,
-				0x37AF5118,
+				0xDB6F71FF,
 				0x8D7E4CD3,
 				METADATA_PARAMS(nullptr, 0)
 			};

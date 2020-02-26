@@ -26,7 +26,7 @@ void UElgEditorBP_EditorWidget::OpenEditorWidget(UEditorUtilityWidgetBlueprint* 
 	FName widgetName = GetEditorWidgetTabName(EditorWidget);
 	TSharedPtr<FTabManager> tabManager = GetLevelEditorTabManager();
 
-	if (tabManager->CanSpawnTab(widgetName)) {
+	if (tabManager->HasTabSpawner(widgetName)) {
 		TSharedRef<SDockTab> widgetTab = tabManager->InvokeTab(widgetName);
 	} else {
 		IBlutilityModule* BlutilityModule = FModuleManager::GetModulePtr<IBlutilityModule>("Blutility");
@@ -47,7 +47,7 @@ void UElgEditorBP_EditorWidget::CloseEditorWidget(UEditorUtilityWidgetBlueprint*
 {
 	if (!EditorWidget) return;
 
-	if (GIsRequestingExit) return; // if the editor is closing down dont do anything
+	if (IsEngineExitRequested()) return; // if the editor is closing down dont do anything
 
 	if (TSharedPtr<SDockTab> tabWidget = GetTabWidget(EditorWidget)) {
 		tabWidget->RequestCloseTab();
@@ -97,7 +97,7 @@ bool UElgEditorBP_EditorWidget::IsEditorWidgetRegistered(UEditorUtilityWidgetBlu
 	FName widgetName = GetEditorWidgetTabName(EditorWidget);
 	TSharedPtr<FTabManager> tabManager = GetLevelEditorTabManager();
 
-	return tabManager->CanSpawnTab(widgetName);
+	return tabManager->HasTabSpawner(widgetName);
 }
 
 

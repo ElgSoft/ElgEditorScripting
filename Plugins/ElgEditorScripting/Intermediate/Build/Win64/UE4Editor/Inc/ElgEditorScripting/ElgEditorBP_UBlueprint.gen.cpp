@@ -156,7 +156,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_UBlueprint.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FS_ElgBlueprintsNodeStats_Statics::NewProp_Stats = { "Stats", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgBlueprintsNodeStats, Stats), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgBlueprintsNodeStats_Statics::NewProp_Stats_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgBlueprintsNodeStats_Statics::NewProp_Stats_MetaData)) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FS_ElgBlueprintsNodeStats_Statics::NewProp_Stats = { "Stats", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgBlueprintsNodeStats, Stats), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgBlueprintsNodeStats_Statics::NewProp_Stats_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgBlueprintsNodeStats_Statics::NewProp_Stats_MetaData)) };
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FS_ElgBlueprintsNodeStats_Statics::NewProp_Stats_Inner = { "Stats", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FS_ElgBlueprintsNodeStats_Statics::NewProp_NodeTypeCountMap_MetaData[] = {
@@ -164,7 +164,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_UBlueprint.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FMapPropertyParams Z_Construct_UScriptStruct_FS_ElgBlueprintsNodeStats_Statics::NewProp_NodeTypeCountMap = { "NodeTypeCountMap", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Map, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgBlueprintsNodeStats, NodeTypeCountMap), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgBlueprintsNodeStats_Statics::NewProp_NodeTypeCountMap_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgBlueprintsNodeStats_Statics::NewProp_NodeTypeCountMap_MetaData)) };
+	const UE4CodeGen_Private::FMapPropertyParams Z_Construct_UScriptStruct_FS_ElgBlueprintsNodeStats_Statics::NewProp_NodeTypeCountMap = { "NodeTypeCountMap", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Map, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgBlueprintsNodeStats, NodeTypeCountMap), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgBlueprintsNodeStats_Statics::NewProp_NodeTypeCountMap_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgBlueprintsNodeStats_Statics::NewProp_NodeTypeCountMap_MetaData)) };
 	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FS_ElgBlueprintsNodeStats_Statics::NewProp_NodeTypeCountMap_Key_KeyProp = { "NodeTypeCountMap_Key", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FS_ElgBlueprintsNodeStats_Statics::NewProp_NodeTypeCountMap_ValueProp = { "NodeTypeCountMap", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, 1, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
@@ -173,7 +173,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_UBlueprint.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FS_ElgBlueprintsNodeStats_Statics::NewProp_NodeCountSorted = { "NodeCountSorted", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgBlueprintsNodeStats, NodeCountSorted), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgBlueprintsNodeStats_Statics::NewProp_NodeCountSorted_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgBlueprintsNodeStats_Statics::NewProp_NodeCountSorted_MetaData)) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FS_ElgBlueprintsNodeStats_Statics::NewProp_NodeCountSorted = { "NodeCountSorted", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgBlueprintsNodeStats, NodeCountSorted), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgBlueprintsNodeStats_Statics::NewProp_NodeCountSorted_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgBlueprintsNodeStats_Statics::NewProp_NodeCountSorted_MetaData)) };
 	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FS_ElgBlueprintsNodeStats_Statics::NewProp_NodeCountSorted_Inner = { "NodeCountSorted", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FS_ElgBlueprintsNodeStats_Statics::NewProp_NodeTypeSorted_MetaData[] = {
@@ -181,7 +181,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_UBlueprint.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FS_ElgBlueprintsNodeStats_Statics::NewProp_NodeTypeSorted = { "NodeTypeSorted", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgBlueprintsNodeStats, NodeTypeSorted), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgBlueprintsNodeStats_Statics::NewProp_NodeTypeSorted_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgBlueprintsNodeStats_Statics::NewProp_NodeTypeSorted_MetaData)) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FS_ElgBlueprintsNodeStats_Statics::NewProp_NodeTypeSorted = { "NodeTypeSorted", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgBlueprintsNodeStats, NodeTypeSorted), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgBlueprintsNodeStats_Statics::NewProp_NodeTypeSorted_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgBlueprintsNodeStats_Statics::NewProp_NodeTypeSorted_MetaData)) };
 	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FS_ElgBlueprintsNodeStats_Statics::NewProp_NodeTypeSorted_Inner = { "NodeTypeSorted", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FS_ElgBlueprintsNodeStats_Statics::NewProp_NodeCount_MetaData[] = {
@@ -189,14 +189,14 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_UBlueprint.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FS_ElgBlueprintsNodeStats_Statics::NewProp_NodeCount = { "NodeCount", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgBlueprintsNodeStats, NodeCount), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgBlueprintsNodeStats_Statics::NewProp_NodeCount_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgBlueprintsNodeStats_Statics::NewProp_NodeCount_MetaData)) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FS_ElgBlueprintsNodeStats_Statics::NewProp_NodeCount = { "NodeCount", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgBlueprintsNodeStats, NodeCount), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgBlueprintsNodeStats_Statics::NewProp_NodeCount_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgBlueprintsNodeStats_Statics::NewProp_NodeCount_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FS_ElgBlueprintsNodeStats_Statics::NewProp_BlueprintCount_MetaData[] = {
 		{ "Category", "NodeStats" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_UBlueprint.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FS_ElgBlueprintsNodeStats_Statics::NewProp_BlueprintCount = { "BlueprintCount", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgBlueprintsNodeStats, BlueprintCount), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgBlueprintsNodeStats_Statics::NewProp_BlueprintCount_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgBlueprintsNodeStats_Statics::NewProp_BlueprintCount_MetaData)) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FS_ElgBlueprintsNodeStats_Statics::NewProp_BlueprintCount = { "BlueprintCount", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgBlueprintsNodeStats, BlueprintCount), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgBlueprintsNodeStats_Statics::NewProp_BlueprintCount_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgBlueprintsNodeStats_Statics::NewProp_BlueprintCount_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FS_ElgBlueprintsNodeStats_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FS_ElgBlueprintsNodeStats_Statics::NewProp_Stats,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FS_ElgBlueprintsNodeStats_Statics::NewProp_Stats_Inner,
@@ -218,10 +218,10 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 		sizeof(FS_ElgBlueprintsNodeStats),
 		alignof(FS_ElgBlueprintsNodeStats),
 		Z_Construct_UScriptStruct_FS_ElgBlueprintsNodeStats_Statics::PropPointers,
-		ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgBlueprintsNodeStats_Statics::PropPointers),
+		UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgBlueprintsNodeStats_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
 		EStructFlags(0x00000001),
-		METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgBlueprintsNodeStats_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgBlueprintsNodeStats_Statics::Struct_MetaDataParams))
+		METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgBlueprintsNodeStats_Statics::Struct_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgBlueprintsNodeStats_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FS_ElgBlueprintsNodeStats()
 	{
@@ -238,7 +238,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FS_ElgBlueprintsNodeStats_Hash() { return 1427969816U; }
+	uint32 Get_Z_Construct_UScriptStruct_FS_ElgBlueprintsNodeStats_Hash() { return 2392401529U; }
 class UScriptStruct* FS_ElgBlueprintNodeStats::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -336,14 +336,14 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_UBlueprint.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::NewProp_NodeCount = { "NodeCount", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgBlueprintNodeStats, NodeCount), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::NewProp_NodeCount_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::NewProp_NodeCount_MetaData)) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::NewProp_NodeCount = { "NodeCount", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgBlueprintNodeStats, NodeCount), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::NewProp_NodeCount_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::NewProp_NodeCount_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::NewProp_DisplayTypeMap_MetaData[] = {
 		{ "Category", "NodeStats" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_UBlueprint.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FMapPropertyParams Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::NewProp_DisplayTypeMap = { "DisplayTypeMap", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Map, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgBlueprintNodeStats, DisplayTypeMap), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::NewProp_DisplayTypeMap_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::NewProp_DisplayTypeMap_MetaData)) };
+	const UE4CodeGen_Private::FMapPropertyParams Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::NewProp_DisplayTypeMap = { "DisplayTypeMap", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Map, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgBlueprintNodeStats, DisplayTypeMap), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::NewProp_DisplayTypeMap_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::NewProp_DisplayTypeMap_MetaData)) };
 	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::NewProp_DisplayTypeMap_Key_KeyProp = { "DisplayTypeMap_Key", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::NewProp_DisplayTypeMap_ValueProp = { "DisplayTypeMap", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, 1, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
@@ -352,7 +352,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_UBlueprint.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FMapPropertyParams Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::NewProp_NodeTypeCountMap = { "NodeTypeCountMap", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Map, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgBlueprintNodeStats, NodeTypeCountMap), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::NewProp_NodeTypeCountMap_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::NewProp_NodeTypeCountMap_MetaData)) };
+	const UE4CodeGen_Private::FMapPropertyParams Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::NewProp_NodeTypeCountMap = { "NodeTypeCountMap", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Map, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgBlueprintNodeStats, NodeTypeCountMap), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::NewProp_NodeTypeCountMap_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::NewProp_NodeTypeCountMap_MetaData)) };
 	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::NewProp_NodeTypeCountMap_Key_KeyProp = { "NodeTypeCountMap_Key", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::NewProp_NodeTypeCountMap_ValueProp = { "NodeTypeCountMap", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, 1, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
@@ -361,7 +361,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_UBlueprint.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FMapPropertyParams Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::NewProp_DisplayNameCountMap = { "DisplayNameCountMap", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Map, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgBlueprintNodeStats, DisplayNameCountMap), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::NewProp_DisplayNameCountMap_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::NewProp_DisplayNameCountMap_MetaData)) };
+	const UE4CodeGen_Private::FMapPropertyParams Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::NewProp_DisplayNameCountMap = { "DisplayNameCountMap", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Map, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgBlueprintNodeStats, DisplayNameCountMap), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::NewProp_DisplayNameCountMap_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::NewProp_DisplayNameCountMap_MetaData)) };
 	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::NewProp_DisplayNameCountMap_Key_KeyProp = { "DisplayNameCountMap_Key", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::NewProp_DisplayNameCountMap_ValueProp = { "DisplayNameCountMap", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, 1, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
@@ -370,7 +370,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_UBlueprint.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::NewProp_NodeTypeCountSorted = { "NodeTypeCountSorted", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgBlueprintNodeStats, NodeTypeCountSorted), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::NewProp_NodeTypeCountSorted_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::NewProp_NodeTypeCountSorted_MetaData)) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::NewProp_NodeTypeCountSorted = { "NodeTypeCountSorted", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgBlueprintNodeStats, NodeTypeCountSorted), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::NewProp_NodeTypeCountSorted_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::NewProp_NodeTypeCountSorted_MetaData)) };
 	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::NewProp_NodeTypeCountSorted_Inner = { "NodeTypeCountSorted", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::NewProp_NodeTypeSorted_MetaData[] = {
@@ -378,7 +378,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_UBlueprint.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::NewProp_NodeTypeSorted = { "NodeTypeSorted", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgBlueprintNodeStats, NodeTypeSorted), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::NewProp_NodeTypeSorted_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::NewProp_NodeTypeSorted_MetaData)) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::NewProp_NodeTypeSorted = { "NodeTypeSorted", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgBlueprintNodeStats, NodeTypeSorted), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::NewProp_NodeTypeSorted_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::NewProp_NodeTypeSorted_MetaData)) };
 	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::NewProp_NodeTypeSorted_Inner = { "NodeTypeSorted", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::NewProp_DisplayNamesCountSorted_MetaData[] = {
@@ -386,7 +386,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_UBlueprint.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::NewProp_DisplayNamesCountSorted = { "DisplayNamesCountSorted", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgBlueprintNodeStats, DisplayNamesCountSorted), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::NewProp_DisplayNamesCountSorted_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::NewProp_DisplayNamesCountSorted_MetaData)) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::NewProp_DisplayNamesCountSorted = { "DisplayNamesCountSorted", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgBlueprintNodeStats, DisplayNamesCountSorted), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::NewProp_DisplayNamesCountSorted_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::NewProp_DisplayNamesCountSorted_MetaData)) };
 	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::NewProp_DisplayNamesCountSorted_Inner = { "DisplayNamesCountSorted", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::NewProp_DisplayNamesSorted_MetaData[] = {
@@ -394,7 +394,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_UBlueprint.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::NewProp_DisplayNamesSorted = { "DisplayNamesSorted", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgBlueprintNodeStats, DisplayNamesSorted), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::NewProp_DisplayNamesSorted_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::NewProp_DisplayNamesSorted_MetaData)) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::NewProp_DisplayNamesSorted = { "DisplayNamesSorted", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgBlueprintNodeStats, DisplayNamesSorted), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::NewProp_DisplayNamesSorted_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::NewProp_DisplayNamesSorted_MetaData)) };
 	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::NewProp_DisplayNamesSorted_Inner = { "DisplayNamesSorted", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::NewProp_BlueprintName_MetaData[] = {
@@ -402,14 +402,14 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_UBlueprint.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::NewProp_BlueprintName = { "BlueprintName", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgBlueprintNodeStats, BlueprintName), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::NewProp_BlueprintName_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::NewProp_BlueprintName_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::NewProp_BlueprintName = { "BlueprintName", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgBlueprintNodeStats, BlueprintName), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::NewProp_BlueprintName_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::NewProp_BlueprintName_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::NewProp_Blueprint_MetaData[] = {
 		{ "Category", "NodeStats" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_UBlueprint.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::NewProp_Blueprint = { "Blueprint", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgBlueprintNodeStats, Blueprint), Z_Construct_UClass_UBlueprint_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::NewProp_Blueprint_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::NewProp_Blueprint_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::NewProp_Blueprint = { "Blueprint", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgBlueprintNodeStats, Blueprint), Z_Construct_UClass_UBlueprint_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::NewProp_Blueprint_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::NewProp_Blueprint_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::NewProp_NodeCount,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::NewProp_DisplayTypeMap,
@@ -440,10 +440,10 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 		sizeof(FS_ElgBlueprintNodeStats),
 		alignof(FS_ElgBlueprintNodeStats),
 		Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::PropPointers,
-		ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::PropPointers),
+		UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
 		EStructFlags(0x00000001),
-		METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::Struct_MetaDataParams))
+		METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::Struct_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats()
 	{
@@ -460,7 +460,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Hash() { return 758260572U; }
+	uint32 Get_Z_Construct_UScriptStruct_FS_ElgBlueprintNodeStats_Hash() { return 1321348040U; }
 	void UElgEditorBP_UBlueprint::StaticRegisterNativesUElgEditorBP_UBlueprint()
 	{
 		UClass* Class = UElgEditorBP_UBlueprint::StaticClass();
@@ -518,7 +518,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 			{ "SetRunConstructionScriptOnDrag", &UElgEditorBP_UBlueprint::execSetRunConstructionScriptOnDrag },
 			{ "SetStartingWithTick", &UElgEditorBP_UBlueprint::execSetStartingWithTick },
 		};
-		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 	}
 	struct Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintAddComponent_Statics
 	{
@@ -544,13 +544,14 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintAddComponent_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Blueprint|Component" },
+		{ "Comment", "/* Add an Component to the Blueprint, if the Blueprint is open you must recompile for it to show up. */" },
 		{ "DisplayName", "Add Component" },
 		{ "Keywords", "ElgSoft Editor Blueprint" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_UBlueprint.h" },
 		{ "ToolTip", "Add an Component to the Blueprint, if the Blueprint is open you must recompile for it to show up." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintAddComponent_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "BlueprintAddComponent", sizeof(ElgEditorBP_UBlueprint_eventBlueprintAddComponent_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintAddComponent_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintAddComponent_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintAddComponent_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintAddComponent_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintAddComponent_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "BlueprintAddComponent", nullptr, nullptr, sizeof(ElgEditorBP_UBlueprint_eventBlueprintAddComponent_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintAddComponent_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintAddComponent_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintAddComponent_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintAddComponent_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintAddComponent()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -584,13 +585,14 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintAddInterface_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Blueprint|Interface" },
+		{ "Comment", "/* Add an Interface to the blueprint */" },
 		{ "DisplayName", "Add Interface" },
 		{ "Keywords", "ElgSoft Editor Blueprint" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_UBlueprint.h" },
 		{ "ToolTip", "Add an Interface to the blueprint" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintAddInterface_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "BlueprintAddInterface", sizeof(ElgEditorBP_UBlueprint_eventBlueprintAddInterface_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintAddInterface_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintAddInterface_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintAddInterface_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintAddInterface_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintAddInterface_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "BlueprintAddInterface", nullptr, nullptr, sizeof(ElgEditorBP_UBlueprint_eventBlueprintAddInterface_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintAddInterface_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintAddInterface_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintAddInterface_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintAddInterface_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintAddInterface()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -631,6 +633,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintImplementInterface_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Blueprint|Interface" },
+		{ "Comment", "/* Check if the blueprint has the Interfaces of the class */" },
 		{ "DeterminesOutputType", "InterfaceClass" },
 		{ "DisplayName", "ImplementInterface" },
 		{ "ExpandEnumAsExecs", "Branches" },
@@ -639,7 +642,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 		{ "ToolTip", "Check if the blueprint has the Interfaces of the class" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintImplementInterface_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "BlueprintImplementInterface", sizeof(ElgEditorBP_UBlueprint_eventBlueprintImplementInterface_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintImplementInterface_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintImplementInterface_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintImplementInterface_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintImplementInterface_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintImplementInterface_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "BlueprintImplementInterface", nullptr, nullptr, sizeof(ElgEditorBP_UBlueprint_eventBlueprintImplementInterface_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintImplementInterface_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintImplementInterface_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintImplementInterface_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintImplementInterface_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintImplementInterface()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -679,7 +682,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 	{
 		((ElgEditorBP_UBlueprint_eventBlueprintRemoveComponent_Parms*)Obj)->bOnlyFirst = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintRemoveComponent_Statics::NewProp_bOnlyFirst = { "bOnlyFirst", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ElgEditorBP_UBlueprint_eventBlueprintRemoveComponent_Parms), &Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintRemoveComponent_Statics::NewProp_bOnlyFirst_SetBit, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintRemoveComponent_Statics::NewProp_bOnlyFirst_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintRemoveComponent_Statics::NewProp_bOnlyFirst_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintRemoveComponent_Statics::NewProp_bOnlyFirst = { "bOnlyFirst", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ElgEditorBP_UBlueprint_eventBlueprintRemoveComponent_Parms), &Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintRemoveComponent_Statics::NewProp_bOnlyFirst_SetBit, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintRemoveComponent_Statics::NewProp_bOnlyFirst_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintRemoveComponent_Statics::NewProp_bOnlyFirst_MetaData)) };
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintRemoveComponent_Statics::NewProp_ComponentClass = { "ComponentClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_UBlueprint_eventBlueprintRemoveComponent_Parms, ComponentClass), Z_Construct_UClass_UActorComponent_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintRemoveComponent_Statics::NewProp_Blueprint = { "Blueprint", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_UBlueprint_eventBlueprintRemoveComponent_Parms, Blueprint), Z_Construct_UClass_UBlueprint_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintRemoveComponent_Statics::PropPointers[] = {
@@ -690,6 +693,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintRemoveComponent_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Blueprint|Component" },
+		{ "Comment", "/* Remove Component(s) from the Blueprint, if the Blueprint is open you must recompile for it to show up.\n\x09@param  Blueprint\x09\x09The blueprint asset to remove the component from.\n\x09@param  ComponentClass\x09The class of component(s) to remove.\n\x09@param  bOnlyFirst\x09\x09Should it only remove the first or all the instances of the class?\n\x09*/" },
 		{ "CPP_Default_bOnlyFirst", "false" },
 		{ "DisplayName", "Remove Component" },
 		{ "Keywords", "ElgSoft Editor Blueprint" },
@@ -697,7 +701,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 		{ "ToolTip", "Remove Component(s) from the Blueprint, if the Blueprint is open you must recompile for it to show up.\n      @param  Blueprint               The blueprint asset to remove the component from.\n      @param  ComponentClass  The class of component(s) to remove.\n      @param  bOnlyFirst              Should it only remove the first or all the instances of the class?" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintRemoveComponent_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "BlueprintRemoveComponent", sizeof(ElgEditorBP_UBlueprint_eventBlueprintRemoveComponent_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintRemoveComponent_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintRemoveComponent_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintRemoveComponent_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintRemoveComponent_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintRemoveComponent_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "BlueprintRemoveComponent", nullptr, nullptr, sizeof(ElgEditorBP_UBlueprint_eventBlueprintRemoveComponent_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintRemoveComponent_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintRemoveComponent_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintRemoveComponent_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintRemoveComponent_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintRemoveComponent()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -737,7 +741,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 	{
 		((ElgEditorBP_UBlueprint_eventBlueprintRemoveInterface_Parms*)Obj)->bPreserveFunctions = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintRemoveInterface_Statics::NewProp_bPreserveFunctions = { "bPreserveFunctions", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ElgEditorBP_UBlueprint_eventBlueprintRemoveInterface_Parms), &Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintRemoveInterface_Statics::NewProp_bPreserveFunctions_SetBit, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintRemoveInterface_Statics::NewProp_bPreserveFunctions_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintRemoveInterface_Statics::NewProp_bPreserveFunctions_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintRemoveInterface_Statics::NewProp_bPreserveFunctions = { "bPreserveFunctions", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ElgEditorBP_UBlueprint_eventBlueprintRemoveInterface_Parms), &Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintRemoveInterface_Statics::NewProp_bPreserveFunctions_SetBit, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintRemoveInterface_Statics::NewProp_bPreserveFunctions_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintRemoveInterface_Statics::NewProp_bPreserveFunctions_MetaData)) };
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintRemoveInterface_Statics::NewProp_InterfaceClass = { "InterfaceClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_UBlueprint_eventBlueprintRemoveInterface_Parms, InterfaceClass), Z_Construct_UClass_UInterface, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintRemoveInterface_Statics::NewProp_Blueprint = { "Blueprint", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_UBlueprint_eventBlueprintRemoveInterface_Parms, Blueprint), Z_Construct_UClass_UBlueprint_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintRemoveInterface_Statics::PropPointers[] = {
@@ -748,6 +752,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintRemoveInterface_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Blueprint|Interface" },
+		{ "Comment", "/*  \n\x09\x09Remove an interface from the blueprint.\n\x09\x09If bPreserveFunctions is true, then the interface will move its functions to be normal implemented blueprint functions\n\x09*/" },
 		{ "CPP_Default_bPreserveFunctions", "false" },
 		{ "DisplayName", "Remove Interface" },
 		{ "Keywords", "ElgSoft Editor Blueprint" },
@@ -755,7 +760,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 		{ "ToolTip", "Remove an interface from the blueprint.\nIf bPreserveFunctions is true, then the interface will move its functions to be normal implemented blueprint functions" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintRemoveInterface_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "BlueprintRemoveInterface", sizeof(ElgEditorBP_UBlueprint_eventBlueprintRemoveInterface_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintRemoveInterface_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintRemoveInterface_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintRemoveInterface_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintRemoveInterface_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintRemoveInterface_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "BlueprintRemoveInterface", nullptr, nullptr, sizeof(ElgEditorBP_UBlueprint_eventBlueprintRemoveInterface_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintRemoveInterface_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintRemoveInterface_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintRemoveInterface_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintRemoveInterface_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintRemoveInterface()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -794,13 +799,14 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintSupportComponent_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Blueprint|Component" },
+		{ "Comment", "/* Return if the blueprint supports components or not */" },
 		{ "DisplayName", "Support Component" },
 		{ "Keywords", "ElgSoft Editor Blueprint" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_UBlueprint.h" },
 		{ "ToolTip", "Return if the blueprint supports components or not" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintSupportComponent_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "BlueprintSupportComponent", sizeof(ElgEditorBP_UBlueprint_eventBlueprintSupportComponent_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintSupportComponent_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintSupportComponent_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintSupportComponent_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintSupportComponent_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintSupportComponent_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "BlueprintSupportComponent", nullptr, nullptr, sizeof(ElgEditorBP_UBlueprint_eventBlueprintSupportComponent_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintSupportComponent_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintSupportComponent_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintSupportComponent_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintSupportComponent_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintSupportComponent()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -837,6 +843,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintSupportComponentBranch_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Blueprint|Component" },
+		{ "Comment", "/* Return if the blueprint supports components or not with a branch pins*/" },
 		{ "DisplayName", "Support Component Branch" },
 		{ "ExpandEnumAsExecs", "Branches" },
 		{ "Keywords", "ElgSoft Editor Blueprint" },
@@ -844,7 +851,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 		{ "ToolTip", "Return if the blueprint supports components or not with a branch pins" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintSupportComponentBranch_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "BlueprintSupportComponentBranch", sizeof(ElgEditorBP_UBlueprint_eventBlueprintSupportComponentBranch_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintSupportComponentBranch_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintSupportComponentBranch_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintSupportComponentBranch_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintSupportComponentBranch_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintSupportComponentBranch_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "BlueprintSupportComponentBranch", nullptr, nullptr, sizeof(ElgEditorBP_UBlueprint_eventBlueprintSupportComponentBranch_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintSupportComponentBranch_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintSupportComponentBranch_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintSupportComponentBranch_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintSupportComponentBranch_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintSupportComponentBranch()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -883,13 +890,14 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintSupportInterface_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Blueprint|Interface" },
+		{ "Comment", "/* Return if the blueprint supports Interfaces or not */" },
 		{ "DisplayName", "Support Interface" },
 		{ "Keywords", "ElgSoft Editor Blueprint" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_UBlueprint.h" },
 		{ "ToolTip", "Return if the blueprint supports Interfaces or not" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintSupportInterface_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "BlueprintSupportInterface", sizeof(ElgEditorBP_UBlueprint_eventBlueprintSupportInterface_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintSupportInterface_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintSupportInterface_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintSupportInterface_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintSupportInterface_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintSupportInterface_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "BlueprintSupportInterface", nullptr, nullptr, sizeof(ElgEditorBP_UBlueprint_eventBlueprintSupportInterface_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintSupportInterface_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintSupportInterface_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintSupportInterface_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintSupportInterface_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintSupportInterface()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -926,6 +934,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintSupportInterfaceBranch_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Blueprint|Interface" },
+		{ "Comment", "/* Return if the blueprint supports Interfaces or not with a branch pins*/" },
 		{ "DisplayName", "Support Interface Branch" },
 		{ "ExpandEnumAsExecs", "Branches" },
 		{ "Keywords", "ElgSoft Editor Blueprint" },
@@ -933,7 +942,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 		{ "ToolTip", "Return if the blueprint supports Interfaces or not with a branch pins" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintSupportInterfaceBranch_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "BlueprintSupportInterfaceBranch", sizeof(ElgEditorBP_UBlueprint_eventBlueprintSupportInterfaceBranch_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintSupportInterfaceBranch_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintSupportInterfaceBranch_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintSupportInterfaceBranch_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintSupportInterfaceBranch_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintSupportInterfaceBranch_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "BlueprintSupportInterfaceBranch", nullptr, nullptr, sizeof(ElgEditorBP_UBlueprint_eventBlueprintSupportInterfaceBranch_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintSupportInterfaceBranch_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintSupportInterfaceBranch_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintSupportInterfaceBranch_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintSupportInterfaceBranch_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintSupportInterfaceBranch()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -972,11 +981,12 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_UBlueprint_CanEverTick_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Blueprint" },
+		{ "Comment", "/* Return the bCanEverTick state */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_UBlueprint.h" },
 		{ "ToolTip", "Return the bCanEverTick state" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_CanEverTick_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "CanEverTick", sizeof(ElgEditorBP_UBlueprint_eventCanEverTick_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_CanEverTick_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_CanEverTick_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_CanEverTick_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_CanEverTick_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_CanEverTick_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "CanEverTick", nullptr, nullptr, sizeof(ElgEditorBP_UBlueprint_eventCanEverTick_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_CanEverTick_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_CanEverTick_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_CanEverTick_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_CanEverTick_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_UBlueprint_CanEverTick()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1013,12 +1023,13 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_UBlueprint_CanEverTickBranch_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Blueprint" },
+		{ "Comment", "/* Return the bCanEverTick state with branch pins */" },
 		{ "ExpandEnumAsExecs", "Branches" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_UBlueprint.h" },
 		{ "ToolTip", "Return the bCanEverTick state with branch pins" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_CanEverTickBranch_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "CanEverTickBranch", sizeof(ElgEditorBP_UBlueprint_eventCanEverTickBranch_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_CanEverTickBranch_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_CanEverTickBranch_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_CanEverTickBranch_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_CanEverTickBranch_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_CanEverTickBranch_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "CanEverTickBranch", nullptr, nullptr, sizeof(ElgEditorBP_UBlueprint_eventCanEverTickBranch_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_CanEverTickBranch_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_CanEverTickBranch_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_CanEverTickBranch_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_CanEverTickBranch_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_UBlueprint_CanEverTickBranch()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1048,12 +1059,13 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_UBlueprint_CompileBlueprint_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Blueprint" },
+		{ "Comment", "/* Compiles the blueprint asset */" },
 		{ "Keywords", "ElgSoft Editor Blueprint" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_UBlueprint.h" },
 		{ "ToolTip", "Compiles the blueprint asset" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_CompileBlueprint_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "CompileBlueprint", sizeof(ElgEditorBP_UBlueprint_eventCompileBlueprint_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_CompileBlueprint_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_CompileBlueprint_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_CompileBlueprint_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_CompileBlueprint_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_CompileBlueprint_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "CompileBlueprint", nullptr, nullptr, sizeof(ElgEditorBP_UBlueprint_eventCompileBlueprint_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_CompileBlueprint_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_CompileBlueprint_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_CompileBlueprint_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_CompileBlueprint_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_UBlueprint_CompileBlueprint()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1086,7 +1098,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_DeleteNodesByName_Statics::NewProp_NodeName = { "NodeName", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_UBlueprint_eventDeleteNodesByName_Parms, NodeName), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_DeleteNodesByName_Statics::NewProp_NodeName_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_DeleteNodesByName_Statics::NewProp_NodeName_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_DeleteNodesByName_Statics::NewProp_NodeName = { "NodeName", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_UBlueprint_eventDeleteNodesByName_Parms, NodeName), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_DeleteNodesByName_Statics::NewProp_NodeName_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_DeleteNodesByName_Statics::NewProp_NodeName_MetaData)) };
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_DeleteNodesByName_Statics::NewProp_Blueprint = { "Blueprint", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_UBlueprint_eventDeleteNodesByName_Parms, Blueprint), Z_Construct_UClass_UBlueprint_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorBP_UBlueprint_DeleteNodesByName_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_UBlueprint_DeleteNodesByName_Statics::NewProp_NodeName,
@@ -1095,11 +1107,12 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_UBlueprint_DeleteNodesByName_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Blueprint" },
+		{ "Comment", "/* Delete any nodes in the blueprint with the NodeName */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_UBlueprint.h" },
 		{ "ToolTip", "Delete any nodes in the blueprint with the NodeName" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_DeleteNodesByName_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "DeleteNodesByName", sizeof(ElgEditorBP_UBlueprint_eventDeleteNodesByName_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_DeleteNodesByName_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_DeleteNodesByName_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_DeleteNodesByName_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_DeleteNodesByName_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_DeleteNodesByName_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "DeleteNodesByName", nullptr, nullptr, sizeof(ElgEditorBP_UBlueprint_eventDeleteNodesByName_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_DeleteNodesByName_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_DeleteNodesByName_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_DeleteNodesByName_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_DeleteNodesByName_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_UBlueprint_DeleteNodesByName()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1140,7 +1153,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 		{ "EditInline", "true" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentOfClass_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000080588, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_UBlueprint_eventGetBlueprintComponentOfClass_Parms, ReturnValue), Z_Construct_UClass_UActorComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentOfClass_Statics::NewProp_ReturnValue_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentOfClass_Statics::NewProp_ReturnValue_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentOfClass_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000080588, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_UBlueprint_eventGetBlueprintComponentOfClass_Parms, ReturnValue), Z_Construct_UClass_UActorComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentOfClass_Statics::NewProp_ReturnValue_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentOfClass_Statics::NewProp_ReturnValue_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentOfClass_Statics::NewProp_ExcludeInherited_MetaData[] = {
 		{ "NativeConst", "" },
@@ -1150,7 +1163,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 	{
 		((ElgEditorBP_UBlueprint_eventGetBlueprintComponentOfClass_Parms*)Obj)->ExcludeInherited = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentOfClass_Statics::NewProp_ExcludeInherited = { "ExcludeInherited", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ElgEditorBP_UBlueprint_eventGetBlueprintComponentOfClass_Parms), &Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentOfClass_Statics::NewProp_ExcludeInherited_SetBit, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentOfClass_Statics::NewProp_ExcludeInherited_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentOfClass_Statics::NewProp_ExcludeInherited_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentOfClass_Statics::NewProp_ExcludeInherited = { "ExcludeInherited", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ElgEditorBP_UBlueprint_eventGetBlueprintComponentOfClass_Parms), &Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentOfClass_Statics::NewProp_ExcludeInherited_SetBit, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentOfClass_Statics::NewProp_ExcludeInherited_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentOfClass_Statics::NewProp_ExcludeInherited_MetaData)) };
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentOfClass_Statics::NewProp_ComponentClass = { "ComponentClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_UBlueprint_eventGetBlueprintComponentOfClass_Parms, ComponentClass), Z_Construct_UClass_UActorComponent_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentOfClass_Statics::NewProp_Blueprint = { "Blueprint", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_UBlueprint_eventGetBlueprintComponentOfClass_Parms, Blueprint), Z_Construct_UClass_UBlueprint_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentOfClass_Statics::PropPointers[] = {
@@ -1162,6 +1175,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentOfClass_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Blueprint|Component" },
+		{ "Comment", "/* Returns the first component of the right class */" },
 		{ "CPP_Default_ExcludeInherited", "false" },
 		{ "DeterminesOutputType", "ComponentClass" },
 		{ "DisplayName", "GetComponentOfClass" },
@@ -1170,7 +1184,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 		{ "ToolTip", "Returns the first component of the right class" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentOfClass_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "GetBlueprintComponentOfClass", sizeof(ElgEditorBP_UBlueprint_eventGetBlueprintComponentOfClass_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentOfClass_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentOfClass_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentOfClass_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentOfClass_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentOfClass_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "GetBlueprintComponentOfClass", nullptr, nullptr, sizeof(ElgEditorBP_UBlueprint_eventGetBlueprintComponentOfClass_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentOfClass_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentOfClass_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentOfClass_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentOfClass_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentOfClass()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1214,7 +1228,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 		{ "EditInline", "true" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentOfClassBranch_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000080588, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_UBlueprint_eventGetBlueprintComponentOfClassBranch_Parms, ReturnValue), Z_Construct_UClass_UActorComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentOfClassBranch_Statics::NewProp_ReturnValue_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentOfClassBranch_Statics::NewProp_ReturnValue_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentOfClassBranch_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000080588, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_UBlueprint_eventGetBlueprintComponentOfClassBranch_Parms, ReturnValue), Z_Construct_UClass_UActorComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentOfClassBranch_Statics::NewProp_ReturnValue_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentOfClassBranch_Statics::NewProp_ReturnValue_MetaData)) };
 	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentOfClassBranch_Statics::NewProp_Branches = { "Branches", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_UBlueprint_eventGetBlueprintComponentOfClassBranch_Parms, Branches), Z_Construct_UEnum_ElgEditorScripting_EBPEditorOutputValidBranch, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentOfClassBranch_Statics::NewProp_Branches_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
@@ -1226,7 +1240,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 	{
 		((ElgEditorBP_UBlueprint_eventGetBlueprintComponentOfClassBranch_Parms*)Obj)->ExcludeInherited = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentOfClassBranch_Statics::NewProp_ExcludeInherited = { "ExcludeInherited", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ElgEditorBP_UBlueprint_eventGetBlueprintComponentOfClassBranch_Parms), &Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentOfClassBranch_Statics::NewProp_ExcludeInherited_SetBit, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentOfClassBranch_Statics::NewProp_ExcludeInherited_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentOfClassBranch_Statics::NewProp_ExcludeInherited_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentOfClassBranch_Statics::NewProp_ExcludeInherited = { "ExcludeInherited", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ElgEditorBP_UBlueprint_eventGetBlueprintComponentOfClassBranch_Parms), &Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentOfClassBranch_Statics::NewProp_ExcludeInherited_SetBit, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentOfClassBranch_Statics::NewProp_ExcludeInherited_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentOfClassBranch_Statics::NewProp_ExcludeInherited_MetaData)) };
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentOfClassBranch_Statics::NewProp_ComponentClass = { "ComponentClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_UBlueprint_eventGetBlueprintComponentOfClassBranch_Parms, ComponentClass), Z_Construct_UClass_UActorComponent_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentOfClassBranch_Statics::NewProp_Blueprint = { "Blueprint", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_UBlueprint_eventGetBlueprintComponentOfClassBranch_Parms, Blueprint), Z_Construct_UClass_UBlueprint_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentOfClassBranch_Statics::PropPointers[] = {
@@ -1240,6 +1254,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentOfClassBranch_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Blueprint|Component" },
+		{ "Comment", "/* Returns the first component of the right class with an branch output pins */" },
 		{ "DeterminesOutputType", "ComponentClass" },
 		{ "DisplayName", "GetComponentOfClassBranch" },
 		{ "ExcludeInherited", "false" },
@@ -1249,7 +1264,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 		{ "ToolTip", "Returns the first component of the right class with an branch output pins" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentOfClassBranch_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "GetBlueprintComponentOfClassBranch", sizeof(ElgEditorBP_UBlueprint_eventGetBlueprintComponentOfClassBranch_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentOfClassBranch_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentOfClassBranch_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentOfClassBranch_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentOfClassBranch_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentOfClassBranch_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "GetBlueprintComponentOfClassBranch", nullptr, nullptr, sizeof(ElgEditorBP_UBlueprint_eventGetBlueprintComponentOfClassBranch_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentOfClassBranch_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentOfClassBranch_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentOfClassBranch_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentOfClassBranch_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentOfClassBranch()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1289,7 +1304,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 		{ "EditInline", "true" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponents_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010008000000588, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_UBlueprint_eventGetBlueprintComponents_Parms, ReturnValue), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponents_Statics::NewProp_ReturnValue_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponents_Statics::NewProp_ReturnValue_MetaData)) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponents_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010008000000588, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_UBlueprint_eventGetBlueprintComponents_Parms, ReturnValue), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponents_Statics::NewProp_ReturnValue_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponents_Statics::NewProp_ReturnValue_MetaData)) };
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponents_Statics::NewProp_ReturnValue_Inner = { "ReturnValue", nullptr, (EPropertyFlags)0x0000000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UActorComponent_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponents_Statics::NewProp_ExcludeInherited_MetaData[] = {
@@ -1300,7 +1315,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 	{
 		((ElgEditorBP_UBlueprint_eventGetBlueprintComponents_Parms*)Obj)->ExcludeInherited = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponents_Statics::NewProp_ExcludeInherited = { "ExcludeInherited", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ElgEditorBP_UBlueprint_eventGetBlueprintComponents_Parms), &Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponents_Statics::NewProp_ExcludeInherited_SetBit, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponents_Statics::NewProp_ExcludeInherited_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponents_Statics::NewProp_ExcludeInherited_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponents_Statics::NewProp_ExcludeInherited = { "ExcludeInherited", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ElgEditorBP_UBlueprint_eventGetBlueprintComponents_Parms), &Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponents_Statics::NewProp_ExcludeInherited_SetBit, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponents_Statics::NewProp_ExcludeInherited_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponents_Statics::NewProp_ExcludeInherited_MetaData)) };
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponents_Statics::NewProp_Blueprint = { "Blueprint", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_UBlueprint_eventGetBlueprintComponents_Parms, Blueprint), Z_Construct_UClass_UBlueprint_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponents_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponents_Statics::NewProp_ReturnValue,
@@ -1311,6 +1326,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponents_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Blueprint|Component" },
+		{ "Comment", "/* Returns an array with all the ActorComponents the blueprint has. */" },
 		{ "CPP_Default_ExcludeInherited", "false" },
 		{ "DisplayName", "GetComponents" },
 		{ "Keywords", "ElgSoft Editor Blueprint" },
@@ -1318,7 +1334,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 		{ "ToolTip", "Returns an array with all the ActorComponents the blueprint has." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponents_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "GetBlueprintComponents", sizeof(ElgEditorBP_UBlueprint_eventGetBlueprintComponents_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponents_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponents_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponents_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponents_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponents_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "GetBlueprintComponents", nullptr, nullptr, sizeof(ElgEditorBP_UBlueprint_eventGetBlueprintComponents_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponents_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponents_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponents_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponents_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponents()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1360,7 +1376,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 		{ "EditInline", "true" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentsOfClass_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010008000000588, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_UBlueprint_eventGetBlueprintComponentsOfClass_Parms, ReturnValue), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentsOfClass_Statics::NewProp_ReturnValue_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentsOfClass_Statics::NewProp_ReturnValue_MetaData)) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentsOfClass_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010008000000588, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_UBlueprint_eventGetBlueprintComponentsOfClass_Parms, ReturnValue), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentsOfClass_Statics::NewProp_ReturnValue_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentsOfClass_Statics::NewProp_ReturnValue_MetaData)) };
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentsOfClass_Statics::NewProp_ReturnValue_Inner = { "ReturnValue", nullptr, (EPropertyFlags)0x0000000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UActorComponent_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentsOfClass_Statics::NewProp_ExcludeInherited_MetaData[] = {
@@ -1371,7 +1387,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 	{
 		((ElgEditorBP_UBlueprint_eventGetBlueprintComponentsOfClass_Parms*)Obj)->ExcludeInherited = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentsOfClass_Statics::NewProp_ExcludeInherited = { "ExcludeInherited", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ElgEditorBP_UBlueprint_eventGetBlueprintComponentsOfClass_Parms), &Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentsOfClass_Statics::NewProp_ExcludeInherited_SetBit, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentsOfClass_Statics::NewProp_ExcludeInherited_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentsOfClass_Statics::NewProp_ExcludeInherited_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentsOfClass_Statics::NewProp_ExcludeInherited = { "ExcludeInherited", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ElgEditorBP_UBlueprint_eventGetBlueprintComponentsOfClass_Parms), &Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentsOfClass_Statics::NewProp_ExcludeInherited_SetBit, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentsOfClass_Statics::NewProp_ExcludeInherited_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentsOfClass_Statics::NewProp_ExcludeInherited_MetaData)) };
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentsOfClass_Statics::NewProp_ComponentClass = { "ComponentClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_UBlueprint_eventGetBlueprintComponentsOfClass_Parms, ComponentClass), Z_Construct_UClass_UActorComponent_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentsOfClass_Statics::NewProp_Blueprint = { "Blueprint", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_UBlueprint_eventGetBlueprintComponentsOfClass_Parms, Blueprint), Z_Construct_UClass_UBlueprint_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentsOfClass_Statics::PropPointers[] = {
@@ -1384,6 +1400,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentsOfClass_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Blueprint|Component" },
+		{ "Comment", "/* Returns all the components of the right class */" },
 		{ "CPP_Default_ExcludeInherited", "false" },
 		{ "DeterminesOutputType", "ComponentClass" },
 		{ "DisplayName", "GetComponentsOfClass" },
@@ -1392,7 +1409,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 		{ "ToolTip", "Returns all the components of the right class" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentsOfClass_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "GetBlueprintComponentsOfClass", sizeof(ElgEditorBP_UBlueprint_eventGetBlueprintComponentsOfClass_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentsOfClass_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentsOfClass_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentsOfClass_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentsOfClass_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentsOfClass_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "GetBlueprintComponentsOfClass", nullptr, nullptr, sizeof(ElgEditorBP_UBlueprint_eventGetBlueprintComponentsOfClass_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentsOfClass_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentsOfClass_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentsOfClass_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentsOfClass_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentsOfClass()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1437,7 +1454,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 		{ "EditInline", "true" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentsOfClassBranch_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010008000000588, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_UBlueprint_eventGetBlueprintComponentsOfClassBranch_Parms, ReturnValue), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentsOfClassBranch_Statics::NewProp_ReturnValue_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentsOfClassBranch_Statics::NewProp_ReturnValue_MetaData)) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentsOfClassBranch_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010008000000588, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_UBlueprint_eventGetBlueprintComponentsOfClassBranch_Parms, ReturnValue), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentsOfClassBranch_Statics::NewProp_ReturnValue_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentsOfClassBranch_Statics::NewProp_ReturnValue_MetaData)) };
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentsOfClassBranch_Statics::NewProp_ReturnValue_Inner = { "ReturnValue", nullptr, (EPropertyFlags)0x0000000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UActorComponent_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentsOfClassBranch_Statics::NewProp_Branches = { "Branches", nullptr, (EPropertyFlags)0x0010000000000180, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_UBlueprint_eventGetBlueprintComponentsOfClassBranch_Parms, Branches), Z_Construct_UEnum_ElgEditorScripting_EBPEditorOutputValidBranch, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentsOfClassBranch_Statics::NewProp_Branches_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
@@ -1450,7 +1467,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 	{
 		((ElgEditorBP_UBlueprint_eventGetBlueprintComponentsOfClassBranch_Parms*)Obj)->ExcludeInherited = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentsOfClassBranch_Statics::NewProp_ExcludeInherited = { "ExcludeInherited", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ElgEditorBP_UBlueprint_eventGetBlueprintComponentsOfClassBranch_Parms), &Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentsOfClassBranch_Statics::NewProp_ExcludeInherited_SetBit, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentsOfClassBranch_Statics::NewProp_ExcludeInherited_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentsOfClassBranch_Statics::NewProp_ExcludeInherited_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentsOfClassBranch_Statics::NewProp_ExcludeInherited = { "ExcludeInherited", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ElgEditorBP_UBlueprint_eventGetBlueprintComponentsOfClassBranch_Parms), &Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentsOfClassBranch_Statics::NewProp_ExcludeInherited_SetBit, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentsOfClassBranch_Statics::NewProp_ExcludeInherited_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentsOfClassBranch_Statics::NewProp_ExcludeInherited_MetaData)) };
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentsOfClassBranch_Statics::NewProp_ComponentClass = { "ComponentClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_UBlueprint_eventGetBlueprintComponentsOfClassBranch_Parms, ComponentClass), Z_Construct_UClass_UActorComponent_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentsOfClassBranch_Statics::NewProp_Blueprint = { "Blueprint", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_UBlueprint_eventGetBlueprintComponentsOfClassBranch_Parms, Blueprint), Z_Construct_UClass_UBlueprint_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentsOfClassBranch_Statics::PropPointers[] = {
@@ -1465,6 +1482,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentsOfClassBranch_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Blueprint|Component" },
+		{ "Comment", "/* Returns all the components of the right class with an branch output pins*/" },
 		{ "DeterminesOutputType", "ComponentClass" },
 		{ "DisplayName", "GetComponentsOfClassBranch" },
 		{ "ExcludeInherited", "false" },
@@ -1474,7 +1492,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 		{ "ToolTip", "Returns all the components of the right class with an branch output pins" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentsOfClassBranch_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "GetBlueprintComponentsOfClassBranch", sizeof(ElgEditorBP_UBlueprint_eventGetBlueprintComponentsOfClassBranch_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentsOfClassBranch_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentsOfClassBranch_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentsOfClassBranch_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentsOfClassBranch_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentsOfClassBranch_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "GetBlueprintComponentsOfClassBranch", nullptr, nullptr, sizeof(ElgEditorBP_UBlueprint_eventGetBlueprintComponentsOfClassBranch_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentsOfClassBranch_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentsOfClassBranch_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentsOfClassBranch_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentsOfClassBranch_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentsOfClassBranch()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1513,7 +1531,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintFromAssetData_Statics::NewProp_AssetDataStruct = { "AssetDataStruct", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_UBlueprint_eventGetBlueprintFromAssetData_Parms, AssetDataStruct), Z_Construct_UScriptStruct_FAssetData, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintFromAssetData_Statics::NewProp_AssetDataStruct_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintFromAssetData_Statics::NewProp_AssetDataStruct_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintFromAssetData_Statics::NewProp_AssetDataStruct = { "AssetDataStruct", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_UBlueprint_eventGetBlueprintFromAssetData_Parms, AssetDataStruct), Z_Construct_UScriptStruct_FAssetData, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintFromAssetData_Statics::NewProp_AssetDataStruct_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintFromAssetData_Statics::NewProp_AssetDataStruct_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintFromAssetData_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintFromAssetData_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintFromAssetData_Statics::NewProp_Branches,
@@ -1523,13 +1541,14 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintFromAssetData_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Blueprint" },
+		{ "Comment", "/* Get the UBlueprint object from the AssetData */" },
 		{ "ExpandEnumAsExecs", "Branches" },
 		{ "Keywords", "ElgSoft Editor Blueprint" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_UBlueprint.h" },
 		{ "ToolTip", "Get the UBlueprint object from the AssetData" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintFromAssetData_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "GetBlueprintFromAssetData", sizeof(ElgEditorBP_UBlueprint_eventGetBlueprintFromAssetData_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintFromAssetData_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintFromAssetData_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintFromAssetData_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintFromAssetData_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintFromAssetData_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "GetBlueprintFromAssetData", nullptr, nullptr, sizeof(ElgEditorBP_UBlueprint_eventGetBlueprintFromAssetData_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintFromAssetData_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintFromAssetData_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintFromAssetData_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintFromAssetData_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintFromAssetData()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1570,13 +1589,14 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintFromObject_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Blueprint" },
+		{ "Comment", "/* Get the UBlueprint object from an UObject */" },
 		{ "ExpandEnumAsExecs", "Branches" },
 		{ "Keywords", "ElgSoft Editor Blueprint" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_UBlueprint.h" },
 		{ "ToolTip", "Get the UBlueprint object from an UObject" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintFromObject_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "GetBlueprintFromObject", sizeof(ElgEditorBP_UBlueprint_eventGetBlueprintFromObject_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintFromObject_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintFromObject_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintFromObject_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintFromObject_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintFromObject_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "GetBlueprintFromObject", nullptr, nullptr, sizeof(ElgEditorBP_UBlueprint_eventGetBlueprintFromObject_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintFromObject_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintFromObject_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintFromObject_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintFromObject_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintFromObject()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1619,7 +1639,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 	{
 		((ElgEditorBP_UBlueprint_eventGetBlueprintInterfaces_Parms*)Obj)->ExcludeInherited = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintInterfaces_Statics::NewProp_ExcludeInherited = { "ExcludeInherited", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ElgEditorBP_UBlueprint_eventGetBlueprintInterfaces_Parms), &Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintInterfaces_Statics::NewProp_ExcludeInherited_SetBit, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintInterfaces_Statics::NewProp_ExcludeInherited_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintInterfaces_Statics::NewProp_ExcludeInherited_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintInterfaces_Statics::NewProp_ExcludeInherited = { "ExcludeInherited", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ElgEditorBP_UBlueprint_eventGetBlueprintInterfaces_Parms), &Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintInterfaces_Statics::NewProp_ExcludeInherited_SetBit, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintInterfaces_Statics::NewProp_ExcludeInherited_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintInterfaces_Statics::NewProp_ExcludeInherited_MetaData)) };
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintInterfaces_Statics::NewProp_Blueprint = { "Blueprint", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_UBlueprint_eventGetBlueprintInterfaces_Parms, Blueprint), Z_Construct_UClass_UBlueprint_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintInterfaces_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintInterfaces_Statics::NewProp_ReturnValue,
@@ -1630,6 +1650,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintInterfaces_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Blueprint|Interface" },
+		{ "Comment", "/* Returns an array with all the Interfaces the blueprint has. */" },
 		{ "CPP_Default_ExcludeInherited", "false" },
 		{ "DisplayName", "GetInterfaces" },
 		{ "Keywords", "ElgSoft Editor Blueprint" },
@@ -1637,7 +1658,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 		{ "ToolTip", "Returns an array with all the Interfaces the blueprint has." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintInterfaces_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "GetBlueprintInterfaces", sizeof(ElgEditorBP_UBlueprint_eventGetBlueprintInterfaces_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintInterfaces_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintInterfaces_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintInterfaces_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintInterfaces_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintInterfaces_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "GetBlueprintInterfaces", nullptr, nullptr, sizeof(ElgEditorBP_UBlueprint_eventGetBlueprintInterfaces_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintInterfaces_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintInterfaces_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintInterfaces_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintInterfaces_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintInterfaces()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1674,7 +1695,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_UBlueprint.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintNodeStat_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "GetBlueprintNodeStat", sizeof(ElgEditorBP_UBlueprint_eventGetBlueprintNodeStat_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintNodeStat_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintNodeStat_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintNodeStat_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintNodeStat_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintNodeStat_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "GetBlueprintNodeStat", nullptr, nullptr, sizeof(ElgEditorBP_UBlueprint_eventGetBlueprintNodeStat_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintNodeStat_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintNodeStat_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintNodeStat_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintNodeStat_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintNodeStat()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1720,13 +1741,13 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 	{
 		((ElgEditorBP_UBlueprint_eventGetBlueprintsByPath_Parms*)Obj)->RecursivePaths = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintsByPath_Statics::NewProp_RecursivePaths = { "RecursivePaths", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ElgEditorBP_UBlueprint_eventGetBlueprintsByPath_Parms), &Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintsByPath_Statics::NewProp_RecursivePaths_SetBit, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintsByPath_Statics::NewProp_RecursivePaths_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintsByPath_Statics::NewProp_RecursivePaths_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintsByPath_Statics::NewProp_RecursivePaths = { "RecursivePaths", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ElgEditorBP_UBlueprint_eventGetBlueprintsByPath_Parms), &Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintsByPath_Statics::NewProp_RecursivePaths_SetBit, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintsByPath_Statics::NewProp_RecursivePaths_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintsByPath_Statics::NewProp_RecursivePaths_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintsByPath_Statics::NewProp_Path_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FNamePropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintsByPath_Statics::NewProp_Path = { "Path", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_UBlueprint_eventGetBlueprintsByPath_Parms, Path), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintsByPath_Statics::NewProp_Path_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintsByPath_Statics::NewProp_Path_MetaData)) };
+	const UE4CodeGen_Private::FNamePropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintsByPath_Statics::NewProp_Path = { "Path", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_UBlueprint_eventGetBlueprintsByPath_Parms, Path), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintsByPath_Statics::NewProp_Path_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintsByPath_Statics::NewProp_Path_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintsByPath_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintsByPath_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintsByPath_Statics::NewProp_ReturnValue_Inner,
@@ -1736,11 +1757,12 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintsByPath_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Blueprint" },
+		{ "Comment", "/*=true*/" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_UBlueprint.h" },
 		{ "ToolTip", "=true" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintsByPath_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "GetBlueprintsByPath", sizeof(ElgEditorBP_UBlueprint_eventGetBlueprintsByPath_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintsByPath_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintsByPath_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintsByPath_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintsByPath_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintsByPath_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "GetBlueprintsByPath", nullptr, nullptr, sizeof(ElgEditorBP_UBlueprint_eventGetBlueprintsByPath_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintsByPath_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintsByPath_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintsByPath_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintsByPath_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintsByPath()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1780,10 +1802,11 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintsFromObjects_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Blueprint" },
+		{ "Comment", "/* */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_UBlueprint.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintsFromObjects_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "GetBlueprintsFromObjects", sizeof(ElgEditorBP_UBlueprint_eventGetBlueprintsFromObjects_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintsFromObjects_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintsFromObjects_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintsFromObjects_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintsFromObjects_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintsFromObjects_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "GetBlueprintsFromObjects", nullptr, nullptr, sizeof(ElgEditorBP_UBlueprint_eventGetBlueprintsFromObjects_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintsFromObjects_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintsFromObjects_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintsFromObjects_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintsFromObjects_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintsFromObjects()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1823,7 +1846,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_UBlueprint.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintsNodeStat_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "GetBlueprintsNodeStat", sizeof(ElgEditorBP_UBlueprint_eventGetBlueprintsNodeStat_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintsNodeStat_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintsNodeStat_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintsNodeStat_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintsNodeStat_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintsNodeStat_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "GetBlueprintsNodeStat", nullptr, nullptr, sizeof(ElgEditorBP_UBlueprint_eventGetBlueprintsNodeStat_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintsNodeStat_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintsNodeStat_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintsNodeStat_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintsNodeStat_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintsNodeStat()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1860,11 +1883,12 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetLocalVariableNames_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Blueprint" },
+		{ "Comment", "/* Return an array of local variable names the blueprint has, VariableName @ FunctionName */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_UBlueprint.h" },
 		{ "ToolTip", "Return an array of local variable names the blueprint has, VariableName @ FunctionName" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetLocalVariableNames_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "GetLocalVariableNames", sizeof(ElgEditorBP_UBlueprint_eventGetLocalVariableNames_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetLocalVariableNames_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetLocalVariableNames_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetLocalVariableNames_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetLocalVariableNames_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetLocalVariableNames_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "GetLocalVariableNames", nullptr, nullptr, sizeof(ElgEditorBP_UBlueprint_eventGetLocalVariableNames_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetLocalVariableNames_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetLocalVariableNames_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetLocalVariableNames_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetLocalVariableNames_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetLocalVariableNames()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1898,11 +1922,12 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetNativeClass_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Blueprint" },
+		{ "Comment", "/* Return the Native class for a blueprint */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_UBlueprint.h" },
 		{ "ToolTip", "Return the Native class for a blueprint" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetNativeClass_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "GetNativeClass", sizeof(ElgEditorBP_UBlueprint_eventGetNativeClass_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetNativeClass_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetNativeClass_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetNativeClass_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetNativeClass_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetNativeClass_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "GetNativeClass", nullptr, nullptr, sizeof(ElgEditorBP_UBlueprint_eventGetNativeClass_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetNativeClass_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetNativeClass_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetNativeClass_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetNativeClass_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetNativeClass()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1936,7 +1961,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FNamePropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetNodeStatsByPath_Statics::NewProp_Path = { "Path", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_UBlueprint_eventGetNodeStatsByPath_Parms, Path), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetNodeStatsByPath_Statics::NewProp_Path_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetNodeStatsByPath_Statics::NewProp_Path_MetaData)) };
+	const UE4CodeGen_Private::FNamePropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetNodeStatsByPath_Statics::NewProp_Path = { "Path", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_UBlueprint_eventGetNodeStatsByPath_Parms, Path), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetNodeStatsByPath_Statics::NewProp_Path_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetNodeStatsByPath_Statics::NewProp_Path_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetNodeStatsByPath_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetNodeStatsByPath_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetNodeStatsByPath_Statics::NewProp_Path,
@@ -1947,7 +1972,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_UBlueprint.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetNodeStatsByPath_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "GetNodeStatsByPath", sizeof(ElgEditorBP_UBlueprint_eventGetNodeStatsByPath_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetNodeStatsByPath_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetNodeStatsByPath_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetNodeStatsByPath_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetNodeStatsByPath_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetNodeStatsByPath_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "GetNodeStatsByPath", nullptr, nullptr, sizeof(ElgEditorBP_UBlueprint_eventGetNodeStatsByPath_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetNodeStatsByPath_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetNodeStatsByPath_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetNodeStatsByPath_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetNodeStatsByPath_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetNodeStatsByPath()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1990,7 +2015,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_UBlueprint.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetNodeUsage_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "GetNodeUsage", sizeof(ElgEditorBP_UBlueprint_eventGetNodeUsage_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetNodeUsage_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetNodeUsage_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetNodeUsage_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetNodeUsage_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetNodeUsage_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "GetNodeUsage", nullptr, nullptr, sizeof(ElgEditorBP_UBlueprint_eventGetNodeUsage_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetNodeUsage_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetNodeUsage_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetNodeUsage_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetNodeUsage_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetNodeUsage()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2024,11 +2049,12 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetParentClass_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Blueprint" },
+		{ "Comment", "/*  */" },
 		{ "Keywords", "ElgSoft Editor Blueprint" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_UBlueprint.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetParentClass_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "GetParentClass", sizeof(ElgEditorBP_UBlueprint_eventGetParentClass_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetParentClass_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetParentClass_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetParentClass_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetParentClass_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetParentClass_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "GetParentClass", nullptr, nullptr, sizeof(ElgEditorBP_UBlueprint_eventGetParentClass_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetParentClass_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetParentClass_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetParentClass_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetParentClass_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetParentClass()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2065,11 +2091,12 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetUnusedLocalVariableNames_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Blueprint" },
+		{ "Comment", "/* Return an array of unused local variable names the blueprint has, VariableName @ FunctionName */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_UBlueprint.h" },
 		{ "ToolTip", "Return an array of unused local variable names the blueprint has, VariableName @ FunctionName" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetUnusedLocalVariableNames_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "GetUnusedLocalVariableNames", sizeof(ElgEditorBP_UBlueprint_eventGetUnusedLocalVariableNames_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetUnusedLocalVariableNames_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetUnusedLocalVariableNames_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetUnusedLocalVariableNames_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetUnusedLocalVariableNames_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetUnusedLocalVariableNames_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "GetUnusedLocalVariableNames", nullptr, nullptr, sizeof(ElgEditorBP_UBlueprint_eventGetUnusedLocalVariableNames_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetUnusedLocalVariableNames_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetUnusedLocalVariableNames_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetUnusedLocalVariableNames_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetUnusedLocalVariableNames_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetUnusedLocalVariableNames()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2106,11 +2133,12 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetVariableNames_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Blueprint" },
+		{ "Comment", "/* Return an array of variable names the blueprint has, VariableName */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_UBlueprint.h" },
 		{ "ToolTip", "Return an array of variable names the blueprint has, VariableName" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetVariableNames_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "GetVariableNames", sizeof(ElgEditorBP_UBlueprint_eventGetVariableNames_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetVariableNames_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetVariableNames_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetVariableNames_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetVariableNames_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetVariableNames_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "GetVariableNames", nullptr, nullptr, sizeof(ElgEditorBP_UBlueprint_eventGetVariableNames_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetVariableNames_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetVariableNames_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetVariableNames_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetVariableNames_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetVariableNames()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2152,7 +2180,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_UBlueprint.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_HasCompilerError_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "HasCompilerError", sizeof(ElgEditorBP_UBlueprint_eventHasCompilerError_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_HasCompilerError_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_HasCompilerError_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_HasCompilerError_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_HasCompilerError_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_HasCompilerError_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "HasCompilerError", nullptr, nullptr, sizeof(ElgEditorBP_UBlueprint_eventHasCompilerError_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_HasCompilerError_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_HasCompilerError_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_HasCompilerError_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_HasCompilerError_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_UBlueprint_HasCompilerError()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2193,7 +2221,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_UBlueprint.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_HasCompilerErrorBranch_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "HasCompilerErrorBranch", sizeof(ElgEditorBP_UBlueprint_eventHasCompilerErrorBranch_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_HasCompilerErrorBranch_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_HasCompilerErrorBranch_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_HasCompilerErrorBranch_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_HasCompilerErrorBranch_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_HasCompilerErrorBranch_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "HasCompilerErrorBranch", nullptr, nullptr, sizeof(ElgEditorBP_UBlueprint_eventHasCompilerErrorBranch_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_HasCompilerErrorBranch_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_HasCompilerErrorBranch_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_HasCompilerErrorBranch_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_HasCompilerErrorBranch_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_UBlueprint_HasCompilerErrorBranch()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2234,7 +2262,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_HasNode_Statics::NewProp_NodeName = { "NodeName", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_UBlueprint_eventHasNode_Parms, NodeName), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_HasNode_Statics::NewProp_NodeName_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_HasNode_Statics::NewProp_NodeName_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_HasNode_Statics::NewProp_NodeName = { "NodeName", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_UBlueprint_eventHasNode_Parms, NodeName), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_HasNode_Statics::NewProp_NodeName_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_HasNode_Statics::NewProp_NodeName_MetaData)) };
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_HasNode_Statics::NewProp_Blueprint = { "Blueprint", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_UBlueprint_eventHasNode_Parms, Blueprint), Z_Construct_UClass_UBlueprint_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorBP_UBlueprint_HasNode_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_UBlueprint_HasNode_Statics::NewProp_ReturnValue,
@@ -2244,11 +2272,12 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_UBlueprint_HasNode_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Blueprint" },
+		{ "Comment", "/* Check if the blueprint has a node with NodeName */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_UBlueprint.h" },
 		{ "ToolTip", "Check if the blueprint has a node with NodeName" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_HasNode_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "HasNode", sizeof(ElgEditorBP_UBlueprint_eventHasNode_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_HasNode_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_HasNode_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_HasNode_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_HasNode_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_HasNode_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "HasNode", nullptr, nullptr, sizeof(ElgEditorBP_UBlueprint_eventHasNode_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_HasNode_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_HasNode_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_HasNode_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_HasNode_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_UBlueprint_HasNode()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2286,7 +2315,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_HasNodeBranch_Statics::NewProp_NodeName = { "NodeName", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_UBlueprint_eventHasNodeBranch_Parms, NodeName), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_HasNodeBranch_Statics::NewProp_NodeName_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_HasNodeBranch_Statics::NewProp_NodeName_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_HasNodeBranch_Statics::NewProp_NodeName = { "NodeName", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_UBlueprint_eventHasNodeBranch_Parms, NodeName), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_HasNodeBranch_Statics::NewProp_NodeName_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_HasNodeBranch_Statics::NewProp_NodeName_MetaData)) };
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_HasNodeBranch_Statics::NewProp_Blueprint = { "Blueprint", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_UBlueprint_eventHasNodeBranch_Parms, Blueprint), Z_Construct_UClass_UBlueprint_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorBP_UBlueprint_HasNodeBranch_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_UBlueprint_HasNodeBranch_Statics::NewProp_Branches,
@@ -2297,12 +2326,13 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_UBlueprint_HasNodeBranch_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Blueprint" },
+		{ "Comment", "/* Check if the blueprint has a node with NodeName */" },
 		{ "ExpandEnumAsExecs", "Branches" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_UBlueprint.h" },
 		{ "ToolTip", "Check if the blueprint has a node with NodeName" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_HasNodeBranch_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "HasNodeBranch", sizeof(ElgEditorBP_UBlueprint_eventHasNodeBranch_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_HasNodeBranch_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_HasNodeBranch_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_HasNodeBranch_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_HasNodeBranch_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_HasNodeBranch_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "HasNodeBranch", nullptr, nullptr, sizeof(ElgEditorBP_UBlueprint_eventHasNodeBranch_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_HasNodeBranch_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_HasNodeBranch_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_HasNodeBranch_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_HasNodeBranch_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_UBlueprint_HasNodeBranch()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2345,11 +2375,12 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsChildOfClass_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Blueprint" },
+		{ "Comment", "/* Test if a blueprint is a child of the ChildClass */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_UBlueprint.h" },
 		{ "ToolTip", "Test if a blueprint is a child of the ChildClass" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsChildOfClass_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "IsChildOfClass", sizeof(ElgEditorBP_UBlueprint_eventIsChildOfClass_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsChildOfClass_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsChildOfClass_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsChildOfClass_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsChildOfClass_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsChildOfClass_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "IsChildOfClass", nullptr, nullptr, sizeof(ElgEditorBP_UBlueprint_eventIsChildOfClass_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsChildOfClass_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsChildOfClass_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsChildOfClass_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsChildOfClass_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsChildOfClass()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2390,12 +2421,13 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsChildOfClassBranch_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Blueprint" },
+		{ "Comment", "/* Test if a blueprint is a child of the ChildClass */" },
 		{ "ExpandEnumAsExecs", "Branches" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_UBlueprint.h" },
 		{ "ToolTip", "Test if a blueprint is a child of the ChildClass" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsChildOfClassBranch_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "IsChildOfClassBranch", sizeof(ElgEditorBP_UBlueprint_eventIsChildOfClassBranch_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsChildOfClassBranch_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsChildOfClassBranch_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsChildOfClassBranch_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsChildOfClassBranch_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsChildOfClassBranch_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "IsChildOfClassBranch", nullptr, nullptr, sizeof(ElgEditorBP_UBlueprint_eventIsChildOfClassBranch_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsChildOfClassBranch_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsChildOfClassBranch_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsChildOfClassBranch_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsChildOfClassBranch_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsChildOfClassBranch()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2434,11 +2466,12 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsConstructionScriptConnected_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Blueprint" },
+		{ "Comment", "/* Return if the ConstructionScript node has anything connected */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_UBlueprint.h" },
 		{ "ToolTip", "Return if the ConstructionScript node has anything connected" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsConstructionScriptConnected_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "IsConstructionScriptConnected", sizeof(ElgEditorBP_UBlueprint_eventIsConstructionScriptConnected_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsConstructionScriptConnected_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsConstructionScriptConnected_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsConstructionScriptConnected_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsConstructionScriptConnected_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsConstructionScriptConnected_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "IsConstructionScriptConnected", nullptr, nullptr, sizeof(ElgEditorBP_UBlueprint_eventIsConstructionScriptConnected_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsConstructionScriptConnected_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsConstructionScriptConnected_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsConstructionScriptConnected_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsConstructionScriptConnected_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsConstructionScriptConnected()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2475,12 +2508,13 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsConstructionScriptConnectedBranch_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Blueprint" },
+		{ "Comment", "/* Return if the ConstructionScript node has anything connected */" },
 		{ "ExpandEnumAsExecs", "Branches" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_UBlueprint.h" },
 		{ "ToolTip", "Return if the ConstructionScript node has anything connected" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsConstructionScriptConnectedBranch_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "IsConstructionScriptConnectedBranch", sizeof(ElgEditorBP_UBlueprint_eventIsConstructionScriptConnectedBranch_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsConstructionScriptConnectedBranch_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsConstructionScriptConnectedBranch_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsConstructionScriptConnectedBranch_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsConstructionScriptConnectedBranch_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsConstructionScriptConnectedBranch_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "IsConstructionScriptConnectedBranch", nullptr, nullptr, sizeof(ElgEditorBP_UBlueprint_eventIsConstructionScriptConnectedBranch_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsConstructionScriptConnectedBranch_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsConstructionScriptConnectedBranch_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsConstructionScriptConnectedBranch_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsConstructionScriptConnectedBranch_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsConstructionScriptConnectedBranch()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2526,13 +2560,13 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsNodePinConnected_Statics::NewProp_PinName = { "PinName", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_UBlueprint_eventIsNodePinConnected_Parms, PinName), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsNodePinConnected_Statics::NewProp_PinName_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsNodePinConnected_Statics::NewProp_PinName_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsNodePinConnected_Statics::NewProp_PinName = { "PinName", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_UBlueprint_eventIsNodePinConnected_Parms, PinName), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsNodePinConnected_Statics::NewProp_PinName_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsNodePinConnected_Statics::NewProp_PinName_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsNodePinConnected_Statics::NewProp_NodeName_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsNodePinConnected_Statics::NewProp_NodeName = { "NodeName", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_UBlueprint_eventIsNodePinConnected_Parms, NodeName), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsNodePinConnected_Statics::NewProp_NodeName_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsNodePinConnected_Statics::NewProp_NodeName_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsNodePinConnected_Statics::NewProp_NodeName = { "NodeName", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_UBlueprint_eventIsNodePinConnected_Parms, NodeName), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsNodePinConnected_Statics::NewProp_NodeName_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsNodePinConnected_Statics::NewProp_NodeName_MetaData)) };
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsNodePinConnected_Statics::NewProp_Blueprint = { "Blueprint", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_UBlueprint_eventIsNodePinConnected_Parms, Blueprint), Z_Construct_UClass_UBlueprint_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsNodePinConnected_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsNodePinConnected_Statics::NewProp_ReturnValue,
@@ -2543,11 +2577,12 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsNodePinConnected_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Blueprint" },
+		{ "Comment", "/* Check if the blueprint has a node with NodeName with a Pin called PinNamed that is connected to anything */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_UBlueprint.h" },
 		{ "ToolTip", "Check if the blueprint has a node with NodeName with a Pin called PinNamed that is connected to anything" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsNodePinConnected_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "IsNodePinConnected", sizeof(ElgEditorBP_UBlueprint_eventIsNodePinConnected_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsNodePinConnected_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsNodePinConnected_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsNodePinConnected_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsNodePinConnected_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsNodePinConnected_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "IsNodePinConnected", nullptr, nullptr, sizeof(ElgEditorBP_UBlueprint_eventIsNodePinConnected_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsNodePinConnected_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsNodePinConnected_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsNodePinConnected_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsNodePinConnected_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsNodePinConnected()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2590,13 +2625,13 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsNodePinConnectedBranch_Statics::NewProp_PinName = { "PinName", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_UBlueprint_eventIsNodePinConnectedBranch_Parms, PinName), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsNodePinConnectedBranch_Statics::NewProp_PinName_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsNodePinConnectedBranch_Statics::NewProp_PinName_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsNodePinConnectedBranch_Statics::NewProp_PinName = { "PinName", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_UBlueprint_eventIsNodePinConnectedBranch_Parms, PinName), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsNodePinConnectedBranch_Statics::NewProp_PinName_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsNodePinConnectedBranch_Statics::NewProp_PinName_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsNodePinConnectedBranch_Statics::NewProp_NodeName_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsNodePinConnectedBranch_Statics::NewProp_NodeName = { "NodeName", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_UBlueprint_eventIsNodePinConnectedBranch_Parms, NodeName), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsNodePinConnectedBranch_Statics::NewProp_NodeName_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsNodePinConnectedBranch_Statics::NewProp_NodeName_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsNodePinConnectedBranch_Statics::NewProp_NodeName = { "NodeName", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_UBlueprint_eventIsNodePinConnectedBranch_Parms, NodeName), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsNodePinConnectedBranch_Statics::NewProp_NodeName_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsNodePinConnectedBranch_Statics::NewProp_NodeName_MetaData)) };
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsNodePinConnectedBranch_Statics::NewProp_Blueprint = { "Blueprint", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_UBlueprint_eventIsNodePinConnectedBranch_Parms, Blueprint), Z_Construct_UClass_UBlueprint_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsNodePinConnectedBranch_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsNodePinConnectedBranch_Statics::NewProp_Branches,
@@ -2608,12 +2643,13 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsNodePinConnectedBranch_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Blueprint" },
+		{ "Comment", "/* Check if the blueprint has a node with NodeName with a Pin called PinNamed that is connected to anything */" },
 		{ "ExpandEnumAsExecs", "Branches" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_UBlueprint.h" },
 		{ "ToolTip", "Check if the blueprint has a node with NodeName with a Pin called PinNamed that is connected to anything" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsNodePinConnectedBranch_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "IsNodePinConnectedBranch", sizeof(ElgEditorBP_UBlueprint_eventIsNodePinConnectedBranch_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsNodePinConnectedBranch_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsNodePinConnectedBranch_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsNodePinConnectedBranch_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsNodePinConnectedBranch_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsNodePinConnectedBranch_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "IsNodePinConnectedBranch", nullptr, nullptr, sizeof(ElgEditorBP_UBlueprint_eventIsNodePinConnectedBranch_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsNodePinConnectedBranch_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsNodePinConnectedBranch_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsNodePinConnectedBranch_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsNodePinConnectedBranch_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsNodePinConnectedBranch()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2652,11 +2688,12 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsRunConstructionScriptOnDrag_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Blueprint" },
+		{ "Comment", "/* Return the bRunConstructionScriptOnDrag state */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_UBlueprint.h" },
 		{ "ToolTip", "Return the bRunConstructionScriptOnDrag state" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsRunConstructionScriptOnDrag_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "IsRunConstructionScriptOnDrag", sizeof(ElgEditorBP_UBlueprint_eventIsRunConstructionScriptOnDrag_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsRunConstructionScriptOnDrag_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsRunConstructionScriptOnDrag_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsRunConstructionScriptOnDrag_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsRunConstructionScriptOnDrag_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsRunConstructionScriptOnDrag_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "IsRunConstructionScriptOnDrag", nullptr, nullptr, sizeof(ElgEditorBP_UBlueprint_eventIsRunConstructionScriptOnDrag_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsRunConstructionScriptOnDrag_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsRunConstructionScriptOnDrag_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsRunConstructionScriptOnDrag_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsRunConstructionScriptOnDrag_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsRunConstructionScriptOnDrag()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2693,12 +2730,13 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsRunConstructionScriptOnDragBranch_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Blueprint" },
+		{ "Comment", "/* Return the bRunConstructionScriptOnDrag state with branch pins */" },
 		{ "ExpandEnumAsExecs", "Branches" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_UBlueprint.h" },
 		{ "ToolTip", "Return the bRunConstructionScriptOnDrag state with branch pins" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsRunConstructionScriptOnDragBranch_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "IsRunConstructionScriptOnDragBranch", sizeof(ElgEditorBP_UBlueprint_eventIsRunConstructionScriptOnDragBranch_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsRunConstructionScriptOnDragBranch_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsRunConstructionScriptOnDragBranch_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsRunConstructionScriptOnDragBranch_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsRunConstructionScriptOnDragBranch_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsRunConstructionScriptOnDragBranch_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "IsRunConstructionScriptOnDragBranch", nullptr, nullptr, sizeof(ElgEditorBP_UBlueprint_eventIsRunConstructionScriptOnDragBranch_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsRunConstructionScriptOnDragBranch_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsRunConstructionScriptOnDragBranch_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsRunConstructionScriptOnDragBranch_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsRunConstructionScriptOnDragBranch_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsRunConstructionScriptOnDragBranch()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2737,11 +2775,12 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsStartingWithTick_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Blueprint" },
+		{ "Comment", "/* Return the bStartWithTickEnabled state */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_UBlueprint.h" },
 		{ "ToolTip", "Return the bStartWithTickEnabled state" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsStartingWithTick_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "IsStartingWithTick", sizeof(ElgEditorBP_UBlueprint_eventIsStartingWithTick_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsStartingWithTick_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsStartingWithTick_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsStartingWithTick_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsStartingWithTick_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsStartingWithTick_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "IsStartingWithTick", nullptr, nullptr, sizeof(ElgEditorBP_UBlueprint_eventIsStartingWithTick_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsStartingWithTick_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsStartingWithTick_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsStartingWithTick_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsStartingWithTick_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsStartingWithTick()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2778,12 +2817,13 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsStartingWithTickBranch_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Blueprint" },
+		{ "Comment", "/* Return the bStartWithTickEnabled state with branch pins */" },
 		{ "ExpandEnumAsExecs", "Branches" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_UBlueprint.h" },
 		{ "ToolTip", "Return the bStartWithTickEnabled state with branch pins" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsStartingWithTickBranch_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "IsStartingWithTickBranch", sizeof(ElgEditorBP_UBlueprint_eventIsStartingWithTickBranch_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsStartingWithTickBranch_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsStartingWithTickBranch_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsStartingWithTickBranch_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsStartingWithTickBranch_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsStartingWithTickBranch_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "IsStartingWithTickBranch", nullptr, nullptr, sizeof(ElgEditorBP_UBlueprint_eventIsStartingWithTickBranch_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsStartingWithTickBranch_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsStartingWithTickBranch_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsStartingWithTickBranch_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsStartingWithTickBranch_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsStartingWithTickBranch()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2821,13 +2861,13 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_RemoveLocalVariable_Statics::NewProp_VariableName = { "VariableName", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_UBlueprint_eventRemoveLocalVariable_Parms, VariableName), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_RemoveLocalVariable_Statics::NewProp_VariableName_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_RemoveLocalVariable_Statics::NewProp_VariableName_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_RemoveLocalVariable_Statics::NewProp_VariableName = { "VariableName", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_UBlueprint_eventRemoveLocalVariable_Parms, VariableName), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_RemoveLocalVariable_Statics::NewProp_VariableName_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_RemoveLocalVariable_Statics::NewProp_VariableName_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_UBlueprint_RemoveLocalVariable_Statics::NewProp_FunctionName_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_RemoveLocalVariable_Statics::NewProp_FunctionName = { "FunctionName", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_UBlueprint_eventRemoveLocalVariable_Parms, FunctionName), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_RemoveLocalVariable_Statics::NewProp_FunctionName_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_RemoveLocalVariable_Statics::NewProp_FunctionName_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_RemoveLocalVariable_Statics::NewProp_FunctionName = { "FunctionName", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_UBlueprint_eventRemoveLocalVariable_Parms, FunctionName), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_RemoveLocalVariable_Statics::NewProp_FunctionName_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_RemoveLocalVariable_Statics::NewProp_FunctionName_MetaData)) };
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_RemoveLocalVariable_Statics::NewProp_Blueprint = { "Blueprint", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_UBlueprint_eventRemoveLocalVariable_Parms, Blueprint), Z_Construct_UClass_UBlueprint_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorBP_UBlueprint_RemoveLocalVariable_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_UBlueprint_RemoveLocalVariable_Statics::NewProp_VariableName,
@@ -2837,11 +2877,12 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_UBlueprint_RemoveLocalVariable_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Blueprint" },
+		{ "Comment", "/* Remove a local variable in FunctionName */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_UBlueprint.h" },
 		{ "ToolTip", "Remove a local variable in FunctionName" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_RemoveLocalVariable_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "RemoveLocalVariable", sizeof(ElgEditorBP_UBlueprint_eventRemoveLocalVariable_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_RemoveLocalVariable_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_RemoveLocalVariable_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_RemoveLocalVariable_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_RemoveLocalVariable_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_RemoveLocalVariable_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "RemoveLocalVariable", nullptr, nullptr, sizeof(ElgEditorBP_UBlueprint_eventRemoveLocalVariable_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_RemoveLocalVariable_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_RemoveLocalVariable_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_RemoveLocalVariable_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_RemoveLocalVariable_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_UBlueprint_RemoveLocalVariable()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2871,11 +2912,12 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_UBlueprint_RemoveUnusedLocalVariables_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Blueprint" },
+		{ "Comment", "/* Remove any unused variables in the blueprint */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_UBlueprint.h" },
 		{ "ToolTip", "Remove any unused variables in the blueprint" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_RemoveUnusedLocalVariables_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "RemoveUnusedLocalVariables", sizeof(ElgEditorBP_UBlueprint_eventRemoveUnusedLocalVariables_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_RemoveUnusedLocalVariables_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_RemoveUnusedLocalVariables_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_RemoveUnusedLocalVariables_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_RemoveUnusedLocalVariables_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_RemoveUnusedLocalVariables_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "RemoveUnusedLocalVariables", nullptr, nullptr, sizeof(ElgEditorBP_UBlueprint_eventRemoveUnusedLocalVariables_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_RemoveUnusedLocalVariables_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_RemoveUnusedLocalVariables_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_RemoveUnusedLocalVariables_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_RemoveUnusedLocalVariables_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_UBlueprint_RemoveUnusedLocalVariables()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2918,19 +2960,19 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_RenameLocalVariable_Statics::NewProp_NewVariableName = { "NewVariableName", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_UBlueprint_eventRenameLocalVariable_Parms, NewVariableName), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_RenameLocalVariable_Statics::NewProp_NewVariableName_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_RenameLocalVariable_Statics::NewProp_NewVariableName_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_RenameLocalVariable_Statics::NewProp_NewVariableName = { "NewVariableName", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_UBlueprint_eventRenameLocalVariable_Parms, NewVariableName), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_RenameLocalVariable_Statics::NewProp_NewVariableName_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_RenameLocalVariable_Statics::NewProp_NewVariableName_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_UBlueprint_RenameLocalVariable_Statics::NewProp_OldVariableName_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_RenameLocalVariable_Statics::NewProp_OldVariableName = { "OldVariableName", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_UBlueprint_eventRenameLocalVariable_Parms, OldVariableName), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_RenameLocalVariable_Statics::NewProp_OldVariableName_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_RenameLocalVariable_Statics::NewProp_OldVariableName_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_RenameLocalVariable_Statics::NewProp_OldVariableName = { "OldVariableName", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_UBlueprint_eventRenameLocalVariable_Parms, OldVariableName), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_RenameLocalVariable_Statics::NewProp_OldVariableName_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_RenameLocalVariable_Statics::NewProp_OldVariableName_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_UBlueprint_RenameLocalVariable_Statics::NewProp_FunctionName_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_RenameLocalVariable_Statics::NewProp_FunctionName = { "FunctionName", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_UBlueprint_eventRenameLocalVariable_Parms, FunctionName), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_RenameLocalVariable_Statics::NewProp_FunctionName_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_RenameLocalVariable_Statics::NewProp_FunctionName_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_RenameLocalVariable_Statics::NewProp_FunctionName = { "FunctionName", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_UBlueprint_eventRenameLocalVariable_Parms, FunctionName), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_RenameLocalVariable_Statics::NewProp_FunctionName_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_RenameLocalVariable_Statics::NewProp_FunctionName_MetaData)) };
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_RenameLocalVariable_Statics::NewProp_Blueprint = { "Blueprint", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_UBlueprint_eventRenameLocalVariable_Parms, Blueprint), Z_Construct_UClass_UBlueprint_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorBP_UBlueprint_RenameLocalVariable_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_UBlueprint_RenameLocalVariable_Statics::NewProp_NewVariableName,
@@ -2941,11 +2983,12 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_UBlueprint_RenameLocalVariable_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Blueprint" },
+		{ "Comment", "/* Rename a local variable in FunctionName */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_UBlueprint.h" },
 		{ "ToolTip", "Rename a local variable in FunctionName" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_RenameLocalVariable_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "RenameLocalVariable", sizeof(ElgEditorBP_UBlueprint_eventRenameLocalVariable_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_RenameLocalVariable_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_RenameLocalVariable_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_RenameLocalVariable_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_RenameLocalVariable_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_RenameLocalVariable_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "RenameLocalVariable", nullptr, nullptr, sizeof(ElgEditorBP_UBlueprint_eventRenameLocalVariable_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_RenameLocalVariable_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_RenameLocalVariable_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_RenameLocalVariable_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_RenameLocalVariable_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_UBlueprint_RenameLocalVariable()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -2983,7 +3026,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 	{
 		((ElgEditorBP_UBlueprint_eventSetCanEverTick_Parms*)Obj)->bEnabled = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_SetCanEverTick_Statics::NewProp_bEnabled = { "bEnabled", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ElgEditorBP_UBlueprint_eventSetCanEverTick_Parms), &Z_Construct_UFunction_UElgEditorBP_UBlueprint_SetCanEverTick_Statics::NewProp_bEnabled_SetBit, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_SetCanEverTick_Statics::NewProp_bEnabled_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_SetCanEverTick_Statics::NewProp_bEnabled_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_SetCanEverTick_Statics::NewProp_bEnabled = { "bEnabled", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ElgEditorBP_UBlueprint_eventSetCanEverTick_Parms), &Z_Construct_UFunction_UElgEditorBP_UBlueprint_SetCanEverTick_Statics::NewProp_bEnabled_SetBit, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_SetCanEverTick_Statics::NewProp_bEnabled_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_SetCanEverTick_Statics::NewProp_bEnabled_MetaData)) };
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_SetCanEverTick_Statics::NewProp_Blueprint = { "Blueprint", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_UBlueprint_eventSetCanEverTick_Parms, Blueprint), Z_Construct_UClass_UBlueprint_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorBP_UBlueprint_SetCanEverTick_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_UBlueprint_SetCanEverTick_Statics::NewProp_bEnabled,
@@ -2992,12 +3035,13 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_UBlueprint_SetCanEverTick_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Blueprint" },
+		{ "Comment", "/* Set the bCanEverTick state */" },
 		{ "CPP_Default_bEnabled", "false" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_UBlueprint.h" },
 		{ "ToolTip", "Set the bCanEverTick state" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_SetCanEverTick_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "SetCanEverTick", sizeof(ElgEditorBP_UBlueprint_eventSetCanEverTick_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_SetCanEverTick_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_SetCanEverTick_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_SetCanEverTick_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_SetCanEverTick_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_SetCanEverTick_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "SetCanEverTick", nullptr, nullptr, sizeof(ElgEditorBP_UBlueprint_eventSetCanEverTick_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_SetCanEverTick_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_SetCanEverTick_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_SetCanEverTick_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_SetCanEverTick_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_UBlueprint_SetCanEverTick()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -3035,7 +3079,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 	{
 		((ElgEditorBP_UBlueprint_eventSetRunConstructionScriptOnDrag_Parms*)Obj)->bEnabled = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_SetRunConstructionScriptOnDrag_Statics::NewProp_bEnabled = { "bEnabled", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ElgEditorBP_UBlueprint_eventSetRunConstructionScriptOnDrag_Parms), &Z_Construct_UFunction_UElgEditorBP_UBlueprint_SetRunConstructionScriptOnDrag_Statics::NewProp_bEnabled_SetBit, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_SetRunConstructionScriptOnDrag_Statics::NewProp_bEnabled_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_SetRunConstructionScriptOnDrag_Statics::NewProp_bEnabled_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_SetRunConstructionScriptOnDrag_Statics::NewProp_bEnabled = { "bEnabled", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ElgEditorBP_UBlueprint_eventSetRunConstructionScriptOnDrag_Parms), &Z_Construct_UFunction_UElgEditorBP_UBlueprint_SetRunConstructionScriptOnDrag_Statics::NewProp_bEnabled_SetBit, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_SetRunConstructionScriptOnDrag_Statics::NewProp_bEnabled_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_SetRunConstructionScriptOnDrag_Statics::NewProp_bEnabled_MetaData)) };
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_SetRunConstructionScriptOnDrag_Statics::NewProp_Blueprint = { "Blueprint", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_UBlueprint_eventSetRunConstructionScriptOnDrag_Parms, Blueprint), Z_Construct_UClass_UBlueprint_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorBP_UBlueprint_SetRunConstructionScriptOnDrag_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_UBlueprint_SetRunConstructionScriptOnDrag_Statics::NewProp_bEnabled,
@@ -3044,12 +3088,13 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_UBlueprint_SetRunConstructionScriptOnDrag_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Blueprint" },
+		{ "Comment", "/* Set the bRunConstructionScriptOnDrag state */" },
 		{ "CPP_Default_bEnabled", "true" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_UBlueprint.h" },
 		{ "ToolTip", "Set the bRunConstructionScriptOnDrag state" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_SetRunConstructionScriptOnDrag_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "SetRunConstructionScriptOnDrag", sizeof(ElgEditorBP_UBlueprint_eventSetRunConstructionScriptOnDrag_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_SetRunConstructionScriptOnDrag_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_SetRunConstructionScriptOnDrag_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_SetRunConstructionScriptOnDrag_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_SetRunConstructionScriptOnDrag_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_SetRunConstructionScriptOnDrag_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "SetRunConstructionScriptOnDrag", nullptr, nullptr, sizeof(ElgEditorBP_UBlueprint_eventSetRunConstructionScriptOnDrag_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_SetRunConstructionScriptOnDrag_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_SetRunConstructionScriptOnDrag_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_SetRunConstructionScriptOnDrag_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_SetRunConstructionScriptOnDrag_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_UBlueprint_SetRunConstructionScriptOnDrag()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -3087,7 +3132,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 	{
 		((ElgEditorBP_UBlueprint_eventSetStartingWithTick_Parms*)Obj)->bEnabled = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_SetStartingWithTick_Statics::NewProp_bEnabled = { "bEnabled", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ElgEditorBP_UBlueprint_eventSetStartingWithTick_Parms), &Z_Construct_UFunction_UElgEditorBP_UBlueprint_SetStartingWithTick_Statics::NewProp_bEnabled_SetBit, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_SetStartingWithTick_Statics::NewProp_bEnabled_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_SetStartingWithTick_Statics::NewProp_bEnabled_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_SetStartingWithTick_Statics::NewProp_bEnabled = { "bEnabled", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ElgEditorBP_UBlueprint_eventSetStartingWithTick_Parms), &Z_Construct_UFunction_UElgEditorBP_UBlueprint_SetStartingWithTick_Statics::NewProp_bEnabled_SetBit, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_SetStartingWithTick_Statics::NewProp_bEnabled_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_SetStartingWithTick_Statics::NewProp_bEnabled_MetaData)) };
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_SetStartingWithTick_Statics::NewProp_Blueprint = { "Blueprint", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_UBlueprint_eventSetStartingWithTick_Parms, Blueprint), Z_Construct_UClass_UBlueprint_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorBP_UBlueprint_SetStartingWithTick_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_UBlueprint_SetStartingWithTick_Statics::NewProp_bEnabled,
@@ -3096,12 +3141,13 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_UBlueprint_SetStartingWithTick_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Blueprint" },
+		{ "Comment", "/* Set the bStartWithTickEnabled state */" },
 		{ "CPP_Default_bEnabled", "false" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_UBlueprint.h" },
 		{ "ToolTip", "Set the bStartWithTickEnabled state" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_SetStartingWithTick_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "SetStartingWithTick", sizeof(ElgEditorBP_UBlueprint_eventSetStartingWithTick_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_SetStartingWithTick_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_SetStartingWithTick_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_SetStartingWithTick_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_SetStartingWithTick_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_UBlueprint_SetStartingWithTick_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_UBlueprint, nullptr, "SetStartingWithTick", nullptr, nullptr, sizeof(ElgEditorBP_UBlueprint_eventSetStartingWithTick_Parms), Z_Construct_UFunction_UElgEditorBP_UBlueprint_SetStartingWithTick_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_SetStartingWithTick_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_UBlueprint_SetStartingWithTick_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_UBlueprint_SetStartingWithTick_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_UBlueprint_SetStartingWithTick()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -3130,61 +3176,62 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 		(UObject* (*)())Z_Construct_UPackage__Script_ElgEditorScripting,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UElgEditorBP_UBlueprint_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintAddComponent, "BlueprintAddComponent" }, // 3499444932
-		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintAddInterface, "BlueprintAddInterface" }, // 300630525
-		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintImplementInterface, "BlueprintImplementInterface" }, // 2245274888
-		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintRemoveComponent, "BlueprintRemoveComponent" }, // 3740366821
-		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintRemoveInterface, "BlueprintRemoveInterface" }, // 601555731
-		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintSupportComponent, "BlueprintSupportComponent" }, // 3539071608
-		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintSupportComponentBranch, "BlueprintSupportComponentBranch" }, // 2032027772
-		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintSupportInterface, "BlueprintSupportInterface" }, // 2642966089
-		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintSupportInterfaceBranch, "BlueprintSupportInterfaceBranch" }, // 334533445
-		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_CanEverTick, "CanEverTick" }, // 88507853
-		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_CanEverTickBranch, "CanEverTickBranch" }, // 96722333
-		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_CompileBlueprint, "CompileBlueprint" }, // 443233441
-		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_DeleteNodesByName, "DeleteNodesByName" }, // 602583478
-		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentOfClass, "GetBlueprintComponentOfClass" }, // 278202030
-		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentOfClassBranch, "GetBlueprintComponentOfClassBranch" }, // 1330502209
-		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponents, "GetBlueprintComponents" }, // 1843416762
-		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentsOfClass, "GetBlueprintComponentsOfClass" }, // 2491739729
-		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentsOfClassBranch, "GetBlueprintComponentsOfClassBranch" }, // 995018040
-		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintFromAssetData, "GetBlueprintFromAssetData" }, // 4155287999
-		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintFromObject, "GetBlueprintFromObject" }, // 469041082
-		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintInterfaces, "GetBlueprintInterfaces" }, // 1421430742
-		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintNodeStat, "GetBlueprintNodeStat" }, // 2142917850
-		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintsByPath, "GetBlueprintsByPath" }, // 3608396396
-		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintsFromObjects, "GetBlueprintsFromObjects" }, // 1474681370
-		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintsNodeStat, "GetBlueprintsNodeStat" }, // 314928995
-		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetLocalVariableNames, "GetLocalVariableNames" }, // 925115746
-		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetNativeClass, "GetNativeClass" }, // 692008856
-		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetNodeStatsByPath, "GetNodeStatsByPath" }, // 4194545431
-		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetNodeUsage, "GetNodeUsage" }, // 2893389417
-		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetParentClass, "GetParentClass" }, // 331553390
-		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetUnusedLocalVariableNames, "GetUnusedLocalVariableNames" }, // 3327785615
-		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetVariableNames, "GetVariableNames" }, // 3940247363
-		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_HasCompilerError, "HasCompilerError" }, // 2842060306
-		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_HasCompilerErrorBranch, "HasCompilerErrorBranch" }, // 3712801259
-		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_HasNode, "HasNode" }, // 4197180725
-		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_HasNodeBranch, "HasNodeBranch" }, // 2687467384
-		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsChildOfClass, "IsChildOfClass" }, // 4086813391
-		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsChildOfClassBranch, "IsChildOfClassBranch" }, // 939189549
-		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsConstructionScriptConnected, "IsConstructionScriptConnected" }, // 927335428
-		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsConstructionScriptConnectedBranch, "IsConstructionScriptConnectedBranch" }, // 2567065586
-		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsNodePinConnected, "IsNodePinConnected" }, // 1344762194
-		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsNodePinConnectedBranch, "IsNodePinConnectedBranch" }, // 3809546607
-		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsRunConstructionScriptOnDrag, "IsRunConstructionScriptOnDrag" }, // 3111920304
-		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsRunConstructionScriptOnDragBranch, "IsRunConstructionScriptOnDragBranch" }, // 703874627
-		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsStartingWithTick, "IsStartingWithTick" }, // 2543395122
-		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsStartingWithTickBranch, "IsStartingWithTickBranch" }, // 3995638147
-		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_RemoveLocalVariable, "RemoveLocalVariable" }, // 2699314229
-		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_RemoveUnusedLocalVariables, "RemoveUnusedLocalVariables" }, // 952843502
-		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_RenameLocalVariable, "RenameLocalVariable" }, // 4059193343
-		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_SetCanEverTick, "SetCanEverTick" }, // 2260846384
-		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_SetRunConstructionScriptOnDrag, "SetRunConstructionScriptOnDrag" }, // 2317023952
-		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_SetStartingWithTick, "SetStartingWithTick" }, // 3567825437
+		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintAddComponent, "BlueprintAddComponent" }, // 1812814279
+		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintAddInterface, "BlueprintAddInterface" }, // 1564220182
+		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintImplementInterface, "BlueprintImplementInterface" }, // 2851754923
+		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintRemoveComponent, "BlueprintRemoveComponent" }, // 1946884629
+		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintRemoveInterface, "BlueprintRemoveInterface" }, // 3142438968
+		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintSupportComponent, "BlueprintSupportComponent" }, // 3394024462
+		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintSupportComponentBranch, "BlueprintSupportComponentBranch" }, // 3211293560
+		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintSupportInterface, "BlueprintSupportInterface" }, // 4179957731
+		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_BlueprintSupportInterfaceBranch, "BlueprintSupportInterfaceBranch" }, // 200432628
+		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_CanEverTick, "CanEverTick" }, // 4249027208
+		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_CanEverTickBranch, "CanEverTickBranch" }, // 758754574
+		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_CompileBlueprint, "CompileBlueprint" }, // 2831792180
+		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_DeleteNodesByName, "DeleteNodesByName" }, // 1747329448
+		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentOfClass, "GetBlueprintComponentOfClass" }, // 2314082473
+		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentOfClassBranch, "GetBlueprintComponentOfClassBranch" }, // 528654125
+		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponents, "GetBlueprintComponents" }, // 1611772367
+		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentsOfClass, "GetBlueprintComponentsOfClass" }, // 3168468645
+		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintComponentsOfClassBranch, "GetBlueprintComponentsOfClassBranch" }, // 901564285
+		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintFromAssetData, "GetBlueprintFromAssetData" }, // 337678593
+		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintFromObject, "GetBlueprintFromObject" }, // 3341093116
+		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintInterfaces, "GetBlueprintInterfaces" }, // 2099507609
+		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintNodeStat, "GetBlueprintNodeStat" }, // 1377863152
+		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintsByPath, "GetBlueprintsByPath" }, // 2300221224
+		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintsFromObjects, "GetBlueprintsFromObjects" }, // 3525975248
+		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetBlueprintsNodeStat, "GetBlueprintsNodeStat" }, // 2825263835
+		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetLocalVariableNames, "GetLocalVariableNames" }, // 3276013559
+		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetNativeClass, "GetNativeClass" }, // 3909337502
+		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetNodeStatsByPath, "GetNodeStatsByPath" }, // 3380311401
+		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetNodeUsage, "GetNodeUsage" }, // 2318396119
+		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetParentClass, "GetParentClass" }, // 1934692930
+		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetUnusedLocalVariableNames, "GetUnusedLocalVariableNames" }, // 847378564
+		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_GetVariableNames, "GetVariableNames" }, // 1992213874
+		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_HasCompilerError, "HasCompilerError" }, // 894812612
+		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_HasCompilerErrorBranch, "HasCompilerErrorBranch" }, // 631940956
+		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_HasNode, "HasNode" }, // 3076197054
+		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_HasNodeBranch, "HasNodeBranch" }, // 68312853
+		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsChildOfClass, "IsChildOfClass" }, // 3394106914
+		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsChildOfClassBranch, "IsChildOfClassBranch" }, // 2649128946
+		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsConstructionScriptConnected, "IsConstructionScriptConnected" }, // 2016413553
+		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsConstructionScriptConnectedBranch, "IsConstructionScriptConnectedBranch" }, // 3619902829
+		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsNodePinConnected, "IsNodePinConnected" }, // 1913982692
+		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsNodePinConnectedBranch, "IsNodePinConnectedBranch" }, // 3765147935
+		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsRunConstructionScriptOnDrag, "IsRunConstructionScriptOnDrag" }, // 2305360805
+		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsRunConstructionScriptOnDragBranch, "IsRunConstructionScriptOnDragBranch" }, // 2158649641
+		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsStartingWithTick, "IsStartingWithTick" }, // 2449982614
+		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_IsStartingWithTickBranch, "IsStartingWithTickBranch" }, // 856255546
+		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_RemoveLocalVariable, "RemoveLocalVariable" }, // 2187571253
+		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_RemoveUnusedLocalVariables, "RemoveUnusedLocalVariables" }, // 346290633
+		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_RenameLocalVariable, "RenameLocalVariable" }, // 1119292154
+		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_SetCanEverTick, "SetCanEverTick" }, // 449201801
+		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_SetRunConstructionScriptOnDrag, "SetRunConstructionScriptOnDrag" }, // 246242972
+		{ &Z_Construct_UFunction_UElgEditorBP_UBlueprint_SetStartingWithTick, "SetStartingWithTick" }, // 3843598535
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UElgEditorBP_UBlueprint_Statics::Class_MetaDataParams[] = {
+		{ "Comment", "/**\n * \n */" },
 		{ "IncludePath", "Blueprints/ElgEditorBP_UBlueprint.h" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_UBlueprint.h" },
 	};
@@ -3200,12 +3247,12 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 		FuncInfo,
 		nullptr,
 		nullptr,
-		ARRAY_COUNT(DependentSingletons),
-		ARRAY_COUNT(FuncInfo),
+		UE_ARRAY_COUNT(DependentSingletons),
+		UE_ARRAY_COUNT(FuncInfo),
 		0,
 		0,
 		0x001000A0u,
-		METADATA_PARAMS(Z_Construct_UClass_UElgEditorBP_UBlueprint_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UElgEditorBP_UBlueprint_Statics::Class_MetaDataParams))
+		METADATA_PARAMS(Z_Construct_UClass_UElgEditorBP_UBlueprint_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_UElgEditorBP_UBlueprint_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UElgEditorBP_UBlueprint()
 	{
@@ -3216,7 +3263,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgBluepr
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UElgEditorBP_UBlueprint, 3898151400);
+	IMPLEMENT_CLASS(UElgEditorBP_UBlueprint, 4223342877);
 	template<> ELGEDITORSCRIPTING_API UClass* StaticClass<UElgEditorBP_UBlueprint>()
 	{
 		return UElgEditorBP_UBlueprint::StaticClass();

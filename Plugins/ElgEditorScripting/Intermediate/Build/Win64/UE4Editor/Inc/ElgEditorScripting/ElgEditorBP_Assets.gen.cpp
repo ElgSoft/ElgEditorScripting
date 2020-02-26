@@ -111,30 +111,33 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgAssetM
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FS_ElgAssetMetaData_Statics::NewProp_MetaData_MetaData[] = {
 		{ "Category", "AssetMetaData" },
+		{ "Comment", "/* The real Meta Data map */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_Assets.h" },
 		{ "ToolTip", "The real Meta Data map" },
 	};
 #endif
-	const UE4CodeGen_Private::FMapPropertyParams Z_Construct_UScriptStruct_FS_ElgAssetMetaData_Statics::NewProp_MetaData = { "MetaData", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Map, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgAssetMetaData, MetaData), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgAssetMetaData_Statics::NewProp_MetaData_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgAssetMetaData_Statics::NewProp_MetaData_MetaData)) };
+	const UE4CodeGen_Private::FMapPropertyParams Z_Construct_UScriptStruct_FS_ElgAssetMetaData_Statics::NewProp_MetaData = { "MetaData", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Map, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgAssetMetaData, MetaData), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgAssetMetaData_Statics::NewProp_MetaData_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgAssetMetaData_Statics::NewProp_MetaData_MetaData)) };
 	const UE4CodeGen_Private::FNamePropertyParams Z_Construct_UScriptStruct_FS_ElgAssetMetaData_Statics::NewProp_MetaData_Key_KeyProp = { "MetaData_Key", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FS_ElgAssetMetaData_Statics::NewProp_MetaData_ValueProp = { "MetaData", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, 1, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FS_ElgAssetMetaData_Statics::NewProp_Keys_MetaData[] = {
 		{ "Category", "AssetMetaData" },
+		{ "Comment", "/* Sorted Meta Data keys */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_Assets.h" },
 		{ "ToolTip", "Sorted Meta Data keys" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FS_ElgAssetMetaData_Statics::NewProp_Keys = { "Keys", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgAssetMetaData, Keys), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgAssetMetaData_Statics::NewProp_Keys_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgAssetMetaData_Statics::NewProp_Keys_MetaData)) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FS_ElgAssetMetaData_Statics::NewProp_Keys = { "Keys", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgAssetMetaData, Keys), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgAssetMetaData_Statics::NewProp_Keys_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgAssetMetaData_Statics::NewProp_Keys_MetaData)) };
 	const UE4CodeGen_Private::FNamePropertyParams Z_Construct_UScriptStruct_FS_ElgAssetMetaData_Statics::NewProp_Keys_Inner = { "Keys", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FS_ElgAssetMetaData_Statics::NewProp_Object_MetaData[] = {
 		{ "Category", "AssetMetaData" },
+		{ "Comment", "/* The owner object of the meta data */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_Assets.h" },
 		{ "ToolTip", "The owner object of the meta data" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FS_ElgAssetMetaData_Statics::NewProp_Object = { "Object", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgAssetMetaData, Object), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgAssetMetaData_Statics::NewProp_Object_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgAssetMetaData_Statics::NewProp_Object_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FS_ElgAssetMetaData_Statics::NewProp_Object = { "Object", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgAssetMetaData, Object), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgAssetMetaData_Statics::NewProp_Object_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgAssetMetaData_Statics::NewProp_Object_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FS_ElgAssetMetaData_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FS_ElgAssetMetaData_Statics::NewProp_MetaData,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FS_ElgAssetMetaData_Statics::NewProp_MetaData_Key_KeyProp,
@@ -151,10 +154,10 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgAssetM
 		sizeof(FS_ElgAssetMetaData),
 		alignof(FS_ElgAssetMetaData),
 		Z_Construct_UScriptStruct_FS_ElgAssetMetaData_Statics::PropPointers,
-		ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgAssetMetaData_Statics::PropPointers),
+		UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgAssetMetaData_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
 		EStructFlags(0x00000201),
-		METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgAssetMetaData_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgAssetMetaData_Statics::Struct_MetaDataParams))
+		METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgAssetMetaData_Statics::Struct_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgAssetMetaData_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FS_ElgAssetMetaData()
 	{
@@ -171,7 +174,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgAssetM
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FS_ElgAssetMetaData_Hash() { return 1969176009U; }
+	uint32 Get_Z_Construct_UScriptStruct_FS_ElgAssetMetaData_Hash() { return 3736038178U; }
 	void UElgEditorBP_Assets::StaticRegisterNativesUElgEditorBP_Assets()
 	{
 		UClass* Class = UElgEditorBP_Assets::StaticClass();
@@ -206,7 +209,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgAssetM
 			{ "GetSelectedPaths", &UElgEditorBP_Assets::execGetSelectedPaths },
 			{ "HasAssetRefs", &UElgEditorBP_Assets::execHasAssetRefs },
 		};
-		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 	}
 	struct Z_Construct_UFunction_UElgEditorBP_Assets_FixRedirectors_Statics
 	{
@@ -218,11 +221,12 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgAssetM
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_Assets_FixRedirectors_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Asset" },
+		{ "Comment", "/* Fix all redirectors in the Content folder /Game/...  */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_Assets.h" },
 		{ "ToolTip", "Fix all redirectors in the Content folder /Game/..." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Assets_FixRedirectors_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Assets, nullptr, "FixRedirectors", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_FixRedirectors_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_FixRedirectors_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Assets_FixRedirectors_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Assets, nullptr, "FixRedirectors", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_FixRedirectors_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_FixRedirectors_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_Assets_FixRedirectors()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -263,13 +267,13 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgAssetM
 	{
 		((ElgEditorBP_Assets_eventFixRedirectorsByPath_Parms*)Obj)->RecursivePaths = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UElgEditorBP_Assets_FixRedirectorsByPath_Statics::NewProp_RecursivePaths = { "RecursivePaths", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ElgEditorBP_Assets_eventFixRedirectorsByPath_Parms), &Z_Construct_UFunction_UElgEditorBP_Assets_FixRedirectorsByPath_Statics::NewProp_RecursivePaths_SetBit, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_FixRedirectorsByPath_Statics::NewProp_RecursivePaths_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_FixRedirectorsByPath_Statics::NewProp_RecursivePaths_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UElgEditorBP_Assets_FixRedirectorsByPath_Statics::NewProp_RecursivePaths = { "RecursivePaths", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ElgEditorBP_Assets_eventFixRedirectorsByPath_Parms), &Z_Construct_UFunction_UElgEditorBP_Assets_FixRedirectorsByPath_Statics::NewProp_RecursivePaths_SetBit, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_FixRedirectorsByPath_Statics::NewProp_RecursivePaths_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_FixRedirectorsByPath_Statics::NewProp_RecursivePaths_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_Assets_FixRedirectorsByPath_Statics::NewProp_Path_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FNamePropertyParams Z_Construct_UFunction_UElgEditorBP_Assets_FixRedirectorsByPath_Statics::NewProp_Path = { "Path", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_Assets_eventFixRedirectorsByPath_Parms, Path), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_FixRedirectorsByPath_Statics::NewProp_Path_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_FixRedirectorsByPath_Statics::NewProp_Path_MetaData)) };
+	const UE4CodeGen_Private::FNamePropertyParams Z_Construct_UFunction_UElgEditorBP_Assets_FixRedirectorsByPath_Statics::NewProp_Path = { "Path", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_Assets_eventFixRedirectorsByPath_Parms, Path), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_FixRedirectorsByPath_Statics::NewProp_Path_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_FixRedirectorsByPath_Statics::NewProp_Path_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorBP_Assets_FixRedirectorsByPath_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_Assets_FixRedirectorsByPath_Statics::NewProp_RecursivePaths,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_Assets_FixRedirectorsByPath_Statics::NewProp_Path,
@@ -277,12 +281,13 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgAssetM
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_Assets_FixRedirectorsByPath_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Asset" },
+		{ "Comment", "/* Fix all redirectors in the specified path and its sub folders  */" },
 		{ "CPP_Default_RecursivePaths", "true" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_Assets.h" },
 		{ "ToolTip", "Fix all redirectors in the specified path and its sub folders" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Assets_FixRedirectorsByPath_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Assets, nullptr, "FixRedirectorsByPath", sizeof(ElgEditorBP_Assets_eventFixRedirectorsByPath_Parms), Z_Construct_UFunction_UElgEditorBP_Assets_FixRedirectorsByPath_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_FixRedirectorsByPath_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_FixRedirectorsByPath_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_FixRedirectorsByPath_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Assets_FixRedirectorsByPath_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Assets, nullptr, "FixRedirectorsByPath", nullptr, nullptr, sizeof(ElgEditorBP_Assets_eventFixRedirectorsByPath_Parms), Z_Construct_UFunction_UElgEditorBP_Assets_FixRedirectorsByPath_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_FixRedirectorsByPath_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_FixRedirectorsByPath_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_FixRedirectorsByPath_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_Assets_FixRedirectorsByPath()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -316,7 +321,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgAssetM
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDataFromObject_Statics::NewProp_Object = { "Object", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_Assets_eventGetAssetDataFromObject_Parms, Object), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDataFromObject_Statics::NewProp_Object_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDataFromObject_Statics::NewProp_Object_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDataFromObject_Statics::NewProp_Object = { "Object", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_Assets_eventGetAssetDataFromObject_Parms, Object), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDataFromObject_Statics::NewProp_Object_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDataFromObject_Statics::NewProp_Object_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDataFromObject_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDataFromObject_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDataFromObject_Statics::NewProp_Object,
@@ -324,11 +329,12 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgAssetM
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDataFromObject_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Asset" },
+		{ "Comment", "/* Get the AssetData by UObject */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_Assets.h" },
 		{ "ToolTip", "Get the AssetData by UObject" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDataFromObject_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Assets, nullptr, "GetAssetDataFromObject", sizeof(ElgEditorBP_Assets_eventGetAssetDataFromObject_Parms), Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDataFromObject_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDataFromObject_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDataFromObject_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDataFromObject_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDataFromObject_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Assets, nullptr, "GetAssetDataFromObject", nullptr, nullptr, sizeof(ElgEditorBP_Assets_eventGetAssetDataFromObject_Parms), Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDataFromObject_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDataFromObject_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDataFromObject_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDataFromObject_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDataFromObject()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -362,7 +368,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgAssetM
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDataFromPath_Statics::NewProp_AssetPath = { "AssetPath", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_Assets_eventGetAssetDataFromPath_Parms, AssetPath), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDataFromPath_Statics::NewProp_AssetPath_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDataFromPath_Statics::NewProp_AssetPath_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDataFromPath_Statics::NewProp_AssetPath = { "AssetPath", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_Assets_eventGetAssetDataFromPath_Parms, AssetPath), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDataFromPath_Statics::NewProp_AssetPath_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDataFromPath_Statics::NewProp_AssetPath_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDataFromPath_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDataFromPath_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDataFromPath_Statics::NewProp_AssetPath,
@@ -370,11 +376,12 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgAssetM
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDataFromPath_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Asset" },
+		{ "Comment", "/* Get the AssetData by its path */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_Assets.h" },
 		{ "ToolTip", "Get the AssetData by its path" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDataFromPath_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Assets, nullptr, "GetAssetDataFromPath", sizeof(ElgEditorBP_Assets_eventGetAssetDataFromPath_Parms), Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDataFromPath_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDataFromPath_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDataFromPath_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDataFromPath_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDataFromPath_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Assets, nullptr, "GetAssetDataFromPath", nullptr, nullptr, sizeof(ElgEditorBP_Assets_eventGetAssetDataFromPath_Parms), Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDataFromPath_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDataFromPath_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDataFromPath_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDataFromPath_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDataFromPath()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -411,7 +418,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgAssetM
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDatasByPath_Statics::NewProp_AssetPaths = { "AssetPaths", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_Assets_eventGetAssetDatasByPath_Parms, AssetPaths), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDatasByPath_Statics::NewProp_AssetPaths_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDatasByPath_Statics::NewProp_AssetPaths_MetaData)) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDatasByPath_Statics::NewProp_AssetPaths = { "AssetPaths", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_Assets_eventGetAssetDatasByPath_Parms, AssetPaths), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDatasByPath_Statics::NewProp_AssetPaths_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDatasByPath_Statics::NewProp_AssetPaths_MetaData)) };
 	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDatasByPath_Statics::NewProp_AssetPaths_Inner = { "AssetPaths", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDatasByPath_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDatasByPath_Statics::NewProp_AssetDatas,
@@ -422,11 +429,12 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgAssetM
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDatasByPath_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Asset" },
+		{ "Comment", "/* Get the asset data array*/" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_Assets.h" },
 		{ "ToolTip", "Get the asset data array" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDatasByPath_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Assets, nullptr, "GetAssetDatasByPath", sizeof(ElgEditorBP_Assets_eventGetAssetDatasByPath_Parms), Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDatasByPath_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDatasByPath_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDatasByPath_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDatasByPath_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDatasByPath_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Assets, nullptr, "GetAssetDatasByPath", nullptr, nullptr, sizeof(ElgEditorBP_Assets_eventGetAssetDatasByPath_Parms), Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDatasByPath_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDatasByPath_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDatasByPath_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDatasByPath_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDatasByPath()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -460,7 +468,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgAssetM
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDateModified_Statics::NewProp_AssetDataStruct = { "AssetDataStruct", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_Assets_eventGetAssetDateModified_Parms, AssetDataStruct), Z_Construct_UScriptStruct_FAssetData, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDateModified_Statics::NewProp_AssetDataStruct_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDateModified_Statics::NewProp_AssetDataStruct_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDateModified_Statics::NewProp_AssetDataStruct = { "AssetDataStruct", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_Assets_eventGetAssetDateModified_Parms, AssetDataStruct), Z_Construct_UScriptStruct_FAssetData, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDateModified_Statics::NewProp_AssetDataStruct_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDateModified_Statics::NewProp_AssetDataStruct_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDateModified_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDateModified_Statics::NewProp_AssetDateTime,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDateModified_Statics::NewProp_AssetDataStruct,
@@ -468,11 +476,12 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgAssetM
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDateModified_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Asset" },
+		{ "Comment", "/* Get the DateTime object for the asset */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_Assets.h" },
 		{ "ToolTip", "Get the DateTime object for the asset" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDateModified_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Assets, nullptr, "GetAssetDateModified", sizeof(ElgEditorBP_Assets_eventGetAssetDateModified_Parms), Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDateModified_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDateModified_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14C42401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDateModified_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDateModified_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDateModified_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Assets, nullptr, "GetAssetDateModified", nullptr, nullptr, sizeof(ElgEditorBP_Assets_eventGetAssetDateModified_Parms), Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDateModified_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDateModified_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14C42401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDateModified_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDateModified_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDateModified()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -506,7 +515,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgAssetM
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDateModifiedAsString_Statics::NewProp_AssetDataStruct = { "AssetDataStruct", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_Assets_eventGetAssetDateModifiedAsString_Parms, AssetDataStruct), Z_Construct_UScriptStruct_FAssetData, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDateModifiedAsString_Statics::NewProp_AssetDataStruct_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDateModifiedAsString_Statics::NewProp_AssetDataStruct_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDateModifiedAsString_Statics::NewProp_AssetDataStruct = { "AssetDataStruct", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_Assets_eventGetAssetDateModifiedAsString_Parms, AssetDataStruct), Z_Construct_UScriptStruct_FAssetData, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDateModifiedAsString_Statics::NewProp_AssetDataStruct_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDateModifiedAsString_Statics::NewProp_AssetDataStruct_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDateModifiedAsString_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDateModifiedAsString_Statics::NewProp_AssetDateTime,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDateModifiedAsString_Statics::NewProp_AssetDataStruct,
@@ -514,11 +523,12 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgAssetM
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDateModifiedAsString_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Asset" },
+		{ "Comment", "/* Get the DateTime as a string for the asset */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_Assets.h" },
 		{ "ToolTip", "Get the DateTime as a string for the asset" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDateModifiedAsString_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Assets, nullptr, "GetAssetDateModifiedAsString", sizeof(ElgEditorBP_Assets_eventGetAssetDateModifiedAsString_Parms), Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDateModifiedAsString_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDateModifiedAsString_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDateModifiedAsString_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDateModifiedAsString_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDateModifiedAsString_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Assets, nullptr, "GetAssetDateModifiedAsString", nullptr, nullptr, sizeof(ElgEditorBP_Assets_eventGetAssetDateModifiedAsString_Parms), Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDateModifiedAsString_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDateModifiedAsString_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDateModifiedAsString_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDateModifiedAsString_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDateModifiedAsString()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -554,7 +564,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgAssetM
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDependencies_Statics::NewProp_AssetData = { "AssetData", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_Assets_eventGetAssetDependencies_Parms, AssetData), Z_Construct_UScriptStruct_FAssetData, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDependencies_Statics::NewProp_AssetData_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDependencies_Statics::NewProp_AssetData_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDependencies_Statics::NewProp_AssetData = { "AssetData", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_Assets_eventGetAssetDependencies_Parms, AssetData), Z_Construct_UScriptStruct_FAssetData, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDependencies_Statics::NewProp_AssetData_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDependencies_Statics::NewProp_AssetData_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDependencies_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDependencies_Statics::NewProp_Dependencies,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDependencies_Statics::NewProp_Dependencies_Inner,
@@ -563,11 +573,12 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgAssetM
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDependencies_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Asset" },
+		{ "Comment", "/* Get all dependencies, hard and soft, to the asset */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_Assets.h" },
 		{ "ToolTip", "Get all dependencies, hard and soft, to the asset" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDependencies_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Assets, nullptr, "GetAssetDependencies", sizeof(ElgEditorBP_Assets_eventGetAssetDependencies_Parms), Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDependencies_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDependencies_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDependencies_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDependencies_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDependencies_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Assets, nullptr, "GetAssetDependencies", nullptr, nullptr, sizeof(ElgEditorBP_Assets_eventGetAssetDependencies_Parms), Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDependencies_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDependencies_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDependencies_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDependencies_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDependencies()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -603,7 +614,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgAssetM
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDependenciesByObject_Statics::NewProp_Object = { "Object", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_Assets_eventGetAssetDependenciesByObject_Parms, Object), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDependenciesByObject_Statics::NewProp_Object_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDependenciesByObject_Statics::NewProp_Object_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDependenciesByObject_Statics::NewProp_Object = { "Object", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_Assets_eventGetAssetDependenciesByObject_Parms, Object), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDependenciesByObject_Statics::NewProp_Object_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDependenciesByObject_Statics::NewProp_Object_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDependenciesByObject_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDependenciesByObject_Statics::NewProp_Dependencies,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDependenciesByObject_Statics::NewProp_Dependencies_Inner,
@@ -612,11 +623,12 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgAssetM
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDependenciesByObject_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Asset" },
+		{ "Comment", "/* Get all reference, hard and soft, to the asset */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_Assets.h" },
 		{ "ToolTip", "Get all reference, hard and soft, to the asset" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDependenciesByObject_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Assets, nullptr, "GetAssetDependenciesByObject", sizeof(ElgEditorBP_Assets_eventGetAssetDependenciesByObject_Parms), Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDependenciesByObject_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDependenciesByObject_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDependenciesByObject_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDependenciesByObject_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDependenciesByObject_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Assets, nullptr, "GetAssetDependenciesByObject", nullptr, nullptr, sizeof(ElgEditorBP_Assets_eventGetAssetDependenciesByObject_Parms), Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDependenciesByObject_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDependenciesByObject_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDependenciesByObject_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDependenciesByObject_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDependenciesByObject()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -652,7 +664,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgAssetM
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDependenciesByPath_Statics::NewProp_AssetPath = { "AssetPath", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_Assets_eventGetAssetDependenciesByPath_Parms, AssetPath), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDependenciesByPath_Statics::NewProp_AssetPath_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDependenciesByPath_Statics::NewProp_AssetPath_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDependenciesByPath_Statics::NewProp_AssetPath = { "AssetPath", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_Assets_eventGetAssetDependenciesByPath_Parms, AssetPath), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDependenciesByPath_Statics::NewProp_AssetPath_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDependenciesByPath_Statics::NewProp_AssetPath_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDependenciesByPath_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDependenciesByPath_Statics::NewProp_Dependencies,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDependenciesByPath_Statics::NewProp_Dependencies_Inner,
@@ -661,11 +673,12 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgAssetM
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDependenciesByPath_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Asset" },
+		{ "Comment", "/* Get all dependencies, hard and soft, to the asset */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_Assets.h" },
 		{ "ToolTip", "Get all dependencies, hard and soft, to the asset" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDependenciesByPath_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Assets, nullptr, "GetAssetDependenciesByPath", sizeof(ElgEditorBP_Assets_eventGetAssetDependenciesByPath_Parms), Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDependenciesByPath_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDependenciesByPath_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDependenciesByPath_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDependenciesByPath_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDependenciesByPath_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Assets, nullptr, "GetAssetDependenciesByPath", nullptr, nullptr, sizeof(ElgEditorBP_Assets_eventGetAssetDependenciesByPath_Parms), Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDependenciesByPath_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDependenciesByPath_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDependenciesByPath_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDependenciesByPath_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDependenciesByPath()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -699,7 +712,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgAssetM
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDiskPath_Statics::NewProp_AssetDataStruct = { "AssetDataStruct", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_Assets_eventGetAssetDiskPath_Parms, AssetDataStruct), Z_Construct_UScriptStruct_FAssetData, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDiskPath_Statics::NewProp_AssetDataStruct_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDiskPath_Statics::NewProp_AssetDataStruct_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDiskPath_Statics::NewProp_AssetDataStruct = { "AssetDataStruct", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_Assets_eventGetAssetDiskPath_Parms, AssetDataStruct), Z_Construct_UScriptStruct_FAssetData, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDiskPath_Statics::NewProp_AssetDataStruct_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDiskPath_Statics::NewProp_AssetDataStruct_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDiskPath_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDiskPath_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDiskPath_Statics::NewProp_AssetDataStruct,
@@ -707,11 +720,12 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgAssetM
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDiskPath_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Asset" },
+		{ "Comment", "/* Get the full disk path for the asset */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_Assets.h" },
 		{ "ToolTip", "Get the full disk path for the asset" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDiskPath_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Assets, nullptr, "GetAssetDiskPath", sizeof(ElgEditorBP_Assets_eventGetAssetDiskPath_Parms), Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDiskPath_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDiskPath_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDiskPath_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDiskPath_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDiskPath_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Assets, nullptr, "GetAssetDiskPath", nullptr, nullptr, sizeof(ElgEditorBP_Assets_eventGetAssetDiskPath_Parms), Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDiskPath_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDiskPath_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDiskPath_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDiskPath_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDiskPath()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -753,7 +767,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgAssetM
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetMetaData_Statics::NewProp_AssetDataStruct = { "AssetDataStruct", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_Assets_eventGetAssetMetaData_Parms, AssetDataStruct), Z_Construct_UScriptStruct_FAssetData, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetMetaData_Statics::NewProp_AssetDataStruct_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetMetaData_Statics::NewProp_AssetDataStruct_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetMetaData_Statics::NewProp_AssetDataStruct = { "AssetDataStruct", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_Assets_eventGetAssetMetaData_Parms, AssetDataStruct), Z_Construct_UScriptStruct_FAssetData, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetMetaData_Statics::NewProp_AssetDataStruct_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetMetaData_Statics::NewProp_AssetDataStruct_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetMetaData_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetMetaData_Statics::NewProp_MetaData,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetMetaData_Statics::NewProp_Success,
@@ -762,11 +776,12 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgAssetM
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetMetaData_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Asset" },
+		{ "Comment", "/* Get the assets meta data struct, Success is true if it has meta data. */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_Assets.h" },
 		{ "ToolTip", "Get the assets meta data struct, Success is true if it has meta data." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetMetaData_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Assets, nullptr, "GetAssetMetaData", sizeof(ElgEditorBP_Assets_eventGetAssetMetaData_Parms), Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetMetaData_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetMetaData_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetMetaData_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetMetaData_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetMetaData_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Assets, nullptr, "GetAssetMetaData", nullptr, nullptr, sizeof(ElgEditorBP_Assets_eventGetAssetMetaData_Parms), Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetMetaData_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetMetaData_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetMetaData_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetMetaData_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetMetaData()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -805,7 +820,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgAssetM
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetMetaDataBranch_Statics::NewProp_AssetDataStruct = { "AssetDataStruct", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_Assets_eventGetAssetMetaDataBranch_Parms, AssetDataStruct), Z_Construct_UScriptStruct_FAssetData, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetMetaDataBranch_Statics::NewProp_AssetDataStruct_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetMetaDataBranch_Statics::NewProp_AssetDataStruct_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetMetaDataBranch_Statics::NewProp_AssetDataStruct = { "AssetDataStruct", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_Assets_eventGetAssetMetaDataBranch_Parms, AssetDataStruct), Z_Construct_UScriptStruct_FAssetData, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetMetaDataBranch_Statics::NewProp_AssetDataStruct_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetMetaDataBranch_Statics::NewProp_AssetDataStruct_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetMetaDataBranch_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetMetaDataBranch_Statics::NewProp_Branches,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetMetaDataBranch_Statics::NewProp_Branches_Underlying,
@@ -815,12 +830,13 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgAssetM
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetMetaDataBranch_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Asset" },
+		{ "Comment", "/* Get the assets meta data struct branch */" },
 		{ "ExpandEnumAsExecs", "Branches" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_Assets.h" },
 		{ "ToolTip", "Get the assets meta data struct branch" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetMetaDataBranch_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Assets, nullptr, "GetAssetMetaDataBranch", sizeof(ElgEditorBP_Assets_eventGetAssetMetaDataBranch_Parms), Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetMetaDataBranch_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetMetaDataBranch_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetMetaDataBranch_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetMetaDataBranch_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetMetaDataBranch_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Assets, nullptr, "GetAssetMetaDataBranch", nullptr, nullptr, sizeof(ElgEditorBP_Assets_eventGetAssetMetaDataBranch_Parms), Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetMetaDataBranch_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetMetaDataBranch_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetMetaDataBranch_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetMetaDataBranch_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetMetaDataBranch()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -854,7 +870,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgAssetM
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetName_Statics::NewProp_AssetDataStruct = { "AssetDataStruct", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_Assets_eventGetAssetName_Parms, AssetDataStruct), Z_Construct_UScriptStruct_FAssetData, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetName_Statics::NewProp_AssetDataStruct_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetName_Statics::NewProp_AssetDataStruct_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetName_Statics::NewProp_AssetDataStruct = { "AssetDataStruct", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_Assets_eventGetAssetName_Parms, AssetDataStruct), Z_Construct_UScriptStruct_FAssetData, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetName_Statics::NewProp_AssetDataStruct_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetName_Statics::NewProp_AssetDataStruct_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetName_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetName_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetName_Statics::NewProp_AssetDataStruct,
@@ -862,11 +878,12 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgAssetM
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetName_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Asset" },
+		{ "Comment", "/* Return the name of the asset */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_Assets.h" },
 		{ "ToolTip", "Return the name of the asset" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetName_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Assets, nullptr, "GetAssetName", sizeof(ElgEditorBP_Assets_eventGetAssetName_Parms), Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetName_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetName_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetName_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetName_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetName_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Assets, nullptr, "GetAssetName", nullptr, nullptr, sizeof(ElgEditorBP_Assets_eventGetAssetName_Parms), Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetName_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetName_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetName_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetName_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetName()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -909,11 +926,12 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgAssetM
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectMetaData_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Asset" },
+		{ "Comment", "/* Get the asset objects meta data struct, Success is true if it has meta data. */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_Assets.h" },
 		{ "ToolTip", "Get the asset objects meta data struct, Success is true if it has meta data." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectMetaData_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Assets, nullptr, "GetAssetObjectMetaData", sizeof(ElgEditorBP_Assets_eventGetAssetObjectMetaData_Parms), Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectMetaData_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectMetaData_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectMetaData_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectMetaData_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectMetaData_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Assets, nullptr, "GetAssetObjectMetaData", nullptr, nullptr, sizeof(ElgEditorBP_Assets_eventGetAssetObjectMetaData_Parms), Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectMetaData_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectMetaData_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectMetaData_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectMetaData_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectMetaData()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -954,12 +972,13 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgAssetM
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectMetaDataBranch_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Asset" },
+		{ "Comment", "/* Get the asset objects meta data struct branch */" },
 		{ "ExpandEnumAsExecs", "Branches" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_Assets.h" },
 		{ "ToolTip", "Get the asset objects meta data struct branch" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectMetaDataBranch_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Assets, nullptr, "GetAssetObjectMetaDataBranch", sizeof(ElgEditorBP_Assets_eventGetAssetObjectMetaDataBranch_Parms), Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectMetaDataBranch_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectMetaDataBranch_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectMetaDataBranch_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectMetaDataBranch_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectMetaDataBranch_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Assets, nullptr, "GetAssetObjectMetaDataBranch", nullptr, nullptr, sizeof(ElgEditorBP_Assets_eventGetAssetObjectMetaDataBranch_Parms), Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectMetaDataBranch_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectMetaDataBranch_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectMetaDataBranch_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectMetaDataBranch_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectMetaDataBranch()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -996,7 +1015,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgAssetM
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjects_Statics::NewProp_AssetDataStructs = { "AssetDataStructs", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_Assets_eventGetAssetObjects_Parms, AssetDataStructs), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjects_Statics::NewProp_AssetDataStructs_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjects_Statics::NewProp_AssetDataStructs_MetaData)) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjects_Statics::NewProp_AssetDataStructs = { "AssetDataStructs", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_Assets_eventGetAssetObjects_Parms, AssetDataStructs), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjects_Statics::NewProp_AssetDataStructs_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjects_Statics::NewProp_AssetDataStructs_MetaData)) };
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjects_Statics::NewProp_AssetDataStructs_Inner = { "AssetDataStructs", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FAssetData, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjects_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjects_Statics::NewProp_AssetObjects,
@@ -1007,11 +1026,12 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgAssetM
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjects_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Asset" },
+		{ "Comment", "/* Get the asset data as asset objects array*/" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_Assets.h" },
 		{ "ToolTip", "Get the asset data as asset objects array" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjects_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Assets, nullptr, "GetAssetObjects", sizeof(ElgEditorBP_Assets_eventGetAssetObjects_Parms), Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjects_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjects_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjects_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjects_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjects_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Assets, nullptr, "GetAssetObjects", nullptr, nullptr, sizeof(ElgEditorBP_Assets_eventGetAssetObjects_Parms), Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjects_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjects_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjects_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjects_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjects()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1048,7 +1068,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgAssetM
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsByPath_Statics::NewProp_AssetPaths = { "AssetPaths", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_Assets_eventGetAssetObjectsByPath_Parms, AssetPaths), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsByPath_Statics::NewProp_AssetPaths_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsByPath_Statics::NewProp_AssetPaths_MetaData)) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsByPath_Statics::NewProp_AssetPaths = { "AssetPaths", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_Assets_eventGetAssetObjectsByPath_Parms, AssetPaths), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsByPath_Statics::NewProp_AssetPaths_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsByPath_Statics::NewProp_AssetPaths_MetaData)) };
 	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsByPath_Statics::NewProp_AssetPaths_Inner = { "AssetPaths", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsByPath_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsByPath_Statics::NewProp_AssetObjects,
@@ -1059,11 +1079,12 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgAssetM
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsByPath_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Asset" },
+		{ "Comment", "/* Get the asset data as asset objects array*/" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_Assets.h" },
 		{ "ToolTip", "Get the asset data as asset objects array" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsByPath_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Assets, nullptr, "GetAssetObjectsByPath", sizeof(ElgEditorBP_Assets_eventGetAssetObjectsByPath_Parms), Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsByPath_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsByPath_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsByPath_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsByPath_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsByPath_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Assets, nullptr, "GetAssetObjectsByPath", nullptr, nullptr, sizeof(ElgEditorBP_Assets_eventGetAssetObjectsByPath_Parms), Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsByPath_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsByPath_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsByPath_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsByPath_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsByPath()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1112,13 +1133,13 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgAssetM
 	{
 		((ElgEditorBP_Assets_eventGetAssetObjectsMetaData_Parms*)Obj)->SkipWithoutMetaData = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsMetaData_Statics::NewProp_SkipWithoutMetaData = { "SkipWithoutMetaData", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ElgEditorBP_Assets_eventGetAssetObjectsMetaData_Parms), &Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsMetaData_Statics::NewProp_SkipWithoutMetaData_SetBit, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsMetaData_Statics::NewProp_SkipWithoutMetaData_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsMetaData_Statics::NewProp_SkipWithoutMetaData_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsMetaData_Statics::NewProp_SkipWithoutMetaData = { "SkipWithoutMetaData", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ElgEditorBP_Assets_eventGetAssetObjectsMetaData_Parms), &Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsMetaData_Statics::NewProp_SkipWithoutMetaData_SetBit, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsMetaData_Statics::NewProp_SkipWithoutMetaData_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsMetaData_Statics::NewProp_SkipWithoutMetaData_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsMetaData_Statics::NewProp_AssetObjects_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsMetaData_Statics::NewProp_AssetObjects = { "AssetObjects", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_Assets_eventGetAssetObjectsMetaData_Parms, AssetObjects), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsMetaData_Statics::NewProp_AssetObjects_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsMetaData_Statics::NewProp_AssetObjects_MetaData)) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsMetaData_Statics::NewProp_AssetObjects = { "AssetObjects", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_Assets_eventGetAssetObjectsMetaData_Parms, AssetObjects), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsMetaData_Statics::NewProp_AssetObjects_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsMetaData_Statics::NewProp_AssetObjects_MetaData)) };
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsMetaData_Statics::NewProp_AssetObjects_Inner = { "AssetObjects", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsMetaData_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsMetaData_Statics::NewProp_ReturnValue,
@@ -1131,12 +1152,13 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgAssetM
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsMetaData_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Asset" },
+		{ "Comment", "/* Get all MetaData for the AssetObjects in a struct with an sorted Keys array */" },
 		{ "CPP_Default_SkipWithoutMetaData", "true" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_Assets.h" },
 		{ "ToolTip", "Get all MetaData for the AssetObjects in a struct with an sorted Keys array" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsMetaData_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Assets, nullptr, "GetAssetObjectsMetaData", sizeof(ElgEditorBP_Assets_eventGetAssetObjectsMetaData_Parms), Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsMetaData_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsMetaData_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsMetaData_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsMetaData_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsMetaData_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Assets, nullptr, "GetAssetObjectsMetaData", nullptr, nullptr, sizeof(ElgEditorBP_Assets_eventGetAssetObjectsMetaData_Parms), Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsMetaData_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsMetaData_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsMetaData_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsMetaData_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsMetaData()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1180,13 +1202,13 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgAssetM
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FNamePropertyParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsWithMetaDataKey_Statics::NewProp_MetaDataKey = { "MetaDataKey", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_Assets_eventGetAssetObjectsWithMetaDataKey_Parms, MetaDataKey), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsWithMetaDataKey_Statics::NewProp_MetaDataKey_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsWithMetaDataKey_Statics::NewProp_MetaDataKey_MetaData)) };
+	const UE4CodeGen_Private::FNamePropertyParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsWithMetaDataKey_Statics::NewProp_MetaDataKey = { "MetaDataKey", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_Assets_eventGetAssetObjectsWithMetaDataKey_Parms, MetaDataKey), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsWithMetaDataKey_Statics::NewProp_MetaDataKey_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsWithMetaDataKey_Statics::NewProp_MetaDataKey_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsWithMetaDataKey_Statics::NewProp_AssetObjects_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsWithMetaDataKey_Statics::NewProp_AssetObjects = { "AssetObjects", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_Assets_eventGetAssetObjectsWithMetaDataKey_Parms, AssetObjects), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsWithMetaDataKey_Statics::NewProp_AssetObjects_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsWithMetaDataKey_Statics::NewProp_AssetObjects_MetaData)) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsWithMetaDataKey_Statics::NewProp_AssetObjects = { "AssetObjects", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_Assets_eventGetAssetObjectsWithMetaDataKey_Parms, AssetObjects), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsWithMetaDataKey_Statics::NewProp_AssetObjects_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsWithMetaDataKey_Statics::NewProp_AssetObjects_MetaData)) };
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsWithMetaDataKey_Statics::NewProp_AssetObjects_Inner = { "AssetObjects", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsWithMetaDataKey_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsWithMetaDataKey_Statics::NewProp_ReturnValue,
@@ -1199,11 +1221,12 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgAssetM
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsWithMetaDataKey_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Asset" },
+		{ "Comment", "/* Get all AssetObjects that has a Meta Data Key */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_Assets.h" },
 		{ "ToolTip", "Get all AssetObjects that has a Meta Data Key" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsWithMetaDataKey_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Assets, nullptr, "GetAssetObjectsWithMetaDataKey", sizeof(ElgEditorBP_Assets_eventGetAssetObjectsWithMetaDataKey_Parms), Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsWithMetaDataKey_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsWithMetaDataKey_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsWithMetaDataKey_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsWithMetaDataKey_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsWithMetaDataKey_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Assets, nullptr, "GetAssetObjectsWithMetaDataKey", nullptr, nullptr, sizeof(ElgEditorBP_Assets_eventGetAssetObjectsWithMetaDataKey_Parms), Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsWithMetaDataKey_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsWithMetaDataKey_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsWithMetaDataKey_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsWithMetaDataKey_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsWithMetaDataKey()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1237,7 +1260,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgAssetM
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetPath_Statics::NewProp_AssetDataStruct = { "AssetDataStruct", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_Assets_eventGetAssetPath_Parms, AssetDataStruct), Z_Construct_UScriptStruct_FAssetData, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetPath_Statics::NewProp_AssetDataStruct_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetPath_Statics::NewProp_AssetDataStruct_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetPath_Statics::NewProp_AssetDataStruct = { "AssetDataStruct", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_Assets_eventGetAssetPath_Parms, AssetDataStruct), Z_Construct_UScriptStruct_FAssetData, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetPath_Statics::NewProp_AssetDataStruct_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetPath_Statics::NewProp_AssetDataStruct_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetPath_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetPath_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetPath_Statics::NewProp_AssetDataStruct,
@@ -1245,11 +1268,12 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgAssetM
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetPath_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Asset" },
+		{ "Comment", "/* Return the asset path name of the asset */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_Assets.h" },
 		{ "ToolTip", "Return the asset path name of the asset" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetPath_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Assets, nullptr, "GetAssetPath", sizeof(ElgEditorBP_Assets_eventGetAssetPath_Parms), Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetPath_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetPath_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetPath_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetPath_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetPath_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Assets, nullptr, "GetAssetPath", nullptr, nullptr, sizeof(ElgEditorBP_Assets_eventGetAssetPath_Parms), Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetPath_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetPath_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetPath_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetPath_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetPath()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1283,7 +1307,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgAssetM
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetPathFromObject_Statics::NewProp_Object = { "Object", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_Assets_eventGetAssetPathFromObject_Parms, Object), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetPathFromObject_Statics::NewProp_Object_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetPathFromObject_Statics::NewProp_Object_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetPathFromObject_Statics::NewProp_Object = { "Object", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_Assets_eventGetAssetPathFromObject_Parms, Object), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetPathFromObject_Statics::NewProp_Object_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetPathFromObject_Statics::NewProp_Object_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetPathFromObject_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetPathFromObject_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetPathFromObject_Statics::NewProp_Object,
@@ -1291,11 +1315,12 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgAssetM
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetPathFromObject_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Asset" },
+		{ "Comment", "/* Get the AssetPath from a UObject */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_Assets.h" },
 		{ "ToolTip", "Get the AssetPath from a UObject" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetPathFromObject_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Assets, nullptr, "GetAssetPathFromObject", sizeof(ElgEditorBP_Assets_eventGetAssetPathFromObject_Parms), Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetPathFromObject_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetPathFromObject_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetPathFromObject_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetPathFromObject_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetPathFromObject_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Assets, nullptr, "GetAssetPathFromObject", nullptr, nullptr, sizeof(ElgEditorBP_Assets_eventGetAssetPathFromObject_Parms), Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetPathFromObject_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetPathFromObject_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetPathFromObject_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetPathFromObject_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetPathFromObject()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1331,7 +1356,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgAssetM
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetReferencers_Statics::NewProp_AssetData = { "AssetData", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_Assets_eventGetAssetReferencers_Parms, AssetData), Z_Construct_UScriptStruct_FAssetData, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetReferencers_Statics::NewProp_AssetData_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetReferencers_Statics::NewProp_AssetData_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetReferencers_Statics::NewProp_AssetData = { "AssetData", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_Assets_eventGetAssetReferencers_Parms, AssetData), Z_Construct_UScriptStruct_FAssetData, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetReferencers_Statics::NewProp_AssetData_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetReferencers_Statics::NewProp_AssetData_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetReferencers_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetReferencers_Statics::NewProp_Referencers,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetReferencers_Statics::NewProp_Referencers_Inner,
@@ -1340,11 +1365,12 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgAssetM
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetReferencers_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Asset" },
+		{ "Comment", "/* Get all reference, hard and soft, to the asset */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_Assets.h" },
 		{ "ToolTip", "Get all reference, hard and soft, to the asset" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetReferencers_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Assets, nullptr, "GetAssetReferencers", sizeof(ElgEditorBP_Assets_eventGetAssetReferencers_Parms), Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetReferencers_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetReferencers_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetReferencers_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetReferencers_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetReferencers_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Assets, nullptr, "GetAssetReferencers", nullptr, nullptr, sizeof(ElgEditorBP_Assets_eventGetAssetReferencers_Parms), Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetReferencers_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetReferencers_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetReferencers_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetReferencers_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetReferencers()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1380,7 +1406,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgAssetM
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetReferencersByObject_Statics::NewProp_Object = { "Object", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_Assets_eventGetAssetReferencersByObject_Parms, Object), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetReferencersByObject_Statics::NewProp_Object_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetReferencersByObject_Statics::NewProp_Object_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetReferencersByObject_Statics::NewProp_Object = { "Object", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_Assets_eventGetAssetReferencersByObject_Parms, Object), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetReferencersByObject_Statics::NewProp_Object_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetReferencersByObject_Statics::NewProp_Object_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetReferencersByObject_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetReferencersByObject_Statics::NewProp_Referencers,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetReferencersByObject_Statics::NewProp_Referencers_Inner,
@@ -1389,11 +1415,12 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgAssetM
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetReferencersByObject_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Asset" },
+		{ "Comment", "/* Get all reference, hard and soft, to the asset */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_Assets.h" },
 		{ "ToolTip", "Get all reference, hard and soft, to the asset" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetReferencersByObject_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Assets, nullptr, "GetAssetReferencersByObject", sizeof(ElgEditorBP_Assets_eventGetAssetReferencersByObject_Parms), Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetReferencersByObject_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetReferencersByObject_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetReferencersByObject_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetReferencersByObject_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetReferencersByObject_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Assets, nullptr, "GetAssetReferencersByObject", nullptr, nullptr, sizeof(ElgEditorBP_Assets_eventGetAssetReferencersByObject_Parms), Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetReferencersByObject_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetReferencersByObject_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetReferencersByObject_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetReferencersByObject_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetReferencersByObject()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1429,7 +1456,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgAssetM
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetReferencersByPath_Statics::NewProp_AssetPath = { "AssetPath", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_Assets_eventGetAssetReferencersByPath_Parms, AssetPath), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetReferencersByPath_Statics::NewProp_AssetPath_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetReferencersByPath_Statics::NewProp_AssetPath_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetReferencersByPath_Statics::NewProp_AssetPath = { "AssetPath", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_Assets_eventGetAssetReferencersByPath_Parms, AssetPath), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetReferencersByPath_Statics::NewProp_AssetPath_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetReferencersByPath_Statics::NewProp_AssetPath_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetReferencersByPath_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetReferencersByPath_Statics::NewProp_Referencers,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetReferencersByPath_Statics::NewProp_Referencers_Inner,
@@ -1438,11 +1465,12 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgAssetM
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetReferencersByPath_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Asset" },
+		{ "Comment", "/* Get all reference, hard and soft, to the asset */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_Assets.h" },
 		{ "ToolTip", "Get all reference, hard and soft, to the asset" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetReferencersByPath_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Assets, nullptr, "GetAssetReferencersByPath", sizeof(ElgEditorBP_Assets_eventGetAssetReferencersByPath_Parms), Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetReferencersByPath_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetReferencersByPath_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetReferencersByPath_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetReferencersByPath_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetReferencersByPath_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Assets, nullptr, "GetAssetReferencersByPath", nullptr, nullptr, sizeof(ElgEditorBP_Assets_eventGetAssetReferencersByPath_Parms), Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetReferencersByPath_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetReferencersByPath_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetReferencersByPath_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetReferencersByPath_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetReferencersByPath()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1480,7 +1508,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgAssetM
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetTags_Statics::NewProp_AssetDataStruct = { "AssetDataStruct", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_Assets_eventGetAssetTags_Parms, AssetDataStruct), Z_Construct_UScriptStruct_FAssetData, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetTags_Statics::NewProp_AssetDataStruct_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetTags_Statics::NewProp_AssetDataStruct_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetTags_Statics::NewProp_AssetDataStruct = { "AssetDataStruct", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_Assets_eventGetAssetTags_Parms, AssetDataStruct), Z_Construct_UScriptStruct_FAssetData, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetTags_Statics::NewProp_AssetDataStruct_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetTags_Statics::NewProp_AssetDataStruct_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetTags_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetTags_Statics::NewProp_Tags,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetTags_Statics::NewProp_Tags_Key_KeyProp,
@@ -1490,11 +1518,12 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgAssetM
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetTags_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Asset" },
+		{ "Comment", "/* Return all the TagsAndValues the asset has. */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_Assets.h" },
 		{ "ToolTip", "Return all the TagsAndValues the asset has." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetTags_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Assets, nullptr, "GetAssetTags", sizeof(ElgEditorBP_Assets_eventGetAssetTags_Parms), Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetTags_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetTags_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetTags_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetTags_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetTags_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Assets, nullptr, "GetAssetTags", nullptr, nullptr, sizeof(ElgEditorBP_Assets_eventGetAssetTags_Parms), Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetTags_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetTags_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetTags_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetTags_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetTags()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1539,13 +1568,14 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgAssetM
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_Assets_GetMetaDataKeyBranch_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Asset" },
+		{ "Comment", "/* Return the meta data for the key with branch output pins */" },
 		{ "ExpandEnumAsExecs", "Branches" },
 		{ "Keywords", "ElgSoft Editor Blueprint" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_Assets.h" },
 		{ "ToolTip", "Return the meta data for the key with branch output pins" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Assets_GetMetaDataKeyBranch_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Assets, nullptr, "GetMetaDataKeyBranch", sizeof(ElgEditorBP_Assets_eventGetMetaDataKeyBranch_Parms), Z_Construct_UFunction_UElgEditorBP_Assets_GetMetaDataKeyBranch_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetMetaDataKeyBranch_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetMetaDataKeyBranch_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetMetaDataKeyBranch_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Assets_GetMetaDataKeyBranch_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Assets, nullptr, "GetMetaDataKeyBranch", nullptr, nullptr, sizeof(ElgEditorBP_Assets_eventGetMetaDataKeyBranch_Parms), Z_Construct_UFunction_UElgEditorBP_Assets_GetMetaDataKeyBranch_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetMetaDataKeyBranch_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetMetaDataKeyBranch_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetMetaDataKeyBranch_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_Assets_GetMetaDataKeyBranch()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1578,11 +1608,12 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgAssetM
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_Assets_GetSelectedPaths_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Asset" },
+		{ "Comment", "/* Return the current selected Folder paths */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_Assets.h" },
 		{ "ToolTip", "Return the current selected Folder paths" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Assets_GetSelectedPaths_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Assets, nullptr, "GetSelectedPaths", sizeof(ElgEditorBP_Assets_eventGetSelectedPaths_Parms), Z_Construct_UFunction_UElgEditorBP_Assets_GetSelectedPaths_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetSelectedPaths_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetSelectedPaths_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetSelectedPaths_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Assets_GetSelectedPaths_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Assets, nullptr, "GetSelectedPaths", nullptr, nullptr, sizeof(ElgEditorBP_Assets_eventGetSelectedPaths_Parms), Z_Construct_UFunction_UElgEditorBP_Assets_GetSelectedPaths_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetSelectedPaths_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_GetSelectedPaths_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_GetSelectedPaths_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_Assets_GetSelectedPaths()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1621,7 +1652,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgAssetM
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UElgEditorBP_Assets_HasAssetRefs_Statics::NewProp_AssetData = { "AssetData", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_Assets_eventHasAssetRefs_Parms, AssetData), Z_Construct_UScriptStruct_FAssetData, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_HasAssetRefs_Statics::NewProp_AssetData_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_HasAssetRefs_Statics::NewProp_AssetData_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UElgEditorBP_Assets_HasAssetRefs_Statics::NewProp_AssetData = { "AssetData", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_Assets_eventHasAssetRefs_Parms, AssetData), Z_Construct_UScriptStruct_FAssetData, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_HasAssetRefs_Statics::NewProp_AssetData_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_HasAssetRefs_Statics::NewProp_AssetData_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorBP_Assets_HasAssetRefs_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_Assets_HasAssetRefs_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_Assets_HasAssetRefs_Statics::NewProp_AssetData,
@@ -1629,11 +1660,12 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgAssetM
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_Assets_HasAssetRefs_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|Asset" },
+		{ "Comment", "/* Check if the Asset has any ref/dep, if its a new asset it might not have anything for a while... */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_Assets.h" },
 		{ "ToolTip", "Check if the Asset has any ref/dep, if its a new asset it might not have anything for a while..." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Assets_HasAssetRefs_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Assets, nullptr, "HasAssetRefs", sizeof(ElgEditorBP_Assets_eventHasAssetRefs_Parms), Z_Construct_UFunction_UElgEditorBP_Assets_HasAssetRefs_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_HasAssetRefs_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_HasAssetRefs_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_HasAssetRefs_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_Assets_HasAssetRefs_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_Assets, nullptr, "HasAssetRefs", nullptr, nullptr, sizeof(ElgEditorBP_Assets_eventHasAssetRefs_Parms), Z_Construct_UFunction_UElgEditorBP_Assets_HasAssetRefs_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_HasAssetRefs_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_Assets_HasAssetRefs_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_Assets_HasAssetRefs_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_Assets_HasAssetRefs()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1662,38 +1694,39 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgAssetM
 		(UObject* (*)())Z_Construct_UPackage__Script_ElgEditorScripting,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UElgEditorBP_Assets_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UElgEditorBP_Assets_FixRedirectors, "FixRedirectors" }, // 2312018516
-		{ &Z_Construct_UFunction_UElgEditorBP_Assets_FixRedirectorsByPath, "FixRedirectorsByPath" }, // 343119377
-		{ &Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDataFromObject, "GetAssetDataFromObject" }, // 1846789065
-		{ &Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDataFromPath, "GetAssetDataFromPath" }, // 1916472441
-		{ &Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDatasByPath, "GetAssetDatasByPath" }, // 3434486846
-		{ &Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDateModified, "GetAssetDateModified" }, // 446261682
-		{ &Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDateModifiedAsString, "GetAssetDateModifiedAsString" }, // 673018241
-		{ &Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDependencies, "GetAssetDependencies" }, // 1801501981
-		{ &Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDependenciesByObject, "GetAssetDependenciesByObject" }, // 1079901288
-		{ &Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDependenciesByPath, "GetAssetDependenciesByPath" }, // 2918125469
-		{ &Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDiskPath, "GetAssetDiskPath" }, // 3948888583
-		{ &Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetMetaData, "GetAssetMetaData" }, // 2231102275
-		{ &Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetMetaDataBranch, "GetAssetMetaDataBranch" }, // 1238896412
-		{ &Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetName, "GetAssetName" }, // 1516179412
-		{ &Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectMetaData, "GetAssetObjectMetaData" }, // 2207844333
-		{ &Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectMetaDataBranch, "GetAssetObjectMetaDataBranch" }, // 2903551139
-		{ &Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjects, "GetAssetObjects" }, // 708900412
-		{ &Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsByPath, "GetAssetObjectsByPath" }, // 472295852
-		{ &Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsMetaData, "GetAssetObjectsMetaData" }, // 2974201296
-		{ &Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsWithMetaDataKey, "GetAssetObjectsWithMetaDataKey" }, // 1896784727
-		{ &Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetPath, "GetAssetPath" }, // 2988434038
-		{ &Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetPathFromObject, "GetAssetPathFromObject" }, // 1301175884
-		{ &Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetReferencers, "GetAssetReferencers" }, // 1690179757
-		{ &Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetReferencersByObject, "GetAssetReferencersByObject" }, // 3184474219
-		{ &Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetReferencersByPath, "GetAssetReferencersByPath" }, // 2760579027
-		{ &Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetTags, "GetAssetTags" }, // 1302152709
-		{ &Z_Construct_UFunction_UElgEditorBP_Assets_GetMetaDataKeyBranch, "GetMetaDataKeyBranch" }, // 2028471875
-		{ &Z_Construct_UFunction_UElgEditorBP_Assets_GetSelectedPaths, "GetSelectedPaths" }, // 2216241779
-		{ &Z_Construct_UFunction_UElgEditorBP_Assets_HasAssetRefs, "HasAssetRefs" }, // 2769582409
+		{ &Z_Construct_UFunction_UElgEditorBP_Assets_FixRedirectors, "FixRedirectors" }, // 1883123597
+		{ &Z_Construct_UFunction_UElgEditorBP_Assets_FixRedirectorsByPath, "FixRedirectorsByPath" }, // 2382590767
+		{ &Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDataFromObject, "GetAssetDataFromObject" }, // 3600109188
+		{ &Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDataFromPath, "GetAssetDataFromPath" }, // 480527475
+		{ &Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDatasByPath, "GetAssetDatasByPath" }, // 1621194199
+		{ &Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDateModified, "GetAssetDateModified" }, // 3796401960
+		{ &Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDateModifiedAsString, "GetAssetDateModifiedAsString" }, // 3119375832
+		{ &Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDependencies, "GetAssetDependencies" }, // 1484847784
+		{ &Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDependenciesByObject, "GetAssetDependenciesByObject" }, // 3056234691
+		{ &Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDependenciesByPath, "GetAssetDependenciesByPath" }, // 4041168433
+		{ &Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetDiskPath, "GetAssetDiskPath" }, // 2516909814
+		{ &Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetMetaData, "GetAssetMetaData" }, // 429591628
+		{ &Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetMetaDataBranch, "GetAssetMetaDataBranch" }, // 668751365
+		{ &Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetName, "GetAssetName" }, // 2544471705
+		{ &Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectMetaData, "GetAssetObjectMetaData" }, // 3250381842
+		{ &Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectMetaDataBranch, "GetAssetObjectMetaDataBranch" }, // 2542018378
+		{ &Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjects, "GetAssetObjects" }, // 4017794686
+		{ &Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsByPath, "GetAssetObjectsByPath" }, // 2157232558
+		{ &Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsMetaData, "GetAssetObjectsMetaData" }, // 1779623521
+		{ &Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetObjectsWithMetaDataKey, "GetAssetObjectsWithMetaDataKey" }, // 3736240368
+		{ &Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetPath, "GetAssetPath" }, // 772383057
+		{ &Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetPathFromObject, "GetAssetPathFromObject" }, // 3934090607
+		{ &Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetReferencers, "GetAssetReferencers" }, // 520712846
+		{ &Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetReferencersByObject, "GetAssetReferencersByObject" }, // 683013168
+		{ &Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetReferencersByPath, "GetAssetReferencersByPath" }, // 2887209393
+		{ &Z_Construct_UFunction_UElgEditorBP_Assets_GetAssetTags, "GetAssetTags" }, // 614873559
+		{ &Z_Construct_UFunction_UElgEditorBP_Assets_GetMetaDataKeyBranch, "GetMetaDataKeyBranch" }, // 3098180065
+		{ &Z_Construct_UFunction_UElgEditorBP_Assets_GetSelectedPaths, "GetSelectedPaths" }, // 275667956
+		{ &Z_Construct_UFunction_UElgEditorBP_Assets_HasAssetRefs, "HasAssetRefs" }, // 4163681774
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UElgEditorBP_Assets_Statics::Class_MetaDataParams[] = {
+		{ "Comment", "/**\n * \n */" },
 		{ "IncludePath", "Blueprints/ElgEditorBP_Assets.h" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_Assets.h" },
 	};
@@ -1709,12 +1742,12 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgAssetM
 		FuncInfo,
 		nullptr,
 		nullptr,
-		ARRAY_COUNT(DependentSingletons),
-		ARRAY_COUNT(FuncInfo),
+		UE_ARRAY_COUNT(DependentSingletons),
+		UE_ARRAY_COUNT(FuncInfo),
 		0,
 		0,
 		0x001000A0u,
-		METADATA_PARAMS(Z_Construct_UClass_UElgEditorBP_Assets_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UElgEditorBP_Assets_Statics::Class_MetaDataParams))
+		METADATA_PARAMS(Z_Construct_UClass_UElgEditorBP_Assets_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_UElgEditorBP_Assets_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UElgEditorBP_Assets()
 	{
@@ -1725,7 +1758,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgAssetM
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UElgEditorBP_Assets, 656773916);
+	IMPLEMENT_CLASS(UElgEditorBP_Assets, 2825618602);
 	template<> ELGEDITORSCRIPTING_API UClass* StaticClass<UElgEditorBP_Assets>()
 	{
 		return UElgEditorBP_Assets::StaticClass();
