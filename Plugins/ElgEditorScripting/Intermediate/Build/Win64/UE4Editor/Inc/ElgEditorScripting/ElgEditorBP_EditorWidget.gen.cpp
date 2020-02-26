@@ -51,7 +51,7 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorBP_EditorWidget() {}
 			{ "SetEditorWidgetToolTip", &UElgEditorBP_EditorWidget::execSetEditorWidgetToolTip },
 			{ "ToggleEditorWidget", &UElgEditorBP_EditorWidget::execToggleEditorWidget },
 		};
-		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 	}
 	struct Z_Construct_UFunction_UElgEditorBP_EditorWidget_AddEditorWidgetsToLoadedScript_Statics
 	{
@@ -76,11 +76,12 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorBP_EditorWidget() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_EditorWidget_AddEditorWidgetsToLoadedScript_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|EditorWidget" },
+		{ "Comment", "/* Add editor widgets to the loaded script list so they will be registration when/if ReinitializeUIs */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_EditorWidget.h" },
 		{ "ToolTip", "Add editor widgets to the loaded script list so they will be registration when/if ReinitializeUIs" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_EditorWidget_AddEditorWidgetsToLoadedScript_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_EditorWidget, nullptr, "AddEditorWidgetsToLoadedScript", sizeof(ElgEditorBP_EditorWidget_eventAddEditorWidgetsToLoadedScript_Parms), Z_Construct_UFunction_UElgEditorBP_EditorWidget_AddEditorWidgetsToLoadedScript_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_EditorWidget_AddEditorWidgetsToLoadedScript_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_EditorWidget_AddEditorWidgetsToLoadedScript_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_EditorWidget_AddEditorWidgetsToLoadedScript_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_EditorWidget_AddEditorWidgetsToLoadedScript_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_EditorWidget, nullptr, "AddEditorWidgetsToLoadedScript", nullptr, nullptr, sizeof(ElgEditorBP_EditorWidget_eventAddEditorWidgetsToLoadedScript_Parms), Z_Construct_UFunction_UElgEditorBP_EditorWidget_AddEditorWidgetsToLoadedScript_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_EditorWidget_AddEditorWidgetsToLoadedScript_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_EditorWidget_AddEditorWidgetsToLoadedScript_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_EditorWidget_AddEditorWidgetsToLoadedScript_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_EditorWidget_AddEditorWidgetsToLoadedScript()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -110,11 +111,12 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorBP_EditorWidget() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_EditorWidget_CloseEditorWidget_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|EditorWidget" },
+		{ "Comment", "/* Close an Editor Utility Widget */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_EditorWidget.h" },
 		{ "ToolTip", "Close an Editor Utility Widget" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_EditorWidget_CloseEditorWidget_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_EditorWidget, nullptr, "CloseEditorWidget", sizeof(ElgEditorBP_EditorWidget_eventCloseEditorWidget_Parms), Z_Construct_UFunction_UElgEditorBP_EditorWidget_CloseEditorWidget_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_EditorWidget_CloseEditorWidget_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_EditorWidget_CloseEditorWidget_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_EditorWidget_CloseEditorWidget_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_EditorWidget_CloseEditorWidget_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_EditorWidget, nullptr, "CloseEditorWidget", nullptr, nullptr, sizeof(ElgEditorBP_EditorWidget_eventCloseEditorWidget_Parms), Z_Construct_UFunction_UElgEditorBP_EditorWidget_CloseEditorWidget_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_EditorWidget_CloseEditorWidget_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_EditorWidget_CloseEditorWidget_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_EditorWidget_CloseEditorWidget_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_EditorWidget_CloseEditorWidget()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -144,11 +146,12 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorBP_EditorWidget() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_EditorWidget_EditorWidgetDrawAttention_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|EditorWidget|Tab" },
+		{ "Comment", "/** Draws attention to the tab. */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_EditorWidget.h" },
 		{ "ToolTip", "Draws attention to the tab." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_EditorWidget_EditorWidgetDrawAttention_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_EditorWidget, nullptr, "EditorWidgetDrawAttention", sizeof(ElgEditorBP_EditorWidget_eventEditorWidgetDrawAttention_Parms), Z_Construct_UFunction_UElgEditorBP_EditorWidget_EditorWidgetDrawAttention_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_EditorWidget_EditorWidgetDrawAttention_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_EditorWidget_EditorWidgetDrawAttention_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_EditorWidget_EditorWidgetDrawAttention_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_EditorWidget_EditorWidgetDrawAttention_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_EditorWidget, nullptr, "EditorWidgetDrawAttention", nullptr, nullptr, sizeof(ElgEditorBP_EditorWidget_eventEditorWidgetDrawAttention_Parms), Z_Construct_UFunction_UElgEditorBP_EditorWidget_EditorWidgetDrawAttention_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_EditorWidget_EditorWidgetDrawAttention_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_EditorWidget_EditorWidgetDrawAttention_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_EditorWidget_EditorWidgetDrawAttention_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_EditorWidget_EditorWidgetDrawAttention()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -182,11 +185,12 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorBP_EditorWidget() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_EditorWidget_GetEditorWidgetLabel_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|EditorWidget|Tab" },
+		{ "Comment", "/** Get the label of the Editor Widget Tab */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_EditorWidget.h" },
 		{ "ToolTip", "Get the label of the Editor Widget Tab" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_EditorWidget_GetEditorWidgetLabel_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_EditorWidget, nullptr, "GetEditorWidgetLabel", sizeof(ElgEditorBP_EditorWidget_eventGetEditorWidgetLabel_Parms), Z_Construct_UFunction_UElgEditorBP_EditorWidget_GetEditorWidgetLabel_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_EditorWidget_GetEditorWidgetLabel_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_EditorWidget_GetEditorWidgetLabel_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_EditorWidget_GetEditorWidgetLabel_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_EditorWidget_GetEditorWidgetLabel_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_EditorWidget, nullptr, "GetEditorWidgetLabel", nullptr, nullptr, sizeof(ElgEditorBP_EditorWidget_eventGetEditorWidgetLabel_Parms), Z_Construct_UFunction_UElgEditorBP_EditorWidget_GetEditorWidgetLabel_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_EditorWidget_GetEditorWidgetLabel_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_EditorWidget_GetEditorWidgetLabel_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_EditorWidget_GetEditorWidgetLabel_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_EditorWidget_GetEditorWidgetLabel()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -225,11 +229,12 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorBP_EditorWidget() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_EditorWidget_IsEditorWidgetOpen_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|EditorWidget" },
+		{ "Comment", "/* Check if an editor widget is open or closed */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_EditorWidget.h" },
 		{ "ToolTip", "Check if an editor widget is open or closed" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_EditorWidget_IsEditorWidgetOpen_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_EditorWidget, nullptr, "IsEditorWidgetOpen", sizeof(ElgEditorBP_EditorWidget_eventIsEditorWidgetOpen_Parms), Z_Construct_UFunction_UElgEditorBP_EditorWidget_IsEditorWidgetOpen_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_EditorWidget_IsEditorWidgetOpen_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_EditorWidget_IsEditorWidgetOpen_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_EditorWidget_IsEditorWidgetOpen_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_EditorWidget_IsEditorWidgetOpen_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_EditorWidget, nullptr, "IsEditorWidgetOpen", nullptr, nullptr, sizeof(ElgEditorBP_EditorWidget_eventIsEditorWidgetOpen_Parms), Z_Construct_UFunction_UElgEditorBP_EditorWidget_IsEditorWidgetOpen_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_EditorWidget_IsEditorWidgetOpen_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_EditorWidget_IsEditorWidgetOpen_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_EditorWidget_IsEditorWidgetOpen_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_EditorWidget_IsEditorWidgetOpen()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -266,12 +271,13 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorBP_EditorWidget() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_EditorWidget_IsEditorWidgetOpenBranch_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|EditorWidget" },
+		{ "Comment", "/* Check if an editor widget is open or closed with branch pins */" },
 		{ "ExpandEnumAsExecs", "Branches" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_EditorWidget.h" },
 		{ "ToolTip", "Check if an editor widget is open or closed with branch pins" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_EditorWidget_IsEditorWidgetOpenBranch_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_EditorWidget, nullptr, "IsEditorWidgetOpenBranch", sizeof(ElgEditorBP_EditorWidget_eventIsEditorWidgetOpenBranch_Parms), Z_Construct_UFunction_UElgEditorBP_EditorWidget_IsEditorWidgetOpenBranch_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_EditorWidget_IsEditorWidgetOpenBranch_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_EditorWidget_IsEditorWidgetOpenBranch_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_EditorWidget_IsEditorWidgetOpenBranch_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_EditorWidget_IsEditorWidgetOpenBranch_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_EditorWidget, nullptr, "IsEditorWidgetOpenBranch", nullptr, nullptr, sizeof(ElgEditorBP_EditorWidget_eventIsEditorWidgetOpenBranch_Parms), Z_Construct_UFunction_UElgEditorBP_EditorWidget_IsEditorWidgetOpenBranch_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_EditorWidget_IsEditorWidgetOpenBranch_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_EditorWidget_IsEditorWidgetOpenBranch_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_EditorWidget_IsEditorWidgetOpenBranch_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_EditorWidget_IsEditorWidgetOpenBranch()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -310,11 +316,12 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorBP_EditorWidget() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_EditorWidget_IsEditorWidgetRegistered_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|EditorWidget" },
+		{ "Comment", "/* Check if an editor widget is open or closed */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_EditorWidget.h" },
 		{ "ToolTip", "Check if an editor widget is open or closed" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_EditorWidget_IsEditorWidgetRegistered_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_EditorWidget, nullptr, "IsEditorWidgetRegistered", sizeof(ElgEditorBP_EditorWidget_eventIsEditorWidgetRegistered_Parms), Z_Construct_UFunction_UElgEditorBP_EditorWidget_IsEditorWidgetRegistered_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_EditorWidget_IsEditorWidgetRegistered_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_EditorWidget_IsEditorWidgetRegistered_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_EditorWidget_IsEditorWidgetRegistered_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_EditorWidget_IsEditorWidgetRegistered_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_EditorWidget, nullptr, "IsEditorWidgetRegistered", nullptr, nullptr, sizeof(ElgEditorBP_EditorWidget_eventIsEditorWidgetRegistered_Parms), Z_Construct_UFunction_UElgEditorBP_EditorWidget_IsEditorWidgetRegistered_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_EditorWidget_IsEditorWidgetRegistered_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_EditorWidget_IsEditorWidgetRegistered_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_EditorWidget_IsEditorWidgetRegistered_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_EditorWidget_IsEditorWidgetRegistered()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -351,12 +358,13 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorBP_EditorWidget() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_EditorWidget_IsEditorWidgetRegisteredBranch_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|EditorWidget" },
+		{ "Comment", "/* Check if an editor widget is open or closed with branch pins */" },
 		{ "ExpandEnumAsExecs", "Branches" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_EditorWidget.h" },
 		{ "ToolTip", "Check if an editor widget is open or closed with branch pins" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_EditorWidget_IsEditorWidgetRegisteredBranch_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_EditorWidget, nullptr, "IsEditorWidgetRegisteredBranch", sizeof(ElgEditorBP_EditorWidget_eventIsEditorWidgetRegisteredBranch_Parms), Z_Construct_UFunction_UElgEditorBP_EditorWidget_IsEditorWidgetRegisteredBranch_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_EditorWidget_IsEditorWidgetRegisteredBranch_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_EditorWidget_IsEditorWidgetRegisteredBranch_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_EditorWidget_IsEditorWidgetRegisteredBranch_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_EditorWidget_IsEditorWidgetRegisteredBranch_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_EditorWidget, nullptr, "IsEditorWidgetRegisteredBranch", nullptr, nullptr, sizeof(ElgEditorBP_EditorWidget_eventIsEditorWidgetRegisteredBranch_Parms), Z_Construct_UFunction_UElgEditorBP_EditorWidget_IsEditorWidgetRegisteredBranch_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_EditorWidget_IsEditorWidgetRegisteredBranch_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_EditorWidget_IsEditorWidgetRegisteredBranch_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_EditorWidget_IsEditorWidgetRegisteredBranch_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_EditorWidget_IsEditorWidgetRegisteredBranch()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -386,11 +394,12 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorBP_EditorWidget() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_EditorWidget_OpenEditorWidget_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|EditorWidget" },
+		{ "Comment", "/* Open an Editor Utility Widget */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_EditorWidget.h" },
 		{ "ToolTip", "Open an Editor Utility Widget" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_EditorWidget_OpenEditorWidget_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_EditorWidget, nullptr, "OpenEditorWidget", sizeof(ElgEditorBP_EditorWidget_eventOpenEditorWidget_Parms), Z_Construct_UFunction_UElgEditorBP_EditorWidget_OpenEditorWidget_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_EditorWidget_OpenEditorWidget_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_EditorWidget_OpenEditorWidget_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_EditorWidget_OpenEditorWidget_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_EditorWidget_OpenEditorWidget_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_EditorWidget, nullptr, "OpenEditorWidget", nullptr, nullptr, sizeof(ElgEditorBP_EditorWidget_eventOpenEditorWidget_Parms), Z_Construct_UFunction_UElgEditorBP_EditorWidget_OpenEditorWidget_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_EditorWidget_OpenEditorWidget_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_EditorWidget_OpenEditorWidget_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_EditorWidget_OpenEditorWidget_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_EditorWidget_OpenEditorWidget()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -410,11 +419,12 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorBP_EditorWidget() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_EditorWidget_ReinitializeEditorWidgets_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|EditorWidget" },
+		{ "Comment", "/* ReinitializeUIs any editor widgets i in the loaded script */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_EditorWidget.h" },
 		{ "ToolTip", "ReinitializeUIs any editor widgets i in the loaded script" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_EditorWidget_ReinitializeEditorWidgets_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_EditorWidget, nullptr, "ReinitializeEditorWidgets", 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_EditorWidget_ReinitializeEditorWidgets_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_EditorWidget_ReinitializeEditorWidgets_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_EditorWidget_ReinitializeEditorWidgets_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_EditorWidget, nullptr, "ReinitializeEditorWidgets", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_EditorWidget_ReinitializeEditorWidgets_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_EditorWidget_ReinitializeEditorWidgets_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_EditorWidget_ReinitializeEditorWidgets()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -447,7 +457,7 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorBP_EditorWidget() {}
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UFunction_UElgEditorBP_EditorWidget_SetEditorWidgetLabel_Statics::NewProp_TabName = { "TabName", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_EditorWidget_eventSetEditorWidgetLabel_Parms, TabName), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_EditorWidget_SetEditorWidgetLabel_Statics::NewProp_TabName_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_EditorWidget_SetEditorWidgetLabel_Statics::NewProp_TabName_MetaData)) };
+	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UFunction_UElgEditorBP_EditorWidget_SetEditorWidgetLabel_Statics::NewProp_TabName = { "TabName", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_EditorWidget_eventSetEditorWidgetLabel_Parms, TabName), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_EditorWidget_SetEditorWidgetLabel_Statics::NewProp_TabName_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_EditorWidget_SetEditorWidgetLabel_Statics::NewProp_TabName_MetaData)) };
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UElgEditorBP_EditorWidget_SetEditorWidgetLabel_Statics::NewProp_EditorWidget = { "EditorWidget", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_EditorWidget_eventSetEditorWidgetLabel_Parms, EditorWidget), Z_Construct_UClass_UEditorUtilityWidgetBlueprint_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorBP_EditorWidget_SetEditorWidgetLabel_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_EditorWidget_SetEditorWidgetLabel_Statics::NewProp_TabName,
@@ -456,11 +466,12 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorBP_EditorWidget() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_EditorWidget_SetEditorWidgetLabel_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|EditorWidget|Tab" },
+		{ "Comment", "/** Set the label of the Editor Widget Tab */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_EditorWidget.h" },
 		{ "ToolTip", "Set the label of the Editor Widget Tab" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_EditorWidget_SetEditorWidgetLabel_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_EditorWidget, nullptr, "SetEditorWidgetLabel", sizeof(ElgEditorBP_EditorWidget_eventSetEditorWidgetLabel_Parms), Z_Construct_UFunction_UElgEditorBP_EditorWidget_SetEditorWidgetLabel_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_EditorWidget_SetEditorWidgetLabel_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_EditorWidget_SetEditorWidgetLabel_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_EditorWidget_SetEditorWidgetLabel_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_EditorWidget_SetEditorWidgetLabel_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_EditorWidget, nullptr, "SetEditorWidgetLabel", nullptr, nullptr, sizeof(ElgEditorBP_EditorWidget_eventSetEditorWidgetLabel_Parms), Z_Construct_UFunction_UElgEditorBP_EditorWidget_SetEditorWidgetLabel_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_EditorWidget_SetEditorWidgetLabel_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_EditorWidget_SetEditorWidgetLabel_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_EditorWidget_SetEditorWidgetLabel_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_EditorWidget_SetEditorWidgetLabel()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -493,7 +504,7 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorBP_EditorWidget() {}
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UFunction_UElgEditorBP_EditorWidget_SetEditorWidgetToolTip_Statics::NewProp_TipText = { "TipText", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_EditorWidget_eventSetEditorWidgetToolTip_Parms, TipText), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_EditorWidget_SetEditorWidgetToolTip_Statics::NewProp_TipText_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_EditorWidget_SetEditorWidgetToolTip_Statics::NewProp_TipText_MetaData)) };
+	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UFunction_UElgEditorBP_EditorWidget_SetEditorWidgetToolTip_Statics::NewProp_TipText = { "TipText", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_EditorWidget_eventSetEditorWidgetToolTip_Parms, TipText), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_EditorWidget_SetEditorWidgetToolTip_Statics::NewProp_TipText_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_EditorWidget_SetEditorWidgetToolTip_Statics::NewProp_TipText_MetaData)) };
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UElgEditorBP_EditorWidget_SetEditorWidgetToolTip_Statics::NewProp_EditorWidget = { "EditorWidget", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_EditorWidget_eventSetEditorWidgetToolTip_Parms, EditorWidget), Z_Construct_UClass_UEditorUtilityWidgetBlueprint_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorBP_EditorWidget_SetEditorWidgetToolTip_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_EditorWidget_SetEditorWidgetToolTip_Statics::NewProp_TipText,
@@ -502,11 +513,12 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorBP_EditorWidget() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_EditorWidget_SetEditorWidgetToolTip_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|EditorWidget|Tab" },
+		{ "Comment", "/** Set the tooltip of the Editor Widget Tab */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_EditorWidget.h" },
 		{ "ToolTip", "Set the tooltip of the Editor Widget Tab" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_EditorWidget_SetEditorWidgetToolTip_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_EditorWidget, nullptr, "SetEditorWidgetToolTip", sizeof(ElgEditorBP_EditorWidget_eventSetEditorWidgetToolTip_Parms), Z_Construct_UFunction_UElgEditorBP_EditorWidget_SetEditorWidgetToolTip_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_EditorWidget_SetEditorWidgetToolTip_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_EditorWidget_SetEditorWidgetToolTip_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_EditorWidget_SetEditorWidgetToolTip_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_EditorWidget_SetEditorWidgetToolTip_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_EditorWidget, nullptr, "SetEditorWidgetToolTip", nullptr, nullptr, sizeof(ElgEditorBP_EditorWidget_eventSetEditorWidgetToolTip_Parms), Z_Construct_UFunction_UElgEditorBP_EditorWidget_SetEditorWidgetToolTip_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_EditorWidget_SetEditorWidgetToolTip_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_EditorWidget_SetEditorWidgetToolTip_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_EditorWidget_SetEditorWidgetToolTip_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_EditorWidget_SetEditorWidgetToolTip()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -536,11 +548,12 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorBP_EditorWidget() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_EditorWidget_ToggleEditorWidget_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|EditorWidget" },
+		{ "Comment", "/* Toggle the Editor Widget on/off */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_EditorWidget.h" },
 		{ "ToolTip", "Toggle the Editor Widget on/off" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_EditorWidget_ToggleEditorWidget_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_EditorWidget, nullptr, "ToggleEditorWidget", sizeof(ElgEditorBP_EditorWidget_eventToggleEditorWidget_Parms), Z_Construct_UFunction_UElgEditorBP_EditorWidget_ToggleEditorWidget_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_EditorWidget_ToggleEditorWidget_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_EditorWidget_ToggleEditorWidget_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_EditorWidget_ToggleEditorWidget_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_EditorWidget_ToggleEditorWidget_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_EditorWidget, nullptr, "ToggleEditorWidget", nullptr, nullptr, sizeof(ElgEditorBP_EditorWidget_eventToggleEditorWidget_Parms), Z_Construct_UFunction_UElgEditorBP_EditorWidget_ToggleEditorWidget_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_EditorWidget_ToggleEditorWidget_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_EditorWidget_ToggleEditorWidget_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_EditorWidget_ToggleEditorWidget_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_EditorWidget_ToggleEditorWidget()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -569,22 +582,23 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorBP_EditorWidget() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_ElgEditorScripting,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UElgEditorBP_EditorWidget_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UElgEditorBP_EditorWidget_AddEditorWidgetsToLoadedScript, "AddEditorWidgetsToLoadedScript" }, // 3019379698
-		{ &Z_Construct_UFunction_UElgEditorBP_EditorWidget_CloseEditorWidget, "CloseEditorWidget" }, // 734820000
-		{ &Z_Construct_UFunction_UElgEditorBP_EditorWidget_EditorWidgetDrawAttention, "EditorWidgetDrawAttention" }, // 3741012
-		{ &Z_Construct_UFunction_UElgEditorBP_EditorWidget_GetEditorWidgetLabel, "GetEditorWidgetLabel" }, // 1747973574
-		{ &Z_Construct_UFunction_UElgEditorBP_EditorWidget_IsEditorWidgetOpen, "IsEditorWidgetOpen" }, // 3267729777
-		{ &Z_Construct_UFunction_UElgEditorBP_EditorWidget_IsEditorWidgetOpenBranch, "IsEditorWidgetOpenBranch" }, // 2046074020
-		{ &Z_Construct_UFunction_UElgEditorBP_EditorWidget_IsEditorWidgetRegistered, "IsEditorWidgetRegistered" }, // 1410310165
-		{ &Z_Construct_UFunction_UElgEditorBP_EditorWidget_IsEditorWidgetRegisteredBranch, "IsEditorWidgetRegisteredBranch" }, // 702436028
-		{ &Z_Construct_UFunction_UElgEditorBP_EditorWidget_OpenEditorWidget, "OpenEditorWidget" }, // 1805266379
-		{ &Z_Construct_UFunction_UElgEditorBP_EditorWidget_ReinitializeEditorWidgets, "ReinitializeEditorWidgets" }, // 483083445
-		{ &Z_Construct_UFunction_UElgEditorBP_EditorWidget_SetEditorWidgetLabel, "SetEditorWidgetLabel" }, // 2528224194
-		{ &Z_Construct_UFunction_UElgEditorBP_EditorWidget_SetEditorWidgetToolTip, "SetEditorWidgetToolTip" }, // 2920095414
-		{ &Z_Construct_UFunction_UElgEditorBP_EditorWidget_ToggleEditorWidget, "ToggleEditorWidget" }, // 2892118650
+		{ &Z_Construct_UFunction_UElgEditorBP_EditorWidget_AddEditorWidgetsToLoadedScript, "AddEditorWidgetsToLoadedScript" }, // 874932556
+		{ &Z_Construct_UFunction_UElgEditorBP_EditorWidget_CloseEditorWidget, "CloseEditorWidget" }, // 2932628112
+		{ &Z_Construct_UFunction_UElgEditorBP_EditorWidget_EditorWidgetDrawAttention, "EditorWidgetDrawAttention" }, // 1343904397
+		{ &Z_Construct_UFunction_UElgEditorBP_EditorWidget_GetEditorWidgetLabel, "GetEditorWidgetLabel" }, // 943317111
+		{ &Z_Construct_UFunction_UElgEditorBP_EditorWidget_IsEditorWidgetOpen, "IsEditorWidgetOpen" }, // 502273427
+		{ &Z_Construct_UFunction_UElgEditorBP_EditorWidget_IsEditorWidgetOpenBranch, "IsEditorWidgetOpenBranch" }, // 1655392395
+		{ &Z_Construct_UFunction_UElgEditorBP_EditorWidget_IsEditorWidgetRegistered, "IsEditorWidgetRegistered" }, // 3529149384
+		{ &Z_Construct_UFunction_UElgEditorBP_EditorWidget_IsEditorWidgetRegisteredBranch, "IsEditorWidgetRegisteredBranch" }, // 2673470572
+		{ &Z_Construct_UFunction_UElgEditorBP_EditorWidget_OpenEditorWidget, "OpenEditorWidget" }, // 2617806500
+		{ &Z_Construct_UFunction_UElgEditorBP_EditorWidget_ReinitializeEditorWidgets, "ReinitializeEditorWidgets" }, // 3033395645
+		{ &Z_Construct_UFunction_UElgEditorBP_EditorWidget_SetEditorWidgetLabel, "SetEditorWidgetLabel" }, // 1848125429
+		{ &Z_Construct_UFunction_UElgEditorBP_EditorWidget_SetEditorWidgetToolTip, "SetEditorWidgetToolTip" }, // 2880577888
+		{ &Z_Construct_UFunction_UElgEditorBP_EditorWidget_ToggleEditorWidget, "ToggleEditorWidget" }, // 3137542543
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UElgEditorBP_EditorWidget_Statics::Class_MetaDataParams[] = {
+		{ "Comment", "/**\n * \n */" },
 		{ "IncludePath", "Blueprints/ElgEditorBP_EditorWidget.h" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_EditorWidget.h" },
 	};
@@ -600,12 +614,12 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorBP_EditorWidget() {}
 		FuncInfo,
 		nullptr,
 		nullptr,
-		ARRAY_COUNT(DependentSingletons),
-		ARRAY_COUNT(FuncInfo),
+		UE_ARRAY_COUNT(DependentSingletons),
+		UE_ARRAY_COUNT(FuncInfo),
 		0,
 		0,
 		0x001000A0u,
-		METADATA_PARAMS(Z_Construct_UClass_UElgEditorBP_EditorWidget_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UElgEditorBP_EditorWidget_Statics::Class_MetaDataParams))
+		METADATA_PARAMS(Z_Construct_UClass_UElgEditorBP_EditorWidget_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_UElgEditorBP_EditorWidget_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UElgEditorBP_EditorWidget()
 	{
@@ -616,7 +630,7 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorBP_EditorWidget() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UElgEditorBP_EditorWidget, 3480583167);
+	IMPLEMENT_CLASS(UElgEditorBP_EditorWidget, 3685451507);
 	template<> ELGEDITORSCRIPTING_API UClass* StaticClass<UElgEditorBP_EditorWidget>()
 	{
 		return UElgEditorBP_EditorWidget::StaticClass();

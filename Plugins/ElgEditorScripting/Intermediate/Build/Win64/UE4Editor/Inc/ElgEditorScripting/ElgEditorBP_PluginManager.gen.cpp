@@ -50,7 +50,7 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorBP_PluginManager() {}
 		return EBPPluginType_StaticEnum();
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EBPPluginType(EBPPluginType_StaticEnum, TEXT("/Script/ElgEditorScripting"), TEXT("EBPPluginType"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_ElgEditorScripting_EBPPluginType_Hash() { return 2866033043U; }
+	uint32 Get_Z_Construct_UEnum_ElgEditorScripting_EBPPluginType_Hash() { return 2375779064U; }
 	UEnum* Z_Construct_UEnum_ElgEditorScripting_EBPPluginType()
 	{
 #if WITH_HOT_RELOAD
@@ -71,10 +71,19 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorBP_PluginManager() {}
 #if WITH_METADATA
 			const UE4CodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
 				{ "BlueprintType", "true" },
+				{ "Engine.Name", "EBPPluginType::Engine" },
+				{ "Enterprise.Comment", "// Plugin is built-in to the engine\n" },
+				{ "Enterprise.Name", "EBPPluginType::Enterprise" },
 				{ "Enterprise.ToolTip", "Plugin is built-in to the engine" },
+				{ "External.Comment", "// Project-specific plugin, stored within a game project directory\n" },
+				{ "External.Name", "EBPPluginType::External" },
 				{ "External.ToolTip", "Project-specific plugin, stored within a game project directory" },
+				{ "Mod.Comment", "// Plugin found in an external directory (found in an AdditionalPluginDirectory listed in the project file, or referenced on the command line)\n" },
+				{ "Mod.Name", "EBPPluginType::Mod" },
 				{ "Mod.ToolTip", "Plugin found in an external directory (found in an AdditionalPluginDirectory listed in the project file, or referenced on the command line)" },
 				{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_PluginManager.h" },
+				{ "Project.Comment", "// Standard enterprise plugin\n" },
+				{ "Project.Name", "EBPPluginType::Project" },
 				{ "Project.ToolTip", "Standard enterprise plugin" },
 			};
 #endif
@@ -84,11 +93,11 @@ void EmptyLinkFunctionForGeneratedCodeElgEditorBP_PluginManager() {}
 				"EBPPluginType",
 				"EBPPluginType",
 				Enumerators,
-				ARRAY_COUNT(Enumerators),
+				UE_ARRAY_COUNT(Enumerators),
 				RF_Public|RF_Transient|RF_MarkAsNative,
 				UE4CodeGen_Private::EDynamicType::NotDynamic,
 				(uint8)UEnum::ECppForm::EnumClass,
-				METADATA_PARAMS(Enum_MetaDataParams, ARRAY_COUNT(Enum_MetaDataParams))
+				METADATA_PARAMS(Enum_MetaDataParams, UE_ARRAY_COUNT(Enum_MetaDataParams))
 			};
 			UE4CodeGen_Private::ConstructUEnum(ReturnEnum, EnumParams);
 		}
@@ -147,18 +156,20 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgPlugin
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FS_ElgPluginCategory_Statics::NewProp_Plugins_MetaData[] = {
 		{ "Category", "Plugin" },
+		{ "Comment", "/**  */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_PluginManager.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FS_ElgPluginCategory_Statics::NewProp_Plugins = { "Plugins", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgPluginCategory, Plugins), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgPluginCategory_Statics::NewProp_Plugins_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgPluginCategory_Statics::NewProp_Plugins_MetaData)) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FS_ElgPluginCategory_Statics::NewProp_Plugins = { "Plugins", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgPluginCategory, Plugins), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgPluginCategory_Statics::NewProp_Plugins_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgPluginCategory_Statics::NewProp_Plugins_MetaData)) };
 	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FS_ElgPluginCategory_Statics::NewProp_Plugins_Inner = { "Plugins", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FS_ElgPluginCategory_Statics::NewProp_Category_MetaData[] = {
 		{ "Category", "Plugin" },
+		{ "Comment", "/**  */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_PluginManager.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FS_ElgPluginCategory_Statics::NewProp_Category = { "Category", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgPluginCategory, Category), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgPluginCategory_Statics::NewProp_Category_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgPluginCategory_Statics::NewProp_Category_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FS_ElgPluginCategory_Statics::NewProp_Category = { "Category", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgPluginCategory, Category), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgPluginCategory_Statics::NewProp_Category_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgPluginCategory_Statics::NewProp_Category_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FS_ElgPluginCategory_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FS_ElgPluginCategory_Statics::NewProp_Plugins,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FS_ElgPluginCategory_Statics::NewProp_Plugins_Inner,
@@ -172,10 +183,10 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgPlugin
 		sizeof(FS_ElgPluginCategory),
 		alignof(FS_ElgPluginCategory),
 		Z_Construct_UScriptStruct_FS_ElgPluginCategory_Statics::PropPointers,
-		ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgPluginCategory_Statics::PropPointers),
+		UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgPluginCategory_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
 		EStructFlags(0x00000001),
-		METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgPluginCategory_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgPluginCategory_Statics::Struct_MetaDataParams))
+		METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgPluginCategory_Statics::Struct_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgPluginCategory_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FS_ElgPluginCategory()
 	{
@@ -192,7 +203,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgPlugin
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FS_ElgPluginCategory_Hash() { return 2317965891U; }
+	uint32 Get_Z_Construct_UScriptStruct_FS_ElgPluginCategory_Hash() { return 3171451656U; }
 class UScriptStruct* FS_ElgPluginDescriptor::StaticStruct()
 {
 	static class UScriptStruct* Singleton = NULL;
@@ -348,49 +359,55 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgPlugin
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_ModuleTypes_MetaData[] = {
 		{ "Category", "Plugin" },
+		{ "Comment", "/** What module types the module\n\x09\x09\x09Runtime,\n\x09\x09\x09RuntimeNoCommandlet,\n\x09\x09\x09RuntimeAndProgram,\n\x09\x09\x09""CookedOnly,\n\x09\x09\x09""Developer,\n\x09\x09\x09""Editor,\n\x09\x09\x09""EditorNoCommandlet,\n\x09\x09\x09Program,\x09\x09//!< Program-only plugin type\n\x09\x09\x09ServerOnly,\n\x09\x09\x09""ClientOnly,\n\x09*/" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_PluginManager.h" },
 		{ "ToolTip", "What module types the module\n                      Runtime,\n                      RuntimeNoCommandlet,\n                      RuntimeAndProgram,\n                      CookedOnly,\n                      Developer,\n                      Editor,\n                      EditorNoCommandlet,\n                      Program,                //!< Program-only plugin type\n                      ServerOnly,\n                      ClientOnly," },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_ModuleTypes = { "ModuleTypes", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgPluginDescriptor, ModuleTypes), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_ModuleTypes_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_ModuleTypes_MetaData)) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_ModuleTypes = { "ModuleTypes", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgPluginDescriptor, ModuleTypes), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_ModuleTypes_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_ModuleTypes_MetaData)) };
 	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_ModuleTypes_Inner = { "ModuleTypes", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_ModuleNames_MetaData[] = {
 		{ "Category", "Plugin" },
+		{ "Comment", "/** Array with all the names of the plugin module */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_PluginManager.h" },
 		{ "ToolTip", "Array with all the names of the plugin module" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_ModuleNames = { "ModuleNames", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgPluginDescriptor, ModuleNames), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_ModuleNames_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_ModuleNames_MetaData)) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_ModuleNames = { "ModuleNames", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgPluginDescriptor, ModuleNames), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_ModuleNames_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_ModuleNames_MetaData)) };
 	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_ModuleNames_Inner = { "ModuleNames", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_IconFilePath_MetaData[] = {
 		{ "Category", "Plugin" },
+		{ "Comment", "/** File path to the icon. */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_PluginManager.h" },
 		{ "ToolTip", "File path to the icon." },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_IconFilePath = { "IconFilePath", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgPluginDescriptor, IconFilePath), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_IconFilePath_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_IconFilePath_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_IconFilePath = { "IconFilePath", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgPluginDescriptor, IconFilePath), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_IconFilePath_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_IconFilePath_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_RootCategory_MetaData[] = {
 		{ "Category", "Plugin" },
+		{ "Comment", "/** Name of the plugin category */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_PluginManager.h" },
 		{ "ToolTip", "Name of the plugin category" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_RootCategory = { "RootCategory", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgPluginDescriptor, RootCategory), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_RootCategory_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_RootCategory_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_RootCategory = { "RootCategory", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgPluginDescriptor, RootCategory), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_RootCategory_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_RootCategory_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_Type_MetaData[] = {
 		{ "Category", "Plugin" },
+		{ "Comment", "/** Plugin type enum\n\x09\x09""Engine\x09Plugin is built-in to the engine\n\x09\x09""Enterprise\x09Standard enterprise plugin\n\x09\x09Project\x09Project-specific plugin, stored within a game project directory\n\x09\x09""External\x09Plugin found in an external directory (found in an AdditionalPluginDirectory listed in the project file, or referenced on the command line)\n\x09\x09Mod\x09Project-specific mod plugin\x09\n\x09*/" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_PluginManager.h" },
 		{ "ToolTip", "Plugin type enum\n              Engine  Plugin is built-in to the engine\n              Enterprise      Standard enterprise plugin\n              Project Project-specific plugin, stored within a game project directory\n              External        Plugin found in an external directory (found in an AdditionalPluginDirectory listed in the project file, or referenced on the command line)\n              Mod     Project-specific mod plugin" },
 	};
 #endif
-	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_Type = { "Type", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgPluginDescriptor, Type), Z_Construct_UEnum_ElgEditorScripting_EBPPluginType, METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_Type_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_Type_MetaData)) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_Type = { "Type", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgPluginDescriptor, Type), Z_Construct_UEnum_ElgEditorScripting_EBPPluginType, METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_Type_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_Type_MetaData)) };
 	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_Type_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_bIsEnabledByDefault_MetaData[] = {
 		{ "Category", "Plugin" },
+		{ "Comment", "/** If the plugin is enabled by default or not */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_PluginManager.h" },
 		{ "ToolTip", "If the plugin is enabled by default or not" },
 	};
@@ -399,10 +416,11 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgPlugin
 	{
 		((FS_ElgPluginDescriptor*)Obj)->bIsEnabledByDefault = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_bIsEnabledByDefault = { "bIsEnabledByDefault", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FS_ElgPluginDescriptor), &Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_bIsEnabledByDefault_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_bIsEnabledByDefault_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_bIsEnabledByDefault_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_bIsEnabledByDefault = { "bIsEnabledByDefault", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FS_ElgPluginDescriptor), &Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_bIsEnabledByDefault_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_bIsEnabledByDefault_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_bIsEnabledByDefault_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_bIsEnabled_MetaData[] = {
 		{ "Category", "Plugin" },
+		{ "Comment", "/** If the plugin is enabled or not */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_PluginManager.h" },
 		{ "ToolTip", "If the plugin is enabled or not" },
 	};
@@ -411,10 +429,11 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgPlugin
 	{
 		((FS_ElgPluginDescriptor*)Obj)->bIsEnabled = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_bIsEnabled = { "bIsEnabled", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FS_ElgPluginDescriptor), &Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_bIsEnabled_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_bIsEnabled_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_bIsEnabled_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_bIsEnabled = { "bIsEnabled", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FS_ElgPluginDescriptor), &Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_bIsEnabled_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_bIsEnabled_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_bIsEnabled_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_bIsHidden_MetaData[] = {
 		{ "Category", "Plugin" },
+		{ "Comment", "/** For auto-generated plugins that should not be listed in the plugin browser for users to disable freely. */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_PluginManager.h" },
 		{ "ToolTip", "For auto-generated plugins that should not be listed in the plugin browser for users to disable freely." },
 	};
@@ -423,10 +442,11 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgPlugin
 	{
 		((FS_ElgPluginDescriptor*)Obj)->bIsHidden = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_bIsHidden = { "bIsHidden", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FS_ElgPluginDescriptor), &Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_bIsHidden_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_bIsHidden_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_bIsHidden_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_bIsHidden = { "bIsHidden", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FS_ElgPluginDescriptor), &Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_bIsHidden_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_bIsHidden_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_bIsHidden_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_bInstalled_MetaData[] = {
 		{ "Category", "Plugin" },
+		{ "Comment", "/** Signifies that the plugin was installed on top of the engine */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_PluginManager.h" },
 		{ "ToolTip", "Signifies that the plugin was installed on top of the engine" },
 	};
@@ -435,10 +455,11 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgPlugin
 	{
 		((FS_ElgPluginDescriptor*)Obj)->bInstalled = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_bInstalled = { "bInstalled", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FS_ElgPluginDescriptor), &Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_bInstalled_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_bInstalled_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_bInstalled_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_bInstalled = { "bInstalled", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FS_ElgPluginDescriptor), &Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_bInstalled_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_bInstalled_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_bInstalled_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_bIsBetaVersion_MetaData[] = {
 		{ "Category", "Plugin" },
+		{ "Comment", "/** Marks the plugin as beta in the UI */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_PluginManager.h" },
 		{ "ToolTip", "Marks the plugin as beta in the UI" },
 	};
@@ -447,10 +468,11 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgPlugin
 	{
 		((FS_ElgPluginDescriptor*)Obj)->bIsBetaVersion = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_bIsBetaVersion = { "bIsBetaVersion", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FS_ElgPluginDescriptor), &Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_bIsBetaVersion_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_bIsBetaVersion_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_bIsBetaVersion_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_bIsBetaVersion = { "bIsBetaVersion", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FS_ElgPluginDescriptor), &Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_bIsBetaVersion_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_bIsBetaVersion_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_bIsBetaVersion_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_bCanContainContent_MetaData[] = {
 		{ "Category", "Plugin" },
+		{ "Comment", "/** Can this plugin contain content? */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_PluginManager.h" },
 		{ "ToolTip", "Can this plugin contain content?" },
 	};
@@ -459,121 +481,135 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgPlugin
 	{
 		((FS_ElgPluginDescriptor*)Obj)->bCanContainContent = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_bCanContainContent = { "bCanContainContent", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FS_ElgPluginDescriptor), &Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_bCanContainContent_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_bCanContainContent_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_bCanContainContent_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_bCanContainContent = { "bCanContainContent", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FS_ElgPluginDescriptor), &Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_bCanContainContent_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_bCanContainContent_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_bCanContainContent_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_SupportedPrograms_MetaData[] = {
 		{ "Category", "Plugin" },
+		{ "Comment", "/** List of programs that are supported by this plugin. */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_PluginManager.h" },
 		{ "ToolTip", "List of programs that are supported by this plugin." },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_SupportedPrograms = { "SupportedPrograms", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgPluginDescriptor, SupportedPrograms), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_SupportedPrograms_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_SupportedPrograms_MetaData)) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_SupportedPrograms = { "SupportedPrograms", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgPluginDescriptor, SupportedPrograms), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_SupportedPrograms_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_SupportedPrograms_MetaData)) };
 	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_SupportedPrograms_Inner = { "SupportedPrograms", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_SupportedTargetPlatforms_MetaData[] = {
 		{ "Category", "Plugin" },
+		{ "Comment", "/** List of target platforms supported by this plugin. This list will be copied to any plugin reference from a project file, to allow filtering entire plugins from staged builds. */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_PluginManager.h" },
 		{ "ToolTip", "List of target platforms supported by this plugin. This list will be copied to any plugin reference from a project file, to allow filtering entire plugins from staged builds." },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_SupportedTargetPlatforms = { "SupportedTargetPlatforms", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgPluginDescriptor, SupportedTargetPlatforms), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_SupportedTargetPlatforms_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_SupportedTargetPlatforms_MetaData)) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_SupportedTargetPlatforms = { "SupportedTargetPlatforms", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgPluginDescriptor, SupportedTargetPlatforms), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_SupportedTargetPlatforms_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_SupportedTargetPlatforms_MetaData)) };
 	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_SupportedTargetPlatforms_Inner = { "SupportedTargetPlatforms", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_EngineVersion_MetaData[] = {
 		{ "Category", "Plugin" },
+		{ "Comment", "/** Version of the engine that this plugin is compatible with */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_PluginManager.h" },
 		{ "ToolTip", "Version of the engine that this plugin is compatible with" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_EngineVersion = { "EngineVersion", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgPluginDescriptor, EngineVersion), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_EngineVersion_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_EngineVersion_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_EngineVersion = { "EngineVersion", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgPluginDescriptor, EngineVersion), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_EngineVersion_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_EngineVersion_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_SupportURL_MetaData[] = {
 		{ "Category", "Plugin" },
+		{ "Comment", "/** Support URL/email for this plugin. */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_PluginManager.h" },
 		{ "ToolTip", "Support URL/email for this plugin." },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_SupportURL = { "SupportURL", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgPluginDescriptor, SupportURL), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_SupportURL_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_SupportURL_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_SupportURL = { "SupportURL", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgPluginDescriptor, SupportURL), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_SupportURL_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_SupportURL_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_MarketplaceURL_MetaData[] = {
 		{ "Category", "Plugin" },
+		{ "Comment", "/** Marketplace URL for this plugin. This URL will be embedded into projects that enable this plugin, so we can redirect to the marketplace if a user doesn't have it installed. */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_PluginManager.h" },
 		{ "ToolTip", "Marketplace URL for this plugin. This URL will be embedded into projects that enable this plugin, so we can redirect to the marketplace if a user doesn't have it installed." },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_MarketplaceURL = { "MarketplaceURL", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgPluginDescriptor, MarketplaceURL), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_MarketplaceURL_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_MarketplaceURL_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_MarketplaceURL = { "MarketplaceURL", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgPluginDescriptor, MarketplaceURL), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_MarketplaceURL_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_MarketplaceURL_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_DocsURL_MetaData[] = {
 		{ "Category", "Plugin" },
+		{ "Comment", "/** Documentation URL string. */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_PluginManager.h" },
 		{ "ToolTip", "Documentation URL string." },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_DocsURL = { "DocsURL", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgPluginDescriptor, DocsURL), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_DocsURL_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_DocsURL_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_DocsURL = { "DocsURL", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgPluginDescriptor, DocsURL), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_DocsURL_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_DocsURL_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_CreatedByURL_MetaData[] = {
 		{ "Category", "Plugin" },
+		{ "Comment", "/** Hyperlink URL string for the company or individual who created this plugin.  This is optional. */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_PluginManager.h" },
 		{ "ToolTip", "Hyperlink URL string for the company or individual who created this plugin.  This is optional." },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_CreatedByURL = { "CreatedByURL", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgPluginDescriptor, CreatedByURL), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_CreatedByURL_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_CreatedByURL_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_CreatedByURL = { "CreatedByURL", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgPluginDescriptor, CreatedByURL), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_CreatedByURL_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_CreatedByURL_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_CreatedBy_MetaData[] = {
 		{ "Category", "Plugin" },
+		{ "Comment", "/** The company or individual who created this plugin.  This is an optional field that may be displayed in the user interface. */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_PluginManager.h" },
 		{ "ToolTip", "The company or individual who created this plugin.  This is an optional field that may be displayed in the user interface." },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_CreatedBy = { "CreatedBy", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgPluginDescriptor, CreatedBy), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_CreatedBy_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_CreatedBy_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_CreatedBy = { "CreatedBy", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgPluginDescriptor, CreatedBy), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_CreatedBy_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_CreatedBy_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_Category_MetaData[] = {
 		{ "Category", "Plugin" },
+		{ "Comment", "/** The name of the category this plugin */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_PluginManager.h" },
 		{ "ToolTip", "The name of the category this plugin" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_Category = { "Category", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgPluginDescriptor, Category), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_Category_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_Category_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_Category = { "Category", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgPluginDescriptor, Category), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_Category_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_Category_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_Description_MetaData[] = {
 		{ "Category", "Plugin" },
+		{ "Comment", "/** Description of the plugin */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_PluginManager.h" },
 		{ "ToolTip", "Description of the plugin" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_Description = { "Description", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgPluginDescriptor, Description), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_Description_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_Description_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_Description = { "Description", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgPluginDescriptor, Description), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_Description_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_Description_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_FriendlyName_MetaData[] = {
 		{ "Category", "Plugin" },
+		{ "Comment", "/** Friendly name of the plugin */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_PluginManager.h" },
 		{ "ToolTip", "Friendly name of the plugin" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_FriendlyName = { "FriendlyName", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgPluginDescriptor, FriendlyName), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_FriendlyName_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_FriendlyName_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_FriendlyName = { "FriendlyName", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgPluginDescriptor, FriendlyName), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_FriendlyName_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_FriendlyName_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_VersionName_MetaData[] = {
 		{ "Category", "Plugin" },
+		{ "Comment", "/** Name of the version for this plugin.  This is the front-facing part of the version number.  It doesn't need to match\n\x09\x09the version number numerically, but should be updated when the version number is increased accordingly. */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_PluginManager.h" },
 		{ "ToolTip", "Name of the version for this plugin.  This is the front-facing part of the version number.  It doesn't need to match\n              the version number numerically, but should be updated when the version number is increased accordingly." },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_VersionName = { "VersionName", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgPluginDescriptor, VersionName), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_VersionName_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_VersionName_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_VersionName = { "VersionName", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgPluginDescriptor, VersionName), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_VersionName_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_VersionName_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_Version_MetaData[] = {
 		{ "Category", "Plugin" },
+		{ "Comment", "/** Version number for the plugin.  The version number must increase with every version of the plugin, so that the system\n\x09\x09""can determine whether one version of a plugin is newer than another, or to enforce other requirements.  This version\n\x09\x09number is not displayed in front-facing UI.  Use the VersionName for that. */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_PluginManager.h" },
 		{ "ToolTip", "Version number for the plugin.  The version number must increase with every version of the plugin, so that the system\n              can determine whether one version of a plugin is newer than another, or to enforce other requirements.  This version\n              number is not displayed in front-facing UI.  Use the VersionName for that." },
 	};
 #endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_Version = { "Version", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgPluginDescriptor, Version), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_Version_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_Version_MetaData)) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_Version = { "Version", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgPluginDescriptor, Version), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_Version_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_Version_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_Name_MetaData[] = {
 		{ "Category", "Plugin" },
+		{ "Comment", "/** Name of the plugin */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_PluginManager.h" },
 		{ "ToolTip", "Name of the plugin" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_Name = { "Name", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgPluginDescriptor, Name), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_Name_MetaData, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_Name_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_Name = { "Name", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FS_ElgPluginDescriptor, Name), METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_Name_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_Name_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_ModuleTypes,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::NewProp_ModuleTypes_Inner,
@@ -614,10 +650,10 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgPlugin
 		sizeof(FS_ElgPluginDescriptor),
 		alignof(FS_ElgPluginDescriptor),
 		Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::PropPointers,
-		ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::PropPointers),
+		UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::PropPointers),
 		RF_Public|RF_Transient|RF_MarkAsNative,
 		EStructFlags(0x00000001),
-		METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::Struct_MetaDataParams, ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::Struct_MetaDataParams))
+		METADATA_PARAMS(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::Struct_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Statics::Struct_MetaDataParams))
 	};
 	UScriptStruct* Z_Construct_UScriptStruct_FS_ElgPluginDescriptor()
 	{
@@ -634,7 +670,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgPlugin
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Hash() { return 4086800129U; }
+	uint32 Get_Z_Construct_UScriptStruct_FS_ElgPluginDescriptor_Hash() { return 2858650655U; }
 	void UElgEditorBP_PluginManager::StaticRegisterNativesUElgEditorBP_PluginManager()
 	{
 		UClass* Class = UElgEditorBP_PluginManager::StaticClass();
@@ -652,7 +688,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgPlugin
 			{ "PackagePlugin", &UElgEditorBP_PluginManager::execPackagePlugin },
 			{ "SetPluginEnabled", &UElgEditorBP_PluginManager::execSetPluginEnabled },
 		};
-		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 	}
 	struct Z_Construct_UFunction_UElgEditorBP_PluginManager_DisablePlugin_Statics
 	{
@@ -690,13 +726,13 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgPlugin
 	{
 		((ElgEditorBP_PluginManager_eventDisablePlugin_Parms*)Obj)->bSkipIfDependencies = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UElgEditorBP_PluginManager_DisablePlugin_Statics::NewProp_bSkipIfDependencies = { "bSkipIfDependencies", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ElgEditorBP_PluginManager_eventDisablePlugin_Parms), &Z_Construct_UFunction_UElgEditorBP_PluginManager_DisablePlugin_Statics::NewProp_bSkipIfDependencies_SetBit, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_PluginManager_DisablePlugin_Statics::NewProp_bSkipIfDependencies_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_PluginManager_DisablePlugin_Statics::NewProp_bSkipIfDependencies_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UElgEditorBP_PluginManager_DisablePlugin_Statics::NewProp_bSkipIfDependencies = { "bSkipIfDependencies", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ElgEditorBP_PluginManager_eventDisablePlugin_Parms), &Z_Construct_UFunction_UElgEditorBP_PluginManager_DisablePlugin_Statics::NewProp_bSkipIfDependencies_SetBit, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_PluginManager_DisablePlugin_Statics::NewProp_bSkipIfDependencies_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_PluginManager_DisablePlugin_Statics::NewProp_bSkipIfDependencies_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_PluginManager_DisablePlugin_Statics::NewProp_PluginName_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_PluginManager_DisablePlugin_Statics::NewProp_PluginName = { "PluginName", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_PluginManager_eventDisablePlugin_Parms, PluginName), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_PluginManager_DisablePlugin_Statics::NewProp_PluginName_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_PluginManager_DisablePlugin_Statics::NewProp_PluginName_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_PluginManager_DisablePlugin_Statics::NewProp_PluginName = { "PluginName", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_PluginManager_eventDisablePlugin_Parms, PluginName), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_PluginManager_DisablePlugin_Statics::NewProp_PluginName_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_PluginManager_DisablePlugin_Statics::NewProp_PluginName_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorBP_PluginManager_DisablePlugin_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_PluginManager_DisablePlugin_Statics::NewProp_Branches,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_PluginManager_DisablePlugin_Statics::NewProp_Branches_Underlying,
@@ -706,12 +742,13 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgPlugin
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_PluginManager_DisablePlugin_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|PluginManager" },
+		{ "Comment", "/* Disable the plugin, need to restart the editor to see the effect. */" },
 		{ "ExpandEnumAsExecs", "Branches" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_PluginManager.h" },
 		{ "ToolTip", "Disable the plugin, need to restart the editor to see the effect." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_PluginManager_DisablePlugin_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_PluginManager, nullptr, "DisablePlugin", sizeof(ElgEditorBP_PluginManager_eventDisablePlugin_Parms), Z_Construct_UFunction_UElgEditorBP_PluginManager_DisablePlugin_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_PluginManager_DisablePlugin_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_PluginManager_DisablePlugin_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_PluginManager_DisablePlugin_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_PluginManager_DisablePlugin_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_PluginManager, nullptr, "DisablePlugin", nullptr, nullptr, sizeof(ElgEditorBP_PluginManager_eventDisablePlugin_Parms), Z_Construct_UFunction_UElgEditorBP_PluginManager_DisablePlugin_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_PluginManager_DisablePlugin_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_PluginManager_DisablePlugin_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_PluginManager_DisablePlugin_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_PluginManager_DisablePlugin()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -757,13 +794,13 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgPlugin
 	{
 		((ElgEditorBP_PluginManager_eventEnablePlugin_Parms*)Obj)->bSkipIfDependencies = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UElgEditorBP_PluginManager_EnablePlugin_Statics::NewProp_bSkipIfDependencies = { "bSkipIfDependencies", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ElgEditorBP_PluginManager_eventEnablePlugin_Parms), &Z_Construct_UFunction_UElgEditorBP_PluginManager_EnablePlugin_Statics::NewProp_bSkipIfDependencies_SetBit, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_PluginManager_EnablePlugin_Statics::NewProp_bSkipIfDependencies_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_PluginManager_EnablePlugin_Statics::NewProp_bSkipIfDependencies_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UElgEditorBP_PluginManager_EnablePlugin_Statics::NewProp_bSkipIfDependencies = { "bSkipIfDependencies", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ElgEditorBP_PluginManager_eventEnablePlugin_Parms), &Z_Construct_UFunction_UElgEditorBP_PluginManager_EnablePlugin_Statics::NewProp_bSkipIfDependencies_SetBit, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_PluginManager_EnablePlugin_Statics::NewProp_bSkipIfDependencies_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_PluginManager_EnablePlugin_Statics::NewProp_bSkipIfDependencies_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_PluginManager_EnablePlugin_Statics::NewProp_PluginName_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_PluginManager_EnablePlugin_Statics::NewProp_PluginName = { "PluginName", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_PluginManager_eventEnablePlugin_Parms, PluginName), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_PluginManager_EnablePlugin_Statics::NewProp_PluginName_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_PluginManager_EnablePlugin_Statics::NewProp_PluginName_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_PluginManager_EnablePlugin_Statics::NewProp_PluginName = { "PluginName", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_PluginManager_eventEnablePlugin_Parms, PluginName), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_PluginManager_EnablePlugin_Statics::NewProp_PluginName_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_PluginManager_EnablePlugin_Statics::NewProp_PluginName_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorBP_PluginManager_EnablePlugin_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_PluginManager_EnablePlugin_Statics::NewProp_Branches,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_PluginManager_EnablePlugin_Statics::NewProp_Branches_Underlying,
@@ -773,12 +810,13 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgPlugin
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_PluginManager_EnablePlugin_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|PluginManager" },
+		{ "Comment", "/* Enable the plugin, need to restart the editor to see the effect. */" },
 		{ "ExpandEnumAsExecs", "Branches" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_PluginManager.h" },
 		{ "ToolTip", "Enable the plugin, need to restart the editor to see the effect." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_PluginManager_EnablePlugin_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_PluginManager, nullptr, "EnablePlugin", sizeof(ElgEditorBP_PluginManager_eventEnablePlugin_Parms), Z_Construct_UFunction_UElgEditorBP_PluginManager_EnablePlugin_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_PluginManager_EnablePlugin_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_PluginManager_EnablePlugin_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_PluginManager_EnablePlugin_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_PluginManager_EnablePlugin_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_PluginManager, nullptr, "EnablePlugin", nullptr, nullptr, sizeof(ElgEditorBP_PluginManager_eventEnablePlugin_Parms), Z_Construct_UFunction_UElgEditorBP_PluginManager_EnablePlugin_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_PluginManager_EnablePlugin_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_PluginManager_EnablePlugin_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_PluginManager_EnablePlugin_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_PluginManager_EnablePlugin()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -821,11 +859,12 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgPlugin
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginCategory_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|PluginManager" },
+		{ "Comment", "/* Get a map with array Category and all plugin for each category\n\x09""As a bonus a sorted array with just the category\n\x09*/" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_PluginManager.h" },
 		{ "ToolTip", "Get a map with array Category and all plugin for each category\n      As a bonus a sorted array with just the category" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginCategory_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_PluginManager, nullptr, "GetPluginCategory", sizeof(ElgEditorBP_PluginManager_eventGetPluginCategory_Parms), Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginCategory_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginCategory_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginCategory_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginCategory_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginCategory_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_PluginManager, nullptr, "GetPluginCategory", nullptr, nullptr, sizeof(ElgEditorBP_PluginManager_eventGetPluginCategory_Parms), Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginCategory_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginCategory_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginCategory_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginCategory_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginCategory()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -858,7 +897,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgPlugin
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_PluginManager.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginCount_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_PluginManager, nullptr, "GetPluginCount", sizeof(ElgEditorBP_PluginManager_eventGetPluginCount_Parms), Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginCount_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginCount_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginCount_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginCount_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginCount_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_PluginManager, nullptr, "GetPluginCount", nullptr, nullptr, sizeof(ElgEditorBP_PluginManager_eventGetPluginCount_Parms), Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginCount_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginCount_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginCount_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginCount_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginCount()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -897,7 +936,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgPlugin
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginDescription_Statics::NewProp_PluginName = { "PluginName", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_PluginManager_eventGetPluginDescription_Parms, PluginName), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginDescription_Statics::NewProp_PluginName_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginDescription_Statics::NewProp_PluginName_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginDescription_Statics::NewProp_PluginName = { "PluginName", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_PluginManager_eventGetPluginDescription_Parms, PluginName), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginDescription_Statics::NewProp_PluginName_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginDescription_Statics::NewProp_PluginName_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginDescription_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginDescription_Statics::NewProp_Branches,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginDescription_Statics::NewProp_Branches_Underlying,
@@ -907,12 +946,13 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgPlugin
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginDescription_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|PluginManager" },
+		{ "Comment", "/* Get Description with information about the plugin */" },
 		{ "ExpandEnumAsExecs", "Branches" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_PluginManager.h" },
 		{ "ToolTip", "Get Description with information about the plugin" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginDescription_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_PluginManager, nullptr, "GetPluginDescription", sizeof(ElgEditorBP_PluginManager_eventGetPluginDescription_Parms), Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginDescription_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginDescription_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginDescription_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginDescription_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginDescription_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_PluginManager, nullptr, "GetPluginDescription", nullptr, nullptr, sizeof(ElgEditorBP_PluginManager_eventGetPluginDescription_Parms), Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginDescription_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginDescription_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginDescription_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginDescription_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginDescription()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -955,11 +995,12 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgPlugin
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginDescriptions_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|PluginManager" },
+		{ "Comment", "/* Get Descriptions with information about all plugins */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_PluginManager.h" },
 		{ "ToolTip", "Get Descriptions with information about all plugins" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginDescriptions_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_PluginManager, nullptr, "GetPluginDescriptions", sizeof(ElgEditorBP_PluginManager_eventGetPluginDescriptions_Parms), Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginDescriptions_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginDescriptions_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginDescriptions_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginDescriptions_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginDescriptions_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_PluginManager, nullptr, "GetPluginDescriptions", nullptr, nullptr, sizeof(ElgEditorBP_PluginManager_eventGetPluginDescriptions_Parms), Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginDescriptions_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginDescriptions_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginDescriptions_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginDescriptions_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginDescriptions()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -993,7 +1034,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgPlugin
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginFriendlyName_Statics::NewProp_PluginName = { "PluginName", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_PluginManager_eventGetPluginFriendlyName_Parms, PluginName), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginFriendlyName_Statics::NewProp_PluginName_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginFriendlyName_Statics::NewProp_PluginName_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginFriendlyName_Statics::NewProp_PluginName = { "PluginName", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_PluginManager_eventGetPluginFriendlyName_Parms, PluginName), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginFriendlyName_Statics::NewProp_PluginName_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginFriendlyName_Statics::NewProp_PluginName_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginFriendlyName_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginFriendlyName_Statics::NewProp_FriendlyNanme,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginFriendlyName_Statics::NewProp_PluginName,
@@ -1001,11 +1042,12 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgPlugin
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginFriendlyName_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|PluginManager" },
+		{ "Comment", "/* Get a plugins friendly name */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_PluginManager.h" },
 		{ "ToolTip", "Get a plugins friendly name" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginFriendlyName_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_PluginManager, nullptr, "GetPluginFriendlyName", sizeof(ElgEditorBP_PluginManager_eventGetPluginFriendlyName_Parms), Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginFriendlyName_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginFriendlyName_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginFriendlyName_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginFriendlyName_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginFriendlyName_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_PluginManager, nullptr, "GetPluginFriendlyName", nullptr, nullptr, sizeof(ElgEditorBP_PluginManager_eventGetPluginFriendlyName_Parms), Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginFriendlyName_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginFriendlyName_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginFriendlyName_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginFriendlyName_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginFriendlyName()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1044,7 +1086,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgPlugin
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginIconTexture_Statics::NewProp_PluginName = { "PluginName", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_PluginManager_eventGetPluginIconTexture_Parms, PluginName), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginIconTexture_Statics::NewProp_PluginName_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginIconTexture_Statics::NewProp_PluginName_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginIconTexture_Statics::NewProp_PluginName = { "PluginName", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_PluginManager_eventGetPluginIconTexture_Parms, PluginName), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginIconTexture_Statics::NewProp_PluginName_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginIconTexture_Statics::NewProp_PluginName_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginIconTexture_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginIconTexture_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginIconTexture_Statics::NewProp_Branches,
@@ -1054,12 +1096,13 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgPlugin
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginIconTexture_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|PluginManager" },
+		{ "Comment", "/* Get the Icon texture for a plugin */" },
 		{ "ExpandEnumAsExecs", "Branches" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_PluginManager.h" },
 		{ "ToolTip", "Get the Icon texture for a plugin" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginIconTexture_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_PluginManager, nullptr, "GetPluginIconTexture", sizeof(ElgEditorBP_PluginManager_eventGetPluginIconTexture_Parms), Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginIconTexture_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginIconTexture_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginIconTexture_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginIconTexture_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginIconTexture_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_PluginManager, nullptr, "GetPluginIconTexture", nullptr, nullptr, sizeof(ElgEditorBP_PluginManager_eventGetPluginIconTexture_Parms), Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginIconTexture_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginIconTexture_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginIconTexture_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginIconTexture_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginIconTexture()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1098,7 +1141,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgPlugin
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginIconTextureByPath_Statics::NewProp_IconPath = { "IconPath", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_PluginManager_eventGetPluginIconTextureByPath_Parms, IconPath), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginIconTextureByPath_Statics::NewProp_IconPath_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginIconTextureByPath_Statics::NewProp_IconPath_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginIconTextureByPath_Statics::NewProp_IconPath = { "IconPath", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_PluginManager_eventGetPluginIconTextureByPath_Parms, IconPath), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginIconTextureByPath_Statics::NewProp_IconPath_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginIconTextureByPath_Statics::NewProp_IconPath_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginIconTextureByPath_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginIconTextureByPath_Statics::NewProp_ReturnValue,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginIconTextureByPath_Statics::NewProp_Branches,
@@ -1108,12 +1151,13 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgPlugin
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginIconTextureByPath_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|PluginManager" },
+		{ "Comment", "/* Get the Icon texture for a plugin */" },
 		{ "ExpandEnumAsExecs", "Branches" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_PluginManager.h" },
 		{ "ToolTip", "Get the Icon texture for a plugin" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginIconTextureByPath_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_PluginManager, nullptr, "GetPluginIconTextureByPath", sizeof(ElgEditorBP_PluginManager_eventGetPluginIconTextureByPath_Parms), Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginIconTextureByPath_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginIconTextureByPath_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginIconTextureByPath_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginIconTextureByPath_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginIconTextureByPath_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_PluginManager, nullptr, "GetPluginIconTextureByPath", nullptr, nullptr, sizeof(ElgEditorBP_PluginManager_eventGetPluginIconTextureByPath_Parms), Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginIconTextureByPath_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginIconTextureByPath_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginIconTextureByPath_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginIconTextureByPath_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginIconTextureByPath()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1149,11 +1193,12 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgPlugin
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginIconTextures_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|PluginManager" },
+		{ "Comment", "/* Get a Map with filepath, texture  */" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_PluginManager.h" },
 		{ "ToolTip", "Get a Map with filepath, texture" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginIconTextures_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_PluginManager, nullptr, "GetPluginIconTextures", sizeof(ElgEditorBP_PluginManager_eventGetPluginIconTextures_Parms), Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginIconTextures_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginIconTextures_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginIconTextures_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginIconTextures_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginIconTextures_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_PluginManager, nullptr, "GetPluginIconTextures", nullptr, nullptr, sizeof(ElgEditorBP_PluginManager_eventGetPluginIconTextures_Parms), Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginIconTextures_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginIconTextures_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginIconTextures_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginIconTextures_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginIconTextures()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1192,7 +1237,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgPlugin
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_PluginManager_PackagePlugin_Statics::NewProp_PluginName = { "PluginName", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_PluginManager_eventPackagePlugin_Parms, PluginName), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_PluginManager_PackagePlugin_Statics::NewProp_PluginName_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_PluginManager_PackagePlugin_Statics::NewProp_PluginName_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_PluginManager_PackagePlugin_Statics::NewProp_PluginName = { "PluginName", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_PluginManager_eventPackagePlugin_Parms, PluginName), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_PluginManager_PackagePlugin_Statics::NewProp_PluginName_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_PluginManager_PackagePlugin_Statics::NewProp_PluginName_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorBP_PluginManager_PackagePlugin_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_PluginManager_PackagePlugin_Statics::NewProp_Branches,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_PluginManager_PackagePlugin_Statics::NewProp_Branches_Underlying,
@@ -1202,12 +1247,13 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgPlugin
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_PluginManager_PackagePlugin_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|PluginManager" },
+		{ "Comment", "/* Package the plugin to the specified Output dir */" },
 		{ "ExpandEnumAsExecs", "Branches" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_PluginManager.h" },
 		{ "ToolTip", "Package the plugin to the specified Output dir" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_PluginManager_PackagePlugin_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_PluginManager, nullptr, "PackagePlugin", sizeof(ElgEditorBP_PluginManager_eventPackagePlugin_Parms), Z_Construct_UFunction_UElgEditorBP_PluginManager_PackagePlugin_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_PluginManager_PackagePlugin_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_PluginManager_PackagePlugin_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_PluginManager_PackagePlugin_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_PluginManager_PackagePlugin_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_PluginManager, nullptr, "PackagePlugin", nullptr, nullptr, sizeof(ElgEditorBP_PluginManager_eventPackagePlugin_Parms), Z_Construct_UFunction_UElgEditorBP_PluginManager_PackagePlugin_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_PluginManager_PackagePlugin_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_PluginManager_PackagePlugin_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_PluginManager_PackagePlugin_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_PluginManager_PackagePlugin()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1259,7 +1305,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgPlugin
 	{
 		((ElgEditorBP_PluginManager_eventSetPluginEnabled_Parms*)Obj)->bSkipIfDependencies = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UElgEditorBP_PluginManager_SetPluginEnabled_Statics::NewProp_bSkipIfDependencies = { "bSkipIfDependencies", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ElgEditorBP_PluginManager_eventSetPluginEnabled_Parms), &Z_Construct_UFunction_UElgEditorBP_PluginManager_SetPluginEnabled_Statics::NewProp_bSkipIfDependencies_SetBit, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_PluginManager_SetPluginEnabled_Statics::NewProp_bSkipIfDependencies_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_PluginManager_SetPluginEnabled_Statics::NewProp_bSkipIfDependencies_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UElgEditorBP_PluginManager_SetPluginEnabled_Statics::NewProp_bSkipIfDependencies = { "bSkipIfDependencies", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ElgEditorBP_PluginManager_eventSetPluginEnabled_Parms), &Z_Construct_UFunction_UElgEditorBP_PluginManager_SetPluginEnabled_Statics::NewProp_bSkipIfDependencies_SetBit, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_PluginManager_SetPluginEnabled_Statics::NewProp_bSkipIfDependencies_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_PluginManager_SetPluginEnabled_Statics::NewProp_bSkipIfDependencies_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_PluginManager_SetPluginEnabled_Statics::NewProp_bEnable_MetaData[] = {
 		{ "NativeConst", "" },
@@ -1269,13 +1315,13 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgPlugin
 	{
 		((ElgEditorBP_PluginManager_eventSetPluginEnabled_Parms*)Obj)->bEnable = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UElgEditorBP_PluginManager_SetPluginEnabled_Statics::NewProp_bEnable = { "bEnable", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ElgEditorBP_PluginManager_eventSetPluginEnabled_Parms), &Z_Construct_UFunction_UElgEditorBP_PluginManager_SetPluginEnabled_Statics::NewProp_bEnable_SetBit, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_PluginManager_SetPluginEnabled_Statics::NewProp_bEnable_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_PluginManager_SetPluginEnabled_Statics::NewProp_bEnable_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UElgEditorBP_PluginManager_SetPluginEnabled_Statics::NewProp_bEnable = { "bEnable", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ElgEditorBP_PluginManager_eventSetPluginEnabled_Parms), &Z_Construct_UFunction_UElgEditorBP_PluginManager_SetPluginEnabled_Statics::NewProp_bEnable_SetBit, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_PluginManager_SetPluginEnabled_Statics::NewProp_bEnable_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_PluginManager_SetPluginEnabled_Statics::NewProp_bEnable_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_PluginManager_SetPluginEnabled_Statics::NewProp_PluginName_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_PluginManager_SetPluginEnabled_Statics::NewProp_PluginName = { "PluginName", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_PluginManager_eventSetPluginEnabled_Parms, PluginName), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_PluginManager_SetPluginEnabled_Statics::NewProp_PluginName_MetaData, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_PluginManager_SetPluginEnabled_Statics::NewProp_PluginName_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UElgEditorBP_PluginManager_SetPluginEnabled_Statics::NewProp_PluginName = { "PluginName", nullptr, (EPropertyFlags)0x0010000000000082, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ElgEditorBP_PluginManager_eventSetPluginEnabled_Parms, PluginName), METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_PluginManager_SetPluginEnabled_Statics::NewProp_PluginName_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_PluginManager_SetPluginEnabled_Statics::NewProp_PluginName_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UElgEditorBP_PluginManager_SetPluginEnabled_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_PluginManager_SetPluginEnabled_Statics::NewProp_Branches,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UElgEditorBP_PluginManager_SetPluginEnabled_Statics::NewProp_Branches_Underlying,
@@ -1286,12 +1332,13 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgPlugin
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UElgEditorBP_PluginManager_SetPluginEnabled_Statics::Function_MetaDataParams[] = {
 		{ "Category", "ElgEditor|PluginManager" },
+		{ "Comment", "/* Enable or Disable the plugin.\n\x09\x09Need to restart to see the effect.\n\x09*/" },
 		{ "ExpandEnumAsExecs", "Branches" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_PluginManager.h" },
 		{ "ToolTip", "Enable or Disable the plugin.\n              Need to restart to see the effect." },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_PluginManager_SetPluginEnabled_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_PluginManager, nullptr, "SetPluginEnabled", sizeof(ElgEditorBP_PluginManager_eventSetPluginEnabled_Parms), Z_Construct_UFunction_UElgEditorBP_PluginManager_SetPluginEnabled_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_PluginManager_SetPluginEnabled_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_PluginManager_SetPluginEnabled_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_PluginManager_SetPluginEnabled_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UElgEditorBP_PluginManager_SetPluginEnabled_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UElgEditorBP_PluginManager, nullptr, "SetPluginEnabled", nullptr, nullptr, sizeof(ElgEditorBP_PluginManager_eventSetPluginEnabled_Parms), Z_Construct_UFunction_UElgEditorBP_PluginManager_SetPluginEnabled_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_PluginManager_SetPluginEnabled_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04442401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UElgEditorBP_PluginManager_SetPluginEnabled_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UElgEditorBP_PluginManager_SetPluginEnabled_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UElgEditorBP_PluginManager_SetPluginEnabled()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -1320,21 +1367,22 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgPlugin
 		(UObject* (*)())Z_Construct_UPackage__Script_ElgEditorScripting,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UElgEditorBP_PluginManager_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UElgEditorBP_PluginManager_DisablePlugin, "DisablePlugin" }, // 4092174825
-		{ &Z_Construct_UFunction_UElgEditorBP_PluginManager_EnablePlugin, "EnablePlugin" }, // 2399932532
-		{ &Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginCategory, "GetPluginCategory" }, // 591762639
-		{ &Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginCount, "GetPluginCount" }, // 3505994965
-		{ &Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginDescription, "GetPluginDescription" }, // 2142623772
-		{ &Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginDescriptions, "GetPluginDescriptions" }, // 1686623873
-		{ &Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginFriendlyName, "GetPluginFriendlyName" }, // 3770627869
-		{ &Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginIconTexture, "GetPluginIconTexture" }, // 1585494243
-		{ &Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginIconTextureByPath, "GetPluginIconTextureByPath" }, // 418696230
-		{ &Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginIconTextures, "GetPluginIconTextures" }, // 4205552862
-		{ &Z_Construct_UFunction_UElgEditorBP_PluginManager_PackagePlugin, "PackagePlugin" }, // 4073732794
-		{ &Z_Construct_UFunction_UElgEditorBP_PluginManager_SetPluginEnabled, "SetPluginEnabled" }, // 3626989037
+		{ &Z_Construct_UFunction_UElgEditorBP_PluginManager_DisablePlugin, "DisablePlugin" }, // 779787133
+		{ &Z_Construct_UFunction_UElgEditorBP_PluginManager_EnablePlugin, "EnablePlugin" }, // 2495712629
+		{ &Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginCategory, "GetPluginCategory" }, // 2928533705
+		{ &Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginCount, "GetPluginCount" }, // 656549617
+		{ &Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginDescription, "GetPluginDescription" }, // 481570653
+		{ &Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginDescriptions, "GetPluginDescriptions" }, // 1980626707
+		{ &Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginFriendlyName, "GetPluginFriendlyName" }, // 1519494787
+		{ &Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginIconTexture, "GetPluginIconTexture" }, // 1456386511
+		{ &Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginIconTextureByPath, "GetPluginIconTextureByPath" }, // 2783117466
+		{ &Z_Construct_UFunction_UElgEditorBP_PluginManager_GetPluginIconTextures, "GetPluginIconTextures" }, // 1264936144
+		{ &Z_Construct_UFunction_UElgEditorBP_PluginManager_PackagePlugin, "PackagePlugin" }, // 989174227
+		{ &Z_Construct_UFunction_UElgEditorBP_PluginManager_SetPluginEnabled, "SetPluginEnabled" }, // 2505051634
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UElgEditorBP_PluginManager_Statics::Class_MetaDataParams[] = {
+		{ "Comment", "/**\n * \n */" },
 		{ "IncludePath", "Blueprints/ElgEditorBP_PluginManager.h" },
 		{ "ModuleRelativePath", "Public/Blueprints/ElgEditorBP_PluginManager.h" },
 	};
@@ -1350,12 +1398,12 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgPlugin
 		FuncInfo,
 		nullptr,
 		nullptr,
-		ARRAY_COUNT(DependentSingletons),
-		ARRAY_COUNT(FuncInfo),
+		UE_ARRAY_COUNT(DependentSingletons),
+		UE_ARRAY_COUNT(FuncInfo),
 		0,
 		0,
 		0x001000A0u,
-		METADATA_PARAMS(Z_Construct_UClass_UElgEditorBP_PluginManager_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UElgEditorBP_PluginManager_Statics::Class_MetaDataParams))
+		METADATA_PARAMS(Z_Construct_UClass_UElgEditorBP_PluginManager_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_UElgEditorBP_PluginManager_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UElgEditorBP_PluginManager()
 	{
@@ -1366,7 +1414,7 @@ static struct FScriptStruct_ElgEditorScripting_StaticRegisterNativesFS_ElgPlugin
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UElgEditorBP_PluginManager, 2746136952);
+	IMPLEMENT_CLASS(UElgEditorBP_PluginManager, 4143442520);
 	template<> ELGEDITORSCRIPTING_API UClass* StaticClass<UElgEditorBP_PluginManager>()
 	{
 		return UElgEditorBP_PluginManager::StaticClass();

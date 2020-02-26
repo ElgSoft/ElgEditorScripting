@@ -1,16 +1,16 @@
-D:\_TEST_\ElgEditorScripting\HostProject\Plugins\ElgEditorScripting\Source\ElgEditorScripting\Public\Blueprints\ElgEditorBP_Assets.h
-D:\_TEST_\ElgEditorScripting\HostProject\Plugins\ElgEditorScripting\Source\ElgEditorScripting\Public\Blueprints\ElgEditorBP_Class.h
-D:\_TEST_\ElgEditorScripting\HostProject\Plugins\ElgEditorScripting\Source\ElgEditorScripting\Public\Blueprints\ElgEditorBP_Enum.h
-D:\_TEST_\ElgEditorScripting\HostProject\Plugins\ElgEditorScripting\Source\ElgEditorScripting\Public\Blueprints\ElgEditorBP_FModuleManager.h
-D:\_TEST_\ElgEditorScripting\HostProject\Plugins\ElgEditorScripting\Source\ElgEditorScripting\Public\Blueprints\ElgEditorBP_EditorWidget.h
-D:\_TEST_\ElgEditorScripting\HostProject\Plugins\ElgEditorScripting\Source\ElgEditorScripting\Public\Blueprints\ElgEditorBP_LevelActor.h
-D:\_TEST_\ElgEditorScripting\HostProject\Plugins\ElgEditorScripting\Source\ElgEditorScripting\Public\Blueprints\ElgEditorBP_UBlueprint.h
-D:\_TEST_\ElgEditorScripting\HostProject\Plugins\ElgEditorScripting\Source\ElgEditorScripting\Public\EditorContexts\ElgEditorContext_BP.h
-D:\_TEST_\ElgEditorScripting\HostProject\Plugins\ElgEditorScripting\Source\ElgEditorScripting\Public\Blueprints\ElgEditorBP_PluginManager.h
-D:\_TEST_\ElgEditorScripting\HostProject\Plugins\ElgEditorScripting\Source\ElgEditorScripting\Public\EditorContexts\ElgEditorContext_AssetBrowser.h
-D:\_TEST_\ElgEditorScripting\HostProject\Plugins\ElgEditorScripting\Source\ElgEditorScripting\Public\EditorContexts\ElgEditorContext_Config.h
-D:\_TEST_\ElgEditorScripting\HostProject\Plugins\ElgEditorScripting\Source\ElgEditorScripting\Public\EditorContexts\ElgEditorContext_DirWatcher.h
-D:\_TEST_\ElgEditorScripting\HostProject\Plugins\ElgEditorScripting\Source\ElgEditorScripting\Public\EditorContexts\ElgEditorContext_Manager.h
-D:\_TEST_\ElgEditorScripting\HostProject\Plugins\ElgEditorScripting\Source\ElgEditorScripting\Public\EditorContexts\ElgEditorContext_Notification.h
-D:\_TEST_\ElgEditorScripting\HostProject\Plugins\ElgEditorScripting\Source\ElgEditorScripting\Public\Blueprints\ElgEditorBP_Editor.h
-D:\_TEST_\ElgEditorScripting\HostProject\Plugins\ElgEditorScripting\Source\ElgEditorScripting\Public\EditorContexts\ElgEditorContext_LevelEditor.h
+C:\Users\lpeter\Documents\Unreal Projects\PluginBuild\Plugins\ElgEditorScripting\Source\ElgEditorScripting\Public\Blueprints\ElgEditorBP_Assets.h
+C:\Users\lpeter\Documents\Unreal Projects\PluginBuild\Plugins\ElgEditorScripting\Source\ElgEditorScripting\Public\Blueprints\ElgEditorBP_Class.h
+C:\Users\lpeter\Documents\Unreal Projects\PluginBuild\Plugins\ElgEditorScripting\Source\ElgEditorScripting\Public\Blueprints\ElgEditorBP_Enum.h
+C:\Users\lpeter\Documents\Unreal Projects\PluginBuild\Plugins\ElgEditorScripting\Source\ElgEditorScripting\Public\Blueprints\ElgEditorBP_EditorWidget.h
+C:\Users\lpeter\Documents\Unreal Projects\PluginBuild\Plugins\ElgEditorScripting\Source\ElgEditorScripting\Public\Blueprints\ElgEditorBP_UBlueprint.h
+C:\Users\lpeter\Documents\Unreal Projects\PluginBuild\Plugins\ElgEditorScripting\Source\ElgEditorScripting\Public\EditorContexts\ElgEditorContext_BP.h
+C:\Users\lpeter\Documents\Unreal Projects\PluginBuild\Plugins\ElgEditorScripting\Source\ElgEditorScripting\Public\EditorContexts\ElgEditorContext_AssetBrowser.h
+C:\Users\lpeter\Documents\Unreal Projects\PluginBuild\Plugins\ElgEditorScripting\Source\ElgEditorScripting\Public\EditorContexts\ElgEditorContext_Config.h
+C:\Users\lpeter\Documents\Unreal Projects\PluginBuild\Plugins\ElgEditorScripting\Source\ElgEditorScripting\Public\EditorContexts\ElgEditorContext_DirWatcher.h
+C:\Users\lpeter\Documents\Unreal Projects\PluginBuild\Plugins\ElgEditorScripting\Source\ElgEditorScripting\Public\EditorContexts\ElgEditorContext_Manager.h
+C:\Users\lpeter\Documents\Unreal Projects\PluginBuild\Plugins\ElgEditorScripting\Source\ElgEditorScripting\Public\EditorContexts\ElgEditorContext_LevelEditor.h
+C:\Users\lpeter\Documents\Unreal Projects\PluginBuild\Plugins\ElgEditorScripting\Source\ElgEditorScripting\Public\Blueprints\ElgEditorBP_Editor.h
+C:\Users\lpeter\Documents\Unreal Projects\PluginBuild\Plugins\ElgEditorScripting\Source\ElgEditorScripting\Public\Blueprints\ElgEditorBP_PluginManager.h
+C:\Users\lpeter\Documents\Unreal Projects\PluginBuild\Plugins\ElgEditorScripting\Source\ElgEditorScripting\Public\EditorContexts\ElgEditorContext_Notification.h
+C:\Users\lpeter\Documents\Unreal Projects\PluginBuild\Plugins\ElgEditorScripting\Source\ElgEditorScripting\Public\Blueprints\ElgEditorBP_FModuleManager.h
+C:\Users\lpeter\Documents\Unreal Projects\PluginBuild\Plugins\ElgEditorScripting\Source\ElgEditorScripting\Public\Blueprints\ElgEditorBP_LevelActor.h
