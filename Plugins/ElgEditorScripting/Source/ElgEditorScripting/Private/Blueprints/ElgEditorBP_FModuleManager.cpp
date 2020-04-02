@@ -169,7 +169,7 @@ void UElgEditorBP_FModuleManager::RecompileModule(const FString ModuleName)
 			const bool bReloadAfterRecompile = true;
 			const bool bForceCodeProject = false;
 			const bool bFailIfGeneratedCodeChanges = true;
-			const bool bRecompileSucceeded = HotReloadSupport.RecompileModule(FName(*ModuleName), bReloadAfterRecompile, *GLog, bFailIfGeneratedCodeChanges, bForceCodeProject);
+			const bool bRecompileSucceeded = HotReloadSupport.RecompileModule(FName(*ModuleName), *GLog, ERecompileModuleFlags::ReloadAfterRecompile | ERecompileModuleFlags::FailIfGeneratedCodeChanges);
 		}
 	}
 
