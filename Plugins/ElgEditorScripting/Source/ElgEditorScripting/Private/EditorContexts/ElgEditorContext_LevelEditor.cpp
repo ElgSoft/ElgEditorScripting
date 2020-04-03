@@ -12,7 +12,7 @@
 #include <PhysicsEngine/PhysicsSettings.h>
 #include "ElgEditorBP_Enum.h"
 #include "SlateCore/Public/Input/Events.h"
-
+#include <EditorModeManager.h>
 
 #pragma region Setup
 
@@ -93,8 +93,8 @@ void UElgEditorContext_LevelEditor::Setup()
 
 	FEditorDelegates::OnFocusViewportOnActors.AddUObject(this, &UElgEditorContext_LevelEditor::HandleOnFocusViewportOnActors);
 
-	FEditorDelegates::EditorModeEnter.AddUObject(this, &UElgEditorContext_LevelEditor::HandleEditorModeEnter);
-	FEditorDelegates::EditorModeExit.AddUObject(this, &UElgEditorContext_LevelEditor::HandleEditorModeExit);
+	FEditorDelegates::EditorModeIDEnter.AddUObject(this, &UElgEditorContext_LevelEditor::HandleEditorModeEnter);
+	FEditorDelegates::EditorModeIDExit.AddUObject(this, &UElgEditorContext_LevelEditor::HandleEditorModeExit);
 
 	FSlateApplication::Get().OnApplicationMousePreInputButtonDownListener().AddUObject(this, &UElgEditorContext_LevelEditor::HandleOnApplicationMousePreInputButtonDown);
 	FSlateApplication::Get().OnApplicationPreInputKeyDownListener().AddUObject(this, &UElgEditorContext_LevelEditor::HandleOnApplicationPreInputKeyDown);
@@ -194,19 +194,21 @@ void UElgEditorContext_LevelEditor::HandleOnWorldDestroyed(UWorld* InWorld)
 
 #pragma region MiscEditorEvents
 
-void UElgEditorContext_LevelEditor::HandleEditorModeEnter(FEdMode* InMode)
+void UElgEditorContext_LevelEditor::HandleEditorModeEnter(const FEditorModeID& ModeID)
 {
 	FText oldName = CurrentEditorMode;
-	CurrentEditorMode = InMode->GetModeInfo().Name;
+	FEdMode* mode = GLevelEditorModeTools().GetActiveMode(ModeID);
+	CurrentEditorMode = mode->GetModeInfo().Name;
 	OnEnterMode.Broadcast(CurrentEditorMode);
 	if (!oldName.EqualTo(CurrentEditorMode)) {
 		OnEditorModeChanged.Broadcast(CurrentEditorMode);
 	}
 }
 
-void UElgEditorContext_LevelEditor::HandleEditorModeExit(FEdMode* InMode)
+void UElgEditorContext_LevelEditor::HandleEditorModeExit(const FEditorModeID& ModeID)
 {
-	OnExitMode.Broadcast(InMode->GetModeInfo().Name);
+	FEdMode* mode = GLevelEditorModeTools().GetActiveMode(ModeID);
+	OnExitMode.Broadcast(mode->GetModeInfo().Name);
 }
 
 

@@ -270,7 +270,6 @@ TMap<UObject*, FS_ElgAssetMetaData> UElgEditorBP_Assets::GetAssetObjectsWithMeta
 			TArray<FName> keys;
 			metaData->GetKeys(keys);
 			keys.Sort();
-
 			FS_ElgAssetMetaData meta;
 			meta.Object = object;
 			meta.Keys = keys;

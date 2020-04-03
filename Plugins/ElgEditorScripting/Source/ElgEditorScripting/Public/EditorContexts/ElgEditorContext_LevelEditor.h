@@ -17,6 +17,8 @@ class UObject;
 class FEdMode;
 struct FPointerEvent;
 struct FKeyEvent;
+class FName;
+typedef FName FEditorModeID;
 
 
 #pragma region Delegates
@@ -271,13 +273,13 @@ public:
 	UPROPERTY(BlueprintAssignable)
 		FElgEditorEventsOnEditorModeSignature OnEnterMode;
 
-	void HandleEditorModeEnter(FEdMode* InMode);
+	void HandleEditorModeEnter(const FEditorModeID& ModeID);
 
 	/** Event when exit a Editor Mode */
 	UPROPERTY(BlueprintAssignable)
 		FElgEditorEventsOnEditorModeSignature OnExitMode;
 
-	void HandleEditorModeExit(FEdMode* InMode);
+	void HandleEditorModeExit(const FEditorModeID& ModeID);
 
 	/* Event when the Editor Mode change */
 	UPROPERTY(BlueprintAssignable)
