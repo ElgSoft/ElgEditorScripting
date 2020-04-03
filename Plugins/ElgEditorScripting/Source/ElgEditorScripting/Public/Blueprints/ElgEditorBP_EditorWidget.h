@@ -1,4 +1,4 @@
-// Copyright 2019 ElgSoft. All rights reserved. 
+// Copyright 2019-2020 ElgSoft. All rights reserved. 
 // Elg001.ElgEditorScripting - ElgSoft.com
 
 #pragma once
@@ -53,10 +53,6 @@ class ELGEDITORSCRIPTING_API UElgEditorBP_EditorWidget : public UBlueprintFuncti
 	/* Check if an editor widget is open or closed with branch pins */
 	UFUNCTION(BlueprintCallable, Category = "ElgEditor|EditorWidget", meta = (ExpandEnumAsExecs = "Branches"))
 		static void IsEditorWidgetRegisteredBranch(UEditorUtilityWidgetBlueprint* EditorWidget, EBPEditorOutputBranch& Branches);
-
-	/* Register the widget in the tab spawner so it can be open, same as "Run Editor Utility Widget" */
-	//UFUNCTION(BlueprintCallable, Category = "ElgEditor | EditorWidget")
-	//	static void RegisterTabSpawner(UEditorUtilityWidgetBlueprint* EditorWidget);
 
 	/* Add editor widgets to the loaded script list so they will be registration when/if ReinitializeUIs */
 	UFUNCTION(BlueprintCallable, Category = "ElgEditor|EditorWidget")

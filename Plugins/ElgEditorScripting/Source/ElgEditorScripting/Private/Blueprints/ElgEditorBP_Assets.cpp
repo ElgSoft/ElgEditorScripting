@@ -1,4 +1,4 @@
-// Copyright 2019 ElgSoft. All rights reserved. 
+// Copyright 2019-2020 ElgSoft. All rights reserved. 
 // Elg001.ElgEditorScripting - ElgSoft.com
 
 
@@ -270,6 +270,7 @@ TMap<UObject*, FS_ElgAssetMetaData> UElgEditorBP_Assets::GetAssetObjectsWithMeta
 			TArray<FName> keys;
 			metaData->GetKeys(keys);
 			keys.Sort();
+
 			FS_ElgAssetMetaData meta;
 			meta.Object = object;
 			meta.Keys = keys;

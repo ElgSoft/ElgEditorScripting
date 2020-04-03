@@ -1,4 +1,4 @@
-// Copyright 2019 ElgSoft. All rights reserved. 
+// Copyright 2019-2020 ElgSoft. All rights reserved. 
 // Elg001.ElgEditorScripting - ElgSoft.com
 
 
@@ -12,6 +12,7 @@
 
 UElgEditorContext_DirWatcher::~UElgEditorContext_DirWatcher()
 {
+	UE_LOG(LogTemp, Log, TEXT("UElgEditorContext_DirWatcher::Cleanup"));
 	// If the directory module is still loaded, unregister any delegates
 	if (FModuleManager::Get().IsModuleLoaded("DirectoryWatcher")) {
 		FDirectoryWatcherModule& DirectoryWatcherModule = FModuleManager::GetModuleChecked<FDirectoryWatcherModule>("DirectoryWatcher");
@@ -20,8 +21,10 @@ UElgEditorContext_DirWatcher::~UElgEditorContext_DirWatcher()
 			for (auto& Elem : DirectoryChangedDelegateHandles) {
 				DirectoryWatcher->UnregisterDirectoryChangedCallback_Handle(Elem.Key, Elem.Value);
 			}
+			DirectoryChangedDelegateHandles.Empty();
 		}
 	}
+
 }
 
 #pragma endregion;

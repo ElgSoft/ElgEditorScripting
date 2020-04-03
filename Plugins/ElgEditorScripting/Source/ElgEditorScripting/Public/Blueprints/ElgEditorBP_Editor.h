@@ -1,4 +1,4 @@
-// Copyright 2019 ElgSoft. All rights reserved. 
+// Copyright 2019-2020 ElgSoft. All rights reserved. 
 // Elg001.ElgEditorScripting - ElgSoft.com
 
 #pragma once
@@ -36,6 +36,9 @@ class ELGEDITORSCRIPTING_API UElgEditorBP_Editor : public UBlueprintFunctionLibr
 	UFUNCTION(BlueprintCallable, Category = "ElgEditor|App")
 		static void CreateProc(const FString PathToProgram, const FString Parameters, const bool Detach, const bool Hidden, const int32 Priority, const FString OptionalWorkingDirectory, int32& ProcessId);
 
+	/* Read the text file into an String array */
+	UFUNCTION(BlueprintCallable, Category = "ElgEditor|File")
+		static void ReadTextFile(const FString PathToFile, TArray<FString>& FileData);
 
 #pragma region SlowTask
 

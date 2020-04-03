@@ -1,13 +1,15 @@
-// Copyright 2019 ElgSoft. All rights reserved. 
+// Copyright 2019-2020 ElgSoft. All rights reserved. 
 // Elg001.ElgEditorScripting - ElgSoft.com
 
 #include "ElgEditorContext_BP.h"
 #include "ElgEditorContext_LevelEditor.h"
 #include "ElgEditorContext_Manager.h"
 #include "ElgEditorContext_Config.h"
+#include "ElgEditorContext_Jason.h"
 #include "ElgEditorScripting.h"
 #include <Editor.h>
 #include <AssetRegistryModule.h>
+
 
 
 #pragma region GetContexts
@@ -53,6 +55,13 @@ UElgEditorContext_DirWatcher* UElgEditorContext_BP::GetDirectoryWatcherContext()
 {
 	FElgEditorScriptingModule& elgEditorScriptModule = FModuleManager::Get().LoadModuleChecked<FElgEditorScriptingModule>(TEXT("ElgEditorScripting"));
 	return elgEditorScriptModule.GetContextManager().GetDirectoryWatcherContext();
+}
+
+UElgEditorContext_Jason* UElgEditorContext_BP::GetJasonContext()
+{
+	UElgEditorContext_Jason* jason = NewObject<UElgEditorContext_Jason>();
+	jason->Setup();
+	return jason;
 }
 
 #pragma endregion

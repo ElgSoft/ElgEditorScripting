@@ -1,4 +1,4 @@
-// Copyright 2019 ElgSoft. All rights reserved. 
+// Copyright 2019-2020 ElgSoft. All rights reserved. 
 // Elg001.ElgEditorScripting - ElgSoft.com
 
 #include "ElgEditorBP_EditorWidget.h"
@@ -8,12 +8,8 @@
 #include <IDocumentation.h>
 #include "Widgets/SToolTip.h"
 #include <IBlutilityModule.h>
+#include <EditorUtilitySubsystem.h>
 
-
-/* RegisterTabSpawner, error LNK2019: unresolved external symbol "public: class TSharedRef<class SDockTab,0> UEditorUtilityWidgetBlueprint::SpawnEditorUITab
-#include <IBlutilityModule.h>
-#include "Framework/Docking/TabManager.h"
-*/
 
 #define LOCTEXT_NAMESPACE "ElgAssetTypeActions"
 
@@ -21,32 +17,17 @@
 
 void UElgEditorBP_EditorWidget::OpenEditorWidget(UEditorUtilityWidgetBlueprint* EditorWidget)
 {
-	if (!EditorWidget) return;
+	if (!EditorWidget || IsRunningCommandlet()) return;
 
-	FName widgetName = GetEditorWidgetTabName(EditorWidget);
-	TSharedPtr<FTabManager> tabManager = GetLevelEditorTabManager();
-
-	if (tabManager->HasTabSpawner(widgetName)) {
-		TSharedRef<SDockTab> widgetTab = tabManager->InvokeTab(widgetName);
-	} else {
-		IBlutilityModule* BlutilityModule = FModuleManager::GetModulePtr<IBlutilityModule>("Blutility");
-
-		if (BlutilityModule)
-		{
-			BlutilityModule->AddLoadedScriptUI(EditorWidget);
-
-			FLevelEditorModule& LevelEditorModule = FModuleManager::LoadModuleChecked<FLevelEditorModule>(TEXT("LevelEditor"));
-			LevelEditorModule.OnTabManagerChanged().Broadcast();  // force a FBlutilityModule::ReinitializeUIs()
-		}
-		//UE_LOG(LogTemp, Error, TEXT("Cant open %s its not registrated..."), *EditorWidget->GetName());
-	}
+	UEditorUtilitySubsystem* EditorUtilitySubsystem = GEditor->GetEditorSubsystem<UEditorUtilitySubsystem>();
+	EditorUtilitySubsystem->SpawnAndRegisterTab(EditorWidget);
 }
 
 
 void UElgEditorBP_EditorWidget::CloseEditorWidget(UEditorUtilityWidgetBlueprint* EditorWidget)
 {
 	if (!EditorWidget) return;
-	
+
 	if (IsEngineExitRequested()) return; // if the editor is closing down dont do anything
 
 	if (TSharedPtr<SDockTab> tabWidget = GetTabWidget(EditorWidget)) {
@@ -129,27 +110,6 @@ void UElgEditorBP_EditorWidget::ReinitializeEditorWidgets()
 	FLevelEditorModule& LevelEditorModule = FModuleManager::LoadModuleChecked<FLevelEditorModule>(TEXT("LevelEditor"));
 	LevelEditorModule.OnTabManagerChanged().Broadcast();  // force a FBlutilityModule::ReinitializeUIs()
 }
-
-/* Dont work, LNK2019: unresolved external symbol "public: class TSharedRef<class SDockTab,0> __cdecl UEditorUtilityWidgetBlueprint::SpawnEditorUITab
-
-void UElgEditorBP_EditorWidget::RegisterTabSpawner(UEditorUtilityWidgetBlueprint* EditorWidget)
-{
-	if (!EditorWidget) return;
-
-	FName widgetName = GetEditorWidgetTabName(EditorWidget);
-	TSharedPtr<FTabManager> tabManager = GetLevelEditorTabManager();
-
-	if (tabManager->HasTabSpawner(widgetName)) return;
-
-	FText DisplayName = FText::FromString(EditorWidget->GetName());
-	IBlutilityModule* BlutilityModule = FModuleManager::GetModulePtr<IBlutilityModule>("Blutility");
-	EditorWidget->SetRegistrationName(widgetName);
-	tabManager->RegisterTabSpawner(widgetName, FOnSpawnTab::CreateUObject(EditorWidget, &UEditorUtilityWidgetBlueprint::SpawnEditorUITab))
-		.SetDisplayName(DisplayName)
-		.SetGroup(BlutilityModule->GetMenuGroup().ToSharedRef());
-	BlutilityModule->AddLoadedScriptUI(EditorWidget);
-}
-*/
 
 
 #pragma endregion

@@ -1,10 +1,12 @@
-// Copyright 2019 ElgSoft. All rights reserved. 
+// Copyright 2019-2020 ElgSoft. All rights reserved. 
 // Elg001.ElgEditorScripting - ElgSoft.com
 
 #include "ElgEditorBP_Editor.h"
 #include <UnrealEdMisc.h>
 #include "Core\Public\Misc\FeedbackContext.h"
 #include "ElgEditorBP_Enum.h"
+#include "Runtime/Core/Public/HAL/FileManager.h"
+#include "Runtime/Core/Public/Misc/FileHelper.h"
 
 
 void UElgEditorBP_Editor::RestartEditor(const bool bShowWarning)
@@ -45,6 +47,18 @@ void UElgEditorBP_Editor::CreateProc(const FString PathToProgram, const FString 
 		(OptionalWorkingDirectory != "") ? *OptionalWorkingDirectory : nullptr,
 		nullptr);
 	ProcessId = processId;
+}
+
+
+void UElgEditorBP_Editor::ReadTextFile(const FString PathToFile, TArray<FString>& FileData)
+{
+	FileData.Empty();
+
+	if (!IFileManager::Get().FileExists(*PathToFile)) {
+		UE_LOG(LogTemp, Warning, TEXT("Can´t find any file called [%s]"), *PathToFile);
+		return;
+	}
+	FFileHelper::LoadFileToStringArray(FileData, *PathToFile);
 }
 
 #pragma region SlowTask

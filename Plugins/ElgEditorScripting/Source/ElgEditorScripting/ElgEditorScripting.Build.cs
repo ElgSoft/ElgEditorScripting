@@ -1,4 +1,4 @@
-// Copyright 2019 ElgSoft. All rights reserved. 
+// Copyright 2019-2020 ElgSoft. All rights reserved. 
 
 using UnrealBuildTool;
 using System.IO;
@@ -58,6 +58,8 @@ public class ElgEditorScripting : ModuleRules
                 "EditorStyle",
                 "AssetTools",
                 "BlueprintGraph",
+                "Json",
+                "JsonUtilities",
 				// ... add private dependencies that you statically link with here ...	
 			}
 			);

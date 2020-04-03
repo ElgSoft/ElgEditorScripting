@@ -1,4 +1,5 @@
-// Copyright 2019 ElgSoft. All rights reserved. 
+// Copyright 2019-2020 ElgSoft. All rights reserved. 
+// Copyright 2019-2020 ElgSoft. All rights reserved. 
 // Elg001.ElgEditorScripting - ElgSoft.com
 
 #include "ElgEditorContext_LevelEditor.h"
@@ -13,6 +14,7 @@
 #include "ElgEditorBP_Enum.h"
 #include "SlateCore/Public/Input/Events.h"
 #include <EditorModeManager.h>
+
 
 #pragma region Setup
 
@@ -195,7 +197,7 @@ void UElgEditorContext_LevelEditor::HandleOnWorldDestroyed(UWorld* InWorld)
 #pragma region MiscEditorEvents
 
 void UElgEditorContext_LevelEditor::HandleEditorModeEnter(const FEditorModeID& ModeID)
-{
+{	
 	FText oldName = CurrentEditorMode;
 	FEdMode* mode = GLevelEditorModeTools().GetActiveMode(ModeID);
 	CurrentEditorMode = mode->GetModeInfo().Name;
@@ -537,6 +539,9 @@ void UElgEditorContext_LevelEditor::HandleOnObjectPropertyChanged(UObject* InObj
 
 #pragma endregion
 
+
+#pragma region ViewportCamera
+
 void UElgEditorContext_LevelEditor::MoveViewportCameraToActor(AActor* Actor, bool bActiveViewportOnly)
 {
 	if (Actor == nullptr) return;
@@ -546,3 +551,118 @@ void UElgEditorContext_LevelEditor::MoveViewportCameraToActor(AActor* Actor, boo
 
 	editor->MoveViewportCamerasToActor(*Actor, bActiveViewportOnly);
 }
+
+
+void UElgEditorContext_LevelEditor::MoveViewportCameraAndLookAt(const FVector& NewLocation, const FVector& LookAtLocation)
+{
+	if (GEngine == nullptr)  return;
+	UEditorEngine* editor = (UEditorEngine*)GEngine;
+	if (editor == nullptr) return;
+
+	SetViewportCameraLocation(NewLocation);
+	SetViewportCameraLookAt(LookAtLocation);
+
+}
+
+
+void UElgEditorContext_LevelEditor::SetViewportCamera(const FVector& NewLocation, const FRotator& NewRotation)
+{
+	if (GEngine == nullptr)  return;
+	UEditorEngine* editor = (UEditorEngine*)GEngine;
+	if (editor == nullptr) return;
+
+	for (FLevelEditorViewportClient* ViewportClient : editor->GetLevelViewportClients())
+	{
+		if (ViewportClient->IsPerspective())
+		{
+			ViewportClient->SetViewLocation(NewLocation);
+			ViewportClient->SetViewRotation(NewRotation);
+			ViewportClient->Invalidate();
+		}
+	}
+}
+
+
+void UElgEditorContext_LevelEditor::SetViewportCameraLocation(const FVector& NewLocation)
+{
+	if (GEngine == nullptr)  return;
+	UEditorEngine* editor = (UEditorEngine*)GEngine;
+	if (editor == nullptr) return;
+
+	for (FLevelEditorViewportClient* ViewportClient : editor->GetLevelViewportClients())
+	{
+		if (ViewportClient->IsPerspective())
+		{
+			ViewportClient->SetViewLocation(NewLocation);
+			ViewportClient->Invalidate();
+		}
+	}
+}
+
+
+void UElgEditorContext_LevelEditor::SetViewportCameraRotation(const FRotator& NewRotation)
+{
+	if (GEngine == nullptr)  return;
+	UEditorEngine* editor = (UEditorEngine*)GEngine;
+	if (editor == nullptr) return;
+
+	for (FLevelEditorViewportClient* ViewportClient : editor->GetLevelViewportClients())
+	{
+		if (ViewportClient->IsPerspective())
+		{
+			ViewportClient->SetViewRotation(NewRotation);
+			ViewportClient->Invalidate();
+		}
+	}
+}
+
+
+void UElgEditorContext_LevelEditor::FocusViewportCameraOnBox(const FBox& BoundingBox, bool bInstant /*= false*/)
+{
+	if (GEngine == nullptr)  return;
+	UEditorEngine* editor = (UEditorEngine*)GEngine;
+	if (editor == nullptr) return;
+
+	for (FLevelEditorViewportClient* ViewportClient : editor->GetLevelViewportClients())
+	{
+		if (ViewportClient->IsPerspective())
+		{
+			ViewportClient->FocusViewportOnBox(BoundingBox, bInstant);
+		}
+	}
+}
+
+
+void UElgEditorContext_LevelEditor::SetViewportCameraLookAt(const FVector& LookAt, bool bRecalculateView /*= true*/)
+{
+	if (GEngine == nullptr)  return;
+	UEditorEngine* editor = (UEditorEngine*)GEngine;
+	if (editor == nullptr) return;
+
+	for (FLevelEditorViewportClient* ViewportClient : editor->GetLevelViewportClients())
+	{
+		if (ViewportClient->IsPerspective())
+		{
+			ViewportClient->SetLookAtLocation(LookAt, bRecalculateView);
+		}
+	}
+}
+
+
+void UElgEditorContext_LevelEditor::GetViewportPerspectiveLocation(FVector& CameraLocation, FVector& CameraLookAt)
+{
+	if (GEngine == nullptr)  return;
+	UEditorEngine* editor = (UEditorEngine*)GEngine;
+	if (editor == nullptr) return;
+
+	for (FLevelEditorViewportClient* ViewportClient : editor->GetLevelViewportClients())
+	{
+		if (ViewportClient->IsPerspective())
+		{
+			CameraLocation = ViewportClient->GetViewLocation();
+			CameraLookAt = ViewportClient->GetLookAtLocation();
+		}
+	}
+}
+
+#pragma endregion

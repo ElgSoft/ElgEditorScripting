@@ -1,4 +1,4 @@
-// Copyright 2019 ElgSoft. All rights reserved. 
+// Copyright 2019-2020 ElgSoft. All rights reserved. 
 // Elg001.ElgEditorScripting - ElgSoft.com
 
 #pragma once
@@ -13,6 +13,7 @@ class UElgEditorContext_LevelEditor;
 class UElgEditorContext_AssetBrowser;
 class UElgEditorContext_Config;
 class AActor;
+class UElgEditorContext_Jason;
 
 
 /**
@@ -56,6 +57,9 @@ class ELGEDITORSCRIPTING_API UElgEditorContext_BP : public UBlueprintFunctionLib
 	*/
 	UFUNCTION(BlueprintPure, Category = "ElgEditor|DirectoryWatcher")
 		static UElgEditorContext_DirWatcher* GetDirectoryWatcherContext();
+
+	UFUNCTION(BlueprintPure, Category = "ElgEditor|Jason")
+		static UElgEditorContext_Jason* GetJasonContext();
 
 #pragma endregion
 
