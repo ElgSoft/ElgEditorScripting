@@ -30,6 +30,10 @@ class ELGEDITORSCRIPTING_API UElgEditorBP_EditorWidget : public UBlueprintFuncti
 	UFUNCTION(BlueprintCallable, Category = "ElgEditor|EditorWidget")
 		static void OpenEditorWidget(UEditorUtilityWidgetBlueprint* EditorWidget);
 
+	/* Open an Editor Utility Widget and return the instance*/
+	UFUNCTION(BlueprintCallable, Category = "ElgEditor|EditorWidget", meta = (ExpandEnumAsExecs = "Branches"))
+		static UEditorUtilityWidget* OpenAndGetEditorWidget(UEditorUtilityWidgetBlueprint* EditorWidget, EBPEditorOutputValidBranch& Branches);
+
 	/* Close an Editor Utility Widget */
 	UFUNCTION(BlueprintCallable, Category = "ElgEditor|EditorWidget")
 		static void CloseEditorWidget(UEditorUtilityWidgetBlueprint* EditorWidget);
@@ -61,6 +65,11 @@ class ELGEDITORSCRIPTING_API UElgEditorBP_EditorWidget : public UBlueprintFuncti
 	/* ReinitializeUIs any editor widgets i in the loaded script */
 	UFUNCTION(BlueprintCallable, Category = "ElgEditor|EditorWidget")
 		static void ReinitializeEditorWidgets();
+	
+	/* Get the Editor Widget Instance, if the widget is running	*/
+	UFUNCTION(BlueprintCallable, Category = "ElgEditor|EditorWidget", meta = (ExpandEnumAsExecs = "Branches"))
+		static class UEditorUtilityWidget* GetEditorWidget(UEditorUtilityWidgetBlueprint* EditorWidget, EBPEditorOutputValidBranch& Branches);
+
 
 #pragma endregion
 

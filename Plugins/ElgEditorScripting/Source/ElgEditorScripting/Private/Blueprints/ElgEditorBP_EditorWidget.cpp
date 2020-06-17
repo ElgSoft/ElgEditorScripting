@@ -24,6 +24,23 @@ void UElgEditorBP_EditorWidget::OpenEditorWidget(UEditorUtilityWidgetBlueprint* 
 }
 
 
+UEditorUtilityWidget* UElgEditorBP_EditorWidget::OpenAndGetEditorWidget(UEditorUtilityWidgetBlueprint* EditorWidget, EBPEditorOutputValidBranch& Branches)
+{
+	Branches = EBPEditorOutputValidBranch::Invalid;
+	if (!EditorWidget || IsRunningCommandlet()) return nullptr;
+
+	UEditorUtilitySubsystem* EditorUtilitySubsystem = GEditor->GetEditorSubsystem<UEditorUtilitySubsystem>();
+	EditorUtilitySubsystem->SpawnAndRegisterTab(EditorWidget);
+
+	if (UEditorUtilityWidget* widget = EditorWidget->GetCreatedWidget()) {
+		Branches = EBPEditorOutputValidBranch::Valid;
+		return widget;
+	}
+	return nullptr;
+
+}
+
+
 void UElgEditorBP_EditorWidget::CloseEditorWidget(UEditorUtilityWidgetBlueprint* EditorWidget)
 {
 	if (!EditorWidget) return;
@@ -111,6 +128,18 @@ void UElgEditorBP_EditorWidget::ReinitializeEditorWidgets()
 	LevelEditorModule.OnTabManagerChanged().Broadcast();  // force a FBlutilityModule::ReinitializeUIs()
 }
 
+
+class UEditorUtilityWidget* UElgEditorBP_EditorWidget::GetEditorWidget(UEditorUtilityWidgetBlueprint* EditorWidget, EBPEditorOutputValidBranch& Branches)
+{
+	Branches = EBPEditorOutputValidBranch::Invalid;
+	if (!EditorWidget) return nullptr;
+
+	if (UEditorUtilityWidget* widget = EditorWidget->GetCreatedWidget()) {
+		Branches = EBPEditorOutputValidBranch::Valid;
+		return widget;
+	}
+	return nullptr;
+}
 
 #pragma endregion
 

@@ -207,6 +207,16 @@ class ELGEDITORSCRIPTING_API UElgEditorBP_Assets : public UBlueprintFunctionLibr
 
 #pragma endregion
 
+
+#pragma region Paths
+
+	UFUNCTION(BlueprintPure, Category = "ElgEditor|Asset")
+		static FString AssetPathToDiskPath(const FString& InAssetPath);
+
+	UFUNCTION(BlueprintPure, Category = "ElgEditor|Asset")
+		static TArray<FString> AssetPathsToDiskPaths(TArray<FString> InAssetPaths);
+
+#pragma endregion
 };
 
 

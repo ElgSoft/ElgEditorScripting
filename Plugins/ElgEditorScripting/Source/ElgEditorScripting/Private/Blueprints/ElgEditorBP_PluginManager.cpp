@@ -306,7 +306,7 @@ FS_ElgPluginDescriptor UElgEditorBP_PluginManager::CreateDescriptor(TSharedRef<I
 	descriptor.bInstalled = pluginDescriptor.bInstalled;
 	descriptor.bIsHidden = pluginDescriptor.bIsHidden;
 	descriptor.bIsEnabled = Plugin->IsEnabled();
-	descriptor.bIsEnabledByDefault = Plugin->IsEnabledByDefault();
+	descriptor.bIsEnabledByDefault = Plugin->IsEnabledByDefault(true);
 	descriptor.Name = Plugin->GetName();
 	
 	if (Plugin->GetType() == EPluginType::Mod) {
@@ -389,7 +389,7 @@ UTexture2D* UElgEditorBP_PluginManager::GetTextureByPath(const FString IconPath)
 
 	if (imageWrapper->SetCompressed(rawFileData.GetData(), rawFileData.Num()))
 	{
-		const TArray<uint8>* uncompressedBGRA = NULL;
+		TArray<uint8> uncompressedBGRA;
 		if (imageWrapper->GetRaw(ERGBFormat::BGRA, 8, uncompressedBGRA))
 		{
 			texture = UTexture2D::CreateTransient(imageWrapper->GetWidth(), imageWrapper->GetHeight(), PF_B8G8R8A8);
@@ -397,7 +397,7 @@ UTexture2D* UElgEditorBP_PluginManager::GetTextureByPath(const FString IconPath)
 			if (!texture) return NULL;
 
 			void* textureData = texture->PlatformData->Mips[0].BulkData.Lock(LOCK_READ_WRITE);
-			FMemory::Memcpy(textureData, uncompressedBGRA->GetData(), uncompressedBGRA->Num());
+			FMemory::Memcpy(textureData, uncompressedBGRA.GetData(), uncompressedBGRA.Num());
 			texture->PlatformData->Mips[0].BulkData.Unlock();
 
 			texture->UpdateResource();

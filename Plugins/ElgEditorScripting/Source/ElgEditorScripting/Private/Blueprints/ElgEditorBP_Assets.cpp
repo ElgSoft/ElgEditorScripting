@@ -240,7 +240,7 @@ TMap<UObject*, FS_ElgAssetMetaData> UElgEditorBP_Assets::GetAssetObjectsMetaData
 		if (metaData) {
 			TArray<FName> keys;
 			metaData->GetKeys(keys);
-			keys.Sort();
+			keys.Sort([](FName A, FName B) {return A.FastLess(B);});
 			meta.Keys = keys;
 			meta.MetaData = *metaData;
 		} else if (SkipWithoutMetaData) {
@@ -269,7 +269,7 @@ TMap<UObject*, FS_ElgAssetMetaData> UElgEditorBP_Assets::GetAssetObjectsWithMeta
 		if (metaData->Find(MetaDataKey)) {
 			TArray<FName> keys;
 			metaData->GetKeys(keys);
-			keys.Sort();
+			keys.Sort([](FName A, FName B) {return A.FastLess(B); });
 
 			FS_ElgAssetMetaData meta;
 			meta.Object = object;
@@ -315,7 +315,7 @@ void UElgEditorBP_Assets::GetAssetObjectMetaData(UObject* AssetObject, bool& Suc
 	if (metaData) {
 		TArray<FName> keys;
 		metaData->GetKeys(keys);
-		keys.Sort();
+		keys.Sort([](FName A, FName B) {return A.FastLess(B); });
 		MetaData.Keys = keys;
 		MetaData.MetaData = *metaData;
 		Success = true;
@@ -444,6 +444,26 @@ TArray<FString> UElgEditorBP_Assets::GetSelectedPaths()
 	FContentBrowserModule& ContentBrowserModule = FModuleManager::GetModuleChecked<FContentBrowserModule>(TEXT("ContentBrowser"));
 	ContentBrowserModule.Get().GetSelectedPathViewFolders(selectedPath);
 	return selectedPath;
+}
+#pragma endregion
+
+
+#pragma region Paths
+
+FString UElgEditorBP_Assets::AssetPathToDiskPath(const FString& InAssetPath)
+{
+	FString path;
+	static FAssetData assetData = GetAssetDataFromPath(InAssetPath);
+	return GetAssetDiskPath(assetData);
+}
+
+TArray<FString> UElgEditorBP_Assets::AssetPathsToDiskPaths(TArray<FString> InAssetPaths)
+{
+	TArray<FString> paths;
+	for (FString path : InAssetPaths) {
+		paths.Add(AssetPathToDiskPath(path));
+	}
+	return paths;
 }
 
 #pragma endregion

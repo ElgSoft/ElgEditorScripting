@@ -327,6 +327,15 @@ class ELGEDITORSCRIPTING_API UElgEditorBP_UBlueprint : public UBlueprintFunction
 	UFUNCTION(BlueprintCallable, Category = "ElgEditor|Blueprint", meta = (ExpandEnumAsExecs = "Branches"))
 		static void HasCompilerErrorBranch(UBlueprint* Blueprint, EBPEditorOutputBranch& Branches);
 
+	/* Check if a comment has the InComment string */
+	UFUNCTION(BlueprintCallable, Category = "ElgEditor|Blueprint", meta = (DisplayName = "Has Comment Node With String", Contains = "true", ExpandEnumAsExecs = "Branches"))
+		static void HasCommentWith(UBlueprint* Blueprint, const FString InComment, const bool Contains, EBPEditorOutputBranch& Branches);
+
+	/* Check if any node has a Node Comment, on the node or in a comment */
+	UFUNCTION(BlueprintCallable, Category = "ElgEditor|Blueprint", meta = (DisplayName = "Has Node Comment With String", Contains = "true", ExpandEnumAsExecs = "Branches"))
+		static void HasNodeCommentWith(UBlueprint* Blueprint, const FString InComment, const bool Contains, EBPEditorOutputBranch& Branches);
+
+
 #pragma endregion
 
 #pragma region LocalVariables

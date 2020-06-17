@@ -822,6 +822,60 @@ void UElgEditorBP_UBlueprint::HasCompilerErrorBranch(UBlueprint* Blueprint, EBPE
 	}
 }
 
+void UElgEditorBP_UBlueprint::HasCommentWith(UBlueprint* Blueprint, const FString InComment, const bool Contains, EBPEditorOutputBranch& Branches)
+{
+	Branches = EBPEditorOutputBranch::outFalse;
+	if (Blueprint == nullptr) return;
+
+	FText nodeName = FText::FromString("Comment");
+	for (UEdGraph* graph : Blueprint->UbergraphPages) {
+		for (UEdGraphNode* node : graph->Nodes) {
+			FText name = node->GetNodeTitle(ENodeTitleType::ListView);
+			if (name.EqualTo(nodeName)) {
+				FString comment = node->NodeComment;
+				if (comment.IsEmpty()) continue;
+				if (Contains) {
+					if (comment.Contains(InComment)) {
+						Branches = EBPEditorOutputBranch::outTrue;
+						return;
+					}
+				}
+				else {
+					if (comment.Equals(InComment)) {
+						Branches = EBPEditorOutputBranch::outTrue;
+						return;
+					}
+				}
+			}
+		}
+	}
+}
+
+void UElgEditorBP_UBlueprint::HasNodeCommentWith(UBlueprint* Blueprint, const FString InComment, const bool Contains, EBPEditorOutputBranch& Branches)
+{
+	Branches = EBPEditorOutputBranch::outFalse;
+	if (Blueprint == nullptr) return;
+	for (UEdGraph* graph : Blueprint->UbergraphPages) {
+		for (UEdGraphNode* node : graph->Nodes) {
+			FText name = node->GetNodeTitle(ENodeTitleType::ListView);
+			FString comment = node->NodeComment;
+			if (comment.IsEmpty()) continue;
+			if (Contains) {
+				if (comment.Contains(InComment)) {
+					Branches = EBPEditorOutputBranch::outTrue;
+					return;
+				}
+			}
+			else {
+				if (comment.Equals(InComment)) {
+					Branches = EBPEditorOutputBranch::outTrue;
+					return;
+				}
+			}
+		}
+	}
+}
+
 #pragma endregion
 
 #pragma region LocalVariables

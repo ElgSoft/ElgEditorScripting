@@ -404,14 +404,26 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "ElgEditor|LevelEditor", meta = (ExpandEnumAsExecs = "Branches"))
 		void IsViewportRealtimeBranch(EBPEditorOutputBranch& Branches);
 
-	/* Sets whether or not the viewport updates in real time. */
+	/* Sets whether or not the viewport updates in real time.
+		No longer takes bStoreCurrentValue
+	*/
 	UFUNCTION(BlueprintCallable, Category = "ElgEditor|LevelEditor")
-		void SetViewportRealtime(bool bInRealtime, bool bStoreCurrentValue = false);
-
-	/* Restores real time setting to stored value. This will only enable real time and
-	 * never disable it (unless bAllowDisable is true) */
+		void SetViewportRealtime(bool bInRealtime);
+	
+	/* 
+	 * Overrides the realtime state of this viewport until RemoveViewportsRealtimeOverride is called.
+	 * The state of this override is not preserved between editor sessions.
+	 *
+	 * @param bInRealtime	If true, this viewport will be realtime, if false this viewport will not be realtime
+	 * @param SystemDisplayName	This display name of whatever system is overriding realtime. This name is displayed to users in the viewport options menu
+	*/
 	UFUNCTION(BlueprintCallable, Category = "ElgEditor|LevelEditor")
-		void RestoreViewportRealtime(const bool bAllowDisable = false);
+		void SetViewportRealtimeOverride(bool bInRealtime, FText SystemDisplayName);
+	
+	/* Removes the current realtime override.  If there was another realtime override set it will restore that override
+	*/
+	UFUNCTION(BlueprintCallable, Category = "ElgEditor|LevelEditor")
+		void RestoreViewportRealtime();
 
 
 #pragma endregion
@@ -426,11 +438,52 @@ public:
 #pragma endregion
 
 
+#pragma region ViewportCamera
 
+	/* Move the camera to the actor */
 	UFUNCTION(BlueprintCallable, Category = "ElgEditor|Leveleditor")
-		void MoveViewportCameraToActor(AActor* Actor, bool bActiveViewportOnly=false);
+		void MoveViewportCameraToActor(AActor* Actor, bool bActiveViewportOnly = false);
 
+	/* Move the camera and look at a location */
+	UFUNCTION(BlueprintCallable, Category = "ElgEditor|Leveleditor")
+		void MoveViewportCameraAndLookAt(const FVector& NewLocation, const FVector& LookAtLocation);
 
+	/** Sets the location and rotation of the viewport's camera */
+	UFUNCTION(BlueprintCallable, Category = "ElgEditor|Leveleditor")
+		void SetViewportCamera(const FVector& NewLocation, const FRotator& NewRotation);
+
+	/** Sets the location of the viewport's camera */
+	UFUNCTION(BlueprintCallable, Category = "ElgEditor|Leveleditor")
+		void SetViewportCameraLocation(const FVector& NewLocation);
+
+	/** Sets the rotation of the viewport's camera */
+	UFUNCTION(BlueprintCallable, Category = "ElgEditor|Leveleditor")
+		void SetViewportCameraRotation(const FRotator& NewRotation);
+
+	/**
+	 * Focuses the viewport to the center of the bounding box ensuring that the entire box is in view
+	 *
+	 * @param BoundingBox			The box to focus
+	 * @param bInstant			Whether or not to focus the viewport instantly or over time
+	 */
+	UFUNCTION(BlueprintCallable, Category = "ElgEditor|Leveleditor")
+		void FocusViewportCameraOnBox(const FBox& BoundingBox, bool bInstant = false);
+
+	/**
+	 * Sets the look at location of the viewport's camera for orbit *
+	 *
+	 * @param LookAt The new look at location
+	 * @param bRecalulateView	If true, will recalculate view location and rotation to look at the new point immediatley
+	 */
+	UFUNCTION(BlueprintCallable, Category = "ElgEditor|Leveleditor")
+		void SetViewportCameraLookAt(const FVector& LookAt, bool bRecalculateView = true);
+
+	/*
+		Return the Position and look at position of the Level editor Perspective camera.
+	*/
+	UFUNCTION(BlueprintPure, Category = "ElgEditor|Leveleditor")
+		void GetViewportPerspectiveLocation(FVector& CameraLocation, FVector& CameraLookAt);
+
+#pragma endregion
 
 };
-

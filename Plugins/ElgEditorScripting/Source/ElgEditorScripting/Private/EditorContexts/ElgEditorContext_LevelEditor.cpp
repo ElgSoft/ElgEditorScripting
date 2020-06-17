@@ -500,17 +500,24 @@ void UElgEditorContext_LevelEditor::IsViewportRealtimeBranch(EBPEditorOutputBran
 }
 
 
-void UElgEditorContext_LevelEditor::SetViewportRealtime(bool bInRealtime, bool bStoreCurrentValue /* false */)
+void UElgEditorContext_LevelEditor::SetViewportRealtime(bool bInRealtime)
 {
 	if (GCurrentLevelEditingViewportClient == nullptr) return;
-	return GCurrentLevelEditingViewportClient->SetRealtime(bInRealtime, bStoreCurrentValue);
+	GCurrentLevelEditingViewportClient->SetRealtime(bInRealtime); 
 }
 
 
-void UElgEditorContext_LevelEditor::RestoreViewportRealtime(const bool bAllowDisable /* false */)
+void UElgEditorContext_LevelEditor::SetViewportRealtimeOverride(bool bInRealtime, FText SystemDisplayName)
 {
 	if (GCurrentLevelEditingViewportClient == nullptr) return;
-	return GCurrentLevelEditingViewportClient->RestoreRealtime(bAllowDisable);
+	GCurrentLevelEditingViewportClient->SetRealtimeOverride(bInRealtime, SystemDisplayName);
+
+}
+
+void UElgEditorContext_LevelEditor::RestoreViewportRealtime()
+{
+	if (GCurrentLevelEditingViewportClient == nullptr) return;
+	GCurrentLevelEditingViewportClient->RemoveRealtimeOverride();
 }
 
 #pragma endregion
