@@ -125,6 +125,10 @@ class ELGEDITORSCRIPTING_API UElgEditorBP_Assets : public UBlueprintFunctionLibr
 
 #pragma region GetAssetObjects
 
+	/* Get the asset object from the asset path */
+	UFUNCTION(BlueprintPure, Category = "ElgEditor|Asset")
+		static void GetAssetObjectByPath(const FString InAssetPath, UObject*& AssetObject);
+
 	/* Get the asset data as asset objects array*/
 	UFUNCTION(BlueprintPure, Category = "ElgEditor|Asset")
 		static void GetAssetObjects(const TArray<FAssetData>& AssetDataStructs, TArray<UObject*>& AssetObjects);
@@ -207,7 +211,6 @@ class ELGEDITORSCRIPTING_API UElgEditorBP_Assets : public UBlueprintFunctionLibr
 
 #pragma endregion
 
-
 #pragma region Paths
 
 	UFUNCTION(BlueprintPure, Category = "ElgEditor|Asset")
@@ -215,6 +218,34 @@ class ELGEDITORSCRIPTING_API UElgEditorBP_Assets : public UBlueprintFunctionLibr
 
 	UFUNCTION(BlueprintPure, Category = "ElgEditor|Asset")
 		static TArray<FString> AssetPathsToDiskPaths(TArray<FString> InAssetPaths);
+
+#pragma endregion
+
+#pragma region DiffAssets
+
+	/** 
+		Try and diff two assets using class-specific tool. Will do nothing if either asset is NULL, or they are not the same class. 
+	*/
+	UFUNCTION(BlueprintCallable, Category = "ElgEditor|Asset|Diff")
+		static void DiffAssets(UObject* OldAsset, UObject* NewAsset, const FString OldAssetRevisionString);
+
+	/**
+		Try and diff two assets using class-specific tool. Will do nothing if either asset is NULL, or they are not the same class.
+	*/
+	UFUNCTION(BlueprintCallable, Category = "ElgEditor|Asset|Diff")
+		static void DiffAssetData(const FAssetData OldAsset, const FAssetData NewAsset, const FString OldAssetRevisionString);
+
+	/**
+		Try and diff two assets using class-specific tool. Will do nothing if either asset is NULL, or they are not the same class.
+	*/
+	UFUNCTION(BlueprintCallable, Category = "ElgEditor|Asset|Diff")
+		static void DiffAssetPath(const FString OldAssetPath, const FString NewAssetPath, const FString OldAssetRevisionString);
+
+	/**
+	Try and diff two assets using class-specific tool. Will do nothing if either asset is NULL, or they are not the same class.
+	*/
+	UFUNCTION(BlueprintCallable, Category = "ElgEditor|Asset|Diff")
+		static void DiffAssetWithExternalAsset(UObject* NewAsset, const FString ExternalAssetFilePath, const FString ExternalAssetName);
 
 #pragma endregion
 };

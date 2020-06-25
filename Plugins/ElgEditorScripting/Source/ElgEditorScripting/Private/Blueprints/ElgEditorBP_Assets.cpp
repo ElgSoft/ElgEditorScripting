@@ -14,6 +14,7 @@
 #include <ContentBrowserModule.h>
 #include "Core\Public\Modules\ModuleManager.h"
 #include <IContentBrowserSingleton.h>
+#include <HAL/PlatformFilemanager.h>
 
 
 #pragma region Redirectors
@@ -148,10 +149,6 @@ FAssetData UElgEditorBP_Assets::GetAssetDataFromPath(const FString& AssetPath)
 
 	FAssetRegistryModule& AssetRegistryModule = FModuleManager::LoadModuleChecked<FAssetRegistryModule>("AssetRegistry");
 	AssetData = AssetRegistryModule.Get().GetAssetByObjectPath(*AssetPath);
-	if (!AssetData.IsValid()) {
-		return AssetData;
-	}
-
 	return AssetData;
 }
 
@@ -199,6 +196,17 @@ FString UElgEditorBP_Assets::GetAssetPath(const FAssetData& AssetDataStruct)
 #pragma endregion
 
 #pragma region GetAssets
+
+void UElgEditorBP_Assets::GetAssetObjectByPath(const FString InAssetPath, UObject*& AssetObject)
+{
+	AssetObject = nullptr;
+	FAssetData assetData = GetAssetDataFromPath(InAssetPath);
+	if (assetData.IsValid()) {
+		AssetObject = assetData.GetAsset();
+	}
+}
+
+
 
 void UElgEditorBP_Assets::GetAssetObjects(const TArray<FAssetData>& AssetDataStructs, TArray<UObject*>& AssetObjects)
 {
@@ -447,7 +455,6 @@ TArray<FString> UElgEditorBP_Assets::GetSelectedPaths()
 }
 #pragma endregion
 
-
 #pragma region Paths
 
 FString UElgEditorBP_Assets::AssetPathToDiskPath(const FString& InAssetPath)
@@ -464,6 +471,82 @@ TArray<FString> UElgEditorBP_Assets::AssetPathsToDiskPaths(TArray<FString> InAss
 		paths.Add(AssetPathToDiskPath(path));
 	}
 	return paths;
+}
+
+#pragma endregion
+
+#pragma region DiffAssets
+
+void UElgEditorBP_Assets::DiffAssets(UObject* OldAsset, UObject* NewAsset, const FString OldAssetRevisionString)
+{
+	if (!OldAsset || !NewAsset) {
+		UE_LOG(LogTemp, Warning, TEXT("Need two valid Asset objects to diff..."));
+		return;
+	}
+
+	FAssetToolsModule& AssetToolsModule = FModuleManager::LoadModuleChecked<FAssetToolsModule>(TEXT("AssetTools"));
+	
+	FRevisionInfo OldRevision;
+	OldRevision.Revision = OldAssetRevisionString;
+
+	FRevisionInfo NewRevision;
+	NewRevision.Revision = TEXT("");
+
+	AssetToolsModule.Get().DiffAssets(OldAsset, NewAsset, OldRevision, NewRevision);
+}
+
+void UElgEditorBP_Assets::DiffAssetData(const FAssetData OldAsset, const FAssetData NewAsset, const FString OldAssetRevisionString)
+{
+	if (!OldAsset.IsValid() || !NewAsset.IsValid()) {
+		UE_LOG(LogTemp, Warning, TEXT("Need two valid Asset data to diff..."));
+		return;
+	}
+	UObject* oldAsset = OldAsset.GetAsset();
+	UObject* newAsset = NewAsset.GetAsset();
+	DiffAssets(oldAsset, newAsset, OldAssetRevisionString);
+}
+
+void UElgEditorBP_Assets::DiffAssetPath(const FString OldAssetPath, const FString NewAssetPath, const FString OldAssetRevisionString)
+{
+	if (OldAssetPath.IsEmpty() || NewAssetPath.IsEmpty()) {
+		UE_LOG(LogTemp, Warning, TEXT("Need two valid Asset Path to diff..."));
+		return;
+	}
+	FAssetData oldAsset = GetAssetDataFromPath(OldAssetPath);
+	FAssetData newAsset = GetAssetDataFromPath(NewAssetPath);
+	DiffAssetData(oldAsset, newAsset, OldAssetRevisionString);
+}
+
+void UElgEditorBP_Assets::DiffAssetWithExternalAsset(UObject* NewAsset, const FString ExternalAssetFilePath, const FString ExternalAssetName)
+{
+	if (!NewAsset) {
+		UE_LOG(LogTemp, Warning, TEXT("Need a valid asset to diff"));
+		return;
+	}
+	if (ExternalAssetName.IsEmpty()) {
+		UE_LOG(LogTemp, Warning, TEXT("Need a valid ExternalAssetName to diff"));
+		return;
+	}
+	if (!FPlatformFileManager::Get().GetPlatformFile().FileExists(*ExternalAssetFilePath)) {
+		UE_LOG(LogTemp, Warning, TEXT("Failed to find any file at %s"), *ExternalAssetFilePath);
+		return;
+	}
+
+	FString path = FPaths::ConvertRelativePathToFull(ExternalAssetFilePath);
+	UPackage* tempPackage = LoadPackage(nullptr, *path, LOAD_ForDiff | LOAD_DisableCompileOnLoad);
+	if (tempPackage != nullptr) {
+		UObject* oldObject = FindObject<UObject>(tempPackage, *ExternalAssetName);
+		if (oldObject != nullptr) {
+			DiffAssets(oldObject, NewAsset, ExternalAssetName);
+		} 
+		else  {
+			UE_LOG(LogTemp, Warning, TEXT("Failed to find any asset with name %s in the package"), *ExternalAssetName);
+			return;
+		}
+	} else {
+		UE_LOG(LogTemp, Warning, TEXT("Failed to load the package at %s"), *path);
+		return;
+	}
 }
 
 #pragma endregion
