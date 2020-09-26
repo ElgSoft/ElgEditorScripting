@@ -459,8 +459,7 @@ TArray<FString> UElgEditorBP_Assets::GetSelectedPaths()
 
 FString UElgEditorBP_Assets::AssetPathToDiskPath(const FString& InAssetPath)
 {
-	FString path;
-	static FAssetData assetData = GetAssetDataFromPath(InAssetPath);
+	FAssetData assetData = GetAssetDataFromPath(InAssetPath);
 	return GetAssetDiskPath(assetData);
 }
 
