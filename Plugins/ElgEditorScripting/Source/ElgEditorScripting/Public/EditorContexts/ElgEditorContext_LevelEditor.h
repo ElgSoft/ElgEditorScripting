@@ -423,7 +423,7 @@ public:
 	/* Removes the current realtime override.  If there was another realtime override set it will restore that override
 	*/
 	UFUNCTION(BlueprintCallable, Category = "ElgEditor|LevelEditor")
-		void RestoreViewportRealtime();
+		void RestoreViewportRealtime(FText SystemDisplayName);
 
 
 #pragma endregion

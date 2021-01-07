@@ -510,14 +510,14 @@ void UElgEditorContext_LevelEditor::SetViewportRealtime(bool bInRealtime)
 void UElgEditorContext_LevelEditor::SetViewportRealtimeOverride(bool bInRealtime, FText SystemDisplayName)
 {
 	if (GCurrentLevelEditingViewportClient == nullptr) return;
-	GCurrentLevelEditingViewportClient->SetRealtimeOverride(bInRealtime, SystemDisplayName);
+	GCurrentLevelEditingViewportClient->AddRealtimeOverride(bInRealtime, SystemDisplayName);
 
 }
 
-void UElgEditorContext_LevelEditor::RestoreViewportRealtime()
+void UElgEditorContext_LevelEditor::RestoreViewportRealtime(FText SystemDisplayName)
 {
 	if (GCurrentLevelEditingViewportClient == nullptr) return;
-	GCurrentLevelEditingViewportClient->RemoveRealtimeOverride();
+	GCurrentLevelEditingViewportClient->RemoveRealtimeOverride(SystemDisplayName);
 }
 
 #pragma endregion
