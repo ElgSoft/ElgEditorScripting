@@ -1,6 +1,6 @@
 # ElgEditorScripting
 
-ElgEditorScripting is an Unreal Engine 4.25.1 editor only plugin created to extend the possibilities of Editor Utility Widgets. 
+ElgEditorScripting is an Unreal Engine 4.26 editor only plugin created to extend the possibilities of Editor Utility Widgets. 
 
 The plugin add basic Level Editor events like OnActorAdded/Deleted/Selected, OnBegin/EndPIE, OnMouseClick, OnInputKey and more.<br>
 For the Content Browser it has events like OnAssetCreated/Removed/Renamed and Selected/Deselected.
