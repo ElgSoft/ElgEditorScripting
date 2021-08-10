@@ -11,10 +11,10 @@ It also add nodes to get the MousePosition, Read/Write to config files, Load/Rel
 [Unreal Forum thread](https://forums.unrealengine.com/community/community-content-tools-and-tutorials/1618595-free-elgeditorscripting-editor-utility-widget-extension-events-and-stuff)
 
 1.0.4 Added support to get an Editor Widget instace so tyou can access it and do cool stuff.
-![GetEditorWidget](https://elgsoft.com/Images/EditorScripting/LEC_GetEditorWidget.png)<br>
+![GetEditorWidget](http://elgsoft.com/Images/EditorScripting/LEC_GetEditorWidget.png)<br>
 
 1.0.2 Exposed Notifications to Blueprints.<br>
-![Notifications](https://elgsoft.com/Images/EditorScripting/Notifications.gif)<br>
+![Notifications](http://elgsoft.com/Images/EditorScripting/Notifications.gif)<br>
 
 1.0.1 Exposed PluginManager to Blueprints.
 
