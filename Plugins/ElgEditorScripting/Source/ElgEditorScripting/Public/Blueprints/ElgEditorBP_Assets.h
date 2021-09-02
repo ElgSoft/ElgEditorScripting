@@ -1,4 +1,4 @@
-// Copyright 2019-2020 ElgSoft. All rights reserved. 
+// Copyright 2019-2021 ElgSoft. All rights reserved. 
 // Elg001.ElgEditorScripting - ElgSoft.com
 
 #pragma once
@@ -121,6 +121,15 @@ class ELGEDITORSCRIPTING_API UElgEditorBP_Assets : public UBlueprintFunctionLibr
 	UFUNCTION(BlueprintPure, Category = "ElgEditor|Asset")
 		static FString GetAssetPath(const FAssetData& AssetDataStruct);
 
+	/* Return the if the asset is a World asset or not */
+	UFUNCTION(BlueprintPure, Category = "ElgEditor|Asset")
+		static bool IsAssetUWorldType(const FAssetData& AssetDataStruct);
+
+	/* Return UPackage object */
+	UFUNCTION(BlueprintPure, Category = "ElgEditor|Asset")
+		static UPackage* GetPackage(const FAssetData& AssetDataStruct);
+
+
 #pragma endregion
 
 #pragma region GetAssetObjects
@@ -213,11 +222,16 @@ class ELGEDITORSCRIPTING_API UElgEditorBP_Assets : public UBlueprintFunctionLibr
 
 #pragma region Paths
 
+	/* Convert the asset path to it's disk path  */
 	UFUNCTION(BlueprintPure, Category = "ElgEditor|Asset")
 		static FString AssetPathToDiskPath(const FString& InAssetPath);
 
 	UFUNCTION(BlueprintPure, Category = "ElgEditor|Asset")
 		static TArray<FString> AssetPathsToDiskPaths(TArray<FString> InAssetPaths);
+
+	/* If the asset don't exist yet but you want to get the disk path they would have use this */
+	UFUNCTION(BlueprintPure, Category = "ElgEditor|Asset")
+		static FString NewAssetPathToDiskPath(const FString& InAssetPath, const bool& bIsWorldAsset = false);
 
 #pragma endregion
 

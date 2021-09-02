@@ -1,4 +1,4 @@
-// Copyright 2019-2020 ElgSoft. All rights reserved. 
+// Copyright 2019-2021 ElgSoft. All rights reserved. 
 // Elg001.ElgEditorScripting - ElgSoft.com
 
 
@@ -68,9 +68,8 @@ void UElgEditorBP_Assets::FixRedirectorsByPath(const FName Path, const bool Recu
 void UElgEditorBP_Assets::GetAssetTags(const FAssetData& AssetDataStruct, TMap<FName, FString>& Tags)
 {
 	Tags.Empty();
-	const FAssetDataTagMap& map = AssetDataStruct.TagsAndValues.GetMap();
-	for (const TPair<FName, FString>& pair : map) {
-		Tags.Add(pair.Key, pair.Value);
+	for (TPair<FName, FAssetTagValueRef> Itt : AssetDataStruct.TagsAndValues) {
+		Tags.Add(Itt.Key, Itt.Value.AsString());
 	}
 }
 
@@ -191,6 +190,18 @@ FString UElgEditorBP_Assets::GetAssetPath(const FAssetData& AssetDataStruct)
 {
 	if (!AssetDataStruct.IsValid()) return "";
 	return AssetDataStruct.ObjectPath.ToString();
+}
+
+bool UElgEditorBP_Assets::IsAssetUWorldType(const FAssetData& AssetDataStruct)
+{
+	if (!AssetDataStruct.IsValid()) return false;
+	return (AssetDataStruct.AssetClass == UWorld::StaticClass()->GetFName());
+}
+
+UPackage* UElgEditorBP_Assets::GetPackage(const FAssetData& AssetDataStruct)
+{
+	if (!AssetDataStruct.IsValid()) return nullptr;
+	return AssetDataStruct.GetPackage();
 }
 
 #pragma endregion
@@ -422,7 +433,7 @@ void UElgEditorBP_Assets::GetReferenceDependencies(const FAssetData AssetData, c
 	FAssetRegistryModule& AssetRegistryModule = FModuleManager::LoadModuleChecked<FAssetRegistryModule>("AssetRegistry");
 	TArray<FAssetIdentifier> ReferenceNames;
 
-	if (bReferencers) {
+	if (bReferencers) {		
 		AssetRegistryModule.Get().GetReferencers(AssetData.PackageName, ReferenceNames, UE::AssetRegistry::EDependencyCategory::All);
 	}
 	else {
@@ -459,9 +470,12 @@ TArray<FString> UElgEditorBP_Assets::GetSelectedPaths()
 
 FString UElgEditorBP_Assets::AssetPathToDiskPath(const FString& InAssetPath)
 {
-	FString path;
-	static FAssetData assetData = GetAssetDataFromPath(InAssetPath);
-	return GetAssetDiskPath(assetData);
+	FAssetData assetData = GetAssetDataFromPath(InAssetPath);
+	if (!assetData.IsValid()) {
+		UE_LOG(LogTemp, Warning, TEXT("AssetPathToDiskPath:: No AssetData found for [%s], try NewAssetPathToDiskPath if the asset don't exist yet."), *InAssetPath);
+		return "";
+	}
+	return GetAssetDiskPath(assetData);	
 }
 
 TArray<FString> UElgEditorBP_Assets::AssetPathsToDiskPaths(TArray<FString> InAssetPaths)
@@ -471,6 +485,14 @@ TArray<FString> UElgEditorBP_Assets::AssetPathsToDiskPaths(TArray<FString> InAss
 		paths.Add(AssetPathToDiskPath(path));
 	}
 	return paths;
+}
+
+FString UElgEditorBP_Assets::NewAssetPathToDiskPath(const FString& InAssetPath, const bool& bIsWorldAsset /*= false*/)
+{
+	const FString extension = bIsWorldAsset ? FPackageName::GetMapPackageExtension() : FPackageName::GetAssetPackageExtension();
+	const FString filePath = FPackageName::LongPackageNameToFilename(InAssetPath, extension);
+	const FString fullFilePath = FPaths::ConvertRelativePathToFull(filePath);
+	return fullFilePath;
 }
 
 #pragma endregion

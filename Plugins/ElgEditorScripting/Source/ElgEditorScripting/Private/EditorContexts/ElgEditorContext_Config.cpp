@@ -229,7 +229,7 @@ bool UElgEditorContext_Config::ReadBool(const FString Key, bool& Value)
 bool UElgEditorContext_Config::ReadArray(const FString Key, TArray<FString>& Value)
 {
 	if (!GConfig) return false;
-	return GConfig->GetArray(*Section, *Key, Value, Path);
+	return GConfig->GetArray(*Section, *Key, Value, Path) != 0;
 }
 
 bool UElgEditorContext_Config::ReadColor(const FString Key, FColor& Value)
