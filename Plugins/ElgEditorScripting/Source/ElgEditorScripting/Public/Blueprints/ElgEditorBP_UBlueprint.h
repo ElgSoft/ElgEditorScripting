@@ -1,4 +1,4 @@
-// Copyright 2019-2020 ElgSoft. All rights reserved. 
+// Copyright 2019-2022 ElgSoft. All rights reserved. 
 // Elg001.ElgEditorScripting - ElgSoft.com
 
 #pragma once
@@ -19,6 +19,75 @@ class UObject;
 
 
 #pragma region Struct
+
+USTRUCT(BlueprintType)
+struct FS_ElgBlueprintNode
+{
+	GENERATED_USTRUCT_BODY()
+
+	UPROPERTY(BlueprintReadOnly, Category="Node")
+		UBlueprint* Blueprint;
+
+	UPROPERTY(BlueprintReadOnly, Category = "Node")
+		FString BlueprintName;
+
+	UPROPERTY(BlueprintReadOnly, Category = "Node")
+		FString GraphName;
+
+	UPROPERTY(BlueprintReadOnly, Category = "Node")
+		FString DisplayName;
+
+	UPROPERTY(BlueprintReadOnly, Category = "Node")
+		FString TypeName;
+
+	UPROPERTY(BlueprintReadOnly, Category = "Node")
+		FGuid NodeGuid;
+
+	UPROPERTY(BlueprintReadOnly, Category = "Node")
+		FString ErrorMsg;
+	
+	UPROPERTY(BlueprintReadOnly, Category = "Node")
+		FString NodeComment;
+
+	FS_ElgBlueprintNode(){
+		Blueprint = nullptr;
+		BlueprintName = "";
+		DisplayName = "";
+		TypeName = "";
+		NodeGuid;
+		ErrorMsg = "";
+		NodeComment = "";
+	}
+};
+
+
+USTRUCT(BlueprintType)
+struct FS_ElgBlueprintNodes{
+
+	GENERATED_USTRUCT_BODY()
+
+	UPROPERTY(BlueprintReadOnly, Category = "Node")
+		UBlueprint* Blueprint;
+
+	UPROPERTY(BlueprintReadOnly, Category = "Node")
+		FString BlueprintName;
+
+	UPROPERTY(BlueprintReadOnly, Category = "Node")
+		TMap<FGuid, FS_ElgBlueprintNode> NodeMap;
+
+	FS_ElgBlueprintNodes(){
+		Blueprint = nullptr;
+		BlueprintName = "";
+		NodeMap.Empty();
+	}
+
+	bool HasNodes(){
+		if (NodeMap.Num() == 0) return false;
+		return true;
+	}
+};
+
+
 
 USTRUCT(BlueprintType)
 struct FS_ElgBlueprintNodeStats
@@ -55,6 +124,10 @@ struct FS_ElgBlueprintNodeStats
 	UPROPERTY(BlueprintReadOnly, Category = "NodeStats")
 		int32 NodeCount;
 
+	/* FGuid to each node so we can use it to find it later, ID (asString), Type */
+	UPROPERTY(BlueprintReadOnly, Category = "NodeStats")
+		TMap<FGuid, FString> NodeIDMap;
+
 	FS_ElgBlueprintNodeStats() {
 		Blueprint = nullptr;
 		BlueprintName = "";
@@ -66,6 +139,7 @@ struct FS_ElgBlueprintNodeStats
 		NodeTypeCountMap.Empty();
 		DisplayTypeMap.Empty();
 		NodeCount = 0;
+		NodeIDMap.Empty();
 	}
 };
 
@@ -233,6 +307,10 @@ class ELGEDITORSCRIPTING_API UElgEditorBP_UBlueprint : public UBlueprintFunction
 	UFUNCTION(BlueprintCallable, Category = "ElgEditor|Blueprint", meta = (Keywords = "ElgSoft Editor Blueprint"))
 		static void CompileBlueprint(UBlueprint* Blueprint);
 
+	/* Compiles all the blueprints, make sure you don't try to compile the BP you run the node it, it WILL CRASH */
+	UFUNCTION(BlueprintCallable, Category = "ElgEditor|Blueprint", meta = (Keywords = "ElgSoft Editor Blueprint"))
+		static void CompileBlueprints(TArray<UBlueprint*> InBlueprints);
+
 #pragma endregion
 
 #pragma region Tick
@@ -311,11 +389,33 @@ class ELGEDITORSCRIPTING_API UElgEditorBP_UBlueprint : public UBlueprintFunction
 	UFUNCTION(BlueprintCallable, Category = "ElgEditor|Blueprint")
 		static FS_ElgBlueprintNodeStats GetBlueprintNodeStat(UBlueprint* Blueprint);
 
+	/* Get all the nodes in the blueprint that match the NodeName
+		Use wild card in the name if you need.
+	*/
+	UFUNCTION(BlueprintCallable, Category = "ElgEditor|Blueprint")
+		static FS_ElgBlueprintNodeStats GetBlueprintNodeStatNameFilter(UBlueprint* Blueprint, const FString NodeName, const bool bNodeType=true);
+
+	/* Get all the nodes in the blueprint that match the NodeName
+		Use wild card in the name if you need.
+	*/
+	UFUNCTION(BlueprintCallable, Category = "ElgEditor|Blueprint", meta = (ExpandEnumAsExecs = "Branches"))
+		static FS_ElgBlueprintNodeStats GetBlueprintNodeStatNameFilterBranch(UBlueprint* Blueprint, const FString NodeName, EBPEditorOutputBranch& Branches, const bool bNodeType = true);
+
+
 	UFUNCTION(BlueprintCallable, Category = "ElgEditor|Blueprint")
 		static FS_ElgBlueprintsNodeStats GetBlueprintsNodeStat(TArray<UBlueprint*> Blueprints);
 
 	UFUNCTION(BlueprintCallable, Category = "ElgEditor|Blueprint")
 		static FS_ElgBlueprintsNodeStats GetNodeStatsByPath(const FName Path);
+
+	/* Search for what blueprints that contains the NodeName */
+	UFUNCTION(BlueprintCallable, Category = "ElgEditor|Blueprint", meta=(bCheckOnType="true"))
+		static TMap<FString, FS_ElgBlueprintNodes> GetBlueprintsWithNodeByPath(const FName Path, const FString NodeName, const bool bCheckOnType = true);
+
+	/* Search for what blueprints that contains the NodeName */
+	UFUNCTION(BlueprintCallable, Category = "ElgEditor|Blueprint", meta=(bCheckOnType = "true"))
+		static TMap<FString, FS_ElgBlueprintNodes> GetBlueprintsWithNode(TArray<UBlueprint*> InBlueprints, const FString NodeName, const bool bCheckOnType = true);
+
 
 	/* Delete any nodes in the blueprint with the NodeName */
 	UFUNCTION(BlueprintCallable, Category = "ElgEditor|Blueprint")
@@ -334,6 +434,11 @@ class ELGEDITORSCRIPTING_API UElgEditorBP_UBlueprint : public UBlueprintFunction
 	/* Check if any node has a Node Comment, on the node or in a comment */
 	UFUNCTION(BlueprintCallable, Category = "ElgEditor|Blueprint", meta = (DisplayName = "Has Node Comment With String", Contains = "true", ExpandEnumAsExecs = "Branches"))
 		static void HasNodeCommentWith(UBlueprint* Blueprint, const FString InComment, const bool Contains, EBPEditorOutputBranch& Branches);
+
+	/* Get an array with node info struct */
+	UFUNCTION(BlueprintCallable, Category = "ElgEditor|Blueprint")
+		static FS_ElgBlueprintNodes GetNodes(UBlueprint* Blueprint);
+
 
 
 #pragma endregion
@@ -366,6 +471,43 @@ class ELGEDITORSCRIPTING_API UElgEditorBP_UBlueprint : public UBlueprintFunction
 
 #pragma endregion
 
+
+#pragma region BPEditor
+
+	/* Open the blueprint in the Blueprint Editor */
+	UFUNCTION(BlueprintCallable, Category = "ElgEditor|Blueprint")
+		static void OpenInEditor(UBlueprint* Blueprint);
+
+	/* Open on the node in the blueprint in the Blueprint Editor */
+	UFUNCTION(BlueprintCallable, Category = "ElgEditor|Blueprint")
+		static void OpenNodeInEditor(UBlueprint* Blueprint, FGuid NodeID);
+
+	/* Open on the node in the blueprint in the Blueprint Editor */
+	UFUNCTION(BlueprintCallable, Category = "ElgEditor|Blueprint")
+		static void OpenNodeStructInEditor(FS_ElgBlueprintNode NodeStruct);
+
+
+#pragma endregion
+
+
+#pragma region CheckConnection
+
+	UFUNCTION(BlueprintCallable, Category = "ElgEditor|Blueprint")
+		static void CheckIfPinTypeIsConnected(TArray<UBlueprint*> InBlueprints, const FName InPinTypeName);
+
+	UFUNCTION(BlueprintCallable, Category = "ElgEditor|Blueprint")
+		static FS_ElgBlueprintNodes GetNodesWithUnconnectedPinType(UBlueprint* InBlueprint, const FName InPinTypeName, const FName InPinName);
+
+	UFUNCTION(BlueprintCallable, Category = "ElgEditor|Blueprint")
+		static TMap<FString, FS_ElgBlueprintNodes> GetAllNodesWithUnconnectedPinType(TArray<UBlueprint*> InBlueprints, const FName InPinTypeName, const FName InPinName);
+
+	UFUNCTION(BlueprintPure, Category = "ElgEditor|Blueprint")
+		static bool HasStructNodes(FS_ElgBlueprintNodes InNodesStruct);
+
+
+#pragma endregion
+
+
 #pragma region Helpers
 
 	static AActor* GetDefaultObjectActor(UBlueprint* Blueprint);
@@ -375,6 +517,11 @@ class ELGEDITORSCRIPTING_API UElgEditorBP_UBlueprint : public UBlueprintFunction
 	static UStruct* GetFunctionScope(UBlueprint* Blueprint, const FString FunctionName);
 
 	static void GetNodeNameAndType(class UEdGraphNode* Node, FString& NodeName, FString& NodeType);
+
+	static bool CreateNodeStatsStruct(UBlueprint* InBlueprint, FS_ElgBlueprintNodeStats& OutNodeStats, const FString OnlyNodeName="", const bool bCheckNodeType=true);
+	static bool CreateBlueprintNodesStruct(UBlueprint* InBlueprint, FS_ElgBlueprintNodes& OutNodes, const FString OnlyNodeName = "", const bool bCheckNodeType = true);
+
+	static FS_ElgBlueprintNode GetNodeStruct(UBlueprint* Blueprint, UEdGraphNode* Node, class UEdGraph* InGraph = nullptr);
 
 #pragma endregion
 

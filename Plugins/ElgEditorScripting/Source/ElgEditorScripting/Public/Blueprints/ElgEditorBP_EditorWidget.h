@@ -1,4 +1,4 @@
-// Copyright 2019-2020 ElgSoft. All rights reserved. 
+// Copyright 2019-2022 ElgSoft. All rights reserved. 
 // Elg001.ElgEditorScripting - ElgSoft.com
 
 #pragma once
@@ -13,6 +13,7 @@
 class UEditorUtilityWidgetBlueprint;
 class FTabManager;
 class SDockTab;
+class UWidgetBlueprint;
 
 
 /**
@@ -25,6 +26,9 @@ class ELGEDITORSCRIPTING_API UElgEditorBP_EditorWidget : public UBlueprintFuncti
 
 
 #pragma region State
+	/* Open an Editor Utility Widget */
+	UFUNCTION(BlueprintCallable, Category = "ElgEditor|EditorWidget")
+		static void OpenEditorWidgetFromObject(class UObject* InObject);
 
 	/* Open an Editor Utility Widget */
 	UFUNCTION(BlueprintCallable, Category = "ElgEditor|EditorWidget")

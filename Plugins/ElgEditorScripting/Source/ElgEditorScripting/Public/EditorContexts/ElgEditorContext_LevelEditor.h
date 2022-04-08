@@ -280,6 +280,8 @@ public:
 		FElgEditorEventsOnEditorModeSignature OnExitMode;
 
 	void HandleEditorModeExit(const FEditorModeID& ModeID);
+	
+	void HandleEditorModeChange(const FEditorModeID& InModeID, bool bIsEnteringMode);
 
 	/* Event when the Editor Mode change */
 	UPROPERTY(BlueprintAssignable)

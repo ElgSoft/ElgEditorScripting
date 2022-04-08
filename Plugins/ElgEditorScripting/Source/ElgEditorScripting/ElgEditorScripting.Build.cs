@@ -1,4 +1,4 @@
-// Copyright 2019-2020 ElgSoft. All rights reserved. 
+// Copyright 2019-2022 ElgSoft. All rights reserved. 
 
 using UnrealBuildTool;
 using System.IO;
@@ -48,8 +48,8 @@ public class ElgEditorScripting : ModuleRules
                 "Engine",
                 "Slate",
                 "SlateCore",
-                "AssetRegistry",
-                "UnrealEd",
+				"AssetRegistry",
+				"UnrealEd",
                 "UMGEditor",
                 "Blutility",
                 "LevelEditor",
@@ -60,6 +60,7 @@ public class ElgEditorScripting : ModuleRules
                 "BlueprintGraph",
                 "Json",
                 "JsonUtilities",
+                "UMG",
 				// ... add private dependencies that you statically link with here ...	
 			}
 			);

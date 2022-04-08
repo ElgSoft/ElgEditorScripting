@@ -1,4 +1,4 @@
-// Copyright 2019-2020 ElgSoft. All rights reserved. 
+// Copyright 2019-2022 ElgSoft. All rights reserved. 
 // Elg001.ElgEditorScripting - ElgSoft.com
 
 #include "ElgEditorBP_UBlueprint.h"
@@ -90,7 +90,10 @@ TArray<UBlueprint*> UElgEditorBP_UBlueprint::GetBlueprintsByPath(const FName Pat
 	FARFilter assetFilter;
 	assetFilter.bRecursivePaths = RecursivePaths;
 	assetFilter.PackagePaths.Add(Path);
+
+	FName className = UBlueprint::StaticClass()->GetFName();
 	assetFilter.ClassNames.Add(UBlueprint::StaticClass()->GetFName());
+	assetFilter.bRecursiveClasses = true;
 
 	// Query for a list of assets in the selected paths
 	TArray<FAssetData> assetList;
@@ -466,6 +469,17 @@ void UElgEditorBP_UBlueprint::CompileBlueprint(UBlueprint* Blueprint)
 
 }
 
+void UElgEditorBP_UBlueprint::CompileBlueprints(TArray<UBlueprint*> InBlueprints)
+{
+	if (InBlueprints.Num() == 0) return;
+
+#if WITH_EDITOR
+	for (UBlueprint* bp : InBlueprints) {
+		FKismetEditorUtilities::CompileBlueprint(bp);
+	}
+#endif
+}
+
 #pragma endregion
 
 #pragma region Tick
@@ -693,52 +707,24 @@ void UElgEditorBP_UBlueprint::GetNodeUsage(UBlueprint* Blueprint, TMap<FString, 
 FS_ElgBlueprintNodeStats UElgEditorBP_UBlueprint::GetBlueprintNodeStat(UBlueprint* Blueprint)
 {
 	FS_ElgBlueprintNodeStats NodeStats;
-	if (Blueprint == nullptr) return NodeStats;
-	
-	TMap<FString, int32> tempMapForNameCountSort;
-	TMap<FString, int32> tempMapForTypeCountSort;
-
-	NodeStats.Blueprint = Blueprint;
-	NodeStats.BlueprintName = Blueprint->GetName();
-
-	FString displayName;
-	FString nodeType;
-
-	// Iterate on all the Graphs and the Construction Script and Functions.
-	TArray<UEdGraph*> graphs = Blueprint->UbergraphPages;
-	graphs.Append(Blueprint->FunctionGraphs);
-	for (UEdGraph* graph : graphs) {
-		for (UEdGraphNode* node : graph->Nodes) {
-			
-			GetNodeNameAndType(node, displayName, nodeType);
-
-			NodeStats.DisplayNameCountMap.FindOrAdd(displayName) += 1;
-			tempMapForNameCountSort.FindOrAdd(displayName) += 1;
-			NodeStats.NodeTypeCountMap.FindOrAdd(nodeType) += 1;
-			tempMapForTypeCountSort.FindOrAdd(nodeType) += 1;
-			NodeStats.DisplayNamesSorted.AddUnique(displayName);
-			NodeStats.NodeTypeSorted.AddUnique(nodeType);
-			NodeStats.DisplayTypeMap.Add(displayName, nodeType);
-			NodeStats.NodeCount += 1;
-		}
-	}
-
-	NodeStats.DisplayNamesSorted.Sort();
-	NodeStats.NodeTypeSorted.Sort();
-
-	// sort on the node count
-	tempMapForNameCountSort.ValueSort([](int32 A, int32 B) {
-		return A > B;
-	});
-	tempMapForNameCountSort.GetKeys(NodeStats.DisplayNamesCountSorted);
-
-	// sort on the node count
-	tempMapForTypeCountSort.ValueSort([](int32 A, int32 B) {
-		return A > B;
-	});
-	tempMapForTypeCountSort.GetKeys(NodeStats.NodeTypeCountSorted);
+	CreateNodeStatsStruct(Blueprint, NodeStats);
+	return NodeStats;
+}
 
 
+FS_ElgBlueprintNodeStats UElgEditorBP_UBlueprint::GetBlueprintNodeStatNameFilter(UBlueprint* Blueprint, const FString NodeName, const bool bNodeType)
+{
+	FS_ElgBlueprintNodeStats NodeStats;
+	CreateNodeStatsStruct(Blueprint, NodeStats, NodeName, bNodeType);
+	return NodeStats;
+}
+
+
+FS_ElgBlueprintNodeStats UElgEditorBP_UBlueprint::GetBlueprintNodeStatNameFilterBranch(UBlueprint* Blueprint, const FString NodeName, EBPEditorOutputBranch& Branches, const bool bNodeType)
+{
+	Branches = EBPEditorOutputBranch::outFalse;
+	FS_ElgBlueprintNodeStats NodeStats;
+	if (CreateNodeStatsStruct(Blueprint, NodeStats, NodeName, bNodeType)) Branches = EBPEditorOutputBranch::outTrue;
 	return NodeStats;
 }
 
@@ -777,6 +763,27 @@ FS_ElgBlueprintsNodeStats UElgEditorBP_UBlueprint::GetNodeStatsByPath(const FNam
 	TArray<UBlueprint*> blueprints = GetBlueprintsByPath(Path, true);
 	return GetBlueprintsNodeStat(blueprints);
 }
+
+
+TMap<FString, FS_ElgBlueprintNodes> UElgEditorBP_UBlueprint::GetBlueprintsWithNodeByPath(const FName Path, const FString NodeName, const bool bCheckOnType)
+{
+	TArray<UBlueprint*> blueprints = GetBlueprintsByPath(Path, true);
+	return GetBlueprintsWithNode(blueprints, NodeName, bCheckOnType);
+}
+
+
+TMap<FString, FS_ElgBlueprintNodes> UElgEditorBP_UBlueprint::GetBlueprintsWithNode(TArray<UBlueprint*> InBlueprints, const FString NodeName, const bool bCheckOnType)
+{
+	TMap<FString, FS_ElgBlueprintNodes> resultMap;
+	for (auto bp : InBlueprints) {
+		FS_ElgBlueprintNodes blueprintNodes;
+		if (CreateBlueprintNodesStruct(bp, blueprintNodes, NodeName, bCheckOnType)) {
+			resultMap.Add(bp->GetName(), blueprintNodes);
+		}
+	}
+	return resultMap;
+}
+
 
 
 void UElgEditorBP_UBlueprint::DeleteNodesByName(UBlueprint* Blueprint, const FString NodeName)
@@ -874,6 +881,23 @@ void UElgEditorBP_UBlueprint::HasNodeCommentWith(UBlueprint* Blueprint, const FS
 			}
 		}
 	}
+}
+
+FS_ElgBlueprintNodes UElgEditorBP_UBlueprint::GetNodes(UBlueprint* Blueprint)
+{
+	FS_ElgBlueprintNodes nodes;
+	if (!Blueprint) return nodes;
+
+	nodes.Blueprint = Blueprint;
+	nodes.BlueprintName = Blueprint->GetName();
+
+	for (UEdGraph* graph : Blueprint->UbergraphPages) {
+		for (UEdGraphNode* node : graph->Nodes) {
+			FS_ElgBlueprintNode nodeStruct = GetNodeStruct(Blueprint, node, graph);
+			nodes.NodeMap.Add(nodeStruct.NodeGuid, nodeStruct);
+		}
+	}
+	return nodes;
 }
 
 #pragma endregion
@@ -983,8 +1007,131 @@ void UElgEditorBP_UBlueprint::RemoveLocalVariable(UBlueprint* Blueprint, const F
 	FBlueprintEditorUtils::RemoveLocalVariable(Blueprint, scope, FName(*VariableName));
 }
 
+#pragma endregion
+
+
+#pragma region BPEditor
+
+void UElgEditorBP_UBlueprint::OpenInEditor(UBlueprint* Blueprint)
+{
+	if (!Blueprint) return;
+	FKismetEditorUtilities::BringKismetToFocusAttentionOnObject(Blueprint, false);
+}
+
+
+void UElgEditorBP_UBlueprint::OpenNodeInEditor(UBlueprint* Blueprint, FGuid NodeID)
+{
+	if (!Blueprint || !NodeID.IsValid()) return;
+	if (UEdGraphNode* graphNode = FBlueprintEditorUtils::GetNodeByGUID(Blueprint, NodeID)) {
+		FKismetEditorUtilities::BringKismetToFocusAttentionOnObject(graphNode, false);
+	}
+}
+
+void UElgEditorBP_UBlueprint::OpenNodeStructInEditor(FS_ElgBlueprintNode NodeStruct)
+{
+	OpenNodeInEditor(NodeStruct.Blueprint, NodeStruct.NodeGuid);
+}
 
 #pragma endregion
+
+#pragma region CheckConnection
+
+void UElgEditorBP_UBlueprint::CheckIfPinTypeIsConnected(TArray<UBlueprint*> InBlueprints, const FName InPinTypeName)
+{
+	for (UBlueprint* blueprint : InBlueprints) {
+		TArray<UEdGraph*> graphs = blueprint->UbergraphPages;
+		graphs.Append(blueprint->FunctionGraphs);
+		for (UEdGraph* graph : graphs) {
+			for (UEdGraphNode* node : graph->Nodes) {
+				for (UEdGraphPin* pin : node->Pins) {
+					FString pinName = pin->GetName();
+					if (pinName != "Perforce") continue;
+					
+					bool isRightType = false;
+					if (pin->PinType.PinCategory == InPinTypeName) {
+						isRightType = true;
+					} else if (pin->PinType.PinSubCategoryObject != nullptr) {
+						if (pin->PinType.PinSubCategoryObject->GetFName() == InPinTypeName){
+							isRightType = true;
+						}
+					}
+					if (!isRightType) continue;
+
+					bool hasConnections = pin->HasAnyConnections();
+					bool test = true;
+				}
+			}
+		}
+	}
+}
+
+
+FS_ElgBlueprintNodes UElgEditorBP_UBlueprint::GetNodesWithUnconnectedPinType(UBlueprint* InBlueprint, const FName InPinTypeName, const FName InPinName)
+{
+	bool checkPinName = false;
+	if (!InPinName.IsNone()) checkPinName = true;
+
+	FS_ElgBlueprintNodes blueprintNodes;
+	blueprintNodes.Blueprint = InBlueprint;
+	blueprintNodes.BlueprintName = InBlueprint->GetName();
+
+	TArray<UEdGraph*> graphs = InBlueprint->UbergraphPages;
+	graphs.Append(InBlueprint->FunctionGraphs);
+
+	for (UEdGraph* graph : graphs) {
+		for (UEdGraphNode* node : graph->Nodes) {			
+			for (UEdGraphPin* pin : node->Pins) {
+				if (pin->Direction.GetValue() == EEdGraphPinDirection::EGPD_Output) continue; // only check input pins
+				if (checkPinName && pin->GetFName() != InPinName) continue;
+
+				bool isRightType = false;
+				if (pin->PinType.PinCategory == InPinTypeName) {
+					isRightType = true;
+				}
+				else if (pin->PinType.PinSubCategoryObject != nullptr) {
+					if (pin->PinType.PinSubCategoryObject->GetFName() == InPinTypeName) {
+						isRightType = true;
+					}
+				}
+				if (!isRightType) continue;
+
+				if (!pin->HasAnyConnections()) {
+					FS_ElgBlueprintNode nodeStruct = GetNodeStruct(InBlueprint, node, graph);
+					blueprintNodes.NodeMap.Add(nodeStruct.NodeGuid, nodeStruct);
+					break;
+				}
+			}
+		}
+	}
+	return blueprintNodes;
+}
+
+TMap<FString, FS_ElgBlueprintNodes> UElgEditorBP_UBlueprint::GetAllNodesWithUnconnectedPinType(
+	TArray<UBlueprint*> InBlueprints, const FName InPinTypeName, const FName InPinName)
+{
+	TMap<FString, FS_ElgBlueprintNodes> returnMap;
+	
+	bool checkPinName = false;
+	if (!InPinName.IsNone()) checkPinName = true;
+
+	for (UBlueprint* blueprint : InBlueprints) {
+		FS_ElgBlueprintNodes blueprintNodes = GetNodesWithUnconnectedPinType(blueprint, InPinTypeName, InPinName);
+		if (!blueprintNodes.HasNodes()) continue;
+		returnMap.Add(blueprintNodes.BlueprintName, blueprintNodes);
+	}
+
+	return returnMap;
+}
+
+
+bool UElgEditorBP_UBlueprint::HasStructNodes(FS_ElgBlueprintNodes InNodesStruct)
+{
+	if (InNodesStruct.NodeMap.Num() == 0) return false;
+	return true;
+}
+
+#pragma endregion
+
 
 #pragma region Helpers
 
@@ -1077,6 +1224,156 @@ void UElgEditorBP_UBlueprint::GetNodeNameAndType(UEdGraphNode* Node, FString& No
 	}
 }
 
+
+bool UElgEditorBP_UBlueprint::CreateNodeStatsStruct(UBlueprint* InBlueprint, FS_ElgBlueprintNodeStats& OutNodeStats, const FString OnlyNodeName, const bool bCheckNodeType)
+{
+	if (InBlueprint == nullptr) return false;
+
+	bool bCheckNodeName = false;
+	bool bUseWildcard = false;
+	if (!OnlyNodeName.IsEmpty()) {
+		bCheckNodeName = true;
+		if (OnlyNodeName.Contains("*")) bUseWildcard = true;
+	}
+
+	TMap<FString, int32> tempMapForNameCountSort;
+	TMap<FString, int32> tempMapForTypeCountSort;
+
+	OutNodeStats.Blueprint = InBlueprint;
+	OutNodeStats.BlueprintName = InBlueprint->GetName();
+
+	FString displayName;
+	FString nodeType;
+
+	// Iterate on all the Graphs and the Construction Script and Functions.
+	TArray<UEdGraph*> graphs = InBlueprint->UbergraphPages;
+	graphs.Append(InBlueprint->FunctionGraphs);
+	for (UEdGraph* graph : graphs) {
+		for (UEdGraphNode* node : graph->Nodes) {
+			GetNodeNameAndType(node, displayName, nodeType);
+
+			if (bCheckNodeName){
+				FString nameToCheck = nodeType;
+				if (!bCheckNodeType) {
+					nameToCheck = displayName;
+				}
+				if (bUseWildcard) {
+					if (!nameToCheck.MatchesWildcard(OnlyNodeName)) continue;
+				} else {
+					if (!nameToCheck.Equals(OnlyNodeName)) continue;
+				}
+			}
+
+			OutNodeStats.NodeIDMap.Add(node->NodeGuid, nodeType);
+
+			OutNodeStats.DisplayNameCountMap.FindOrAdd(displayName) += 1;
+			tempMapForNameCountSort.FindOrAdd(displayName) += 1;
+			OutNodeStats.NodeTypeCountMap.FindOrAdd(nodeType) += 1;
+			tempMapForTypeCountSort.FindOrAdd(nodeType) += 1;
+			OutNodeStats.DisplayNamesSorted.AddUnique(displayName);
+			OutNodeStats.NodeTypeSorted.AddUnique(nodeType);
+			OutNodeStats.DisplayTypeMap.Add(displayName, nodeType);
+			OutNodeStats.NodeCount += 1;
+		}
+	}
+
+	// if we are checking for specific node(s) and we didn't find any return out here.
+	if (bCheckNodeName && OutNodeStats.NodeCount == 0) {
+		OutNodeStats = FS_ElgBlueprintNodeStats(); // make sure the struct is empty and not have any old data.
+		return false;
+	}
+
+	OutNodeStats.DisplayNamesSorted.Sort();
+	OutNodeStats.NodeTypeSorted.Sort();
+
+	// sort on the node count
+	tempMapForNameCountSort.ValueSort([](int32 A, int32 B) {
+		return A > B;
+	});
+	tempMapForNameCountSort.GetKeys(OutNodeStats.DisplayNamesCountSorted);
+
+	// sort on the node count
+	tempMapForTypeCountSort.ValueSort([](int32 A, int32 B) {
+		return A > B;
+	});
+	tempMapForTypeCountSort.GetKeys(OutNodeStats.NodeTypeCountSorted);
+
+	return true;
+}
+
+
+bool UElgEditorBP_UBlueprint::CreateBlueprintNodesStruct(UBlueprint* InBlueprint, FS_ElgBlueprintNodes& OutNodes, const FString OnlyNodeName /*= ""*/, const bool bCheckNodeType /*= true*/)
+{
+	if (InBlueprint == nullptr) return false;
+
+	bool bCheckNodeName = false;
+	bool bUseWildcard = false;
+	if (!OnlyNodeName.IsEmpty()) {
+		bCheckNodeName = true;
+		if (OnlyNodeName.Contains("*")) bUseWildcard = true;
+	}
+
+	OutNodes.Blueprint = InBlueprint;
+	OutNodes.BlueprintName = InBlueprint->GetName();
+
+	FString displayName;
+	FString nodeType;
+
+	// Iterate on all the Graphs and the Construction Script and Functions.
+	TArray<UEdGraph*> graphs = InBlueprint->UbergraphPages;
+	graphs.Append(InBlueprint->FunctionGraphs);
+	for (UEdGraph* graph : graphs) {
+		for (UEdGraphNode* node : graph->Nodes) {
+
+			if (bCheckNodeName) {
+				GetNodeNameAndType(node, displayName, nodeType);
+				FString nameToCheck = nodeType;
+				if (!bCheckNodeType) {
+					nameToCheck = displayName;
+				}
+				if (bUseWildcard) {
+					if (!nameToCheck.MatchesWildcard(OnlyNodeName)) continue;
+				}
+				else {
+					if (!nameToCheck.Equals(OnlyNodeName)) continue;
+				}
+			}
+			
+			FS_ElgBlueprintNode nudeStruct;
+			nudeStruct = GetNodeStruct(InBlueprint, node, graph);
+			OutNodes.NodeMap.Add(nudeStruct.NodeGuid, nudeStruct);
+		}
+	}
+
+	// if we are checking for specific node(s) and we didn't find any return out here.
+	if (bCheckNodeName && OutNodes.NodeMap.Num() == 0) {
+		OutNodes = FS_ElgBlueprintNodes(); // make sure the struct is empty and not have any old data.
+		return false;
+	}
+
+	return true;
+}
+
+
+FS_ElgBlueprintNode UElgEditorBP_UBlueprint::GetNodeStruct(UBlueprint* Blueprint, UEdGraphNode* Node, UEdGraph* InGraph/* = nullptr*/)
+{
+	FS_ElgBlueprintNode nodeInfo;
+	if (!Blueprint || !Node) return nodeInfo;
+
+	FString display, nodeType;
+	GetNodeNameAndType(Node, display, nodeType);
+	nodeInfo.DisplayName = display;
+	nodeInfo.TypeName = nodeType;
+	nodeInfo.NodeGuid = Node->NodeGuid;
+	nodeInfo.NodeComment = Node->NodeComment;
+	nodeInfo.ErrorMsg = Node->ErrorMsg;
+	nodeInfo.Blueprint = Blueprint;
+	nodeInfo.BlueprintName = Blueprint->GetName();
+
+	if (InGraph) nodeInfo.GraphName = InGraph->GetName();
+
+	return nodeInfo;
+}
 
 #pragma endregion
 

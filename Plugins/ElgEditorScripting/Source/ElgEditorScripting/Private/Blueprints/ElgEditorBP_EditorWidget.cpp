@@ -1,4 +1,4 @@
-// Copyright 2019-2020 ElgSoft. All rights reserved. 
+// Copyright 2019-2022 ElgSoft. All rights reserved. 
 // Elg001.ElgEditorScripting - ElgSoft.com
 
 #include "ElgEditorBP_EditorWidget.h"
@@ -9,11 +9,58 @@
 #include "Widgets/SToolTip.h"
 #include <IBlutilityModule.h>
 #include <EditorUtilitySubsystem.h>
+#include <Blutility/Classes/EditorUtilityWidget.h>
 
 
 #define LOCTEXT_NAMESPACE "ElgAssetTypeActions"
 
 #pragma region State
+
+
+void UElgEditorBP_EditorWidget::OpenEditorWidgetFromObject(UObject* InObject)
+{
+	UWidgetBlueprint* Blueprint = Cast<UWidgetBlueprint>(InObject);
+	if (!Blueprint) return;
+	if (Blueprint->GeneratedClass->IsChildOf(UEditorUtilityWidget::StaticClass())) {
+		
+		//UEditorUtilityWidget* CDO = Blueprint->GeneratedClass->GetDefaultObject();
+
+		UObject* cdoBase = Blueprint->GeneratedClass->GetDefaultObject();
+		UEditorUtilityWidget* CDO = Cast<UEditorUtilityWidget>(cdoBase);
+		if (CDO->ShouldAutoRunDefaultAction()) {
+			// This is an instant-run blueprint, just execute it   
+			UEditorUtilityWidget* Instance = NewObject<UEditorUtilityWidget>(GetTransientPackage(), Blueprint->GeneratedClass);
+			Instance->ExecuteDefaultAction();
+		} else {
+			FName RegistrationName = FName(*(Blueprint->GetPathName() + TEXT("_ActiveTab")));
+			FText DisplayName = FText::FromString(Blueprint->GetName());
+			FLevelEditorModule& LevelEditorModule = FModuleManager::GetModuleChecked<FLevelEditorModule>(TEXT("LevelEditor"));
+			TSharedPtr<FTabManager> LevelEditorTabManager = LevelEditorModule.GetLevelEditorTabManager();
+			
+			if (!LevelEditorTabManager->HasTabSpawner(RegistrationName)) {
+				// to add a spawner we need to do some workaround...
+				UEditorUtilitySubsystem* EditorUtilitySubsystem = GEditor->GetEditorSubsystem<UEditorUtilitySubsystem>();
+				
+				// get the path to the EditorWidget we want to open
+				FSoftObjectPath path = FSoftObjectPath(FName(*(Blueprint->GetPathName())));
+				// add it to the loaded UIs that will be setup when the tab manager change
+				EditorUtilitySubsystem->LoadedUIs.Add(path);
+				// save away the current open widgets as the OnTabManagerChanged will clear it
+				//  and your open widgets will be closed when you restart the editor.
+				TArray<FSoftObjectPath> paths = EditorUtilitySubsystem->LoadedUIs;
+
+				// trigger a fake out that will make sure we have a spawner for our EdiorWidget
+				LevelEditorModule.OnTabManagerChanged().Broadcast();
+
+				// now we need to restore the widgets that was open before this hack and save it to the config file.
+				EditorUtilitySubsystem->LoadedUIs = paths;
+				EditorUtilitySubsystem->SaveConfig();
+			}
+			TSharedPtr<SDockTab> NewDockTab = LevelEditorTabManager->TryInvokeTab(RegistrationName);
+		}
+	}
+}
+
 
 void UElgEditorBP_EditorWidget::OpenEditorWidget(UEditorUtilityWidgetBlueprint* EditorWidget)
 {

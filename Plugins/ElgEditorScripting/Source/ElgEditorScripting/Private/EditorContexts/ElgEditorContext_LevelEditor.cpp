@@ -1,5 +1,4 @@
-// Copyright 2019-2020 ElgSoft. All rights reserved. 
-// Copyright 2019-2020 ElgSoft. All rights reserved. 
+// Copyright 2019-2022 ElgSoft. All rights reserved. 
 // Elg001.ElgEditorScripting - ElgSoft.com
 
 #include "ElgEditorContext_LevelEditor.h"
@@ -14,6 +13,7 @@
 #include "ElgEditorBP_Enum.h"
 #include "SlateCore/Public/Input/Events.h"
 #include <EditorModeManager.h>
+#include <EditorModeTools.h>
 
 
 #pragma region Setup
@@ -56,6 +56,8 @@ UElgEditorContext_LevelEditor::~UElgEditorContext_LevelEditor()
 
 	FCoreUObjectDelegates::OnObjectPropertyChanged.RemoveAll(this);
 
+	GLevelEditorModeTools().OnEditorModeIDChanged().RemoveAll(this);
+
 #endif // WITH_EDITOR
 }
 
@@ -81,7 +83,6 @@ void UElgEditorContext_LevelEditor::Setup()
 
 	FLevelEditorModule& levelEditor = FModuleManager::GetModuleChecked<FLevelEditorModule>(TEXT("LevelEditor"));
 	levelEditor.OnActorSelectionChanged().AddUObject(this, &UElgEditorContext_LevelEditor::HandleOnActorSelectionChanged);
-
 	FEditorDelegates::OnEditorCameraMoved.AddUObject(this, &UElgEditorContext_LevelEditor::HandleOnEditorCameraMoved);
 
 	FEditorDelegates::BeginPIE.AddUObject(this, &UElgEditorContext_LevelEditor::HandleBeginPIE);
@@ -95,8 +96,7 @@ void UElgEditorContext_LevelEditor::Setup()
 
 	FEditorDelegates::OnFocusViewportOnActors.AddUObject(this, &UElgEditorContext_LevelEditor::HandleOnFocusViewportOnActors);
 
-	FEditorDelegates::EditorModeIDEnter.AddUObject(this, &UElgEditorContext_LevelEditor::HandleEditorModeEnter);
-	FEditorDelegates::EditorModeIDExit.AddUObject(this, &UElgEditorContext_LevelEditor::HandleEditorModeExit);
+	GLevelEditorModeTools().OnEditorModeIDChanged().AddUObject(this, &UElgEditorContext_LevelEditor::HandleEditorModeChange);
 
 	FSlateApplication::Get().OnApplicationMousePreInputButtonDownListener().AddUObject(this, &UElgEditorContext_LevelEditor::HandleOnApplicationMousePreInputButtonDown);
 	FSlateApplication::Get().OnApplicationPreInputKeyDownListener().AddUObject(this, &UElgEditorContext_LevelEditor::HandleOnApplicationPreInputKeyDown);
@@ -199,8 +199,14 @@ void UElgEditorContext_LevelEditor::HandleOnWorldDestroyed(UWorld* InWorld)
 void UElgEditorContext_LevelEditor::HandleEditorModeEnter(const FEditorModeID& ModeID)
 {	
 	FText oldName = CurrentEditorMode;
+	// not all modes has a FEdMode, like Select and Fracture mode. so for them use the FEditorNodeID instead
 	FEdMode* mode = GLevelEditorModeTools().GetActiveMode(ModeID);
-	CurrentEditorMode = mode->GetModeInfo().Name;
+	if (mode != nullptr) {
+		CurrentEditorMode = FText::FromString(mode->GetModeInfo().Name.ToString());		
+	} else {
+		CurrentEditorMode = FText::FromString(ModeID.ToString());
+	}
+
 	OnEnterMode.Broadcast(CurrentEditorMode);
 	if (!oldName.EqualTo(CurrentEditorMode)) {
 		OnEditorModeChanged.Broadcast(CurrentEditorMode);
@@ -209,10 +215,24 @@ void UElgEditorContext_LevelEditor::HandleEditorModeEnter(const FEditorModeID& M
 
 void UElgEditorContext_LevelEditor::HandleEditorModeExit(const FEditorModeID& ModeID)
 {
+	// not all modes has a FEdMode, like Select and Fracture mode. so for them use the FEditorNodeID instead
 	FEdMode* mode = GLevelEditorModeTools().GetActiveMode(ModeID);
-	OnExitMode.Broadcast(mode->GetModeInfo().Name);
+	if (mode == nullptr) {
+		OnExitMode.Broadcast(CurrentEditorMode);
+	} else {
+		OnExitMode.Broadcast(mode->GetModeInfo().Name);
+	}	
 }
 
+
+void UElgEditorContext_LevelEditor::HandleEditorModeChange(const FEditorModeID& InModeID, bool bIsEnteringMode)
+{
+	if (bIsEnteringMode) {
+		HandleEditorModeEnter(InModeID);
+	} else {
+		HandleEditorModeExit(InModeID);
+	}
+}
 
 void UElgEditorContext_LevelEditor::HandleOnEditorCameraMoved(const FVector& InPosition, const FRotator& InRotation, ELevelViewportType ViewportType, int32 ViewIndex)
 {
@@ -517,7 +537,7 @@ void UElgEditorContext_LevelEditor::SetViewportRealtimeOverride(bool bInRealtime
 void UElgEditorContext_LevelEditor::RestoreViewportRealtime(FText SystemDisplayName)
 {
 	if (GCurrentLevelEditingViewportClient == nullptr) return;
-	GCurrentLevelEditingViewportClient->RemoveRealtimeOverride(SystemDisplayName);
+	GCurrentLevelEditingViewportClient->RemoveRealtimeOverride(SystemDisplayName, false);
 }
 
 #pragma endregion

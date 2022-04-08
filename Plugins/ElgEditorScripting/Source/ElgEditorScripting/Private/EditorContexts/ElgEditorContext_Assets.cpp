@@ -1,4 +1,4 @@
-// Copyright 2019-2020 ElgSoft. All rights reserved. 
+// Copyright 2019-2022 ElgSoft. All rights reserved. 
 // Elg001.ElgEditorScripting - ElgSoft.com
 
 #include "ElgEditorContext_AssetBrowser.h"
@@ -13,13 +13,14 @@ UElgEditorContext_AssetBrowser::~UElgEditorContext_AssetBrowser()
 {
 	if (FModuleManager::Get().IsModuleLoaded(TEXT("AssetRegistry"))) { // fix for some crash on exit as it couldn't get the module
 		FAssetRegistryModule& assetRegistryModule = FModuleManager::Get().GetModuleChecked<FAssetRegistryModule>(TEXT("AssetRegistry"));
-		IAssetRegistry& assetRegistry = assetRegistryModule.Get();
-
-		assetRegistry.OnAssetAdded().RemoveAll(this);
-		assetRegistry.OnAssetRemoved().RemoveAll(this);
-		assetRegistry.OnAssetRenamed().RemoveAll(this);
-		assetRegistry.OnAssetUpdated().RemoveAll(this);
-		assetRegistry.OnFilesLoaded().RemoveAll(this);
+		if (assetRegistryModule.GetPtr()) {
+			IAssetRegistry& assetRegistry = assetRegistryModule.Get();
+			assetRegistry.OnAssetAdded().RemoveAll(this);
+			assetRegistry.OnAssetRemoved().RemoveAll(this);
+			assetRegistry.OnAssetRenamed().RemoveAll(this);
+			assetRegistry.OnAssetUpdated().RemoveAll(this);
+			assetRegistry.OnFilesLoaded().RemoveAll(this);
+		}
 	}
 	FContentBrowserModule& ContentBrowserModule = FModuleManager::GetModuleChecked<FContentBrowserModule>(TEXT("ContentBrowser"));
 	ContentBrowserModule.GetOnAssetSelectionChanged().RemoveAll(this);
