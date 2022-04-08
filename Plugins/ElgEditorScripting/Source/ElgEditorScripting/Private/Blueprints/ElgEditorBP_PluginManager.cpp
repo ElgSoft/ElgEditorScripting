@@ -396,9 +396,9 @@ UTexture2D* UElgEditorBP_PluginManager::GetTextureByPath(const FString IconPath)
 
 			if (!texture) return NULL;
 
-			void* textureData = texture->PlatformData->Mips[0].BulkData.Lock(LOCK_READ_WRITE);
+			void* textureData = texture->GetPlatformData()->Mips[0].BulkData.Lock(LOCK_READ_WRITE);
 			FMemory::Memcpy(textureData, uncompressedBGRA.GetData(), uncompressedBGRA.Num());
-			texture->PlatformData->Mips[0].BulkData.Unlock();
+			texture->GetPlatformData()->Mips[0].BulkData.Unlock();
 
 			texture->UpdateResource();
 		}
