@@ -25,13 +25,13 @@ public:
 
 #pragma region Property
 
-	UPROPERTY(BlueprintReadOnly)
+	UPROPERTY(BlueprintReadOnly, Category = "ElgEditor|Config")
 		FString Name;
 	
-	UPROPERTY(BlueprintReadOnly)
+	UPROPERTY(BlueprintReadOnly, Category = "ElgEditor|Config")
 		FString Section;
 
-	UPROPERTY(BlueprintReadOnly)
+	UPROPERTY(BlueprintReadOnly, Category = "ElgEditor|Config")
 		FString Path;
 
 #pragma endregion

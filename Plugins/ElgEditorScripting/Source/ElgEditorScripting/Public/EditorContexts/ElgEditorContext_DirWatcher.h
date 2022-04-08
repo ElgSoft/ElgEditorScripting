@@ -50,11 +50,11 @@ class ELGEDITORSCRIPTING_API UElgEditorContext_DirWatcher : public UObject
 #pragma region AddDirs
 
 	/* Add the Directory to be watched */
-	UFUNCTION(BlueprintCallable)
+	UFUNCTION(BlueprintCallable, Category = "ElgEditor|DirWatcher")
 		void AddWatchDirectory(const FString Directory);
 
 	/* Add the Directories to be watched */
-	UFUNCTION(BlueprintCallable)
+	UFUNCTION(BlueprintCallable, Category = "ElgEditor|DirWatcher")
 		void AddWatchDirectories(const TArray<FString> Directories);
 
 #pragma endregion
@@ -62,11 +62,11 @@ class ELGEDITORSCRIPTING_API UElgEditorContext_DirWatcher : public UObject
 #pragma region RemoveDirs
 
 	/* Remove the watch for Directory */
-	UFUNCTION(BlueprintCallable)
+	UFUNCTION(BlueprintCallable, Category = "ElgEditor|DirWatcher")
 		void RemoveWatchDirectory(const FString Directory);
 
 	/* Remove the watch for the Directories */
-	UFUNCTION(BlueprintCallable)
+	UFUNCTION(BlueprintCallable, Category = "ElgEditor|DirWatcher")
 		void  RemoveWatchDirectories(const TArray<FString> Directories);
 
 #pragma endregion
@@ -74,7 +74,7 @@ class ELGEDITORSCRIPTING_API UElgEditorContext_DirWatcher : public UObject
 #pragma region Get
 
 	/* Return all Directories that are watched */
-	UFUNCTION(BlueprintPure)
+	UFUNCTION(BlueprintPure, Category = "ElgEditor|DirWatcher")
 		TArray<FString> GetWatchDirectories();
 
 #pragma endregion
