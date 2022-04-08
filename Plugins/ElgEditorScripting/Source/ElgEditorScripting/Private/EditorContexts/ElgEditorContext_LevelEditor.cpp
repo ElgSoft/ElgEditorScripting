@@ -95,9 +95,22 @@ void UElgEditorContext_LevelEditor::Setup()
 
 	FEditorDelegates::OnFocusViewportOnActors.AddUObject(this, &UElgEditorContext_LevelEditor::HandleOnFocusViewportOnActors);
 
+	/*
+	 * REMARK: EditorModeIDEnter, EditorModeIDExit still used in UE 5.0.0 and warning disabled in sources:
+		Engine/Source/Editor/UnrealEd/Private/EdMode.cpp void FEdMode::Enter(), line 213
+		Engine/Source/Editor/UnrealEd/Private/Tools/UEdMode.cpp void FEdMode::Enter(), line 89
+		Engine/Source/Editor/UnrealEd/Private/EdMode.cpp void FEdMode::Exit(), line 220
+		Engine/Source/Editor/UnrealEd/Private/Tools/UEdMode.cpp void FEdMode::Exit(), line 171
+		Engine/Source/Developer/AssetTools/Private/AssetTypeActions/AssetTypeActions_CameraAnim.cpp
+		void FAssetTypeActions_CameraAnim::OpenAssetEditor, line 183, 224
+		void FAssetTypeActions_CameraAnim::OnMatineeEditorClosed line 259
+	*/
+	
+	PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	FEditorDelegates::EditorModeIDEnter.AddUObject(this, &UElgEditorContext_LevelEditor::HandleEditorModeEnter);
 	FEditorDelegates::EditorModeIDExit.AddUObject(this, &UElgEditorContext_LevelEditor::HandleEditorModeExit);
-
+	PRAGMA_ENABLE_DEPRECATION_WARNINGS
+	
 	FSlateApplication::Get().OnApplicationMousePreInputButtonDownListener().AddUObject(this, &UElgEditorContext_LevelEditor::HandleOnApplicationMousePreInputButtonDown);
 	FSlateApplication::Get().OnApplicationPreInputKeyDownListener().AddUObject(this, &UElgEditorContext_LevelEditor::HandleOnApplicationPreInputKeyDown);
 
