@@ -6,6 +6,7 @@
 #include "ElgEditorContext_Manager.h"
 #include "ElgEditorContext_Config.h"
 #include "ElgEditorContext_Jason.h"
+#include "ElgEditorContext_SlowTask.h"
 #include "ElgEditorScripting.h"
 #include <Editor.h>
 #include <AssetRegistryModule.h>
@@ -17,7 +18,7 @@
 UElgEditorContext_LevelEditor* UElgEditorContext_BP::GetLevelEditorContext()
 {
 #if WITH_EDITOR
-	FElgEditorScriptingModule& elgEditorScriptModule = FModuleManager::Get().LoadModuleChecked<FElgEditorScriptingModule>(TEXT("ElgEditorScripting"));
+	const FElgEditorScriptingModule& elgEditorScriptModule = FModuleManager::Get().LoadModuleChecked<FElgEditorScriptingModule>(TEXT("ElgEditorScripting"));
 	return elgEditorScriptModule.GetContextManager().GetLevelEditorContext();
 #endif
 	return nullptr;
@@ -27,7 +28,7 @@ UElgEditorContext_LevelEditor* UElgEditorContext_BP::GetLevelEditorContext()
 UElgEditorContext_AssetBrowser* UElgEditorContext_BP::GetAssetBrowserContext()
 {
 #if WITH_EDITOR
-	FElgEditorScriptingModule& elgEditorScriptModule = FModuleManager::Get().LoadModuleChecked<FElgEditorScriptingModule>(TEXT("ElgEditorScripting"));
+	const FElgEditorScriptingModule& elgEditorScriptModule = FModuleManager::Get().LoadModuleChecked<FElgEditorScriptingModule>(TEXT("ElgEditorScripting"));
 	return elgEditorScriptModule.GetContextManager().GetAssetBrowserContext();
 #endif
 	return nullptr;
@@ -39,7 +40,7 @@ UElgEditorContext_Config* UElgEditorContext_BP::GetConfigContext(FString ConfigF
 	if (ConfigFilename.IsEmpty() || ConfigSection.IsEmpty()) return nullptr;
 
 #if WITH_EDITOR
-	FElgEditorScriptingModule& elgEditorScriptModule = FModuleManager::Get().LoadModuleChecked<FElgEditorScriptingModule>(TEXT("ElgEditorScripting"));
+	const FElgEditorScriptingModule& elgEditorScriptModule = FModuleManager::Get().LoadModuleChecked<FElgEditorScriptingModule>(TEXT("ElgEditorScripting"));
 	return elgEditorScriptModule.GetContextManager().GetConfigContext(ConfigFilename, ConfigSection);
 #endif
 	return nullptr;
@@ -47,13 +48,13 @@ UElgEditorContext_Config* UElgEditorContext_BP::GetConfigContext(FString ConfigF
 
 UElgEditorContext_Notification* UElgEditorContext_BP::GetNotificationContext(const FS_ElgNotificationInfo& Info, const bool ShowNotification, UObject* InGraphObject)
 {
-	FElgEditorScriptingModule& elgEditorScriptModule = FModuleManager::Get().LoadModuleChecked<FElgEditorScriptingModule>(TEXT("ElgEditorScripting"));
+	const FElgEditorScriptingModule& elgEditorScriptModule = FModuleManager::Get().LoadModuleChecked<FElgEditorScriptingModule>(TEXT("ElgEditorScripting"));
 	return elgEditorScriptModule.GetContextManager().GetNotificationContext(Info, InGraphObject, ShowNotification);
 }
 
 UElgEditorContext_DirWatcher* UElgEditorContext_BP::GetDirectoryWatcherContext()
 {
-	FElgEditorScriptingModule& elgEditorScriptModule = FModuleManager::Get().LoadModuleChecked<FElgEditorScriptingModule>(TEXT("ElgEditorScripting"));
+	const FElgEditorScriptingModule& elgEditorScriptModule = FModuleManager::Get().LoadModuleChecked<FElgEditorScriptingModule>(TEXT("ElgEditorScripting"));
 	return elgEditorScriptModule.GetContextManager().GetDirectoryWatcherContext();
 }
 
@@ -62,6 +63,17 @@ UElgEditorContext_Jason* UElgEditorContext_BP::GetJasonContext()
 	UElgEditorContext_Jason* jason = NewObject<UElgEditorContext_Jason>();
 	jason->Setup();
 	return jason;
+}
+
+void UElgEditorContext_BP::ShowSlowTask(UElgEditorContext_SlowTask*& OutSlowTask, float InTotalAmountOfWork, const FText InDefaultMessage, bool bShowProgressDialog, bool bShowCancelButton)
+{
+#if WITH_EDITOR	
+	const FElgEditorScriptingModule& elgEditorScriptModule = FModuleManager::Get().LoadModuleChecked<FElgEditorScriptingModule>(TEXT("ElgEditorScripting"));
+	OutSlowTask = elgEditorScriptModule.GetContextManager().GetSlowTaskContext();
+	if (OutSlowTask) {
+		OutSlowTask->Begin(InTotalAmountOfWork, InDefaultMessage, bShowProgressDialog, bShowCancelButton);
+	}
+#endif
 }
 
 #pragma endregion
@@ -97,8 +109,7 @@ void UElgEditorContext_BP::IsInEditor(bool& Result)
 	if (GEditor == nullptr) return;
 
 	// the PIE world context only exist when the PIE is running.
-	FWorldContext* pieWorldContext = GEditor->GetPIEWorldContext();
-	if (!pieWorldContext) {
+	if (GEditor->GetPIEWorldContext()) {
 		Result = true;
 	}		
 #endif
@@ -111,8 +122,7 @@ void UElgEditorContext_BP::IsInPIE(bool& Result)
 	if (GEditor == nullptr) return;
 
 	// the PIE world context only exist when the PIE is running.
-	FWorldContext* pieWorldContext = GEditor->GetPIEWorldContext();
-	if (pieWorldContext) {
+	if (GEditor->GetPIEWorldContext()) {
 		Result = true;
 	}	
 #endif

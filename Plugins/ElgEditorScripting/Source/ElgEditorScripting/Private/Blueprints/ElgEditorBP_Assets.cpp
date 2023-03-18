@@ -16,6 +16,9 @@
 #include <IContentBrowserSingleton.h>
 #include <HAL/PlatformFilemanager.h>
 
+#include "ElgEditorBP_UBlueprint.h"
+#include <Editor.h>
+
 
 #pragma region Redirectors
 
@@ -572,4 +575,3 @@ void UElgEditorBP_Assets::DiffAssetWithExternalAsset(UObject* NewAsset, const FS
 }
 
 #pragma endregion
-

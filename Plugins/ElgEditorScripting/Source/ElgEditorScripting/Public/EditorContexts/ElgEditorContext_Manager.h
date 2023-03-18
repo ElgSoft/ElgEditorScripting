@@ -4,6 +4,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "ElgEditorContext_SlowTask.h"
 #include "UObject/NoExportTypes.h"
 #include "ElgEditorContext_Manager.generated.h"
 
@@ -34,6 +35,9 @@ public:
 
 	UElgEditorContext_DirWatcher* GetDirectoryWatcherContext();
 
+	UElgEditorContext_SlowTask* GetSlowTaskContext();
+	UElgEditorContext_SlowTask* GetSlowTaskActive(const bool bNewSlowTask = false);
+
 
 protected:
 	UPROPERTY()
@@ -48,4 +52,9 @@ protected:
 
 	UPROPERTY()
 		UElgEditorContext_DirWatcher* DirectoryWatcherContext;
+
+	UPROPERTY()
+		UElgEditorContext_SlowTask* SlowTaskContext;
+	
+		
 };

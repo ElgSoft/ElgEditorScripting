@@ -7,7 +7,7 @@
 #include "ElgEditorContext_Config.h"
 #include "ElgEditorContext_Notification.h"
 #include "ElgEditorContext_DirWatcher.h"
-
+#include "GenericPlatform/GenericPlatformChunkInstall.h"
 
 
 UElgEditorContext_LevelEditor* UElgEditorContext_Manager::GetLevelEditorContext()
@@ -62,4 +62,18 @@ UElgEditorContext_DirWatcher* UElgEditorContext_Manager::GetDirectoryWatcherCont
 	}
 	return DirectoryWatcherContext;
 }
+
+UElgEditorContext_SlowTask* UElgEditorContext_Manager::GetSlowTaskContext()
+{
+	return NewObject<UElgEditorContext_SlowTask>();
+}
+
+UElgEditorContext_SlowTask* UElgEditorContext_Manager::GetSlowTaskActive(const bool bNewSlowTask /*= false*/)
+{
+	if (bNewSlowTask) {
+		SlowTaskContext = NewObject<UElgEditorContext_SlowTask>(); 
+	} 
+	return SlowTaskContext; 
+}
+
 

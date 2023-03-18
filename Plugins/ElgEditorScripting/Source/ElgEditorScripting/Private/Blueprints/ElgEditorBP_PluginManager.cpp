@@ -15,6 +15,7 @@
 
 #include <UATHelper/Public/IUATHelperModule.h>
 #include <EditorStyleSet.h>
+#include "Launch/Resources/Version.h"
 
 #define LOCTEXT_NAMESPACE "ElgEditorPluginManager"
 
@@ -396,11 +397,17 @@ UTexture2D* UElgEditorBP_PluginManager::GetTextureByPath(const FString IconPath)
 
 			if (!texture) return NULL;
 
-			//void* textureData = texture->PlatformData->Mips[0].BulkData.Lock(LOCK_READ_WRITE); #UE5
+
+#if ENGINE_MAJOR_VERSION == 4
+			void* textureData = texture->PlatformData->Mips[0].BulkData.Lock(LOCK_READ_WRITE);
+			FMemory::Memcpy(textureData, uncompressedBGRA.GetData(), uncompressedBGRA.Num());
+			texture->PlatformData->Mips[0].BulkData.Unlock();
+#else
+			// update for #UE5
 			void* textureData = texture->GetPlatformData()->Mips[0].BulkData.Lock(LOCK_READ_WRITE);
 			FMemory::Memcpy(textureData, uncompressedBGRA.GetData(), uncompressedBGRA.Num());
 			texture->GetPlatformData()->Mips[0].BulkData.Unlock();
-
+#endif
 			texture->UpdateResource();
 		}
 	}

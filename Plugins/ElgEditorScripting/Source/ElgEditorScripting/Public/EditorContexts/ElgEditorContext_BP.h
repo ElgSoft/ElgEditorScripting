@@ -61,6 +61,18 @@ class ELGEDITORSCRIPTING_API UElgEditorContext_BP : public UBlueprintFunctionLib
 	UFUNCTION(BlueprintPure, Category = "ElgEditor|Jason")
 		static UElgEditorContext_Jason* GetJasonContext();
 
+	/**
+	 * Show a SlowTask UI 
+	 * Construct this scope from an amount of work to do, and a message to display
+	 * @param		InTotalAmountOfWork		Arbitrary number of work units to perform (can be a percentage or number of steps).
+	 *										0 indicates that no progress frames are to be entered in this scope (automatically enters a frame encompassing the entire scope)
+	 * @param		InDefaultMessage		A message to display to the user to describe the purpose of the scope
+	 * @param		bShowProgressDialog		When false, this scope will have no effect. Allows for proper scoped objects that are conditionally hidden.
+	 * @param		bShowCancelButton		Whether to show a cancel button on the dialog or not.
+	 */	
+	UFUNCTION(BlueprintCallable, Category= "ElgEditor|SlowTask")
+		static void ShowSlowTask(UElgEditorContext_SlowTask*& OutSlowTask, float InTotalAmountOfWork = 1.0f, const FText InDefaultMessage = FText(), bool bShowProgressDialog = true, bool bShowCancelButton = false);
+
 #pragma endregion
 
 #pragma region Notification

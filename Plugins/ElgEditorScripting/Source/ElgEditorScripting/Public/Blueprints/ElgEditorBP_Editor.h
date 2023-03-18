@@ -65,6 +65,6 @@ class ELGEDITORSCRIPTING_API UElgEditorBP_Editor : public UBlueprintFunctionLibr
 	/* Return if the SlowTask has been cancel by the user */
 	UFUNCTION(BlueprintCallable, Category = "ElgEditor|Editor|SlowTask", meta=(ExpandEnumAsExecs = "Branches"))
 		static void ReceivedUserCancelBranch(EBPEditorOutputBranch& Branches);
-
+	
 #pragma endregion
 };

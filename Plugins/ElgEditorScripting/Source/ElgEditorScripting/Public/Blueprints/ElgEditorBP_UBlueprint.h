@@ -188,7 +188,7 @@ class ELGEDITORSCRIPTING_API UElgEditorBP_UBlueprint : public UBlueprintFunction
 {
 	GENERATED_BODY()
 
-
+public:
 #pragma region GetBlueprint
 
 	/* Get the UBlueprint object from the AssetData */
@@ -234,6 +234,9 @@ class ELGEDITORSCRIPTING_API UElgEditorBP_UBlueprint : public UBlueprintFunction
 	/* Add an Component to the Blueprint, if the Blueprint is open you must recompile for it to show up. */
 	UFUNCTION(BlueprintCallable, Category = "ElgEditor|Blueprint|Component", meta = (DisplayName = "Add Component", Keywords = "ElgSoft Editor Blueprint"))
 		static void BlueprintAddComponent(UBlueprint* Blueprint, TSubclassOf<UActorComponent> ComponentClass);
+
+	UFUNCTION(BlueprintCallable, Category = "ElgEditor|Blueprint|Component", meta = (DisplayName = "Add Component", Keywords = "ElgSoft Editor Blueprint"))
+		static void BlueprintAddComponentWithName(UBlueprint* Blueprint, TSubclassOf<UActorComponent> ComponentClass, FName InName);
 
 	/* Remove Component(s) from the Blueprint, if the Blueprint is open you must recompile for it to show up.
 	@param  Blueprint		The blueprint asset to remove the component from.
@@ -509,7 +512,7 @@ class ELGEDITORSCRIPTING_API UElgEditorBP_UBlueprint : public UBlueprintFunction
 
 
 #pragma region Helpers
-
+public:
 	static AActor* GetDefaultObjectActor(UBlueprint* Blueprint);
 
 	static UStruct* GetNodeScope(class UK2Node* Node);

@@ -10,6 +10,9 @@ It also add nodes to get the MousePosition, Read/Write to config files, Load/Rel
 [ElgSoft.com](http://elgsoft.com/ccount/click.php?id=main), 
 [Unreal Forum thread](https://forums.unrealengine.com/community/community-content-tools-and-tutorials/1618595-free-elgeditorscripting-editor-utility-widget-extension-events-and-stuff)
 
+1.0.5 Fixed so SlowTask work again in UE5.
+![SlowTask](http://elgsoft.com/Images/EditorScripting/slowtask.gif)<br>
+
 1.0.4 Added support to get an Editor Widget instace so you can access it and do cool stuff.
 ![GetEditorWidget](http://elgsoft.com/Images/EditorScripting/LEC_GetEditorWidget.png)<br>
 

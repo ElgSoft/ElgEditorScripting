@@ -227,6 +227,14 @@ TArray<UActorComponent*> UElgEditorBP_UBlueprint::GetBlueprintComponentsOfClassB
 void UElgEditorBP_UBlueprint::BlueprintAddComponent(UBlueprint* Blueprint, TSubclassOf<UActorComponent> ComponentClass)
 {
 	if (Blueprint == nullptr || ComponentClass == nullptr) return;
+#if WITH_EDITOR
+	BlueprintAddComponentWithName(Blueprint, ComponentClass, ComponentClass->GetFName());
+#endif
+}
+
+void UElgEditorBP_UBlueprint::BlueprintAddComponentWithName(UBlueprint* Blueprint, TSubclassOf<UActorComponent> ComponentClass, FName InName)
+{
+	if (Blueprint == nullptr || ComponentClass == nullptr) return;
 
 #if WITH_EDITOR
 
@@ -235,15 +243,15 @@ void UElgEditorBP_UBlueprint::BlueprintAddComponent(UBlueprint* Blueprint, TSubc
 
 	USimpleConstructionScript* blueprintSCS = Blueprint->SimpleConstructionScript;
 
-	if (USCS_Node* newCompNode = blueprintSCS->CreateNode(ComponentClass, ComponentClass->GetFName()))
+	if (USCS_Node* newCompNode = blueprintSCS->CreateNode(ComponentClass, InName))
 	{
 		blueprintSCS->AddNode(newCompNode);
-	} else {
+	}
+	else {
 		UE_LOG(LogTemp, Warning, TEXT("BlueprintAddComponent:: Failed to create an new component node!"))
 	}
 
 #endif
-
 }
 
 void UElgEditorBP_UBlueprint::BlueprintRemoveComponent(UBlueprint* Blueprint, TSubclassOf<UActorComponent> ComponentClass, const bool bOnlyFirst /*= false*/)

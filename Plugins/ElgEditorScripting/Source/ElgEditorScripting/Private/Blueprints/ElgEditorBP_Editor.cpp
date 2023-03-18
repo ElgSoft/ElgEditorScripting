@@ -7,6 +7,8 @@
 #include "ElgEditorBP_Enum.h"
 #include "Runtime/Core/Public/HAL/FileManager.h"
 #include "Runtime/Core/Public/Misc/FileHelper.h"
+#include "ElgEditorContext_SlowTask.h"
+
 
 
 void UElgEditorBP_Editor::RestartEditor(const bool bShowWarning)
@@ -65,32 +67,67 @@ void UElgEditorBP_Editor::ReadTextFile(const FString PathToFile, TArray<FString>
 
 void UElgEditorBP_Editor::BeginSlowTask(const FText Task, bool ShowProgressDialog, bool bShowCancelButton /*= false*/)
 {
-	GWarn->BeginSlowTask(Task, ShowProgressDialog, bShowCancelButton);
+#if WITH_EDITOR	
+	const FElgEditorScriptingModule& elgEditorScriptModule = FModuleManager::Get().LoadModuleChecked<FElgEditorScriptingModule>(TEXT("ElgEditorScripting"));
+	if (UElgEditorContext_SlowTask* slowTask = elgEditorScriptModule.GetContextManager().GetSlowTaskActive(true)) {
+		slowTask->Begin(100.f, Task, ShowProgressDialog, bShowCancelButton);	
+	}
+	
+#endif
 }
 
 
 void UElgEditorBP_Editor::EndSlowTask()
 {
-	GWarn->EndSlowTask();
+#if WITH_EDITOR	
+	const FElgEditorScriptingModule& elgEditorScriptModule = FModuleManager::Get().LoadModuleChecked<FElgEditorScriptingModule>(TEXT("ElgEditorScripting"));
+	if (UElgEditorContext_SlowTask* slowTask = elgEditorScriptModule.GetContextManager().GetSlowTaskActive(false)) {
+		slowTask->End();	
+	}
+#endif
+	
 }
 
 
 void UElgEditorBP_Editor::StatusUpdate(int32 Numerator, int32 Denominator, const FText StatusText)
 {
-	GWarn->StatusUpdate(Numerator, Denominator, StatusText);
+#if WITH_EDITOR	
+	const FElgEditorScriptingModule& elgEditorScriptModule = FModuleManager::Get().LoadModuleChecked<FElgEditorScriptingModule>(TEXT("ElgEditorScripting"));
+	if (UElgEditorContext_SlowTask* slowTask = elgEditorScriptModule.GetContextManager().GetSlowTaskActive(false)) {
+		slowTask->SetTotalAmountOfWork((float)Denominator);
+		const float inc = (float)Numerator-slowTask->GetCompletedWork();
+		slowTask->EnterProgressFrame(inc, StatusText);
+	}
+#endif
+	
 }
 
 
 void UElgEditorBP_Editor::UpdateProgress(int32 Numerator, int32 Denominator)
 {
-	GWarn->UpdateProgress(Numerator, Denominator);
+#if WITH_EDITOR	
+	const FElgEditorScriptingModule& elgEditorScriptModule = FModuleManager::Get().LoadModuleChecked<FElgEditorScriptingModule>(TEXT("ElgEditorScripting"));
+	if (UElgEditorContext_SlowTask* slowTask = elgEditorScriptModule.GetContextManager().GetSlowTaskActive(false)) {
+		slowTask->SetTotalAmountOfWork((float)Denominator);
+		const float inc = (float)Numerator-slowTask->GetCompletedWork();
+		slowTask->EnterProgressFrame(inc);
+	}
+#endif
+	
 }
 
 
 bool UElgEditorBP_Editor::ReceivedUserCancel()
 {
-	return GWarn->ReceivedUserCancel();
+#if WITH_EDITOR	
+	const FElgEditorScriptingModule& elgEditorScriptModule = FModuleManager::Get().LoadModuleChecked<FElgEditorScriptingModule>(TEXT("ElgEditorScripting"));
+	if (const UElgEditorContext_SlowTask* slowTask = elgEditorScriptModule.GetContextManager().GetSlowTaskActive(false)) {
+		return slowTask->ShouldCancel();
+	}
+#endif
+	return false;
 }
+
 
 void UElgEditorBP_Editor::ReceivedUserCancelBranch(EBPEditorOutputBranch& Branches)
 {

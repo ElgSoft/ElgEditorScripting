@@ -19,4 +19,5 @@ public:
 
 private:
 	TWeakObjectPtr<class UElgEditorContext_Manager> ContextManagerPtr;
+	
 };

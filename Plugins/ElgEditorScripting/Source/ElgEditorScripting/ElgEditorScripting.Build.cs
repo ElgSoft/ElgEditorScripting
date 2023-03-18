@@ -61,6 +61,8 @@ public class ElgEditorScripting : ModuleRules
                 "Json",
                 "JsonUtilities",
                 "UMG",
+				"ApplicationCore",
+				"Kismet",
 				// ... add private dependencies that you statically link with here ...	
 			}
 			);
