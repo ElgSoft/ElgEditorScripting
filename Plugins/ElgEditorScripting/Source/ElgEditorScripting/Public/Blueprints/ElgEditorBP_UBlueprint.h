@@ -1,4 +1,4 @@
-// Copyright 2019-2022 ElgSoft. All rights reserved. 
+// Copyright 2019-2023 ElgSoft. All rights reserved. 
 // Elg001.ElgEditorScripting - ElgSoft.com
 
 #pragma once
@@ -6,7 +6,7 @@
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintFunctionLibrary.h"
 #include "Templates/SubclassOf.h"
-#include <AssetData.h>
+#include "AssetRegistry/AssetData.h"
 #include "ElgEditorBP_Enum.h"
 #include "ElgEditorBP_UBlueprint.generated.h"
 

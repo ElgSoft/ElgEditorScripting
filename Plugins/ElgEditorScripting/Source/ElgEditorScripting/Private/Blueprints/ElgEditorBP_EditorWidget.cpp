@@ -1,4 +1,4 @@
-// Copyright 2019-2022 ElgSoft. All rights reserved. 
+// Copyright 2019-2023 ElgSoft. All rights reserved. 
 // Elg001.ElgEditorScripting - ElgSoft.com
 
 #include "ElgEditorBP_EditorWidget.h"
@@ -42,7 +42,7 @@ void UElgEditorBP_EditorWidget::OpenEditorWidgetFromObject(UObject* InObject)
 				UEditorUtilitySubsystem* EditorUtilitySubsystem = GEditor->GetEditorSubsystem<UEditorUtilitySubsystem>();
 				
 				// get the path to the EditorWidget we want to open
-				FSoftObjectPath path = FSoftObjectPath(FName(*(Blueprint->GetPathName())));
+				FSoftObjectPath path = FSoftObjectPath(Blueprint->GetPathName());
 				// add it to the loaded UIs that will be setup when the tab manager change
 				EditorUtilitySubsystem->LoadedUIs.Add(path);
 				// save away the current open widgets as the OnTabManagerChanged will clear it

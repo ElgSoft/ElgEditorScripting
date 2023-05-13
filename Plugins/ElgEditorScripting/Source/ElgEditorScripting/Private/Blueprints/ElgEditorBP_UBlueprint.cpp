@@ -1,11 +1,11 @@
-// Copyright 2019-2022 ElgSoft. All rights reserved. 
+// Copyright 2019-2023 ElgSoft. All rights reserved. 
 // Elg001.ElgEditorScripting - ElgSoft.com
 
 #include "ElgEditorBP_UBlueprint.h"
 #include "ElgEditorBP_Enum.h"
 #include <Engine/Blueprint.h>
 #include "Modules/ModuleManager.h"
-#include "AssetRegistryModule.h"
+#include "AssetRegistry/AssetRegistryModule.h"
 #include "Kismet2/BlueprintEditorUtils.h"
 #include "Engine/SCS_Node.h"
 #include "Kismet2/KismetEditorUtilities.h"
@@ -91,22 +91,16 @@ TArray<UBlueprint*> UElgEditorBP_UBlueprint::GetBlueprintsByPath(const FName Pat
 	assetFilter.bRecursivePaths = RecursivePaths;
 	assetFilter.PackagePaths.Add(Path);
 
-	FName className = UBlueprint::StaticClass()->GetFName();
-	assetFilter.ClassNames.Add(UBlueprint::StaticClass()->GetFName());
+	assetFilter.ClassPaths.Add(FTopLevelAssetPath(UBlueprint::StaticClass()->GetPathName()));
 	assetFilter.bRecursiveClasses = true;
 
 	// Query for a list of assets in the selected paths
 	TArray<FAssetData> assetList;
 	assetRegistryModule.Get().GetAssets(assetFilter, assetList);
 
-	if (assetList.Num() > 0)
-	{
-
-		for (const auto& asset : assetList)
-		{
-			FString path = asset.ObjectPath.ToString();
-
-			FAssetData assetData = assetRegistryModule.Get().GetAssetByObjectPath(*path, false);
+	if (assetList.Num() > 0) {
+		for (const auto& asset : assetList) {
+			FAssetData assetData = assetRegistryModule.Get().GetAssetByObjectPath(asset.GetSoftObjectPath(), false);
 			if (assetData.IsValid()) {
 				auto blueprint = CastChecked<UBlueprint>(assetData.GetAsset());
 				blueprints.Add(blueprint);
@@ -373,12 +367,8 @@ void UElgEditorBP_UBlueprint::BlueprintAddInterface(UBlueprint* Blueprint, TSubc
 	// make sure the blueprint can have interfaces before we continue to add one...
 	if (!FBlueprintEditorUtils::DoesSupportImplementingInterfaces(Blueprint)) return;
 
-	FName className = InterfaceClass->StaticClass()->GetFName();
-	if (className == (TEXT("Class"))) {
-		className = InterfaceClass->GetFName();
-	}
-	
-	FBlueprintEditorUtils::ImplementNewInterface(Blueprint, className);
+	FTopLevelAssetPath assetPath = FTopLevelAssetPath(InterfaceClass->StaticClass()->GetPathName());
+	FBlueprintEditorUtils::ImplementNewInterface(Blueprint, assetPath);
 
 #endif
 }
@@ -397,15 +387,11 @@ void UElgEditorBP_UBlueprint::BlueprintRemoveInterface(UBlueprint* Blueprint, TS
 		return;
 	}
 
-	// if the blueprint dont support interface dont even try to remove it.
+	// if the blueprint don't support interface don't even try to remove it.
 	if (!FBlueprintEditorUtils::DoesSupportImplementingInterfaces(Blueprint)) return;
 
-	FName className = InterfaceClass->StaticClass()->GetFName();
-	if (className == (TEXT("Class"))) {
-		className = InterfaceClass->GetFName();
-	}
-
-	FBlueprintEditorUtils::RemoveInterface(Blueprint, className, bPreserveFunctions);
+	FTopLevelAssetPath assetPath = FTopLevelAssetPath(InterfaceClass->StaticClass()->GetPathName());
+	FBlueprintEditorUtils::RemoveInterface(Blueprint, assetPath, bPreserveFunctions);
 
 #endif
 }

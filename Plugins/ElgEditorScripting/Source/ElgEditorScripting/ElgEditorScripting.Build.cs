@@ -1,4 +1,4 @@
-// Copyright 2019-2022 ElgSoft. All rights reserved. 
+// Copyright 2019-2023 ElgSoft. All rights reserved. 
 
 using UnrealBuildTool;
 using System.IO;

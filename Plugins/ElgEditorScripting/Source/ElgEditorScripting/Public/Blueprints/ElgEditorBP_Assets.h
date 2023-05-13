@@ -1,4 +1,4 @@
-// Copyright 2019-2022 ElgSoft. All rights reserved. 
+// Copyright 2019-2023 ElgSoft. All rights reserved. 
 // Elg001.ElgEditorScripting - ElgSoft.com
 
 #pragma once
@@ -6,7 +6,7 @@
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintFunctionLibrary.h"
 #include "ElgEditorBP_Enum.h"
-#include "AssetData.h"
+#include "AssetRegistry/AssetData.h"
 #include "ElgEditorBP_Assets.generated.h"
 
 struct FAssetData;
@@ -232,6 +232,18 @@ class ELGEDITORSCRIPTING_API UElgEditorBP_Assets : public UBlueprintFunctionLibr
 	/* If the asset don't exist yet but you want to get the disk path they would have use this */
 	UFUNCTION(BlueprintPure, Category = "ElgEditor|Asset")
 		static FString NewAssetPathToDiskPath(const FString& InAssetPath, const bool& bIsWorldAsset = false);
+
+	/* Return the FTopLevelAssetPath for the class */
+	UFUNCTION(BlueprintPure, Category = "ElgEditor|Asset")
+	static FTopLevelAssetPath GetClassPathName(const UClass* InClass);
+
+	/* Return the FTopLevelAssetPath for the object */
+	UFUNCTION(BlueprintPure, Category = "ElgEditor|Asset")
+	static FTopLevelAssetPath GetObjectPathName(const UObject *InObject);
+	
+	/* /Game/Blueprints/BP_TestObject.BP_TestObject will be come /Game/Blueprints/BP_TestObject */
+	UFUNCTION(BlueprintPure, Category = "ElgEditor|Asset")
+	static FString FileNameToLongPackageName(const FString InFileName);
 
 #pragma endregion
 

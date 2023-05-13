@@ -1,4 +1,4 @@
-// Copyright 2019-2022 ElgSoft. All rights reserved. 
+// Copyright 2019-2023 ElgSoft. All rights reserved. 
 // Elg001.ElgEditorScripting - ElgSoft.com
 
 #include "ElgEditorContext_BP.h"
@@ -9,7 +9,8 @@
 #include "ElgEditorContext_SlowTask.h"
 #include "ElgEditorScripting.h"
 #include <Editor.h>
-#include <AssetRegistryModule.h>
+#include "Engine/Texture2D.h"
+#include "AssetRegistry/AssetRegistryModule.h"
 
 
 
