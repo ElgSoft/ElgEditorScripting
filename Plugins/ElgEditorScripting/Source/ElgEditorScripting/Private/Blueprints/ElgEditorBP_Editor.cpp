@@ -1,4 +1,4 @@
-// Copyright 2019-2022 ElgSoft. All rights reserved. 
+// Copyright 2019-2023 ElgSoft. All rights reserved. 
 // Elg001.ElgEditorScripting - ElgSoft.com
 
 #include "ElgEditorBP_Editor.h"
@@ -57,7 +57,7 @@ void UElgEditorBP_Editor::ReadTextFile(const FString PathToFile, TArray<FString>
 	FileData.Empty();
 
 	if (!IFileManager::Get().FileExists(*PathToFile)) {
-		UE_LOG(LogTemp, Warning, TEXT("Can´t find any file called [%s]"), *PathToFile);
+		UE_LOG(LogTemp, Warning, TEXT("Canï¿½t find any file called [%s]"), *PathToFile);
 		return;
 	}
 	FFileHelper::LoadFileToStringArray(FileData, *PathToFile);

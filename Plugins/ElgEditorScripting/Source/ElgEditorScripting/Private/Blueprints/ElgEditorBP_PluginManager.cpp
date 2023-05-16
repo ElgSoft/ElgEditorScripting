@@ -1,4 +1,4 @@
-// Copyright 2019 ElgSoft. All rights reserved.
+// Copyright 2019-2023 ElgSoft. All rights reserved.
 
 
 #include "ElgEditorBP_PluginManager.h"
@@ -12,6 +12,7 @@
 #include <IImageWrapper.h>
 #include <Misc/FileHelper.h>
 #include <Engine/Texture2D.h>
+#include "TextureResource.h"
 
 #include <UATHelper/Public/IUATHelperModule.h>
 #include <EditorStyleSet.h>
@@ -67,7 +68,7 @@ void UElgEditorBP_PluginManager::PackagePlugin(const FString PluginName, FString
 	#endif
 
 		IUATHelperModule::Get().CreateUatTask(commandLine, platformName, LOCTEXT("PackagePluginTaskName", "Packaging Plugin"),
-			LOCTEXT("PackagePluginTaskShortName", "Package Plugin Task"), FEditorStyle::GetBrush(TEXT("MainFrame.CookContent")));
+			LOCTEXT("PackagePluginTaskShortName", "Package Plugin Task"), FAppStyle::GetBrush(TEXT("MainFrame.CookContent")));
 		Branches = EBPEditorOutputResultBranch::Success;
 	}
 }

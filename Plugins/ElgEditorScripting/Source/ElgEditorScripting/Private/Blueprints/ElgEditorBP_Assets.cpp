@@ -1,11 +1,11 @@
-// Copyright 2019-2022 ElgSoft. All rights reserved. 
+// Copyright 2019-2023 ElgSoft. All rights reserved. 
 // Elg001.ElgEditorScripting - ElgSoft.com
 
 
 #include "ElgEditorBP_Assets.h"
-#include <AssetRegistryModule.h>
+#include "AssetRegistry/AssetRegistryModule.h"
 #include <AssetToolsModule.h>
-#include <AssetData.h>
+#include "AssetRegistry/AssetData.h"
 #include "Misc/Paths.h"
 #include <Engine/World.h>
 #include "HAL\FileManager.h"
@@ -16,7 +16,6 @@
 #include <IContentBrowserSingleton.h>
 #include <HAL/PlatformFilemanager.h>
 
-#include "ElgEditorBP_UBlueprint.h"
 #include <Editor.h>
 
 
@@ -35,7 +34,7 @@ void UElgEditorBP_Assets::FixRedirectorsByPath(const FName Path, const bool Recu
 	FARFilter assetFilter;
 	assetFilter.bRecursivePaths = RecursivePaths;
 	assetFilter.PackagePaths.Add(Path);
-	assetFilter.ClassNames.Add(TEXT("ObjectRedirector"));
+	assetFilter.ClassPaths.Add(GetClassPathName(UObjectRedirector::StaticClass()));
 
 	// Query for a list of assets in the selected paths
 	TArray<FAssetData> assetList;
@@ -44,12 +43,8 @@ void UElgEditorBP_Assets::FixRedirectorsByPath(const FName Path, const bool Recu
 	if (assetList.Num() > 0)
 	{
 		TArray<UObjectRedirector*> redirectors;
-		
-		for (const auto& asset : assetList)		
-		{
-			FString path = asset.ObjectPath.ToString();
-
-			FAssetData assetData = assetRegistryModule.Get().GetAssetByObjectPath(*path, false);
+		for (const auto& asset : assetList) {
+			FAssetData assetData = assetRegistryModule.Get().GetAssetByObjectPath(asset.GetSoftObjectPath(), false);
 			if (assetData.IsValid() && assetData.IsRedirector()) {				
 				auto redirector = CastChecked<UObjectRedirector>(assetData.GetAsset());
 				redirectors.Add(redirector);
@@ -103,7 +98,7 @@ FString UElgEditorBP_Assets::GetAssetDiskPath(const FAssetData& AssetDataStruct)
 	if (!AssetDataStruct.IsValid()) return "";
 
 	const FString PackageName = AssetDataStruct.PackageName.ToString();
-	const bool bIsWorldAsset = (AssetDataStruct.AssetClass == UWorld::StaticClass()->GetFName());
+	const bool bIsWorldAsset = (AssetDataStruct.AssetClassPath == GetClassPathName(UWorld::StaticClass()));
 	const FString Extension = bIsWorldAsset ? FPackageName::GetMapPackageExtension() : FPackageName::GetAssetPackageExtension();
 	const FString FilePath = FPackageName::LongPackageNameToFilename(PackageName, Extension);
 	const FString FullFilePath = FPaths::ConvertRelativePathToFull(FilePath);
@@ -149,8 +144,9 @@ FAssetData UElgEditorBP_Assets::GetAssetDataFromPath(const FString& AssetPath)
 		return AssetData;
 	}
 
+	FSoftObjectPath softObjectPath = FSoftObjectPath(AssetPath);
 	FAssetRegistryModule& AssetRegistryModule = FModuleManager::LoadModuleChecked<FAssetRegistryModule>("AssetRegistry");
-	AssetData = AssetRegistryModule.Get().GetAssetByObjectPath(*AssetPath);
+	AssetData = AssetRegistryModule.Get().GetAssetByObjectPath(softObjectPath);
 	return AssetData;
 }
 
@@ -168,7 +164,7 @@ FString UElgEditorBP_Assets::GetAssetPathFromObject(const UObject* AssetObject)
 	if (AssetObject == nullptr) return path;
 
 	AssetObject->GetPathName().Split("/", &path, nullptr, ESearchCase::IgnoreCase, ESearchDir::FromEnd);
-	return FString::Printf(TEXT("%s/%s.%s"), *path, *AssetObject->GetName(), *AssetObject->GetName());
+	return FString::Printf(TEXT("%s/%s"), *path, *AssetObject->GetName());
 }
 
 void UElgEditorBP_Assets::GetAssetDatasByPath(const TArray<FString>& AssetPaths, TArray<FAssetData>& AssetDatas)
@@ -192,13 +188,13 @@ FString UElgEditorBP_Assets::GetAssetName(const FAssetData& AssetDataStruct)
 FString UElgEditorBP_Assets::GetAssetPath(const FAssetData& AssetDataStruct)
 {
 	if (!AssetDataStruct.IsValid()) return "";
-	return AssetDataStruct.ObjectPath.ToString();
+	return AssetDataStruct.GetSoftObjectPath().ToString();
 }
 
 bool UElgEditorBP_Assets::IsAssetUWorldType(const FAssetData& AssetDataStruct)
 {
 	if (!AssetDataStruct.IsValid()) return false;
-	return (AssetDataStruct.AssetClass == UWorld::StaticClass()->GetFName());
+	return (AssetDataStruct.AssetClassPath == GetClassPathName(UWorld::StaticClass()));
 }
 
 UPackage* UElgEditorBP_Assets::GetPackage(const FAssetData& AssetDataStruct)
@@ -496,6 +492,27 @@ FString UElgEditorBP_Assets::NewAssetPathToDiskPath(const FString& InAssetPath, 
 	const FString filePath = FPackageName::LongPackageNameToFilename(InAssetPath, extension);
 	const FString fullFilePath = FPaths::ConvertRelativePathToFull(filePath);
 	return fullFilePath;
+}
+
+FTopLevelAssetPath UElgEditorBP_Assets::GetClassPathName(const UClass* InClass)
+{
+	if (InClass) {
+		return InClass->GetClassPathName();	
+	}
+	return FTopLevelAssetPath();
+}
+
+FTopLevelAssetPath UElgEditorBP_Assets::GetObjectPathName(const UObject* InObject)
+{
+	if (InObject) {
+		return GetClassPathName(InObject->GetClass());
+	}
+	return FTopLevelAssetPath();
+}
+
+FString UElgEditorBP_Assets::FileNameToLongPackageName(const FString InFileName)
+{
+	return FPackageName::FilenameToLongPackageName(InFileName);
 }
 
 #pragma endregion

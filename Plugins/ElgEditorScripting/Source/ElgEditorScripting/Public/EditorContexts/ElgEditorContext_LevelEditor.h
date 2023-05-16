@@ -1,4 +1,4 @@
-// Copyright 2019 ElgSoft. All rights reserved. 
+// Copyright 2019-2023 ElgSoft. All rights reserved. 
 // Elg001.ElgEditorScripting - ElgSoft.com
 
 #pragma once

@@ -1,9 +1,9 @@
-// Copyright 2019-2022 ElgSoft. All rights reserved. 
+// Copyright 2019-2023 ElgSoft. All rights reserved. 
 // Elg001.ElgEditorScripting - ElgSoft.com
 
 #include "ElgEditorContext_AssetBrowser.h"
 #include "Core\Public\Modules\ModuleManager.h"
-#include <AssetRegistryModule.h>
+#include "AssetRegistry/AssetRegistryModule.h"
 #include <ContentBrowserModule.h>
 
 
