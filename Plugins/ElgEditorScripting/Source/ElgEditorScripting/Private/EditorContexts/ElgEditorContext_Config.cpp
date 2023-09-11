@@ -23,6 +23,7 @@ void UElgEditorContext_Config::Setup(FString ConfigFilename, FString ConfigSecti
 	Name = ConfigFilename;
 	Section = ConfigSection;
 	Path = FPaths::ProjectConfigDir() + "/" + Name + ".ini";
+	Path = FConfigCacheIni::NormalizeConfigIniPath(Path);
 }
 
 #pragma endregion
