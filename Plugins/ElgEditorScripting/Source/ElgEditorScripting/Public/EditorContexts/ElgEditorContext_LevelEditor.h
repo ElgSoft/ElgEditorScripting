@@ -8,7 +8,7 @@
 #include <Editor/UnrealEdTypes.h>
 #include <Kismet/KismetSystemLibrary.h>
 #include "ElgEditorBP_Enum.h"
-#include "SlateCore/Public/Input/Events.h"
+#include "Input/Events.h"
 #include "ElgEditorContext_LevelEditor.generated.h"
 
 

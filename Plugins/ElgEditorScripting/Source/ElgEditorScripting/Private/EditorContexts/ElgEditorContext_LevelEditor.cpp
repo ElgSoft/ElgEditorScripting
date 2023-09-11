@@ -11,7 +11,7 @@
 #include <LevelEditorViewport.h>
 #include <PhysicsEngine/PhysicsSettings.h>
 #include "ElgEditorBP_Enum.h"
-#include "SlateCore/Public/Input/Events.h"
+#include "Input/Events.h"
 #include <EditorModeManager.h>
 #include <EditorModeTools.h>
 

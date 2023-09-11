@@ -63,6 +63,8 @@ public class ElgEditorScripting : ModuleRules
                 "UMG",
 				"ApplicationCore",
 				"Kismet",
+				"UATHelper",
+				"GameProjectGeneration",
 				// ... add private dependencies that you statically link with here ...	
 			}
 			);

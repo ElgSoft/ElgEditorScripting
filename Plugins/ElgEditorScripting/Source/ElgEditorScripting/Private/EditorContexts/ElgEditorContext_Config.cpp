@@ -3,7 +3,7 @@
 
 #include "ElgEditorContext_Config.h"
 #include "Misc/Paths.h"
-#include "Core\Public\Misc\ConfigCacheIni.h"
+#include "Misc\ConfigCacheIni.h"
 #include "ElgEditorBP_Enum.h"
 
 
