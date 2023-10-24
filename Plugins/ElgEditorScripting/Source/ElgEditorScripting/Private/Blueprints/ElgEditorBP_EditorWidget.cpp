@@ -9,7 +9,7 @@
 #include "Widgets/SToolTip.h"
 #include <IBlutilityModule.h>
 #include <EditorUtilitySubsystem.h>
-#include <Blutility/Classes/EditorUtilityWidget.h>
+#include <EditorUtilityWidget.h>
 
 
 #define LOCTEXT_NAMESPACE "ElgAssetTypeActions"

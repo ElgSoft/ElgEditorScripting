@@ -3,10 +3,9 @@
 
 #include "ElgEditorBP_Editor.h"
 #include <UnrealEdMisc.h>
-#include "Core\Public\Misc\FeedbackContext.h"
 #include "ElgEditorBP_Enum.h"
-#include "Runtime/Core/Public/HAL/FileManager.h"
-#include "Runtime/Core/Public/Misc/FileHelper.h"
+#include "HAL/FileManager.h"
+#include "Misc/FileHelper.h"
 #include "ElgEditorContext_SlowTask.h"
 
 

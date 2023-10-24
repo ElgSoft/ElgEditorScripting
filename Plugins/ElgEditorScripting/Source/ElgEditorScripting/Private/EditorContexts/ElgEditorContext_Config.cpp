@@ -3,7 +3,7 @@
 
 #include "ElgEditorContext_Config.h"
 #include "Misc/Paths.h"
-#include "Core\Public\Misc\ConfigCacheIni.h"
+#include "Misc\ConfigCacheIni.h"
 #include "ElgEditorBP_Enum.h"
 
 
@@ -23,6 +23,7 @@ void UElgEditorContext_Config::Setup(FString ConfigFilename, FString ConfigSecti
 	Name = ConfigFilename;
 	Section = ConfigSection;
 	Path = FPaths::ProjectConfigDir() + "/" + Name + ".ini";
+	Path = FConfigCacheIni::NormalizeConfigIniPath(Path);
 }
 
 #pragma endregion

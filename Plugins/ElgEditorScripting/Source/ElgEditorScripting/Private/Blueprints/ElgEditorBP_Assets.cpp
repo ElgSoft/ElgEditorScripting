@@ -12,7 +12,7 @@
 #include "UObject\MetaData.h"
 #include <FileHelpers.h>
 #include <ContentBrowserModule.h>
-#include "Core\Public\Modules\ModuleManager.h"
+#include "Modules\ModuleManager.h"
 #include <IContentBrowserSingleton.h>
 #include <HAL/PlatformFilemanager.h>
 
@@ -421,11 +421,6 @@ bool UElgEditorBP_Assets::HasAssetRefs(const FAssetData AssetData)
 
 void UElgEditorBP_Assets::GetReferenceDependencies(const FAssetData AssetData, const bool bReferencers, const bool bExcludeNativePackage, const bool bExcludeSelf,  TArray<FString>& Referencers)
 {
-	// check for both Soft and hard dependency types
-	int32 ReferenceFlags = 0;
-	ReferenceFlags |= EAssetRegistryDependencyType::Soft;
-	ReferenceFlags |= EAssetRegistryDependencyType::Hard;
-	
 	// load the asset
 	UObject* FoundObject = AssetData.GetAsset();
 

@@ -3,10 +3,10 @@
 
 
 #include "ElgEditorContext_DirWatcher.h"
-#include "Developer/DirectoryWatcher/Public/DirectoryWatcherModule.h"
+#include "DirectoryWatcherModule.h"
 #include <IDirectoryWatcher.h>
-#include "Runtime/Core/Public/HAL/FileManager.h"
-#include "Runtime/Core/Public/Modules/ModuleManager.h"
+#include "HAL/FileManager.h"
+#include "Modules/ModuleManager.h"
 
 #pragma region Setup
 

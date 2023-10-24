@@ -5,7 +5,6 @@
 #include <Interfaces/IPluginManager.h>
 #include <Misc/Paths.h>
 #include <Interfaces/IProjectManager.h>
-#include <GameProjectGeneration/Public/GameProjectGenerationModule.h>
 #include <HAL/PlatformFilemanager.h>
 #include <GenericPlatform/GenericPlatformFile.h>
 #include <IImageWrapperModule.h>
@@ -14,9 +13,11 @@
 #include <Engine/Texture2D.h>
 #include "TextureResource.h"
 
-#include <UATHelper/Public/IUATHelperModule.h>
 #include <EditorStyleSet.h>
-#include "Launch/Resources/Version.h"
+
+#include "GameProjectGenerationModule.h"
+#include "IUATHelperModule.h"
+#include "Runtime/Launch/Resources/Version.h"
 
 #define LOCTEXT_NAMESPACE "ElgEditorPluginManager"
 

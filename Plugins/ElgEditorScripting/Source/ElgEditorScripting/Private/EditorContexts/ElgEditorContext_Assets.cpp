@@ -2,7 +2,7 @@
 // Elg001.ElgEditorScripting - ElgSoft.com
 
 #include "ElgEditorContext_AssetBrowser.h"
-#include "Core\Public\Modules\ModuleManager.h"
+#include "Modules\ModuleManager.h"
 #include "AssetRegistry/AssetRegistryModule.h"
 #include <ContentBrowserModule.h>
 

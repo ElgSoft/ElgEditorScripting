@@ -3,11 +3,11 @@
 
 
 #include "ElgEditorContext_Jason.h"
-#include "Runtime/Json/Public/Dom/JsonObject.h"
-#include "Runtime/Json/Public/Serialization/JsonWriter.h"
-#include "Runtime/Json/Public/Serialization/JsonSerializer.h"
-#include "Runtime/Json/Public/Policies/CondensedJsonPrintPolicy.h"
-#include "Runtime/Core/Public/Misc/FileHelper.h"
+#include "Dom/JsonObject.h"
+#include "Serialization/JsonWriter.h"
+#include "Serialization/JsonSerializer.h"
+#include "Policies/CondensedJsonPrintPolicy.h"
+#include "Misc/FileHelper.h"
 
 
 typedef TJsonWriterFactory< TCHAR, TCondensedJsonPrintPolicy<TCHAR> > FCondensedJsonStringWriterFactory;
