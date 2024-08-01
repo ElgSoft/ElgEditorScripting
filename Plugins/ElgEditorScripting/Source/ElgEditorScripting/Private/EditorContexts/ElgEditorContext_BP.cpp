@@ -21,8 +21,9 @@ UElgEditorContext_LevelEditor* UElgEditorContext_BP::GetLevelEditorContext()
 #if WITH_EDITOR
 	const FElgEditorScriptingModule& elgEditorScriptModule = FModuleManager::Get().LoadModuleChecked<FElgEditorScriptingModule>(TEXT("ElgEditorScripting"));
 	return elgEditorScriptModule.GetContextManager().GetLevelEditorContext();
-#endif
+#else
 	return nullptr;
+#endif
 }
 
 
@@ -31,8 +32,9 @@ UElgEditorContext_AssetBrowser* UElgEditorContext_BP::GetAssetBrowserContext()
 #if WITH_EDITOR
 	const FElgEditorScriptingModule& elgEditorScriptModule = FModuleManager::Get().LoadModuleChecked<FElgEditorScriptingModule>(TEXT("ElgEditorScripting"));
 	return elgEditorScriptModule.GetContextManager().GetAssetBrowserContext();
-#endif
+#else
 	return nullptr;
+#endif
 }
 
 

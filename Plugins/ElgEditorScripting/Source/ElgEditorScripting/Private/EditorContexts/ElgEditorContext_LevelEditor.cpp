@@ -14,6 +14,7 @@
 #include "Input/Events.h"
 #include <EditorModeManager.h>
 #include <EditorModeTools.h>
+#include <Engine/HitResult.h>
 
 
 #pragma region Setup
